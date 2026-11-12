@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
 NERD-TEXT Static Generator
-Fetches CISA KEV vulnerabilities, Linux Security Advisories, and Roguelike/Nerd-Game RSS feeds,
-enforces a strict 40-character Teletext grid, and outputs:
-  - dist/pages.json (for the Web UI)
-  - dist/<page>.txt (for terminal `curl` access)
+Fetches CISA KEV vulnerabilities, Linux Security Advisories, Retro Gaming news,
+and Top 10 Hacker News stories, enforces a strict 40-character Teletext grid,
+and outputs:
+  - dist/pages.json (Web UI)
+  - dist/<page>.txt (terminal curl access)
+  - dist/all.txt (complete offline bundle)
 """
 
 import json
@@ -29,18 +31,21 @@ LINUX_SEC_FEEDS = [
     ("Kernel", "https://www.kernel.org/feeds/kdist.xml"),
 ]
 
-GAME_FEEDS = [
-    ("Dwarf Fortress", "https://www.bay12games.com/dwarves/dev_now.rss"),
-    ("Caves of Qud", "https://steamcommunity.com/games/333640/rss/"),
-    ("Cataclysm: DDA", "https://github.com/CleverRaven/Cataclysm-DDA/releases.atom"),
-    ("NetHack", "https://github.com/NetHack/NetHack/releases.atom"),
+RETRO_FEEDS = [
+    ("TimeExt", "https://www.timeextension.com/feeds/latest"),
+    ("RetroRGB", "https://www.retrorgb.com/feed"),
     ("Libretro", "https://www.libretro.com/index.php/feed/"),
+    ("GBATemp", "https://gbatemp.net/forums/-/index.rss"),
+    ("Romhack", "https://www.romhacking.net/news/feed/"),
 ]
+
+HN_TOP_URL = "https://hacker-news.firebaseio.com/v0/topstories.json"
+HN_ITEM_URL = "https://hacker-news.firebaseio.com/v0/item/{}.json"
 
 USER_AGENT = "NerdText-Bot/1.0 (+https://nerdtext.local)"
 
 
-def fetch_url(url: str, timeout: int = 15) -> bytes:
+def fetch_url(url: str, timeout: int = 12) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return resp.read()
@@ -55,7 +60,6 @@ def clean_text(raw: str) -> str:
 
 
 def dedup_prefix(prefix: str, text: str) -> str:
-    """Entfernt doppelte Hersteller-/Spielnamen, Autoren-Tags und Datums-Präfixe."""
     t = text.strip()
     t = re.sub(r"^\([A-Za-z0-9 _.-]+\)\s*", "", t)
     t = re.sub(r"^\d{4}-\d{2}-\d{2}\s*[:\-]\s*", "", t)
@@ -70,7 +74,6 @@ def is_date_only(text: str) -> bool:
 
 
 def smart_truncate(text: str, max_len: int) -> str:
-    """Kürzt bevorzugt am Satzende, sonst sauber an Wortgrenzen."""
     t = text.strip()
     if len(t) <= max_len:
         return t
@@ -98,15 +101,12 @@ def wrap_40(text: str, indent: str = "") -> list[str]:
 
 
 def resolve_gemini_models(api_key: str) -> list[str]:
-    """Ermittelt alle verfügbaren Gemini-Modelle in priorisierter Reihenfolge."""
     preferred_order = [
-        "gemini-2.5-flash",
-        "gemini-2.5-flash-lite",
+        "gemini-flash-latest",
         "gemini-2.0-flash",
         "gemini-2.0-flash-lite",
-        "gemini-flash-latest",
+        "gemini-2.5-flash",
         "gemini-1.5-flash",
-        "gemini-1.5-flash-latest",
     ]
     list_url = f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}"
     try:
@@ -139,9 +139,9 @@ def summarize_with_llm(items: list[dict], category: str) -> list[dict] | None:
         f"You are a senior Teletext news editor for {category}. "
         "Rewrite each raw feed item into crisp, complete Teletext copy:\n"
         "1) 'headline': max 34 chars, complete words (NEVER cut off mid-word), "
-        "format 'Vendor/Game: Core Issue' (e.g. 'Cisco BroadWorks: XXE Flaw').\n"
-        "2) 'summary': 150 to 200 chars of dense technical facts ending with a full period. "
-        "State attack vector, impact, and patch/fix. Never repeat the headline.\n"
+        "format 'Topic/Source: Core Fact'.\n"
+        "2) 'summary': 150 to 200 chars of dense technical/editorial facts ending with a full period. "
+        "Explain what happened, why it matters, or key specs. Never repeat the headline.\n"
         "Return ONLY a raw JSON array of objects with keys 'headline' and 'summary'. No markdown.\n\n"
         f"Items:\n{json.dumps(items, ensure_ascii=True)}"
     )
@@ -163,16 +163,16 @@ def summarize_with_llm(items: list[dict], category: str) -> list[dict] | None:
                 headers={"Content-Type": "application/json"},
                 method="POST",
             )
-            with urllib.request.urlopen(req, timeout=25) as resp:
+            with urllib.request.urlopen(req, timeout=30) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
                 raw_text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
                 raw_text = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw_text)
                 parsed = json.loads(raw_text)
                 if isinstance(parsed, list) and len(parsed) == len(items):
-                    print(f"[INFO] LLM editorial rewrite succeeded via {model}.")
+                    print(f"[INFO] LLM editorial rewrite succeeded via {model} ({category}).")
                     return parsed
         except urllib.error.HTTPError as exc:
-            err_body = exc.read().decode("utf-8", errors="ignore")[:160]
+            err_body = exc.read().decode("utf-8", errors="ignore")[:140]
             print(f"[WARN] {model} failed ({exc.code}): {err_body}")
         except Exception as exc:
             print(f"[WARN] {model} failed: {exc}")
@@ -292,51 +292,112 @@ def get_security_items() -> list[dict]:
     return combined
 
 
-def get_nerd_games(limit: int = 5) -> list[dict]:
+def get_retro_games(limit: int = 5) -> list[dict]:
     collected = []
-    for name, url in GAME_FEEDS:
+    for name, url in RETRO_FEEDS:
         try:
             raw = fetch_url(url, timeout=12)
-            tag = "DF" if name == "Dwarf Fortress" else name
-            collected.extend(parse_feed_items(raw, name, max_items=2, short_tag=tag))
+            collected.extend(parse_feed_items(raw, name, max_items=2, short_tag=name))
         except Exception as exc:
-            print(f"[WARN] Feed unreachable ({name}): {exc}")
+            print(f"[WARN] Retro feed unreachable ({name}): {exc}")
 
     if not collected:
         return [{
-            "id": "GAMES-OFFLINE",
-            "headline": "Game feeds unreachable",
-            "summary": "Upstream RSS endpoints did not respond during build.",
+            "id": "RETRO-OFFLINE",
+            "headline": "Retro feeds unreachable",
+            "summary": "Upstream retro gaming RSS feeds did not respond.",
             "meta": "Retry next cycle",
         }]
     return collected[:limit]
 
 
-def build_pages(sec_items: list[dict], games: list[dict], stamp: str) -> dict:
+def extract_article_snippet(url: str) -> str:
+    """Liest den Anfang des verlinkten Artikels für eine echte Gemini-Zusammenfassung."""
+    if not url or url.lower().endswith((".pdf", ".zip", ".png", ".jpg")):
+        return ""
+    try:
+        raw = fetch_url(url, timeout=6)[:25000]
+        html = raw.decode("utf-8", errors="ignore")
+        html = re.sub(r"<(script|style|nav|header|footer)[^>]*>.*?</\1>", " ", html, flags=re.S | re.I)
+        paragraphs = re.findall(r"<p[^>]*>(.*?)</p>", html, flags=re.S | re.I)
+        cleaned_p = [clean_text(p) for p in paragraphs if len(clean_text(p)) > 50]
+        if cleaned_p:
+            return " ".join(cleaned_p[:3])[:600]
+        return clean_text(html)[:500]
+    except Exception:
+        return ""
+
+
+def get_hacker_news(limit: int = 10) -> list[dict]:
+    results = []
+    try:
+        ids = json.loads(fetch_url(HN_TOP_URL, timeout=10).decode("utf-8"))[:25]
+        for rank_idx, item_id in enumerate(ids):
+            if len(results) >= limit:
+                break
+            try:
+                story = json.loads(fetch_url(HN_ITEM_URL.format(item_id), timeout=8).decode("utf-8"))
+                if not story or story.get("type") != "story" or story.get("dead") or story.get("deleted"):
+                    continue
+                title = clean_text(story.get("title", ""))
+                url = story.get("url", "")
+                score = story.get("score", 0)
+                comments = story.get("descendants", 0)
+                domain = re.sub(r"^https?://(?:www\.)?([^/]+).*$", r"\1", url) if url else "news.ycombinator.com"
+
+                snippet = extract_article_snippet(url) if url else clean_text(story.get("text", ""))[:500]
+                raw_summary = snippet if snippet else f"{title} ({domain})."
+
+                results.append({
+                    "id": f"HN #{len(results)+1} | {domain[:24]}",
+                    "headline": smart_truncate(title, 34),
+                    "summary": smart_truncate(raw_summary, 220),
+                    "meta": f"{score} pts | {comments} comments | {domain[:18]}",
+                })
+            except Exception:
+                continue
+    except Exception as exc:
+        print(f"[ERROR] Hacker News fetch failed: {exc}")
+
+    if not results:
+        return [{
+            "id": "HN-OFFLINE",
+            "headline": "Hacker News unreachable",
+            "summary": "Hacker News Firebase API did not respond during build.",
+            "meta": "Retry next cycle",
+        }]
+    return results
+
+
+def build_pages(sec_items: list[dict], retro_items: list[dict], hn_items: list[dict], stamp: str) -> dict:
     pages = {}
 
     # --- PAGE 100: INDEX ---
     p100 = [
         {"t": "banner", "s": "  NERD-TEXT // ZERO-BLOAT TELETEXT    "},
         {"t": "sep", "s": "=" * 40},
-        {"t": "sec_cyan", "s": "SECURITY & LINUX ADVISORIES (P200)"},
+        {"t": "sec_cyan", "s": "SECURITY & LINUX ADVISORIES     [200]"},
     ]
-    for idx, item in enumerate(sec_items[:3], start=201):
+    for idx, item in enumerate(sec_items[:2], start=201):
         p100.append({"t": "link", "p": str(idx), "s": f"{idx}  {item['headline'][:35]}"})
 
     p100.append({"t": "blank", "s": ""})
-    p100.append({"t": "sec_green", "s": "NERD GAMES & ROGUELIKES (FROM 300)"})
-    for idx, item in enumerate(games[:3], start=301):
+    p100.append({"t": "sec_green", "s": "RETRO GAMING & HANDHELDS        [300]"})
+    for idx, item in enumerate(retro_items[:2], start=301):
+        p100.append({"t": "link", "p": str(idx), "s": f"{idx}  {item['headline'][:35]}"})
+
+    p100.append({"t": "blank", "s": ""})
+    p100.append({"t": "item_yel", "s": "TOP 10 HACKER NEWS              [400]"})
+    for idx, item in enumerate(hn_items[:3], start=401):
         p100.append({"t": "link", "p": str(idx), "s": f"{idx}  {item['headline'][:35]}"})
 
     p100.extend([
-        {"t": "blank", "s": ""},
         {"t": "sep", "s": "-" * 40},
-        {"t": "nav", "s": "[200] Security  [300] Games   [999] Info"},
+        {"t": "nav", "s": "[200] Sec  [300] Retro  [400] HN  [999]"},
     ])
     pages["100"] = {"title": "INDEX", "next": "200", "prev": "999", "lines": p100}
 
-    # --- PAGE 200: SECURITY & LINUX OVERVIEW ---
+    # --- PAGE 200: SECURITY OVERVIEW ---
     p200 = [
         {"t": "hdr_red", "s": "CISA KEV & LINUX SECURITY (DSA/USN)"},
         {"t": "sep", "s": "=" * 40},
@@ -365,24 +426,24 @@ def build_pages(sec_items: list[dict], games: list[dict], stamp: str) -> dict:
         lines.append({"t": "nav", "s": f"[100] Index  [{prv}] Prev  [{nxt}] Next"})
         pages[pg] = {"title": item["id"][:12], "next": nxt, "prev": prv, "lines": lines}
 
-    # --- PAGE 300: NERD GAMES OVERVIEW ---
+    # --- PAGE 300: RETRO GAMING OVERVIEW ---
     p300 = [
-        {"t": "hdr_grn", "s": "ROGUELIKES & SYSTEM-DRIVEN GAMES"},
+        {"t": "hdr_grn", "s": "RETRO GAMING, HANDHELDS & ROMHACKS"},
         {"t": "sep", "s": "=" * 40},
     ]
-    for idx, item in enumerate(games, start=301):
+    for idx, item in enumerate(retro_items, start=301):
         p300.append({"t": "link", "p": str(idx), "s": f"{idx}  {item['headline'][:35]}"})
         p300.extend({"t": "body", "s": l} for l in wrap_40(item["summary"], "     ")[:2])
-    p300.append({"t": "nav", "s": "[100] Index      [301] Details     [999]"})
-    pages["300"] = {"title": "NERD GAMES", "next": "301", "prev": "200", "lines": p300}
+    p300.append({"t": "nav", "s": "[100] Index      [301] Details     [400]"})
+    pages["300"] = {"title": "RETRO GAMES", "next": "301", "prev": "200", "lines": p300}
 
-    # --- PAGES 301..30N: GAME DETAILS ---
-    for i, item in enumerate(games):
+    # --- PAGES 301..30N: RETRO DETAILS ---
+    for i, item in enumerate(retro_items):
         pg = str(301 + i)
-        nxt = str(301 + i + 1) if i + 1 < len(games) else "999"
+        nxt = str(301 + i + 1) if i + 1 < len(retro_items) else "400"
         prv = str(301 + i - 1) if i > 0 else "300"
         lines = [
-            {"t": "hdr_grn", "s": f"GAME LOG ({i+1}/{len(games)})"},
+            {"t": "hdr_grn", "s": f"RETRO LOG ({i+1}/{len(retro_items)})"},
             {"t": "sep", "s": "=" * 40},
             {"t": "item_yel", "s": f"> {item['id']}"[:40]},
         ]
@@ -394,24 +455,56 @@ def build_pages(sec_items: list[dict], games: list[dict], stamp: str) -> dict:
         lines.append({"t": "nav", "s": f"[100] Index  [{prv}] Prev  [{nxt}] Next"})
         pages[pg] = {"title": item["id"][:12], "next": nxt, "prev": prv, "lines": lines}
 
+    # --- PAGE 400: TOP 10 HACKER NEWS OVERVIEW ---
+    p400 = [
+        {"t": "banner", "s": "  TOP 10 HACKER NEWS // FRONT PAGE    "},
+        {"t": "sep", "s": "=" * 40},
+    ]
+    for idx, item in enumerate(hn_items, start=401):
+        p400.append({"t": "link", "p": str(idx), "s": f"{idx}  {item['headline'][:35]}"})
+    p400.extend([
+        {"t": "blank", "s": ""},
+        {"t": "sep", "s": "-" * 40},
+        {"t": "nav", "s": "[100] Index      [401] Story 1     [999]"},
+    ])
+    pages["400"] = {"title": "HACKER NEWS", "next": "401", "prev": "300", "lines": p400}
+
+    # --- PAGES 401..410: HACKER NEWS DETAILS ---
+    for i, item in enumerate(hn_items):
+        pg = str(401 + i)
+        nxt = str(401 + i + 1) if i + 1 < len(hn_items) else "999"
+        prv = str(401 + i - 1) if i > 0 else "400"
+        lines = [
+            {"t": "banner", "s": f"  HACKER NEWS ({i+1}/{len(hn_items)})                  "[:40]},
+            {"t": "sep", "s": "=" * 40},
+            {"t": "item_yel", "s": f"> {item['id']}"[:40]},
+        ]
+        lines.extend({"t": "sec_cyan", "s": l} for l in wrap_40(item["headline"], "  "))
+        lines.append({"t": "blank", "s": ""})
+        lines.extend({"t": "body", "s": l} for l in wrap_40(item["summary"], "  ")[:6])
+        lines.append({"t": "blank", "s": ""})
+        lines.extend({"t": "warn_grn", "s": l} for l in wrap_40(item["meta"], "  "))
+        lines.append({"t": "nav", "s": f"[100] Index  [{prv}] Prev  [{nxt}] Next"})
+        pages[pg] = {"title": f"HN #{i+1}", "next": nxt, "prev": prv, "lines": lines}
+
     # --- PAGE 999: INFO & CURL ACCESS ---
     pages["999"] = {
         "title": "INFO",
         "next": "100",
-        "prev": "300",
+        "prev": "400",
         "lines": [
             {"t": "hdr_mag", "s": "ABOUT NERD-TEXT // ARCHITECTURE"},
             {"t": "sep", "s": "=" * 40},
             {"t": "body", "s": "Zero ads. Zero tracking. Finite pages."},
-            {"t": "body", "s": "Built for instant loading on weak"},
-            {"t": "body", "s": "mobile links and terminal workflows."},
+            {"t": "body", "s": "200: Security | 300: Retro | 400: HN"},
             {"t": "blank", "s": ""},
             {"t": "sec_cyan", "s": "TERMINAL / CURL ACCESS:"},
             {"t": "item_yel", "s": "  $ curl <host>/100.txt"},
-            {"t": "item_yel", "s": "  $ curl <host>/204.txt"},
+            {"t": "item_yel", "s": "  $ curl <host>/400.txt"},
+            {"t": "item_yel", "s": "  $ curl <host>/all.txt"},
             {"t": "blank", "s": ""},
             {"t": "body", "s": f"Last build: {stamp} UTC"},
-            {"t": "nav", "s": "[100] Index   [200] Sec   [300] Games"},
+            {"t": "nav", "s": "[100] Index   [200] Sec   [400] HN"},
         ],
     }
 
@@ -424,7 +517,7 @@ def render_plain_txt(page_num: str, page_obj: dict, stamp: str) -> str:
     for line in page_obj["lines"]:
         out.append(line["s"][:40].ljust(40))
     out.append("=" * 40)
-    out.append("RED:100  GRN:200  YEL:300  CYN:999".ljust(40))
+    out.append("100:IDX  200:SEC  300:RETRO  400:HN".ljust(40))
     return "\n".join(out) + "\n"
 
 
@@ -433,7 +526,7 @@ def main() -> None:
     now_utc = datetime.now(timezone.utc)
     stamp = now_utc.strftime("%d.%m.%y %H:%M")
 
-    print("[1/4] Fetching CISA KEV & Linux Security feeds...")
+    print("[1/5] Fetching CISA KEV & Linux Security feeds...")
     sec_items = get_security_items()
     llm_sec = summarize_with_llm(sec_items, "Cybersecurity, CVEs & Linux Advisories")
     if llm_sec:
@@ -441,26 +534,37 @@ def main() -> None:
             orig["headline"] = smart_truncate(clean_text(refined.get("headline", orig["headline"])), 34)
             orig["summary"] = smart_truncate(clean_text(refined.get("summary", orig["summary"])), 220)
 
-    print("[2/4] Fetching Nerd-Game & Roguelike feeds...")
-    games = get_nerd_games(limit=5)
-    llm_games = summarize_with_llm(games, "Roguelikes & Deep System Games")
-    if llm_games:
-        for orig, refined in zip(games, llm_games):
+    print("[2/5] Fetching Retro Gaming & Handheld feeds...")
+    retro_items = get_retro_games(limit=5)
+    llm_retro = summarize_with_llm(retro_items, "Retro Gaming, Handhelds & ROM Hacks")
+    if llm_retro:
+        for orig, refined in zip(retro_items, llm_retro):
             orig["headline"] = smart_truncate(clean_text(refined.get("headline", orig["headline"])), 34)
             orig["summary"] = smart_truncate(clean_text(refined.get("summary", orig["summary"])), 220)
 
-    print("[3/4] Building 40-char Teletext grid...")
-    pages = build_pages(sec_items, games, stamp)
+    print("[3/5] Fetching Top 10 Hacker News stories...")
+    hn_items = get_hacker_news(limit=10)
+    llm_hn = summarize_with_llm(hn_items, "Hacker News Tech & Programming Stories")
+    if llm_hn:
+        for orig, refined in zip(hn_items, llm_hn):
+            orig["headline"] = smart_truncate(clean_text(refined.get("headline", orig["headline"])), 34)
+            orig["summary"] = smart_truncate(clean_text(refined.get("summary", orig["summary"])), 220)
+
+    print("[4/5] Building 40-char Teletext grid...")
+    pages = build_pages(sec_items, retro_items, hn_items, stamp)
 
     payload = {"generated_utc": now_utc.isoformat(), "pages": pages}
     (DIST_DIR / "pages.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
-    print("[4/4] Writing plain-text pages for curl...")
-    for pg_num, pg_obj in pages.items():
-        txt_content = render_plain_txt(pg_num, pg_obj, stamp)
+    print("[5/5] Writing plain-text pages & offline bundle...")
+    bundle_parts = []
+    for pg_num in sorted(pages.keys(), key=int):
+        txt_content = render_plain_txt(pg_num, pages[pg_num], stamp)
         (DIST_DIR / f"{pg_num}.txt").write_text(txt_content, encoding="utf-8")
+        bundle_parts.append(txt_content)
 
-    print(f"[DONE] Built {len(pages)} pages into ./{DIST_DIR}/")
+    (DIST_DIR / "all.txt").write_text("\n".join(bundle_parts), encoding="utf-8")
+    print(f"[DONE] Built {len(pages)} pages + all.txt into ./{DIST_DIR}/")
 
 
 if __name__ == "__main__":
