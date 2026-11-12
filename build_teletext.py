@@ -69,6 +69,15 @@ def is_date_only(text: str) -> bool:
     return bool(re.fullmatch(r"[\d./\-:\s]+", text.strip()))
 
 
+def smart_truncate(text: str, max_len: int) -> str:
+    """Kürzt sauber an Wortgrenzen statt mitten im Wort."""
+    t = text.strip()
+    if len(t) <= max_len:
+        return t
+    cut = t[:max_len].rsplit(" ", 1)[0]
+    return cut if len(cut) >= max_len // 2 else t[:max_len]
+
+
 def wrap_40(text: str, indent: str = "") -> list[str]:
     clean = clean_text(text)
     if not clean:
@@ -90,10 +99,13 @@ def summarize_with_llm(items: list[dict], category: str) -> list[dict] | None:
         return None
 
     prompt = (
-        f"You are a Teletext editor for {category}. Rewrite each item below into:\n"
-        "1) 'headline': max 34 chars, punchy, factual, no redundant vendor/game prefix.\n"
-        "2) 'summary': max 110 chars, pure technical facts/versions/impact.\n"
-        "Return ONLY valid JSON array of objects with keys 'headline' and 'summary'.\n\n"
+        f"You are a senior Teletext news editor for {category}. "
+        "Rewrite each raw feed item into crisp, authentic Teletext copy:\n"
+        "1) 'headline': max 34 chars, complete words (NEVER cut off mid-word), "
+        "format 'Vendor/Game: Core Issue' (e.g. 'MS Outlook: Unsafe Action Bug').\n"
+        "2) 'summary': 160 to 215 chars of dense technical facts (attack vector, "
+        "affected versions, impact, mitigation). No filler, no repeating the headline.\n"
+        "Return ONLY a valid JSON array of objects with keys 'headline' and 'summary'.\n\n"
         f"Items:\n{json.dumps(items, ensure_ascii=True)}"
     )
 
@@ -136,16 +148,22 @@ def get_cisa_cves(limit: int = 3) -> list[dict]:
             vendor = clean_text(v.get("vendorProject", ""))
             product = clean_text(v.get("product", ""))
             name = clean_text(v.get("vulnerabilityName", ""))
+            desc = clean_text(v.get("shortDescription", ""))
+            action = clean_text(v.get("requiredAction", ""))
             due = clean_text(v.get("dueDate", ""))
 
             target = dedup_prefix(vendor, product)
             label = f"{vendor} {target}".strip() if target else vendor
             clean_name = dedup_prefix(label, name) or name
 
+            body = desc if desc else clean_name
+            if action and len(body) < 160:
+                body = f"{body} Fix: {action}"
+
             results.append({
                 "id": cve,
-                "headline": f"{label}: {clean_name}"[:34],
-                "summary": f"{clean_name}. Patch due: {due}."[:140],
+                "headline": smart_truncate(f"{label}: {clean_name}", 34),
+                "summary": smart_truncate(body, 220),
                 "meta": f"CISA KEV | Added: {v.get('dateAdded', '')} | Due: {due}",
             })
         return results
@@ -167,7 +185,7 @@ def parse_feed_items(xml_bytes: bytes, source_name: str, max_items: int = 2, sho
             is_rdf = bool(entries)
         if not entries:
             entries = root.findall(".//{http://www.w3.org/2005/Atom}entry")
-            is_atom = bool(entries)
+            is_atom = True
 
         for entry in entries[:max_items]:
             if is_atom:
@@ -194,13 +212,13 @@ def parse_feed_items(xml_bytes: bytes, source_name: str, max_items: int = 2, sho
             if short_tag:
                 title = dedup_prefix(short_tag, title)
             if not title or is_date_only(title):
-                title = dedup_prefix(short_tag or source_name, summary[:55]) if summary else "Update"
+                title = dedup_prefix(short_tag or source_name, summary[:65]) if summary else "Update"
 
             tag = short_tag or source_name
             items.append({
                 "id": source_name.upper(),
-                "headline": f"{tag}: {title}"[:34],
-                "summary": (summary or title)[:140],
+                "headline": smart_truncate(f"{tag}: {title}", 34),
+                "summary": smart_truncate(summary or title, 220),
                 "meta": f"Source: {source_name} ({pub})" if pub else f"Source: {source_name}",
             })
     except Exception as exc:
@@ -297,7 +315,7 @@ def build_pages(sec_items: list[dict], games: list[dict], stamp: str) -> dict:
         ]
         lines.extend({"t": "sec_cyan", "s": l} for l in wrap_40(item["headline"], "  "))
         lines.append({"t": "blank", "s": ""})
-        lines.extend({"t": "body", "s": l} for l in wrap_40(item["summary"], "  "))
+        lines.extend({"t": "body", "s": l} for l in wrap_40(item["summary"], "  ")[:6])
         lines.append({"t": "blank", "s": ""})
         lines.extend({"t": "warn_red", "s": l} for l in wrap_40(item["meta"], "  "))
         lines.append({"t": "nav", "s": f"[100] Index  [{prv}] Prev  [{nxt}] Next"})
@@ -326,7 +344,7 @@ def build_pages(sec_items: list[dict], games: list[dict], stamp: str) -> dict:
         ]
         lines.extend({"t": "sec_cyan", "s": l} for l in wrap_40(item["headline"], "  "))
         lines.append({"t": "blank", "s": ""})
-        lines.extend({"t": "body", "s": l} for l in wrap_40(item["summary"], "  "))
+        lines.extend({"t": "body", "s": l} for l in wrap_40(item["summary"], "  ")[:6])
         lines.append({"t": "blank", "s": ""})
         lines.extend({"t": "warn_grn", "s": l} for l in wrap_40(item["meta"], "  "))
         lines.append({"t": "nav", "s": f"[100] Index  [{prv}] Prev  [{nxt}] Next"})
@@ -376,16 +394,16 @@ def main() -> None:
     llm_sec = summarize_with_llm(sec_items, "Cybersecurity, CVEs & Linux Advisories")
     if llm_sec:
         for orig, refined in zip(sec_items, llm_sec):
-            orig["headline"] = clean_text(refined.get("headline", orig["headline"]))[:34]
-            orig["summary"] = clean_text(refined.get("summary", orig["summary"]))[:140]
+            orig["headline"] = smart_truncate(clean_text(refined.get("headline", orig["headline"])), 34)
+            orig["summary"] = smart_truncate(clean_text(refined.get("summary", orig["summary"])), 220)
 
     print("[2/4] Fetching Nerd-Game & Roguelike feeds...")
     games = get_nerd_games(limit=5)
     llm_games = summarize_with_llm(games, "Roguelikes & Deep System Games")
     if llm_games:
         for orig, refined in zip(games, llm_games):
-            orig["headline"] = clean_text(refined.get("headline", orig["headline"]))[:34]
-            orig["summary"] = clean_text(refined.get("summary", orig["summary"]))[:140]
+            orig["headline"] = smart_truncate(clean_text(refined.get("headline", orig["headline"])), 34)
+            orig["summary"] = smart_truncate(clean_text(refined.get("summary", orig["summary"])), 220)
 
     print("[3/4] Building 40-char Teletext grid...")
     pages = build_pages(sec_items, games, stamp)
