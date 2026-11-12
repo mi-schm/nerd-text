@@ -1,18 +1,16 @@
-P204  NERD-TEXT 204   12.11.26 15:28 UTC
+P204  NERD-TEXT 204   28.11.26 14:11 UTC
 ========================================
 SECURITY ADVISORY (4/5)                 
 ========================================
 > DEBIAN DSA                            
-  Debian: Apache2 Security Update       
+  Debian DSA: Chromium Fix              
                                         
-  Debian issued DSA 6620-1 to resolve   
-  multiple security vulnerabilities     
-  within the Apache2 HTTP server suite. 
-  Administrators are urged to upgrade   
-  packages immediately to protect       
-  production servers.                   
+  Critical security updates have been   
+  issued for the Chromium browser       
+  package under Debian advisory DSA     
+  6667-1.                               
                                         
-  Source: Debian DSA (2026-11-12)       
+  Source: Debian DSA (2026-11-27)       
 [100] Index  [203] Prev  [205] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

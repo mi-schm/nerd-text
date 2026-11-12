@@ -1,17 +1,17 @@
-P400  NERD-TEXT 400   12.11.26 15:28 UTC
+P400  NERD-TEXT 400   28.11.26 14:11 UTC
 ========================================
   TOP 10 HACKER NEWS // FRONT PAGE      
 ========================================
-401  Quake 4: Open-Source Engine Out    
-402  AMD: Mike Clark Details Zen 6      
-403  Nvidia: CEO Transition Announced   
-404  Curry On: Software Correctness     
-405  Nvidia: Jensen Huang Steps Down    
-406  LibreAGI: Torrenting Open AI       
-407  Jane Street: LLM Dev Workflow      
-408  Nvidia: Stock Plunge Amid Exit     
-409  Jane Street: Socratic AI Tutor     
-410  Bootvine: Systemd Tree Visualizer  
+401  Nielsen: AI Book Taken Offline     
+402  E-Commerce: Major Card Skim Found  
+403  Google: DeepCrossAttention Debut   
+404  Unkernel: Linux Kernel in Wasm     
+405  States: Lawsuit Targets Grok AI    
+406  BounceMarket: Live Bouncing Game   
+407  Heretic: Maintainer Steps Down     
+408  Convex: Skill Telemetry Flaw       
+409  Math: Bugs in Proof Checkers       
+410  Knuth: Halts Book Error Reports    
                                         
 ----------------------------------------
 [100] Index      [401] Story 1     [999]

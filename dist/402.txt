@@ -1,19 +1,18 @@
-P402  NERD-TEXT 402   12.11.26 15:28 UTC
+P402  NERD-TEXT 402   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (2/10)                    
 ========================================
-> HN #2 | chipsandcheese.com            
-  AMD: Mike Clark Details Zen 6         
+> HN #2 | infohawk.com                  
+  E-Commerce: Major Card Skim Found     
                                         
-  Chief architect Mike Clark unpacks    
-  design philosophies behind the        
-  upcoming microarchitecture, exploring 
-  execution width, cache layouts, and   
-  power scaling for next-generation     
-  silicon.                              
+  Malicious digital card skimmers       
+  breached checkout flows on major      
+  retail sites including Samsonite and  
+  Lascana, exfiltrating customer payment
+  credentials through compromised       
+  client-side web scripts.              
                                         
-  39 pts | 0 comments |                 
-  chipsandcheese.com                    
+  559 pts | 309 comments | infohawk.com 
 [100] Index  [401] Prev  [403] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

@@ -1,18 +1,17 @@
-P302  NERD-TEXT 302   12.11.26 15:28 UTC
+P302  NERD-TEXT 302   28.11.26 14:11 UTC
 ========================================
 RETRO LOG (2/5)                         
 ========================================
 > TIMEEXT                               
-  Gunpei Yokoi: Legacy Reassessed       
+  Arcade: 1983 Bubbles Easter Egg       
                                         
-  Colleagues revisit the lateral        
-  thinking philosophy of the late Game  
-  Boy inventor and Game & Watch pioneer,
-  whose hardware design tenets still    
-  guide modern portable console         
-  creation.                             
+  A hidden developer secret has finally 
+  surfaced in Williams' legendary 1983  
+  arcade hit after remaining completely 
+  undetected by players for over four   
+  decades of intense cabinet history.   
                                         
-  Source: TimeExt (Thu, 12 Nov 2026)    
+  Source: TimeExt (Sat, 28 Nov 2026)    
 [100] Index  [301] Prev  [303] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

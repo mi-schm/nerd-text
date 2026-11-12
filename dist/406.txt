@@ -1,18 +1,19 @@
-P406  NERD-TEXT 406   12.11.26 15:28 UTC
+P406  NERD-TEXT 406   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (6/10)                    
 ========================================
-> HN #6 | libreagi.com                  
-  LibreAGI: Torrenting Open AI          
+> HN #6 | bouncemarket.minhanhday.      
+  BounceMarket: Live Bouncing Game      
                                         
-  A decentralized BitTorrent tracker    
-  preserves vulnerable open-source      
-  artificial intelligence weights,      
-  ensuring research community access    
-  even if centralized host platforms    
-  delete them.                          
+  The experimental multiplayer web game 
+  lets players buy and trade shares in  
+  bouncing balls in real time, rewarding
+  point payouts for winning bounces     
+  while stress-testing concurrent socket
+  connections.                          
                                         
-  23 pts | 10 comments | libreagi.com   
+  394 pts | 133 comments |              
+  bouncemarket.minha                    
 [100] Index  [405] Prev  [407] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

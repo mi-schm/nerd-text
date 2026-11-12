@@ -1,19 +1,19 @@
-P100  NERD-TEXT 100   12.11.26 15:28 UTC
+P100  NERD-TEXT 100   28.11.26 14:11 UTC
 ========================================
   NERD-TEXT // TECH & RETRO TELETEXT    
 ========================================
 SECURITY & LINUX ADVISORIES     [200]   
-201  Outlook: Network Spoofing Flaw     
-202  Webtop: Media Transcoder Flaw      
+201  GeoServer: XML Injection           
+202  GeoServer: Auth Bypass             
                                         
 RETRO GAMING & HANDHELDS        [300]   
-301  id Software: Ex-Devs Form Studio   
-302  Gunpei Yokoi: Legacy Reassessed    
+301  PS1: Mezase Senkyu-Oh Arrives      
+302  Arcade: 1983 Bubbles Easter Egg    
                                         
 TOP 10 HACKER NEWS              [400]   
-401  Quake 4: Open-Source Engine Out    
-402  AMD: Mike Clark Details Zen 6      
-403  Nvidia: CEO Transition Announced   
+401  Nielsen: AI Book Taken Offline     
+402  E-Commerce: Major Card Skim Found  
+403  Google: DeepCrossAttention Debut   
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 [200] Sec  [300] Retro  [400] HN  [999] 
@@ -22,281 +22,270 @@ AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P200  NERD-TEXT 200   12.11.26 15:28 UTC
+P200  NERD-TEXT 200   28.11.26 14:11 UTC
 ========================================
 CISA KEV & LINUX SECURITY (DSA/USN)     
 ========================================
-201  Outlook: Network Spoofing Flaw     
-     CISA added a zero-interaction flaw 
-     to its Known Exploited...          
-202  Webtop: Media Transcoder Flaw      
-     A resource transfer vulnerability  
-     enables authenticated users to...  
-203  BroadWorks: XXE Data Leak Bug      
-     An unauthenticated remote XXE flaw 
-     exposes sensitive server...        
-204  Debian: Apache2 Security Update    
-     Debian issued DSA 6620-1 to resolve
-     multiple security...               
-205  Ubuntu: Yodl Buffer Over-Read      
-     Canonical patched a buffer over-   
-     read vulnerability in Yodl...      
+201  GeoServer: XML Injection           
+     An unauthenticated remote flaw lets
+     attackers read local text files... 
+202  GeoServer: Auth Bypass             
+     Flaw allows unauthenticated remote 
+     attackers to bypass...             
+203  Drupal Core: Installer Takeover    
+     An improper condition check allows 
+     unauthenticated remote actors to...
+204  Debian DSA: Chromium Fix           
+     Critical security updates have been
+     issued for the Chromium browser... 
+205  Ubuntu USN: Apache Regression      
+     Fixes an upstream cookie-setting   
+     regression during HTTP redirects...
 [100] Index      [201] Details     [300]
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P201  NERD-TEXT 201   12.11.26 15:28 UTC
+P201  NERD-TEXT 201   28.11.26 14:11 UTC
 ========================================
 SECURITY ADVISORY (1/5)                 
 ========================================
-> CVE-2026-124194                       
-  Outlook: Network Spoofing Flaw        
+> CVE-2026-120705                       
+  GeoServer: XML Injection              
                                         
-  CISA added a zero-interaction flaw to 
-  its Known Exploited Vulnerabilities   
-  catalog. Remote unauthenticated       
-  attackers can spoof network actions to
-  compromise target systems without user
-  prompts.                              
+  An unauthenticated remote flaw lets   
+  attackers read local text files       
+  accessible to the process or fetch    
+  arbitrary HTTP targets.               
                                         
-  CISA KEV | Added: 2026-11-10 | Due:   
-  2026-11-24                            
+  CISA KEV | Added: 2026-11-27 | Due:   
+  2026-11-30                            
 [100] Index  [200] Prev  [202] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P202  NERD-TEXT 202   12.11.26 15:28 UTC
+P202  NERD-TEXT 202   28.11.26 14:11 UTC
 ========================================
 SECURITY ADVISORY (2/5)                 
 ========================================
-> CVE-2026-111793                       
-  Webtop: Media Transcoder Flaw         
+> CVE-2026-129243                       
+  GeoServer: Auth Bypass                
                                         
-  A resource transfer vulnerability     
-  enables authenticated users to convert
-  unauthorized documents and breach     
-  boundaries. CISA flags active         
-  exploitation, ordering federal patches
-  within two weeks.                     
+  Flaw allows unauthenticated remote    
+  attackers to bypass service-level role
+  checks and invoke protected operations
+  directly.                             
                                         
-  CISA KEV | Added: 2026-11-10 | Due:   
-  2026-11-24                            
+  CISA KEV | Added: 2026-11-27 | Due:   
+  2026-11-30                            
 [100] Index  [201] Prev  [203] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P203  NERD-TEXT 203   12.11.26 15:28 UTC
+P203  NERD-TEXT 203   28.11.26 14:11 UTC
 ========================================
 SECURITY ADVISORY (3/5)                 
 ========================================
-> CVE-2026-20320                        
-  BroadWorks: XXE Data Leak Bug         
+> CVE-2026-136716                       
+  Drupal Core: Installer Takeover       
                                         
-  An unauthenticated remote XXE flaw    
-  exposes sensitive server configuration
-  files on Cisco BroadWorks. CISA       
-  confirmed active exploitation,        
-  mandating remediation across federal  
-  systems by Nov 24.                    
+  An improper condition check allows    
+  unauthenticated remote actors to      
+  execute full site takeovers via the   
+  exposed installer.                    
                                         
-  CISA KEV | Added: 2026-11-10 | Due:   
-  2026-11-24                            
+  CISA KEV | Added: 2026-11-27 | Due:   
+  2026-11-30                            
 [100] Index  [202] Prev  [204] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P204  NERD-TEXT 204   12.11.26 15:28 UTC
+P204  NERD-TEXT 204   28.11.26 14:11 UTC
 ========================================
 SECURITY ADVISORY (4/5)                 
 ========================================
 > DEBIAN DSA                            
-  Debian: Apache2 Security Update       
+  Debian DSA: Chromium Fix              
                                         
-  Debian issued DSA 6620-1 to resolve   
-  multiple security vulnerabilities     
-  within the Apache2 HTTP server suite. 
-  Administrators are urged to upgrade   
-  packages immediately to protect       
-  production servers.                   
+  Critical security updates have been   
+  issued for the Chromium browser       
+  package under Debian advisory DSA     
+  6667-1.                               
                                         
-  Source: Debian DSA (2026-11-12)       
+  Source: Debian DSA (2026-11-27)       
 [100] Index  [203] Prev  [205] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P205  NERD-TEXT 205   12.11.26 15:28 UTC
+P205  NERD-TEXT 205   28.11.26 14:11 UTC
 ========================================
 SECURITY ADVISORY (5/5)                 
 ========================================
 > UBUNTU USN                            
-  Ubuntu: Yodl Buffer Over-Read         
+  Ubuntu USN: Apache Regression         
                                         
-  Canonical patched a buffer over-read  
-  vulnerability in Yodl. Specially      
-  crafted input could cause the document
-  pre-parser to crash, triggering       
-  denial-of-service conditions on       
-  impacted Ubuntu hosts.                
+  Fixes an upstream cookie-setting      
+  regression during HTTP redirects      
+  introduced by previous Apache2        
+  security updates.                     
                                         
-  Source: Ubuntu USN (Wed, 11 Nov 2026) 
+  Source: Ubuntu USN (Thu, 26 Nov 2026) 
 [100] Index  [204] Prev  [300] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P300  NERD-TEXT 300   12.11.26 15:28 UTC
+P300  NERD-TEXT 300   28.11.26 14:11 UTC
 ========================================
 RETRO GAMING, HANDHELDS & ROMHACKS      
 ========================================
-301  id Software: Ex-Devs Form Studio   
-     Veteran developers laid off by     
-     Microsoft have banded together...  
-302  Gunpei Yokoi: Legacy Reassessed    
-     Colleagues revisit the lateral     
-     thinking philosophy of the late... 
-303  PS2 Slim: M.2 SATA SSD Mod Debuts  
-     The M2 Slim hardware modification  
-     enables internal M.2 SATA...       
-304  RetroRGB: Weekly Roundup #539 Out  
-     Issue 539 recaps current CRT       
-     calibrations, scaler firmware...   
-305  RetroArch: Version 1.21.0 Launched 
-     The modular multi-system frontend  
-     rolls out its latest maintenance...
+301  PS1: Mezase Senkyu-Oh Arrives      
+     Seibu Kaihatsu's classic anime-    
+     styled puzzle title makes its...   
+302  Arcade: 1983 Bubbles Easter Egg    
+     A hidden developer secret has      
+     finally surfaced in Williams'...   
+303  RetroArch: Version 1.21.0 Out      
+     The cross-platform emulation       
+     frontend receives a major update...
+304  Tools: ROM Cleaner Utility         
+     Developer Jesse Talavera expands   
+     retro maintenance tooling with...  
+305  Hardware: PC GameShare on Switch   
+     Community discussions explore      
+     whether upcoming GameShare...      
 [100] Index      [301] Details     [400]
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P301  NERD-TEXT 301   12.11.26 15:28 UTC
+P301  NERD-TEXT 301   28.11.26 14:11 UTC
 ========================================
 RETRO LOG (1/5)                         
 ========================================
 > TIMEEXT                               
-  id Software: Ex-Devs Form Studio      
+  PS1: Mezase Senkyu-Oh Arrives         
                                         
-  Veteran developers laid off by        
-  Microsoft have banded together to     
-  found an independent game studio,     
-  aiming to preserve their classic      
-  shooter craft outside corporate       
-  ownership.                            
+  Seibu Kaihatsu's classic anime-styled 
+  puzzle title makes its debut on the   
+  Console Archives, challenging players 
+  to put their strategic skills to the  
+  test in this faithful emulation       
+  release.                              
                                         
-  Source: TimeExt (Thu, 12 Nov 2026)    
+  Source: TimeExt (Sat, 28 Nov 2026)    
 [100] Index  [300] Prev  [302] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P302  NERD-TEXT 302   12.11.26 15:28 UTC
+P302  NERD-TEXT 302   28.11.26 14:11 UTC
 ========================================
 RETRO LOG (2/5)                         
 ========================================
 > TIMEEXT                               
-  Gunpei Yokoi: Legacy Reassessed       
+  Arcade: 1983 Bubbles Easter Egg       
                                         
-  Colleagues revisit the lateral        
-  thinking philosophy of the late Game  
-  Boy inventor and Game & Watch pioneer,
-  whose hardware design tenets still    
-  guide modern portable console         
-  creation.                             
+  A hidden developer secret has finally 
+  surfaced in Williams' legendary 1983  
+  arcade hit after remaining completely 
+  undetected by players for over four   
+  decades of intense cabinet history.   
                                         
-  Source: TimeExt (Thu, 12 Nov 2026)    
+  Source: TimeExt (Sat, 28 Nov 2026)    
 [100] Index  [301] Prev  [303] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P303  NERD-TEXT 303   12.11.26 15:28 UTC
+P303  NERD-TEXT 303   28.11.26 14:11 UTC
 ========================================
 RETRO LOG (3/5)                         
 ========================================
-> RETRORGB                              
-  PS2 Slim: M.2 SATA SSD Mod Debuts     
+> LIBRETRO                              
+  RetroArch: Version 1.21.0 Out         
                                         
-  The M2 Slim hardware modification     
-  enables internal M.2 SATA storage     
-  inside SCPH-700XX revision consoles,  
-  eliminating slow USB 1.1 bottlenecks  
-  for faster Open PS2 Loader playback.  
+  The cross-platform emulation frontend 
+  receives a major update with RetroArch
+  1.21.0, delivering core improvements, 
+  bug fixes, and enhanced user features 
+  for retro gaming enthusiasts.         
                                         
-  Source: RetroRGB (Wed, 11 Nov 2026)   
+  Source: Libretro (Tue, 29 Apr 2025)   
 [100] Index  [302] Prev  [304] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P304  NERD-TEXT 304   12.11.26 15:28 UTC
+P304  NERD-TEXT 304   28.11.26 14:11 UTC
 ========================================
 RETRO LOG (4/5)                         
 ========================================
-> RETRORGB                              
-  RetroRGB: Weekly Roundup #539 Out     
+> LIBRETRO                              
+  Tools: ROM Cleaner Utility            
                                         
-  Issue 539 recaps current CRT          
-  calibrations, scaler firmware updates,
-  flash carts, and community hardware   
-  projects across video formats and all 
-  major audio streaming feeds.          
+  Developer Jesse Talavera expands retro
+  maintenance tooling with ROM Cleaner, 
+  building upon previous contributions  
+  to melonDS, microphone support, and   
+  XDelta softpatching systems.          
                                         
-  Source: RetroRGB (Wed, 11 Nov 2026)   
+  Source: Libretro (Mon, 31 Mar 2025)   
 [100] Index  [303] Prev  [305] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P305  NERD-TEXT 305   12.11.26 15:28 UTC
+P305  NERD-TEXT 305   28.11.26 14:11 UTC
 ========================================
 RETRO LOG (5/5)                         
 ========================================
-> LIBRETRO                              
-  RetroArch: Version 1.21.0 Launched    
+> GBATEMP                               
+  Hardware: PC GameShare on Switch      
                                         
-  The modular multi-system frontend     
-  rolls out its latest maintenance      
-  release, delivering core stability    
-  patches, input latency improvements,  
-  and updated shader pipeline           
-  compatibility.                        
+  Community discussions explore whether 
+  upcoming GameShare software solutions 
+  could enable seamless local wireless  
+  LAN streaming of demanding PC titles  
+  directly onto next-gen handheld       
+  hardware.                             
                                         
-  Source: Libretro (Tue, 29 Apr 2025)   
+  Source: GBATemp (Sat, 28 Nov 2026)    
 [100] Index  [304] Prev  [400] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P400  NERD-TEXT 400   12.11.26 15:28 UTC
+P400  NERD-TEXT 400   28.11.26 14:11 UTC
 ========================================
   TOP 10 HACKER NEWS // FRONT PAGE      
 ========================================
-401  Quake 4: Open-Source Engine Out    
-402  AMD: Mike Clark Details Zen 6      
-403  Nvidia: CEO Transition Announced   
-404  Curry On: Software Correctness     
-405  Nvidia: Jensen Huang Steps Down    
-406  LibreAGI: Torrenting Open AI       
-407  Jane Street: LLM Dev Workflow      
-408  Nvidia: Stock Plunge Amid Exit     
-409  Jane Street: Socratic AI Tutor     
-410  Bootvine: Systemd Tree Visualizer  
+401  Nielsen: AI Book Taken Offline     
+402  E-Commerce: Major Card Skim Found  
+403  Google: DeepCrossAttention Debut   
+404  Unkernel: Linux Kernel in Wasm     
+405  States: Lawsuit Targets Grok AI    
+406  BounceMarket: Live Bouncing Game   
+407  Heretic: Maintainer Steps Down     
+408  Convex: Skill Telemetry Flaw       
+409  Math: Bugs in Proof Checkers       
+410  Knuth: Halts Book Error Reports    
                                         
 ----------------------------------------
 [100] Index      [401] Story 1     [999]
@@ -305,219 +294,222 @@ AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P401  NERD-TEXT 401   12.11.26 15:28 UTC
+P401  NERD-TEXT 401   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (1/10)                    
 ========================================
-> HN #1 | moddb.com                     
-  Quake 4: Open-Source Engine Out       
+> HN #1 | neuralnetworksanddeeplea      
+  Nielsen: AI Book Taken Offline        
                                         
-  The openQ4 project brings native      
-  modern OS support to the classic id   
-  Tech 4 shooter. Players gain          
-  widescreen scaling, high-refresh      
-  rates, and full Linux or Steam Deck   
-  compatibility.                        
+  The author removed Neural Networks and
+  Deep Learning from the web, citing    
+  shifting views on catastrophic AGI    
+  risks since its 2015 release, urging  
+  developers to rethink rapid capability
+  scaling.                              
                                         
-  47 pts | 16 comments | moddb.com      
+  596 pts | 416 comments |              
+  neuralnetworksandd                    
 [100] Index  [400] Prev  [402] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P402  NERD-TEXT 402   12.11.26 15:28 UTC
+P402  NERD-TEXT 402   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (2/10)                    
 ========================================
-> HN #2 | chipsandcheese.com            
-  AMD: Mike Clark Details Zen 6         
+> HN #2 | infohawk.com                  
+  E-Commerce: Major Card Skim Found     
                                         
-  Chief architect Mike Clark unpacks    
-  design philosophies behind the        
-  upcoming microarchitecture, exploring 
-  execution width, cache layouts, and   
-  power scaling for next-generation     
-  silicon.                              
+  Malicious digital card skimmers       
+  breached checkout flows on major      
+  retail sites including Samsonite and  
+  Lascana, exfiltrating customer payment
+  credentials through compromised       
+  client-side web scripts.              
                                         
-  39 pts | 0 comments |                 
-  chipsandcheese.com                    
+  559 pts | 309 comments | infohawk.com 
 [100] Index  [401] Prev  [403] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P403  NERD-TEXT 403   12.11.26 15:28 UTC
+P403  NERD-TEXT 403   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (3/10)                    
 ========================================
-> HN #3 | nvidianews.nvidia.com         
-  Nvidia: CEO Transition Announced      
+> HN #3 | research.google               
+  Google: DeepCrossAttention Debut      
                                         
-  The semiconductor giant confirms an   
-  immediate executive leadership        
-  handover following decades of market- 
-  defining GPU and AI hardware          
-  dominance, triggering massive industry
-  reaction.                             
+  Google Research unveiled              
+  DeepCrossAttention to enhance         
+  transformer residual paths, preventing
+  representation collapse and improving 
+  training efficiency across deep neural
+  network models at scale.              
                                         
-  926 pts | 739 comments |              
-  nvidianews.nvidia.                    
+  483 pts | 174 comments |              
+  research.google                       
 [100] Index  [402] Prev  [404] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P404  NERD-TEXT 404   12.11.26 15:28 UTC
+P404  NERD-TEXT 404   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (4/10)                    
 ========================================
-> HN #4 | pron.github.io                
-  Curry On: Software Correctness        
+> HN #4 | unkernel.dev                  
+  Unkernel: Linux Kernel in Wasm        
                                         
-  Ron Pressler examines the mathematical
-  limits and pragmatic realities of     
-  program verification, comparing formal
-  proofs against empirical testing      
-  models across complex distributed     
-  systems.                              
+  Unkernel compiles a genuine Linux     
+  kernel directly into WebAssembly,     
+  enabling native execution in the      
+  browser via JavaScript to demonstrate 
+  client-side system virtualization     
+  without backend emulators.            
                                         
-  208 pts | 90 comments | pron.github.io
+  446 pts | 118 comments | unkernel.dev 
 [100] Index  [403] Prev  [405] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P405  NERD-TEXT 405   12.11.26 15:28 UTC
+P405  NERD-TEXT 405   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (5/10)                    
 ========================================
-> HN #5 | reuters.com                   
-  Nvidia: Jensen Huang Steps Down       
+> HN #5 | oag.state.va.us               
+  States: Lawsuit Targets Grok AI       
                                         
-  Jensen Huang has abruptly vacated his 
-  chief executive role at the chipmaker.
-  The immediate departure shocks global 
-  tech markets, prompting swift         
-  succession planning across the board. 
+  State attorneys general filed suit    
+  against SpaceX and xAI to halt Grok,  
+  alleging the generative AI system     
+  enables the illicit synthesis of non- 
+  consensual imagery and child sexual   
+  abuse material.                       
                                         
-  282 pts | 148 comments | reuters.com  
+  422 pts | 290 comments |              
+  oag.state.va.us                       
 [100] Index  [404] Prev  [406] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P406  NERD-TEXT 406   12.11.26 15:28 UTC
+P406  NERD-TEXT 406   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (6/10)                    
 ========================================
-> HN #6 | libreagi.com                  
-  LibreAGI: Torrenting Open AI          
+> HN #6 | bouncemarket.minhanhday.      
+  BounceMarket: Live Bouncing Game      
                                         
-  A decentralized BitTorrent tracker    
-  preserves vulnerable open-source      
-  artificial intelligence weights,      
-  ensuring research community access    
-  even if centralized host platforms    
-  delete them.                          
+  The experimental multiplayer web game 
+  lets players buy and trade shares in  
+  bouncing balls in real time, rewarding
+  point payouts for winning bounces     
+  while stress-testing concurrent socket
+  connections.                          
                                         
-  23 pts | 10 comments | libreagi.com   
+  394 pts | 133 comments |              
+  bouncemarket.minha                    
 [100] Index  [405] Prev  [407] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P407  NERD-TEXT 407   12.11.26 15:28 UTC
+P407  NERD-TEXT 407   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (7/10)                    
 ========================================
-> HN #7 | blog.janestreet.com           
-  Jane Street: LLM Dev Workflow         
+> HN #7 | github.com                    
+  Heretic: Maintainer Steps Down        
                                         
-  The quantitative trading firm outlines
-  how engineering teams integrate large 
-  language models into internal         
-  development pipelines without         
-  sacrificing rigorous OCaml correctness
-  standards.                            
+  The creator of the open-source Heretic
+  project announced their departure in  
+  issue #601, concluding active         
+  development and handing over          
+  repository stewardship to the broader 
+  community.                            
                                         
-  40 pts | 19 comments |                
-  blog.janestreet.co                    
+  377 pts | 142 comments | github.com   
 [100] Index  [406] Prev  [408] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P408  NERD-TEXT 408   12.11.26 15:28 UTC
+P408  NERD-TEXT 408   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (8/10)                    
 ========================================
-> HN #8 | bbc.co.uk                     
-  Nvidia: Stock Plunge Amid Exit        
+> HN #8 | github.com                    
+  Convex: Skill Telemetry Flaw          
                                         
-  Shares tumble sharply following the   
-  sudden resignation of the firm's      
-  founding executive, as controversy and
-  national security allegations ignite  
-  intense scrutiny across global        
-  financial markets.                    
+  Issue #64 reveals Convex quickstart   
+  skills leak user project concepts to  
+  external hosts and execute remote     
+  scripts designed to bypass safety     
+  checks, sparking severe privacy and   
+  security concerns.                    
                                         
-  140 pts | 73 comments | bbc.co.uk     
+  334 pts | 112 comments | github.com   
 [100] Index  [407] Prev  [409] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P409  NERD-TEXT 409   12.11.26 15:28 UTC
+P409  NERD-TEXT 409   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (9/10)                    
 ========================================
-> HN #9 | github.com                    
-  Jane Street: Socratic AI Tutor        
+> HN #9 | cr.yp.to                      
+  Math: Bugs in Proof Checkers          
                                         
-  An open agent specification guides    
-  autonomous models to teach complex    
-  concepts via targeted questioning,    
-  fostering deep conceptual             
-  understanding rather than merely      
-  emitting direct answers.              
+  Cryptographer Daniel J. Bernstein     
+  examines soundness bugs in automated  
+  proof checkers, warning that logic    
+  flaws in formal verification software 
+  can validate incorrect mathematical   
+  claims as true.                       
                                         
-  489 pts | 112 comments | github.com   
+  238 pts | 109 comments | cr.yp.to     
 [100] Index  [408] Prev  [410] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P410  NERD-TEXT 410   12.11.26 15:28 UTC
+P410  NERD-TEXT 410   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (10/10)                   
 ========================================
-> HN #10 | codeberg.org                 
-  Bootvine: Systemd Tree Visualizer     
+> HN #10 | www-cs-faculty.stanford.     
+  Knuth: Halts Book Error Reports       
                                         
-  A Linux boot visualization utility    
-  renders active systemd services as an 
-  evolving organic vine, transforming   
-  cryptic startup diagnostics into an   
-  intuitive, real-time graphical process
-  tree.                                 
+  Computer science pioneer Donald Knuth 
+  announced a moratorium on reader bug  
+  submissions for The Art of Computer   
+  Programming after more than 50 years  
+  of issuing reward checks for          
+  documented errata.                    
                                         
-  234 pts | 93 comments | codeberg.org  
+  232 pts | 119 comments | www-cs-      
+  faculty.sta                           
 [100] Index  [409] Prev  [999] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P999  NERD-TEXT 999   12.11.26 15:28 UTC
+P999  NERD-TEXT 999   28.11.26 14:11 UTC
 ========================================
 ABOUT NERD-TEXT // ARCHITECTURE         
 ========================================
@@ -531,7 +523,7 @@ TERMINAL / CURL ACCESS:
   $ curl <host>/100.txt                 
   $ curl <host>/all.txt                 
                                         
-Last build: 12.11.26 15:28 UTC          
+Last build: 28.11.26 14:11 UTC          
 [100] Index   [200] Sec   [400] HN      
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

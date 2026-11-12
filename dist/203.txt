@@ -1,19 +1,17 @@
-P203  NERD-TEXT 203   12.11.26 15:28 UTC
+P203  NERD-TEXT 203   28.11.26 14:11 UTC
 ========================================
 SECURITY ADVISORY (3/5)                 
 ========================================
-> CVE-2026-20320                        
-  BroadWorks: XXE Data Leak Bug         
+> CVE-2026-136716                       
+  Drupal Core: Installer Takeover       
                                         
-  An unauthenticated remote XXE flaw    
-  exposes sensitive server configuration
-  files on Cisco BroadWorks. CISA       
-  confirmed active exploitation,        
-  mandating remediation across federal  
-  systems by Nov 24.                    
+  An improper condition check allows    
+  unauthenticated remote actors to      
+  execute full site takeovers via the   
+  exposed installer.                    
                                         
-  CISA KEV | Added: 2026-11-10 | Due:   
-  2026-11-24                            
+  CISA KEV | Added: 2026-11-27 | Due:   
+  2026-11-30                            
 [100] Index  [202] Prev  [204] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

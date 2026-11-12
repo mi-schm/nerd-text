@@ -1,19 +1,18 @@
-P407  NERD-TEXT 407   12.11.26 15:28 UTC
+P407  NERD-TEXT 407   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (7/10)                    
 ========================================
-> HN #7 | blog.janestreet.com           
-  Jane Street: LLM Dev Workflow         
+> HN #7 | github.com                    
+  Heretic: Maintainer Steps Down        
                                         
-  The quantitative trading firm outlines
-  how engineering teams integrate large 
-  language models into internal         
-  development pipelines without         
-  sacrificing rigorous OCaml correctness
-  standards.                            
+  The creator of the open-source Heretic
+  project announced their departure in  
+  issue #601, concluding active         
+  development and handing over          
+  repository stewardship to the broader 
+  community.                            
                                         
-  40 pts | 19 comments |                
-  blog.janestreet.co                    
+  377 pts | 142 comments | github.com   
 [100] Index  [406] Prev  [408] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

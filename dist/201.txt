@@ -1,19 +1,17 @@
-P201  NERD-TEXT 201   12.11.26 15:28 UTC
+P201  NERD-TEXT 201   28.11.26 14:11 UTC
 ========================================
 SECURITY ADVISORY (1/5)                 
 ========================================
-> CVE-2026-124194                       
-  Outlook: Network Spoofing Flaw        
+> CVE-2026-120705                       
+  GeoServer: XML Injection              
                                         
-  CISA added a zero-interaction flaw to 
-  its Known Exploited Vulnerabilities   
-  catalog. Remote unauthenticated       
-  attackers can spoof network actions to
-  compromise target systems without user
-  prompts.                              
+  An unauthenticated remote flaw lets   
+  attackers read local text files       
+  accessible to the process or fetch    
+  arbitrary HTTP targets.               
                                         
-  CISA KEV | Added: 2026-11-10 | Due:   
-  2026-11-24                            
+  CISA KEV | Added: 2026-11-27 | Due:   
+  2026-11-30                            
 [100] Index  [200] Prev  [202] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

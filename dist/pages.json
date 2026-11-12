@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-12T15:28:39.581288+00:00",
+  "generated_utc": "2026-11-28T14:11:50.466963+00:00",
   "pages": {
     "100": {
       "title": "INDEX",
@@ -21,12 +21,12 @@
         {
           "t": "link",
           "p": "201",
-          "s": "201  Outlook: Network Spoofing Flaw"
+          "s": "201  GeoServer: XML Injection"
         },
         {
           "t": "link",
           "p": "202",
-          "s": "202  Webtop: Media Transcoder Flaw"
+          "s": "202  GeoServer: Auth Bypass"
         },
         {
           "t": "blank",
@@ -39,12 +39,12 @@
         {
           "t": "link",
           "p": "301",
-          "s": "301  id Software: Ex-Devs Form Studio"
+          "s": "301  PS1: Mezase Senkyu-Oh Arrives"
         },
         {
           "t": "link",
           "p": "302",
-          "s": "302  Gunpei Yokoi: Legacy Reassessed"
+          "s": "302  Arcade: 1983 Bubbles Easter Egg"
         },
         {
           "t": "blank",
@@ -57,17 +57,17 @@
         {
           "t": "link",
           "p": "401",
-          "s": "401  Quake 4: Open-Source Engine Out"
+          "s": "401  Nielsen: AI Book Taken Offline"
         },
         {
           "t": "link",
           "p": "402",
-          "s": "402  AMD: Mike Clark Details Zen 6"
+          "s": "402  E-Commerce: Major Card Skim Found"
         },
         {
           "t": "link",
           "p": "403",
-          "s": "403  Nvidia: CEO Transition Announced"
+          "s": "403  Google: DeepCrossAttention Debut"
         },
         {
           "t": "sep",
@@ -99,67 +99,67 @@
         {
           "t": "link",
           "p": "201",
-          "s": "201  Outlook: Network Spoofing Flaw"
+          "s": "201  GeoServer: XML Injection"
         },
         {
           "t": "body",
-          "s": "     CISA added a zero-interaction flaw"
+          "s": "     An unauthenticated remote flaw lets"
         },
         {
           "t": "body",
-          "s": "     to its Known Exploited..."
+          "s": "     attackers read local text files..."
         },
         {
           "t": "link",
           "p": "202",
-          "s": "202  Webtop: Media Transcoder Flaw"
+          "s": "202  GeoServer: Auth Bypass"
         },
         {
           "t": "body",
-          "s": "     A resource transfer vulnerability"
+          "s": "     Flaw allows unauthenticated remote"
         },
         {
           "t": "body",
-          "s": "     enables authenticated users to..."
+          "s": "     attackers to bypass..."
         },
         {
           "t": "link",
           "p": "203",
-          "s": "203  BroadWorks: XXE Data Leak Bug"
+          "s": "203  Drupal Core: Installer Takeover"
         },
         {
           "t": "body",
-          "s": "     An unauthenticated remote XXE flaw"
+          "s": "     An improper condition check allows"
         },
         {
           "t": "body",
-          "s": "     exposes sensitive server..."
+          "s": "     unauthenticated remote actors to..."
         },
         {
           "t": "link",
           "p": "204",
-          "s": "204  Debian: Apache2 Security Update"
+          "s": "204  Debian DSA: Chromium Fix"
         },
         {
           "t": "body",
-          "s": "     Debian issued DSA 6620-1 to resolve"
+          "s": "     Critical security updates have been"
         },
         {
           "t": "body",
-          "s": "     multiple security..."
+          "s": "     issued for the Chromium browser..."
         },
         {
           "t": "link",
           "p": "205",
-          "s": "205  Ubuntu: Yodl Buffer Over-Read"
+          "s": "205  Ubuntu USN: Apache Regression"
         },
         {
           "t": "body",
-          "s": "     Canonical patched a buffer over-"
+          "s": "     Fixes an upstream cookie-setting"
         },
         {
           "t": "body",
-          "s": "     read vulnerability in Yodl..."
+          "s": "     regression during HTTP redirects..."
         },
         {
           "t": "nav",
@@ -168,7 +168,7 @@
       ]
     },
     "201": {
-      "title": "CVE-2026-124",
+      "title": "CVE-2026-120",
       "next": "202",
       "prev": "200",
       "lines": [
@@ -182,11 +182,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> CVE-2026-124194"
+          "s": "> CVE-2026-120705"
         },
         {
           "t": "sec_cyan",
-          "s": "  Outlook: Network Spoofing Flaw"
+          "s": "  GeoServer: XML Injection"
         },
         {
           "t": "blank",
@@ -194,27 +194,19 @@
         },
         {
           "t": "body",
-          "s": "  CISA added a zero-interaction flaw to"
+          "s": "  An unauthenticated remote flaw lets"
         },
         {
           "t": "body",
-          "s": "  its Known Exploited Vulnerabilities"
+          "s": "  attackers read local text files"
         },
         {
           "t": "body",
-          "s": "  catalog. Remote unauthenticated"
+          "s": "  accessible to the process or fetch"
         },
         {
           "t": "body",
-          "s": "  attackers can spoof network actions to"
-        },
-        {
-          "t": "body",
-          "s": "  compromise target systems without user"
-        },
-        {
-          "t": "body",
-          "s": "  prompts."
+          "s": "  arbitrary HTTP targets."
         },
         {
           "t": "blank",
@@ -222,11 +214,11 @@
         },
         {
           "t": "warn_red",
-          "s": "  CISA KEV | Added: 2026-11-10 | Due:"
+          "s": "  CISA KEV | Added: 2026-11-27 | Due:"
         },
         {
           "t": "warn_red",
-          "s": "  2026-11-24"
+          "s": "  2026-11-30"
         },
         {
           "t": "nav",
@@ -235,7 +227,7 @@
       ]
     },
     "202": {
-      "title": "CVE-2026-111",
+      "title": "CVE-2026-129",
       "next": "203",
       "prev": "201",
       "lines": [
@@ -249,11 +241,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> CVE-2026-111793"
+          "s": "> CVE-2026-129243"
         },
         {
           "t": "sec_cyan",
-          "s": "  Webtop: Media Transcoder Flaw"
+          "s": "  GeoServer: Auth Bypass"
         },
         {
           "t": "blank",
@@ -261,27 +253,19 @@
         },
         {
           "t": "body",
-          "s": "  A resource transfer vulnerability"
+          "s": "  Flaw allows unauthenticated remote"
         },
         {
           "t": "body",
-          "s": "  enables authenticated users to convert"
+          "s": "  attackers to bypass service-level role"
         },
         {
           "t": "body",
-          "s": "  unauthorized documents and breach"
+          "s": "  checks and invoke protected operations"
         },
         {
           "t": "body",
-          "s": "  boundaries. CISA flags active"
-        },
-        {
-          "t": "body",
-          "s": "  exploitation, ordering federal patches"
-        },
-        {
-          "t": "body",
-          "s": "  within two weeks."
+          "s": "  directly."
         },
         {
           "t": "blank",
@@ -289,11 +273,11 @@
         },
         {
           "t": "warn_red",
-          "s": "  CISA KEV | Added: 2026-11-10 | Due:"
+          "s": "  CISA KEV | Added: 2026-11-27 | Due:"
         },
         {
           "t": "warn_red",
-          "s": "  2026-11-24"
+          "s": "  2026-11-30"
         },
         {
           "t": "nav",
@@ -302,7 +286,7 @@
       ]
     },
     "203": {
-      "title": "CVE-2026-203",
+      "title": "CVE-2026-136",
       "next": "204",
       "prev": "202",
       "lines": [
@@ -316,11 +300,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> CVE-2026-20320"
+          "s": "> CVE-2026-136716"
         },
         {
           "t": "sec_cyan",
-          "s": "  BroadWorks: XXE Data Leak Bug"
+          "s": "  Drupal Core: Installer Takeover"
         },
         {
           "t": "blank",
@@ -328,27 +312,19 @@
         },
         {
           "t": "body",
-          "s": "  An unauthenticated remote XXE flaw"
+          "s": "  An improper condition check allows"
         },
         {
           "t": "body",
-          "s": "  exposes sensitive server configuration"
+          "s": "  unauthenticated remote actors to"
         },
         {
           "t": "body",
-          "s": "  files on Cisco BroadWorks. CISA"
+          "s": "  execute full site takeovers via the"
         },
         {
           "t": "body",
-          "s": "  confirmed active exploitation,"
-        },
-        {
-          "t": "body",
-          "s": "  mandating remediation across federal"
-        },
-        {
-          "t": "body",
-          "s": "  systems by Nov 24."
+          "s": "  exposed installer."
         },
         {
           "t": "blank",
@@ -356,11 +332,11 @@
         },
         {
           "t": "warn_red",
-          "s": "  CISA KEV | Added: 2026-11-10 | Due:"
+          "s": "  CISA KEV | Added: 2026-11-27 | Due:"
         },
         {
           "t": "warn_red",
-          "s": "  2026-11-24"
+          "s": "  2026-11-30"
         },
         {
           "t": "nav",
@@ -387,7 +363,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Debian: Apache2 Security Update"
+          "s": "  Debian DSA: Chromium Fix"
         },
         {
           "t": "blank",
@@ -395,27 +371,19 @@
         },
         {
           "t": "body",
-          "s": "  Debian issued DSA 6620-1 to resolve"
+          "s": "  Critical security updates have been"
         },
         {
           "t": "body",
-          "s": "  multiple security vulnerabilities"
+          "s": "  issued for the Chromium browser"
         },
         {
           "t": "body",
-          "s": "  within the Apache2 HTTP server suite."
+          "s": "  package under Debian advisory DSA"
         },
         {
           "t": "body",
-          "s": "  Administrators are urged to upgrade"
-        },
-        {
-          "t": "body",
-          "s": "  packages immediately to protect"
-        },
-        {
-          "t": "body",
-          "s": "  production servers."
+          "s": "  6667-1."
         },
         {
           "t": "blank",
@@ -423,7 +391,7 @@
         },
         {
           "t": "warn_red",
-          "s": "  Source: Debian DSA (2026-11-12)"
+          "s": "  Source: Debian DSA (2026-11-27)"
         },
         {
           "t": "nav",
@@ -450,7 +418,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Ubuntu: Yodl Buffer Over-Read"
+          "s": "  Ubuntu USN: Apache Regression"
         },
         {
           "t": "blank",
@@ -458,27 +426,19 @@
         },
         {
           "t": "body",
-          "s": "  Canonical patched a buffer over-read"
+          "s": "  Fixes an upstream cookie-setting"
         },
         {
           "t": "body",
-          "s": "  vulnerability in Yodl. Specially"
+          "s": "  regression during HTTP redirects"
         },
         {
           "t": "body",
-          "s": "  crafted input could cause the document"
+          "s": "  introduced by previous Apache2"
         },
         {
           "t": "body",
-          "s": "  pre-parser to crash, triggering"
-        },
-        {
-          "t": "body",
-          "s": "  denial-of-service conditions on"
-        },
-        {
-          "t": "body",
-          "s": "  impacted Ubuntu hosts."
+          "s": "  security updates."
         },
         {
           "t": "blank",
@@ -486,7 +446,7 @@
         },
         {
           "t": "warn_red",
-          "s": "  Source: Ubuntu USN (Wed, 11 Nov 2026)"
+          "s": "  Source: Ubuntu USN (Thu, 26 Nov 2026)"
         },
         {
           "t": "nav",
@@ -510,67 +470,67 @@
         {
           "t": "link",
           "p": "301",
-          "s": "301  id Software: Ex-Devs Form Studio"
+          "s": "301  PS1: Mezase Senkyu-Oh Arrives"
         },
         {
           "t": "body",
-          "s": "     Veteran developers laid off by"
+          "s": "     Seibu Kaihatsu's classic anime-"
         },
         {
           "t": "body",
-          "s": "     Microsoft have banded together..."
+          "s": "     styled puzzle title makes its..."
         },
         {
           "t": "link",
           "p": "302",
-          "s": "302  Gunpei Yokoi: Legacy Reassessed"
+          "s": "302  Arcade: 1983 Bubbles Easter Egg"
         },
         {
           "t": "body",
-          "s": "     Colleagues revisit the lateral"
+          "s": "     A hidden developer secret has"
         },
         {
           "t": "body",
-          "s": "     thinking philosophy of the late..."
+          "s": "     finally surfaced in Williams'..."
         },
         {
           "t": "link",
           "p": "303",
-          "s": "303  PS2 Slim: M.2 SATA SSD Mod Debuts"
+          "s": "303  RetroArch: Version 1.21.0 Out"
         },
         {
           "t": "body",
-          "s": "     The M2 Slim hardware modification"
+          "s": "     The cross-platform emulation"
         },
         {
           "t": "body",
-          "s": "     enables internal M.2 SATA..."
+          "s": "     frontend receives a major update..."
         },
         {
           "t": "link",
           "p": "304",
-          "s": "304  RetroRGB: Weekly Roundup #539 Out"
+          "s": "304  Tools: ROM Cleaner Utility"
         },
         {
           "t": "body",
-          "s": "     Issue 539 recaps current CRT"
+          "s": "     Developer Jesse Talavera expands"
         },
         {
           "t": "body",
-          "s": "     calibrations, scaler firmware..."
+          "s": "     retro maintenance tooling with..."
         },
         {
           "t": "link",
           "p": "305",
-          "s": "305  RetroArch: Version 1.21.0 Launched"
+          "s": "305  Hardware: PC GameShare on Switch"
         },
         {
           "t": "body",
-          "s": "     The modular multi-system frontend"
+          "s": "     Community discussions explore"
         },
         {
           "t": "body",
-          "s": "     rolls out its latest maintenance..."
+          "s": "     whether upcoming GameShare..."
         },
         {
           "t": "nav",
@@ -597,7 +557,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  id Software: Ex-Devs Form Studio"
+          "s": "  PS1: Mezase Senkyu-Oh Arrives"
         },
         {
           "t": "blank",
@@ -605,27 +565,27 @@
         },
         {
           "t": "body",
-          "s": "  Veteran developers laid off by"
+          "s": "  Seibu Kaihatsu's classic anime-styled"
         },
         {
           "t": "body",
-          "s": "  Microsoft have banded together to"
+          "s": "  puzzle title makes its debut on the"
         },
         {
           "t": "body",
-          "s": "  found an independent game studio,"
+          "s": "  Console Archives, challenging players"
         },
         {
           "t": "body",
-          "s": "  aiming to preserve their classic"
+          "s": "  to put their strategic skills to the"
         },
         {
           "t": "body",
-          "s": "  shooter craft outside corporate"
+          "s": "  test in this faithful emulation"
         },
         {
           "t": "body",
-          "s": "  ownership."
+          "s": "  release."
         },
         {
           "t": "blank",
@@ -633,7 +593,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: TimeExt (Thu, 12 Nov 2026)"
+          "s": "  Source: TimeExt (Sat, 28 Nov 2026)"
         },
         {
           "t": "nav",
@@ -660,7 +620,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Gunpei Yokoi: Legacy Reassessed"
+          "s": "  Arcade: 1983 Bubbles Easter Egg"
         },
         {
           "t": "blank",
@@ -668,27 +628,23 @@
         },
         {
           "t": "body",
-          "s": "  Colleagues revisit the lateral"
+          "s": "  A hidden developer secret has finally"
         },
         {
           "t": "body",
-          "s": "  thinking philosophy of the late Game"
+          "s": "  surfaced in Williams' legendary 1983"
         },
         {
           "t": "body",
-          "s": "  Boy inventor and Game & Watch pioneer,"
+          "s": "  arcade hit after remaining completely"
         },
         {
           "t": "body",
-          "s": "  whose hardware design tenets still"
+          "s": "  undetected by players for over four"
         },
         {
           "t": "body",
-          "s": "  guide modern portable console"
-        },
-        {
-          "t": "body",
-          "s": "  creation."
+          "s": "  decades of intense cabinet history."
         },
         {
           "t": "blank",
@@ -696,7 +652,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: TimeExt (Thu, 12 Nov 2026)"
+          "s": "  Source: TimeExt (Sat, 28 Nov 2026)"
         },
         {
           "t": "nav",
@@ -705,7 +661,7 @@
       ]
     },
     "303": {
-      "title": "RETRORGB",
+      "title": "LIBRETRO",
       "next": "304",
       "prev": "302",
       "lines": [
@@ -719,11 +675,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> RETRORGB"
+          "s": "> LIBRETRO"
         },
         {
           "t": "sec_cyan",
-          "s": "  PS2 Slim: M.2 SATA SSD Mod Debuts"
+          "s": "  RetroArch: Version 1.21.0 Out"
         },
         {
           "t": "blank",
@@ -731,23 +687,23 @@
         },
         {
           "t": "body",
-          "s": "  The M2 Slim hardware modification"
+          "s": "  The cross-platform emulation frontend"
         },
         {
           "t": "body",
-          "s": "  enables internal M.2 SATA storage"
+          "s": "  receives a major update with RetroArch"
         },
         {
           "t": "body",
-          "s": "  inside SCPH-700XX revision consoles,"
+          "s": "  1.21.0, delivering core improvements,"
         },
         {
           "t": "body",
-          "s": "  eliminating slow USB 1.1 bottlenecks"
+          "s": "  bug fixes, and enhanced user features"
         },
         {
           "t": "body",
-          "s": "  for faster Open PS2 Loader playback."
+          "s": "  for retro gaming enthusiasts."
         },
         {
           "t": "blank",
@@ -755,7 +711,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: RetroRGB (Wed, 11 Nov 2026)"
+          "s": "  Source: Libretro (Tue, 29 Apr 2025)"
         },
         {
           "t": "nav",
@@ -764,7 +720,7 @@
       ]
     },
     "304": {
-      "title": "RETRORGB",
+      "title": "LIBRETRO",
       "next": "305",
       "prev": "303",
       "lines": [
@@ -778,11 +734,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> RETRORGB"
+          "s": "> LIBRETRO"
         },
         {
           "t": "sec_cyan",
-          "s": "  RetroRGB: Weekly Roundup #539 Out"
+          "s": "  Tools: ROM Cleaner Utility"
         },
         {
           "t": "blank",
@@ -790,23 +746,23 @@
         },
         {
           "t": "body",
-          "s": "  Issue 539 recaps current CRT"
+          "s": "  Developer Jesse Talavera expands retro"
         },
         {
           "t": "body",
-          "s": "  calibrations, scaler firmware updates,"
+          "s": "  maintenance tooling with ROM Cleaner,"
         },
         {
           "t": "body",
-          "s": "  flash carts, and community hardware"
+          "s": "  building upon previous contributions"
         },
         {
           "t": "body",
-          "s": "  projects across video formats and all"
+          "s": "  to melonDS, microphone support, and"
         },
         {
           "t": "body",
-          "s": "  major audio streaming feeds."
+          "s": "  XDelta softpatching systems."
         },
         {
           "t": "blank",
@@ -814,7 +770,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: RetroRGB (Wed, 11 Nov 2026)"
+          "s": "  Source: Libretro (Mon, 31 Mar 2025)"
         },
         {
           "t": "nav",
@@ -823,7 +779,7 @@
       ]
     },
     "305": {
-      "title": "LIBRETRO",
+      "title": "GBATEMP",
       "next": "400",
       "prev": "304",
       "lines": [
@@ -837,11 +793,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> LIBRETRO"
+          "s": "> GBATEMP"
         },
         {
           "t": "sec_cyan",
-          "s": "  RetroArch: Version 1.21.0 Launched"
+          "s": "  Hardware: PC GameShare on Switch"
         },
         {
           "t": "blank",
@@ -849,27 +805,27 @@
         },
         {
           "t": "body",
-          "s": "  The modular multi-system frontend"
+          "s": "  Community discussions explore whether"
         },
         {
           "t": "body",
-          "s": "  rolls out its latest maintenance"
+          "s": "  upcoming GameShare software solutions"
         },
         {
           "t": "body",
-          "s": "  release, delivering core stability"
+          "s": "  could enable seamless local wireless"
         },
         {
           "t": "body",
-          "s": "  patches, input latency improvements,"
+          "s": "  LAN streaming of demanding PC titles"
         },
         {
           "t": "body",
-          "s": "  and updated shader pipeline"
+          "s": "  directly onto next-gen handheld"
         },
         {
           "t": "body",
-          "s": "  compatibility."
+          "s": "  hardware."
         },
         {
           "t": "blank",
@@ -877,7 +833,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: Libretro (Tue, 29 Apr 2025)"
+          "s": "  Source: GBATemp (Sat, 28 Nov 2026)"
         },
         {
           "t": "nav",
@@ -901,52 +857,52 @@
         {
           "t": "link",
           "p": "401",
-          "s": "401  Quake 4: Open-Source Engine Out"
+          "s": "401  Nielsen: AI Book Taken Offline"
         },
         {
           "t": "link",
           "p": "402",
-          "s": "402  AMD: Mike Clark Details Zen 6"
+          "s": "402  E-Commerce: Major Card Skim Found"
         },
         {
           "t": "link",
           "p": "403",
-          "s": "403  Nvidia: CEO Transition Announced"
+          "s": "403  Google: DeepCrossAttention Debut"
         },
         {
           "t": "link",
           "p": "404",
-          "s": "404  Curry On: Software Correctness"
+          "s": "404  Unkernel: Linux Kernel in Wasm"
         },
         {
           "t": "link",
           "p": "405",
-          "s": "405  Nvidia: Jensen Huang Steps Down"
+          "s": "405  States: Lawsuit Targets Grok AI"
         },
         {
           "t": "link",
           "p": "406",
-          "s": "406  LibreAGI: Torrenting Open AI"
+          "s": "406  BounceMarket: Live Bouncing Game"
         },
         {
           "t": "link",
           "p": "407",
-          "s": "407  Jane Street: LLM Dev Workflow"
+          "s": "407  Heretic: Maintainer Steps Down"
         },
         {
           "t": "link",
           "p": "408",
-          "s": "408  Nvidia: Stock Plunge Amid Exit"
+          "s": "408  Convex: Skill Telemetry Flaw"
         },
         {
           "t": "link",
           "p": "409",
-          "s": "409  Jane Street: Socratic AI Tutor"
+          "s": "409  Math: Bugs in Proof Checkers"
         },
         {
           "t": "link",
           "p": "410",
-          "s": "410  Bootvine: Systemd Tree Visualizer"
+          "s": "410  Knuth: Halts Book Error Reports"
         },
         {
           "t": "blank",
@@ -977,11 +933,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #1 | moddb.com"
+          "s": "> HN #1 | neuralnetworksanddeeplea"
         },
         {
           "t": "sec_cyan",
-          "s": "  Quake 4: Open-Source Engine Out"
+          "s": "  Nielsen: AI Book Taken Offline"
         },
         {
           "t": "blank",
@@ -989,27 +945,27 @@
         },
         {
           "t": "body",
-          "s": "  The openQ4 project brings native"
+          "s": "  The author removed Neural Networks and"
         },
         {
           "t": "body",
-          "s": "  modern OS support to the classic id"
+          "s": "  Deep Learning from the web, citing"
         },
         {
           "t": "body",
-          "s": "  Tech 4 shooter. Players gain"
+          "s": "  shifting views on catastrophic AGI"
         },
         {
           "t": "body",
-          "s": "  widescreen scaling, high-refresh"
+          "s": "  risks since its 2015 release, urging"
         },
         {
           "t": "body",
-          "s": "  rates, and full Linux or Steam Deck"
+          "s": "  developers to rethink rapid capability"
         },
         {
           "t": "body",
-          "s": "  compatibility."
+          "s": "  scaling."
         },
         {
           "t": "blank",
@@ -1017,7 +973,11 @@
         },
         {
           "t": "warn_grn",
-          "s": "  47 pts | 16 comments | moddb.com"
+          "s": "  596 pts | 416 comments |"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  neuralnetworksandd"
         },
         {
           "t": "nav",
@@ -1040,11 +1000,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #2 | chipsandcheese.com"
+          "s": "> HN #2 | infohawk.com"
         },
         {
           "t": "sec_cyan",
-          "s": "  AMD: Mike Clark Details Zen 6"
+          "s": "  E-Commerce: Major Card Skim Found"
         },
         {
           "t": "blank",
@@ -1052,27 +1012,27 @@
         },
         {
           "t": "body",
-          "s": "  Chief architect Mike Clark unpacks"
+          "s": "  Malicious digital card skimmers"
         },
         {
           "t": "body",
-          "s": "  design philosophies behind the"
+          "s": "  breached checkout flows on major"
         },
         {
           "t": "body",
-          "s": "  upcoming microarchitecture, exploring"
+          "s": "  retail sites including Samsonite and"
         },
         {
           "t": "body",
-          "s": "  execution width, cache layouts, and"
+          "s": "  Lascana, exfiltrating customer payment"
         },
         {
           "t": "body",
-          "s": "  power scaling for next-generation"
+          "s": "  credentials through compromised"
         },
         {
           "t": "body",
-          "s": "  silicon."
+          "s": "  client-side web scripts."
         },
         {
           "t": "blank",
@@ -1080,11 +1040,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  39 pts | 0 comments |"
-        },
-        {
-          "t": "warn_grn",
-          "s": "  chipsandcheese.com"
+          "s": "  559 pts | 309 comments | infohawk.com"
         },
         {
           "t": "nav",
@@ -1107,11 +1063,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #3 | nvidianews.nvidia.com"
+          "s": "> HN #3 | research.google"
         },
         {
           "t": "sec_cyan",
-          "s": "  Nvidia: CEO Transition Announced"
+          "s": "  Google: DeepCrossAttention Debut"
         },
         {
           "t": "blank",
@@ -1119,27 +1075,27 @@
         },
         {
           "t": "body",
-          "s": "  The semiconductor giant confirms an"
+          "s": "  Google Research unveiled"
         },
         {
           "t": "body",
-          "s": "  immediate executive leadership"
+          "s": "  DeepCrossAttention to enhance"
         },
         {
           "t": "body",
-          "s": "  handover following decades of market-"
+          "s": "  transformer residual paths, preventing"
         },
         {
           "t": "body",
-          "s": "  defining GPU and AI hardware"
+          "s": "  representation collapse and improving"
         },
         {
           "t": "body",
-          "s": "  dominance, triggering massive industry"
+          "s": "  training efficiency across deep neural"
         },
         {
           "t": "body",
-          "s": "  reaction."
+          "s": "  network models at scale."
         },
         {
           "t": "blank",
@@ -1147,11 +1103,11 @@
         },
         {
           "t": "warn_grn",
-          "s": "  926 pts | 739 comments |"
+          "s": "  483 pts | 174 comments |"
         },
         {
           "t": "warn_grn",
-          "s": "  nvidianews.nvidia."
+          "s": "  research.google"
         },
         {
           "t": "nav",
@@ -1174,11 +1130,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #4 | pron.github.io"
+          "s": "> HN #4 | unkernel.dev"
         },
         {
           "t": "sec_cyan",
-          "s": "  Curry On: Software Correctness"
+          "s": "  Unkernel: Linux Kernel in Wasm"
         },
         {
           "t": "blank",
@@ -1186,27 +1142,27 @@
         },
         {
           "t": "body",
-          "s": "  Ron Pressler examines the mathematical"
+          "s": "  Unkernel compiles a genuine Linux"
         },
         {
           "t": "body",
-          "s": "  limits and pragmatic realities of"
+          "s": "  kernel directly into WebAssembly,"
         },
         {
           "t": "body",
-          "s": "  program verification, comparing formal"
+          "s": "  enabling native execution in the"
         },
         {
           "t": "body",
-          "s": "  proofs against empirical testing"
+          "s": "  browser via JavaScript to demonstrate"
         },
         {
           "t": "body",
-          "s": "  models across complex distributed"
+          "s": "  client-side system virtualization"
         },
         {
           "t": "body",
-          "s": "  systems."
+          "s": "  without backend emulators."
         },
         {
           "t": "blank",
@@ -1214,7 +1170,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  208 pts | 90 comments | pron.github.io"
+          "s": "  446 pts | 118 comments | unkernel.dev"
         },
         {
           "t": "nav",
@@ -1237,11 +1193,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #5 | reuters.com"
+          "s": "> HN #5 | oag.state.va.us"
         },
         {
           "t": "sec_cyan",
-          "s": "  Nvidia: Jensen Huang Steps Down"
+          "s": "  States: Lawsuit Targets Grok AI"
         },
         {
           "t": "blank",
@@ -1249,23 +1205,27 @@
         },
         {
           "t": "body",
-          "s": "  Jensen Huang has abruptly vacated his"
+          "s": "  State attorneys general filed suit"
         },
         {
           "t": "body",
-          "s": "  chief executive role at the chipmaker."
+          "s": "  against SpaceX and xAI to halt Grok,"
         },
         {
           "t": "body",
-          "s": "  The immediate departure shocks global"
+          "s": "  alleging the generative AI system"
         },
         {
           "t": "body",
-          "s": "  tech markets, prompting swift"
+          "s": "  enables the illicit synthesis of non-"
         },
         {
           "t": "body",
-          "s": "  succession planning across the board."
+          "s": "  consensual imagery and child sexual"
+        },
+        {
+          "t": "body",
+          "s": "  abuse material."
         },
         {
           "t": "blank",
@@ -1273,7 +1233,11 @@
         },
         {
           "t": "warn_grn",
-          "s": "  282 pts | 148 comments | reuters.com"
+          "s": "  422 pts | 290 comments |"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  oag.state.va.us"
         },
         {
           "t": "nav",
@@ -1296,11 +1260,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #6 | libreagi.com"
+          "s": "> HN #6 | bouncemarket.minhanhday."
         },
         {
           "t": "sec_cyan",
-          "s": "  LibreAGI: Torrenting Open AI"
+          "s": "  BounceMarket: Live Bouncing Game"
         },
         {
           "t": "blank",
@@ -1308,27 +1272,27 @@
         },
         {
           "t": "body",
-          "s": "  A decentralized BitTorrent tracker"
+          "s": "  The experimental multiplayer web game"
         },
         {
           "t": "body",
-          "s": "  preserves vulnerable open-source"
+          "s": "  lets players buy and trade shares in"
         },
         {
           "t": "body",
-          "s": "  artificial intelligence weights,"
+          "s": "  bouncing balls in real time, rewarding"
         },
         {
           "t": "body",
-          "s": "  ensuring research community access"
+          "s": "  point payouts for winning bounces"
         },
         {
           "t": "body",
-          "s": "  even if centralized host platforms"
+          "s": "  while stress-testing concurrent socket"
         },
         {
           "t": "body",
-          "s": "  delete them."
+          "s": "  connections."
         },
         {
           "t": "blank",
@@ -1336,7 +1300,11 @@
         },
         {
           "t": "warn_grn",
-          "s": "  23 pts | 10 comments | libreagi.com"
+          "s": "  394 pts | 133 comments |"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  bouncemarket.minha"
         },
         {
           "t": "nav",
@@ -1359,11 +1327,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #7 | blog.janestreet.com"
+          "s": "> HN #7 | github.com"
         },
         {
           "t": "sec_cyan",
-          "s": "  Jane Street: LLM Dev Workflow"
+          "s": "  Heretic: Maintainer Steps Down"
         },
         {
           "t": "blank",
@@ -1371,27 +1339,27 @@
         },
         {
           "t": "body",
-          "s": "  The quantitative trading firm outlines"
+          "s": "  The creator of the open-source Heretic"
         },
         {
           "t": "body",
-          "s": "  how engineering teams integrate large"
+          "s": "  project announced their departure in"
         },
         {
           "t": "body",
-          "s": "  language models into internal"
+          "s": "  issue #601, concluding active"
         },
         {
           "t": "body",
-          "s": "  development pipelines without"
+          "s": "  development and handing over"
         },
         {
           "t": "body",
-          "s": "  sacrificing rigorous OCaml correctness"
+          "s": "  repository stewardship to the broader"
         },
         {
           "t": "body",
-          "s": "  standards."
+          "s": "  community."
         },
         {
           "t": "blank",
@@ -1399,11 +1367,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  40 pts | 19 comments |"
-        },
-        {
-          "t": "warn_grn",
-          "s": "  blog.janestreet.co"
+          "s": "  377 pts | 142 comments | github.com"
         },
         {
           "t": "nav",
@@ -1426,11 +1390,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #8 | bbc.co.uk"
+          "s": "> HN #8 | github.com"
         },
         {
           "t": "sec_cyan",
-          "s": "  Nvidia: Stock Plunge Amid Exit"
+          "s": "  Convex: Skill Telemetry Flaw"
         },
         {
           "t": "blank",
@@ -1438,27 +1402,27 @@
         },
         {
           "t": "body",
-          "s": "  Shares tumble sharply following the"
+          "s": "  Issue #64 reveals Convex quickstart"
         },
         {
           "t": "body",
-          "s": "  sudden resignation of the firm's"
+          "s": "  skills leak user project concepts to"
         },
         {
           "t": "body",
-          "s": "  founding executive, as controversy and"
+          "s": "  external hosts and execute remote"
         },
         {
           "t": "body",
-          "s": "  national security allegations ignite"
+          "s": "  scripts designed to bypass safety"
         },
         {
           "t": "body",
-          "s": "  intense scrutiny across global"
+          "s": "  checks, sparking severe privacy and"
         },
         {
           "t": "body",
-          "s": "  financial markets."
+          "s": "  security concerns."
         },
         {
           "t": "blank",
@@ -1466,7 +1430,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  140 pts | 73 comments | bbc.co.uk"
+          "s": "  334 pts | 112 comments | github.com"
         },
         {
           "t": "nav",
@@ -1489,11 +1453,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #9 | github.com"
+          "s": "> HN #9 | cr.yp.to"
         },
         {
           "t": "sec_cyan",
-          "s": "  Jane Street: Socratic AI Tutor"
+          "s": "  Math: Bugs in Proof Checkers"
         },
         {
           "t": "blank",
@@ -1501,27 +1465,27 @@
         },
         {
           "t": "body",
-          "s": "  An open agent specification guides"
+          "s": "  Cryptographer Daniel J. Bernstein"
         },
         {
           "t": "body",
-          "s": "  autonomous models to teach complex"
+          "s": "  examines soundness bugs in automated"
         },
         {
           "t": "body",
-          "s": "  concepts via targeted questioning,"
+          "s": "  proof checkers, warning that logic"
         },
         {
           "t": "body",
-          "s": "  fostering deep conceptual"
+          "s": "  flaws in formal verification software"
         },
         {
           "t": "body",
-          "s": "  understanding rather than merely"
+          "s": "  can validate incorrect mathematical"
         },
         {
           "t": "body",
-          "s": "  emitting direct answers."
+          "s": "  claims as true."
         },
         {
           "t": "blank",
@@ -1529,7 +1493,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  489 pts | 112 comments | github.com"
+          "s": "  238 pts | 109 comments | cr.yp.to"
         },
         {
           "t": "nav",
@@ -1552,11 +1516,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #10 | codeberg.org"
+          "s": "> HN #10 | www-cs-faculty.stanford."
         },
         {
           "t": "sec_cyan",
-          "s": "  Bootvine: Systemd Tree Visualizer"
+          "s": "  Knuth: Halts Book Error Reports"
         },
         {
           "t": "blank",
@@ -1564,27 +1528,27 @@
         },
         {
           "t": "body",
-          "s": "  A Linux boot visualization utility"
+          "s": "  Computer science pioneer Donald Knuth"
         },
         {
           "t": "body",
-          "s": "  renders active systemd services as an"
+          "s": "  announced a moratorium on reader bug"
         },
         {
           "t": "body",
-          "s": "  evolving organic vine, transforming"
+          "s": "  submissions for The Art of Computer"
         },
         {
           "t": "body",
-          "s": "  cryptic startup diagnostics into an"
+          "s": "  Programming after more than 50 years"
         },
         {
           "t": "body",
-          "s": "  intuitive, real-time graphical process"
+          "s": "  of issuing reward checks for"
         },
         {
           "t": "body",
-          "s": "  tree."
+          "s": "  documented errata."
         },
         {
           "t": "blank",
@@ -1592,7 +1556,11 @@
         },
         {
           "t": "warn_grn",
-          "s": "  234 pts | 93 comments | codeberg.org"
+          "s": "  232 pts | 119 comments | www-cs-"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  faculty.sta"
         },
         {
           "t": "nav",
@@ -1655,7 +1623,7 @@
         },
         {
           "t": "body",
-          "s": "Last build: 12.11.26 15:28 UTC"
+          "s": "Last build: 28.11.26 14:11 UTC"
         },
         {
           "t": "nav",

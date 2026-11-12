@@ -1,18 +1,18 @@
-P404  NERD-TEXT 404   12.11.26 15:28 UTC
+P404  NERD-TEXT 404   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (4/10)                    
 ========================================
-> HN #4 | pron.github.io                
-  Curry On: Software Correctness        
+> HN #4 | unkernel.dev                  
+  Unkernel: Linux Kernel in Wasm        
                                         
-  Ron Pressler examines the mathematical
-  limits and pragmatic realities of     
-  program verification, comparing formal
-  proofs against empirical testing      
-  models across complex distributed     
-  systems.                              
+  Unkernel compiles a genuine Linux     
+  kernel directly into WebAssembly,     
+  enabling native execution in the      
+  browser via JavaScript to demonstrate 
+  client-side system virtualization     
+  without backend emulators.            
                                         
-  208 pts | 90 comments | pron.github.io
+  446 pts | 118 comments | unkernel.dev 
 [100] Index  [403] Prev  [405] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

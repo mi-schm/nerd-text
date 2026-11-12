@@ -1,19 +1,19 @@
-P403  NERD-TEXT 403   12.11.26 15:28 UTC
+P403  NERD-TEXT 403   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (3/10)                    
 ========================================
-> HN #3 | nvidianews.nvidia.com         
-  Nvidia: CEO Transition Announced      
+> HN #3 | research.google               
+  Google: DeepCrossAttention Debut      
                                         
-  The semiconductor giant confirms an   
-  immediate executive leadership        
-  handover following decades of market- 
-  defining GPU and AI hardware          
-  dominance, triggering massive industry
-  reaction.                             
+  Google Research unveiled              
+  DeepCrossAttention to enhance         
+  transformer residual paths, preventing
+  representation collapse and improving 
+  training efficiency across deep neural
+  network models at scale.              
                                         
-  926 pts | 739 comments |              
-  nvidianews.nvidia.                    
+  483 pts | 174 comments |              
+  research.google                       
 [100] Index  [402] Prev  [404] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

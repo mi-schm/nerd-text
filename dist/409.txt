@@ -1,18 +1,18 @@
-P409  NERD-TEXT 409   12.11.26 15:28 UTC
+P409  NERD-TEXT 409   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (9/10)                    
 ========================================
-> HN #9 | github.com                    
-  Jane Street: Socratic AI Tutor        
+> HN #9 | cr.yp.to                      
+  Math: Bugs in Proof Checkers          
                                         
-  An open agent specification guides    
-  autonomous models to teach complex    
-  concepts via targeted questioning,    
-  fostering deep conceptual             
-  understanding rather than merely      
-  emitting direct answers.              
+  Cryptographer Daniel J. Bernstein     
+  examines soundness bugs in automated  
+  proof checkers, warning that logic    
+  flaws in formal verification software 
+  can validate incorrect mathematical   
+  claims as true.                       
                                         
-  489 pts | 112 comments | github.com   
+  238 pts | 109 comments | cr.yp.to     
 [100] Index  [408] Prev  [410] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

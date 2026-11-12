@@ -1,18 +1,18 @@
-P305  NERD-TEXT 305   12.11.26 15:28 UTC
+P305  NERD-TEXT 305   28.11.26 14:11 UTC
 ========================================
 RETRO LOG (5/5)                         
 ========================================
-> LIBRETRO                              
-  RetroArch: Version 1.21.0 Launched    
+> GBATEMP                               
+  Hardware: PC GameShare on Switch      
                                         
-  The modular multi-system frontend     
-  rolls out its latest maintenance      
-  release, delivering core stability    
-  patches, input latency improvements,  
-  and updated shader pipeline           
-  compatibility.                        
+  Community discussions explore whether 
+  upcoming GameShare software solutions 
+  could enable seamless local wireless  
+  LAN streaming of demanding PC titles  
+  directly onto next-gen handheld       
+  hardware.                             
                                         
-  Source: Libretro (Tue, 29 Apr 2025)   
+  Source: GBATemp (Sat, 28 Nov 2026)    
 [100] Index  [304] Prev  [400] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

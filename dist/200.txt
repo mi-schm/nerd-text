@@ -1,22 +1,22 @@
-P200  NERD-TEXT 200   12.11.26 15:28 UTC
+P200  NERD-TEXT 200   28.11.26 14:11 UTC
 ========================================
 CISA KEV & LINUX SECURITY (DSA/USN)     
 ========================================
-201  Outlook: Network Spoofing Flaw     
-     CISA added a zero-interaction flaw 
-     to its Known Exploited...          
-202  Webtop: Media Transcoder Flaw      
-     A resource transfer vulnerability  
-     enables authenticated users to...  
-203  BroadWorks: XXE Data Leak Bug      
-     An unauthenticated remote XXE flaw 
-     exposes sensitive server...        
-204  Debian: Apache2 Security Update    
-     Debian issued DSA 6620-1 to resolve
-     multiple security...               
-205  Ubuntu: Yodl Buffer Over-Read      
-     Canonical patched a buffer over-   
-     read vulnerability in Yodl...      
+201  GeoServer: XML Injection           
+     An unauthenticated remote flaw lets
+     attackers read local text files... 
+202  GeoServer: Auth Bypass             
+     Flaw allows unauthenticated remote 
+     attackers to bypass...             
+203  Drupal Core: Installer Takeover    
+     An improper condition check allows 
+     unauthenticated remote actors to...
+204  Debian DSA: Chromium Fix           
+     Critical security updates have been
+     issued for the Chromium browser... 
+205  Ubuntu USN: Apache Regression      
+     Fixes an upstream cookie-setting   
+     regression during HTTP redirects...
 [100] Index      [201] Details     [300]
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

@@ -1,17 +1,17 @@
-P303  NERD-TEXT 303   12.11.26 15:28 UTC
+P303  NERD-TEXT 303   28.11.26 14:11 UTC
 ========================================
 RETRO LOG (3/5)                         
 ========================================
-> RETRORGB                              
-  PS2 Slim: M.2 SATA SSD Mod Debuts     
+> LIBRETRO                              
+  RetroArch: Version 1.21.0 Out         
                                         
-  The M2 Slim hardware modification     
-  enables internal M.2 SATA storage     
-  inside SCPH-700XX revision consoles,  
-  eliminating slow USB 1.1 bottlenecks  
-  for faster Open PS2 Loader playback.  
+  The cross-platform emulation frontend 
+  receives a major update with RetroArch
+  1.21.0, delivering core improvements, 
+  bug fixes, and enhanced user features 
+  for retro gaming enthusiasts.         
                                         
-  Source: RetroRGB (Wed, 11 Nov 2026)   
+  Source: Libretro (Tue, 29 Apr 2025)   
 [100] Index  [302] Prev  [304] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

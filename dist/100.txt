@@ -1,19 +1,19 @@
-P100  NERD-TEXT 100   12.11.26 15:28 UTC
+P100  NERD-TEXT 100   28.11.26 14:11 UTC
 ========================================
   NERD-TEXT // TECH & RETRO TELETEXT    
 ========================================
 SECURITY & LINUX ADVISORIES     [200]   
-201  Outlook: Network Spoofing Flaw     
-202  Webtop: Media Transcoder Flaw      
+201  GeoServer: XML Injection           
+202  GeoServer: Auth Bypass             
                                         
 RETRO GAMING & HANDHELDS        [300]   
-301  id Software: Ex-Devs Form Studio   
-302  Gunpei Yokoi: Legacy Reassessed    
+301  PS1: Mezase Senkyu-Oh Arrives      
+302  Arcade: 1983 Bubbles Easter Egg    
                                         
 TOP 10 HACKER NEWS              [400]   
-401  Quake 4: Open-Source Engine Out    
-402  AMD: Mike Clark Details Zen 6      
-403  Nvidia: CEO Transition Announced   
+401  Nielsen: AI Book Taken Offline     
+402  E-Commerce: Major Card Skim Found  
+403  Google: DeepCrossAttention Debut   
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 [200] Sec  [300] Retro  [400] HN  [999] 

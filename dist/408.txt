@@ -1,18 +1,18 @@
-P408  NERD-TEXT 408   12.11.26 15:28 UTC
+P408  NERD-TEXT 408   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (8/10)                    
 ========================================
-> HN #8 | bbc.co.uk                     
-  Nvidia: Stock Plunge Amid Exit        
+> HN #8 | github.com                    
+  Convex: Skill Telemetry Flaw          
                                         
-  Shares tumble sharply following the   
-  sudden resignation of the firm's      
-  founding executive, as controversy and
-  national security allegations ignite  
-  intense scrutiny across global        
-  financial markets.                    
+  Issue #64 reveals Convex quickstart   
+  skills leak user project concepts to  
+  external hosts and execute remote     
+  scripts designed to bypass safety     
+  checks, sparking severe privacy and   
+  security concerns.                    
                                         
-  140 pts | 73 comments | bbc.co.uk     
+  334 pts | 112 comments | github.com   
 [100] Index  [407] Prev  [409] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

@@ -1,17 +1,19 @@
-P405  NERD-TEXT 405   12.11.26 15:28 UTC
+P405  NERD-TEXT 405   28.11.26 14:11 UTC
 ========================================
   HACKER NEWS (5/10)                    
 ========================================
-> HN #5 | reuters.com                   
-  Nvidia: Jensen Huang Steps Down       
+> HN #5 | oag.state.va.us               
+  States: Lawsuit Targets Grok AI       
                                         
-  Jensen Huang has abruptly vacated his 
-  chief executive role at the chipmaker.
-  The immediate departure shocks global 
-  tech markets, prompting swift         
-  succession planning across the board. 
+  State attorneys general filed suit    
+  against SpaceX and xAI to halt Grok,  
+  alleging the generative AI system     
+  enables the illicit synthesis of non- 
+  consensual imagery and child sexual   
+  abuse material.                       
                                         
-  282 pts | 148 comments | reuters.com  
+  422 pts | 290 comments |              
+  oag.state.va.us                       
 [100] Index  [404] Prev  [406] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
