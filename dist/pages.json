@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-12T13:54:09.142627+00:00",
+  "generated_utc": "2026-11-12T14:00:51.039549+00:00",
   "pages": {
     "100": {
       "title": "INDEX",
@@ -588,11 +588,7 @@
         },
         {
           "t": "body",
-          "s": "  varied work sounds for mining. With"
-        },
-        {
-          "t": "body",
-          "s": "  this new framework, we can continue to"
+          "s": "  varied work sounds for mining."
         },
         {
           "t": "blank",
@@ -765,15 +761,7 @@
         },
         {
           "t": "body",
-          "s": "  default. Added a \"Performance\""
-        },
-        {
-          "t": "body",
-          "s": "  autoexplore mode that utilizes far"
-        },
-        {
-          "t": "body",
-          "s": "  less CPU but ocassionally causes"
+          "s": "  default."
         },
         {
           "t": "blank",
@@ -907,7 +895,7 @@
         },
         {
           "t": "body",
-          "s": "Last build: 12.11.26 13:54 UTC"
+          "s": "Last build: 12.11.26 14:00 UTC"
         },
         {
           "t": "nav",

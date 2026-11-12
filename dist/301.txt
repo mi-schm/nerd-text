@@ -1,4 +1,4 @@
-P301  NERD-TEXT 301   12.11.26 13:54 UTC
+P301  NERD-TEXT 301   12.11.26 14:00 UTC
 ========================================
 GAME LOG (1/5)                          
 ========================================
@@ -9,8 +9,7 @@ GAME LOG (1/5)
   rebuilt from the ground up for        
   fortress mode. We have user interface 
   sounds, a better ambience system, and 
-  varied work sounds for mining. With   
-  this new framework, we can continue to
+  varied work sounds for mining.        
                                         
   Source: Dwarf Fortress (Mon, 09 Nov   
   2026)                                 
