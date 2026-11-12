@@ -1,14 +1,14 @@
-P204  NERD-TEXT 204   12.11.26 13:29 UTC
+P204  NERD-TEXT 204   12.11.26 13:33 UTC
 ========================================
-CVE DETAIL (4/5)                        
+SECURITY ADVISORY (4/5)                 
 ========================================
-> CVE-2026-111560                       
-  Barracuda Networks Multiple Produc    
+> DEBIAN DSA                            
+  DSA: 6620-1 apache2 - security upd    
                                         
-  OS Command Injection Vulnerability.   
-  Patch due: 2026-11-13.                
+  https://security-                     
+  tracker.debian.org/tracker/DSA-6620-1 
                                         
-  Added: 2026-11-10 | Due: 2026-11-13   
+  Source: Debian DSA (2026-11-12)       
 [100] Index  [203] Prev  [205] Next     
 ========================================
 RED:100  GRN:200  YEL:300  CYN:999      

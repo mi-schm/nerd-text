@@ -1,22 +1,22 @@
-P200  NERD-TEXT 200   12.11.26 13:29 UTC
+P200  NERD-TEXT 200   12.11.26 13:33 UTC
 ========================================
-SECURITY & CISA KEV OVERVIEW            
+CISA KEV & LINUX SECURITY (DSA/USN)     
 ========================================
-201  CVE-2026-124194: Microsoft Office: 
+201  Microsoft Office: Outlook Missing  
      Outlook Missing User Interaction   
      for Potentially Unsafe Action      
-202  CVE-2026-111793: Openwave Messaging
+202  Openwave Messaging Limited Webtop  
      Incorrect Resource Transfer Between
      Spheres Vulnerability. Patch due:  
-203  CVE-2026-20320: Cisco BroadWorks: I
+203  Cisco BroadWorks: Improper Restric 
      Improper Restriction of XML        
      External Entity Reference          
-204  CVE-2026-111560: Barracuda Networks
-     OS Command Injection Vulnerability.
-     Patch due: 2026-11-13.             
-205  CVE-2026-116606: Barracuda Networks
-     Barracuda Networks Email Security  
-     Gateway (ESG) Authentication Bypass
+204  DSA: 6620-1 apache2 - security upd 
+     https://security-tracker.debian.org
+     /tracker/DSA-6620-1                
+205  USN: 9063-1: Yodl vulnerability    
+     It was discovered that Yodl        
+     incorrectly handled certain input, 
 [100] Index      [201] Details     [300]
 ========================================
 RED:100  GRN:200  YEL:300  CYN:999      

@@ -1,16 +1,17 @@
-P205  NERD-TEXT 205   12.11.26 13:29 UTC
+P205  NERD-TEXT 205   12.11.26 13:33 UTC
 ========================================
-CVE DETAIL (5/5)                        
+SECURITY ADVISORY (5/5)                 
 ========================================
-> CVE-2026-116606                       
-  Barracuda Networks Barracuda Email    
+> UBUNTU USN                            
+  USN: 9063-1: Yodl vulnerability       
                                         
-  Barracuda Networks Email Security     
-  Gateway (ESG) Authentication Bypass   
-  Using an Alternate Path or Channel    
-  Vulnerability. Patch due: 2026-11-1   
+  It was discovered that Yodl           
+  incorrectly handled certain input,    
+  leading to a buffer over-read. An     
+  attacker could possibly use this issue
+  to c                                  
                                         
-  Added: 2026-11-10 | Due: 2026-11-13   
+  Source: Ubuntu USN (Wed, 11 Nov 2026) 
 [100] Index  [204] Prev  [300] Next     
 ========================================
 RED:100  GRN:200  YEL:300  CYN:999      

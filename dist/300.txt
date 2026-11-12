@@ -1,11 +1,11 @@
-P300  NERD-TEXT 300   12.11.26 13:29 UTC
+P300  NERD-TEXT 300   12.11.26 13:33 UTC
 ========================================
 ROGUELIKES & SYSTEM-DRIVEN GAMES        
 ========================================
-301  DF: (Toady One) The audio system h 
+301  DF: The audio system has rebuilt f 
      (Toady One) The audio system has   
      rebuilt from the ground up for     
-302  DF: 2026-11-09: DF 53.17 Released  
+302  DF: 53.17 Released                 
      DF Version 53.17 has been released.
 303  Caves of Qud: Diaspora is coming D 
      Hey friends, It's the beginning of 

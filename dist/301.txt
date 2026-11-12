@@ -1,9 +1,9 @@
-P301  NERD-TEXT 301   12.11.26 13:29 UTC
+P301  NERD-TEXT 301   12.11.26 13:33 UTC
 ========================================
 GAME LOG (1/5)                          
 ========================================
 > DWARF FORTRESS                        
-  DF: (Toady One) The audio system h    
+  DF: The audio system has rebuilt f    
                                         
   (Toady One) The audio system has      
   rebuilt from the ground up for        

@@ -1,6 +1,6 @@
-P203  NERD-TEXT 203   12.11.26 13:29 UTC
+P203  NERD-TEXT 203   12.11.26 13:33 UTC
 ========================================
-CVE DETAIL (3/5)                        
+SECURITY ADVISORY (3/5)                 
 ========================================
 > CVE-2026-20320                        
   Cisco BroadWorks: Improper Restric    
@@ -9,7 +9,8 @@ CVE DETAIL (3/5)
   Entity Reference Vulnerability. Patch 
   due: 2026-11-24.                      
                                         
-  Added: 2026-11-10 | Due: 2026-11-24   
+  CISA KEV | Added: 2026-11-10 | Due:   
+  2026-11-24                            
 [100] Index  [202] Prev  [204] Next     
 ========================================
 RED:100  GRN:200  YEL:300  CYN:999      
