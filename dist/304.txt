@@ -1,14 +1,15 @@
-P304  NERD-TEXT 304   12.11.26 14:00 UTC
+P304  NERD-TEXT 304   12.11.26 14:11 UTC
 ========================================
 GAME LOG (4/5)                          
 ========================================
 > CAVES OF QUD                          
-  Caves of Qud: Autoexplore Patch -     
+  Caves of Qud: Autoexplore Update      
                                         
-  211.55 Added a "Standard" autoexplore 
-  mode that matches older classic       
-  autoexplore pathing, it is now the    
-  default.                              
+  Update 211.55 restores classic        
+  autoexplore movement pathing under a  
+  new default Standard mode, correcting 
+  navigation algorithms and automated   
+  grid exploration behaviors.           
                                         
   Source: Caves of Qud (Thu, 24 Sep     
   2026)                                 

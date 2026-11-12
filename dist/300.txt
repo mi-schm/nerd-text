@@ -1,21 +1,22 @@
-P300  NERD-TEXT 300   12.11.26 14:00 UTC
+P300  NERD-TEXT 300   12.11.26 14:11 UTC
 ========================================
 ROGUELIKES & SYSTEM-DRIVEN GAMES        
 ========================================
-301  DF: The audio system has rebuilt   
-     (Toady One) The audio system has   
-     rebuilt from the ground up for     
-302  DF: 53.17 Released                 
-     DF Version 53.17 has been released.
-303  Caves of Qud: Diaspora is coming   
-     Hey friends, It's the beginning of 
-     a new era of Caves of Qud          
-304  Caves of Qud: Autoexplore Patch -  
-     211.55 Added a "Standard"          
-     autoexplore mode that matches older
-305  Cataclysm: DDA: Cataclysm-DDA      
-     What's Changed Remove all legacy   
-     int -indexed item accessors for    
+301  Dwarf Fortress: Audio Overhaul     
+     Fortress mode receives a total     
+     sound engine rewrite, integrating  
+302  Dwarf Fortress: Update 53.17       
+     Bay 12 Games deployed maintenance  
+     build 53.17 to production branches.
+303  Caves of Qud: Diaspora Expansion   
+     Developers scheduled the first     
+     commercial expansion for early     
+304  Caves of Qud: Autoexplore Update   
+     Update 211.55 restores classic     
+     autoexplore movement pathing under 
+305  Cataclysm DDA: Accessor Refactor   
+     Pull requests #89509 and #89492    
+     purge legacy integer-indexed       
 [100] Index      [301] Details     [999]
 ========================================
 RED:100  GRN:200  YEL:300  CYN:999      

@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-12T14:00:51.039549+00:00",
+  "generated_utc": "2026-11-12T14:11:12.276433+00:00",
   "pages": {
     "100": {
       "title": "INDEX",
@@ -21,17 +21,17 @@
         {
           "t": "link",
           "p": "201",
-          "s": "201  Microsoft Office: Outlook Missing"
+          "s": "201  MS Office: Outlook Spoofing Flaw"
         },
         {
           "t": "link",
           "p": "202",
-          "s": "202  Openwave Messaging Limited Webtop"
+          "s": "202  Openwave Webtop: Transcoder Bug"
         },
         {
           "t": "link",
           "p": "203",
-          "s": "203  Cisco BroadWorks: Improper"
+          "s": "203  Cisco BroadWorks: Remote XXE Flaw"
         },
         {
           "t": "blank",
@@ -44,17 +44,17 @@
         {
           "t": "link",
           "p": "301",
-          "s": "301  DF: The audio system has rebuilt"
+          "s": "301  Dwarf Fortress: Audio Overhaul"
         },
         {
           "t": "link",
           "p": "302",
-          "s": "302  DF: 53.17 Released"
+          "s": "302  Dwarf Fortress: Update 53.17"
         },
         {
           "t": "link",
           "p": "303",
-          "s": "303  Caves of Qud: Diaspora is coming"
+          "s": "303  Caves of Qud: Diaspora Expansion"
         },
         {
           "t": "blank",
@@ -86,67 +86,67 @@
         {
           "t": "link",
           "p": "201",
-          "s": "201  Microsoft Office: Outlook Missing"
+          "s": "201  MS Office: Outlook Spoofing Flaw"
         },
         {
           "t": "body",
-          "s": "     Microsoft Office Outlook contains a"
+          "s": "     Remote unauthorized attackers"
         },
         {
           "t": "body",
-          "s": "     missing user interaction for"
+          "s": "     exploit a missing user interaction"
         },
         {
           "t": "link",
           "p": "202",
-          "s": "202  Openwave Messaging Limited Webtop"
+          "s": "202  Openwave Webtop: Transcoder Bug"
         },
         {
           "t": "body",
-          "s": "     Openwave Messaging Limited Webtop"
+          "s": "     Authenticated actors bypass"
         },
         {
           "t": "body",
-          "s": "     Media Transcoder contains an"
+          "s": "     boundary spheres during document"
         },
         {
           "t": "link",
           "p": "203",
-          "s": "203  Cisco BroadWorks: Improper"
+          "s": "203  Cisco BroadWorks: Remote XXE Flaw"
         },
         {
           "t": "body",
-          "s": "     Cisco BroadWorks contains an"
+          "s": "     Unauthenticated remote threat"
         },
         {
           "t": "body",
-          "s": "     improper restriction of XML"
+          "s": "     actors submit crafted XML entities"
         },
         {
           "t": "link",
           "p": "204",
-          "s": "204  DSA: 6620-1 apache2 - security"
+          "s": "204  Debian: Apache2 Security Flaw"
         },
         {
           "t": "body",
-          "s": "     https://security-tracker.debian.org"
+          "s": "     Debian security advisory DSA-6620-1"
         },
         {
           "t": "body",
-          "s": "     /tracker/DSA-6620-1"
+          "s": "     addresses security vulnerabilities"
         },
         {
           "t": "link",
           "p": "205",
-          "s": "205  USN: 9063-1: Yodl vulnerability"
+          "s": "205  Ubuntu: Yodl Buffer Over-Read"
         },
         {
           "t": "body",
-          "s": "     It was discovered that Yodl"
+          "s": "     Maliciously crafted document input"
         },
         {
           "t": "body",
-          "s": "     incorrectly handled certain input,"
+          "s": "     triggers an out-of-bounds read"
         },
         {
           "t": "nav",
@@ -173,7 +173,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Microsoft Office: Outlook Missing"
+          "s": "  MS Office: Outlook Spoofing Flaw"
         },
         {
           "t": "blank",
@@ -181,27 +181,27 @@
         },
         {
           "t": "body",
-          "s": "  Microsoft Office Outlook contains a"
+          "s": "  Remote unauthorized attackers exploit"
         },
         {
           "t": "body",
-          "s": "  missing user interaction for"
+          "s": "  a missing user interaction check over"
         },
         {
           "t": "body",
-          "s": "  potentially unsafe action"
+          "s": "  network vectors to spoof client"
         },
         {
           "t": "body",
-          "s": "  vulnerability that allows an"
+          "s": "  sessions. Organizations must apply"
         },
         {
           "t": "body",
-          "s": "  unauthorized attacker to perform"
+          "s": "  Microsoft security updates before the"
         },
         {
           "t": "body",
-          "s": "  spoofing over a network."
+          "s": "  Nov 24 deadline."
         },
         {
           "t": "blank",
@@ -240,7 +240,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Openwave Messaging Limited Webtop"
+          "s": "  Openwave Webtop: Transcoder Bug"
         },
         {
           "t": "blank",
@@ -248,27 +248,27 @@
         },
         {
           "t": "body",
-          "s": "  Openwave Messaging Limited Webtop"
+          "s": "  Authenticated actors bypass boundary"
         },
         {
           "t": "body",
-          "s": "  Media Transcoder contains an incorrect"
+          "s": "  spheres during document conversion to"
         },
         {
           "t": "body",
-          "s": "  resource transfer between spheres"
+          "s": "  process restricted file formats"
         },
         {
           "t": "body",
-          "s": "  vulnerability that may allow an"
+          "s": "  remotely. Administrators must patch"
         },
         {
           "t": "body",
-          "s": "  authenticated user to process and"
+          "s": "  Openwave Webtop Transcoder systems per"
         },
         {
           "t": "body",
-          "s": "  convert unintended document types if"
+          "s": "  CISA guidance."
         },
         {
           "t": "blank",
@@ -307,7 +307,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Cisco BroadWorks: Improper"
+          "s": "  Cisco BroadWorks: Remote XXE Flaw"
         },
         {
           "t": "blank",
@@ -315,27 +315,27 @@
         },
         {
           "t": "body",
-          "s": "  Cisco BroadWorks contains an improper"
+          "s": "  Unauthenticated remote threat actors"
         },
         {
           "t": "body",
-          "s": "  restriction of XML external entity"
+          "s": "  submit crafted XML entities to leak"
         },
         {
           "t": "body",
-          "s": "  reference vulnerability that could"
+          "s": "  sensitive configuration data and local"
         },
         {
           "t": "body",
-          "s": "  allow an unauthenticated, remote"
+          "s": "  files. Network teams must apply Cisco"
         },
         {
           "t": "body",
-          "s": "  attacker to read sensitive"
+          "s": "  software fixes before CISA's Nov 24"
         },
         {
           "t": "body",
-          "s": "  configuration information on an"
+          "s": "  deadline."
         },
         {
           "t": "blank",
@@ -374,7 +374,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  DSA: 6620-1 apache2 - security"
+          "s": "  Debian: Apache2 Security Flaw"
         },
         {
           "t": "blank",
@@ -382,11 +382,27 @@
         },
         {
           "t": "body",
-          "s": "  https://security-"
+          "s": "  Debian security advisory DSA-6620-1"
         },
         {
           "t": "body",
-          "s": "  tracker.debian.org/tracker/DSA-6620-1"
+          "s": "  addresses security vulnerabilities"
+        },
+        {
+          "t": "body",
+          "s": "  within the Apache2 HTTP server"
+        },
+        {
+          "t": "body",
+          "s": "  package. System administrators should"
+        },
+        {
+          "t": "body",
+          "s": "  upgrade apache2 packages via apt to"
+        },
+        {
+          "t": "body",
+          "s": "  secure web services."
         },
         {
           "t": "blank",
@@ -421,7 +437,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  USN: 9063-1: Yodl vulnerability"
+          "s": "  Ubuntu: Yodl Buffer Over-Read"
         },
         {
           "t": "blank",
@@ -429,27 +445,27 @@
         },
         {
           "t": "body",
-          "s": "  It was discovered that Yodl"
+          "s": "  Maliciously crafted document input"
         },
         {
           "t": "body",
-          "s": "  incorrectly handled certain input,"
+          "s": "  triggers an out-of-bounds read error"
         },
         {
           "t": "body",
-          "s": "  leading to a buffer over-read. An"
+          "s": "  during parsing, crashing the Yodl"
         },
         {
           "t": "body",
-          "s": "  attacker could possibly use this issue"
+          "s": "  utility in a denial-of-service state."
         },
         {
           "t": "body",
-          "s": "  to cause Yodl to crash, resulting in a"
+          "s": "  Upgrade yodl packages on Ubuntu hosts"
         },
         {
           "t": "body",
-          "s": "  denial of service."
+          "s": "  immediately."
         },
         {
           "t": "blank",
@@ -481,63 +497,67 @@
         {
           "t": "link",
           "p": "301",
-          "s": "301  DF: The audio system has rebuilt"
+          "s": "301  Dwarf Fortress: Audio Overhaul"
         },
         {
           "t": "body",
-          "s": "     (Toady One) The audio system has"
+          "s": "     Fortress mode receives a total"
         },
         {
           "t": "body",
-          "s": "     rebuilt from the ground up for"
+          "s": "     sound engine rewrite, integrating"
         },
         {
           "t": "link",
           "p": "302",
-          "s": "302  DF: 53.17 Released"
+          "s": "302  Dwarf Fortress: Update 53.17"
         },
         {
           "t": "body",
-          "s": "     DF Version 53.17 has been released."
+          "s": "     Bay 12 Games deployed maintenance"
+        },
+        {
+          "t": "body",
+          "s": "     build 53.17 to production branches."
         },
         {
           "t": "link",
           "p": "303",
-          "s": "303  Caves of Qud: Diaspora is coming"
+          "s": "303  Caves of Qud: Diaspora Expansion"
         },
         {
           "t": "body",
-          "s": "     Hey friends, It's the beginning of"
+          "s": "     Developers scheduled the first"
         },
         {
           "t": "body",
-          "s": "     a new era of Caves of Qud"
+          "s": "     commercial expansion for early"
         },
         {
           "t": "link",
           "p": "304",
-          "s": "304  Caves of Qud: Autoexplore Patch -"
+          "s": "304  Caves of Qud: Autoexplore Update"
         },
         {
           "t": "body",
-          "s": "     211.55 Added a \"Standard\""
+          "s": "     Update 211.55 restores classic"
         },
         {
           "t": "body",
-          "s": "     autoexplore mode that matches older"
+          "s": "     autoexplore movement pathing under"
         },
         {
           "t": "link",
           "p": "305",
-          "s": "305  Cataclysm: DDA: Cataclysm-DDA"
+          "s": "305  Cataclysm DDA: Accessor Refactor"
         },
         {
           "t": "body",
-          "s": "     What's Changed Remove all legacy"
+          "s": "     Pull requests #89509 and #89492"
         },
         {
           "t": "body",
-          "s": "     int -indexed item accessors for"
+          "s": "     purge legacy integer-indexed"
         },
         {
           "t": "nav",
@@ -564,7 +584,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  DF: The audio system has rebuilt"
+          "s": "  Dwarf Fortress: Audio Overhaul"
         },
         {
           "t": "blank",
@@ -572,23 +592,23 @@
         },
         {
           "t": "body",
-          "s": "  (Toady One) The audio system has"
+          "s": "  Fortress mode receives a total sound"
         },
         {
           "t": "body",
-          "s": "  rebuilt from the ground up for"
+          "s": "  engine rewrite, integrating dedicated"
         },
         {
           "t": "body",
-          "s": "  fortress mode. We have user interface"
+          "s": "  UI audio cues, dynamic environmental"
         },
         {
           "t": "body",
-          "s": "  sounds, a better ambience system, and"
+          "s": "  ambience, and contextual mining sound"
         },
         {
           "t": "body",
-          "s": "  varied work sounds for mining."
+          "s": "  effects."
         },
         {
           "t": "blank",
@@ -627,7 +647,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  DF: 53.17 Released"
+          "s": "  Dwarf Fortress: Update 53.17"
         },
         {
           "t": "blank",
@@ -635,7 +655,23 @@
         },
         {
           "t": "body",
-          "s": "  DF Version 53.17 has been released."
+          "s": "  Bay 12 Games deployed maintenance"
+        },
+        {
+          "t": "body",
+          "s": "  build 53.17 to production branches."
+        },
+        {
+          "t": "body",
+          "s": "  The patch addresses runtime stability,"
+        },
+        {
+          "t": "body",
+          "s": "  core simulation loops, and critical"
+        },
+        {
+          "t": "body",
+          "s": "  world-gen routines."
         },
         {
           "t": "blank",
@@ -674,7 +710,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Caves of Qud: Diaspora is coming"
+          "s": "  Caves of Qud: Diaspora Expansion"
         },
         {
           "t": "blank",
@@ -682,27 +718,23 @@
         },
         {
           "t": "body",
-          "s": "  Hey friends, It's the beginning of a"
+          "s": "  Developers scheduled the first"
         },
         {
           "t": "body",
-          "s": "  new era of Caves of Qud development."
+          "s": "  commercial expansion for early access"
         },
         {
           "t": "body",
-          "s": "  We are pleased to announce that the"
+          "s": "  launch on December 9th at $14.99,"
         },
         {
           "t": "body",
-          "s": "  first expansion pack, Caves of Qud:"
+          "s": "  expanding baseline engine content and"
         },
         {
           "t": "body",
-          "s": "  Diaspora is releasing into Early"
-        },
-        {
-          "t": "body",
-          "s": "  Access on December 9th for $14.99."
+          "s": "  introducing new world systems."
         },
         {
           "t": "blank",
@@ -741,7 +773,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Caves of Qud: Autoexplore Patch -"
+          "s": "  Caves of Qud: Autoexplore Update"
         },
         {
           "t": "blank",
@@ -749,19 +781,23 @@
         },
         {
           "t": "body",
-          "s": "  211.55 Added a \"Standard\" autoexplore"
+          "s": "  Update 211.55 restores classic"
         },
         {
           "t": "body",
-          "s": "  mode that matches older classic"
+          "s": "  autoexplore movement pathing under a"
         },
         {
           "t": "body",
-          "s": "  autoexplore pathing, it is now the"
+          "s": "  new default Standard mode, correcting"
         },
         {
           "t": "body",
-          "s": "  default."
+          "s": "  navigation algorithms and automated"
+        },
+        {
+          "t": "body",
+          "s": "  grid exploration behaviors."
         },
         {
           "t": "blank",
@@ -800,7 +836,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Cataclysm: DDA: Cataclysm-DDA"
+          "s": "  Cataclysm DDA: Accessor Refactor"
         },
         {
           "t": "blank",
@@ -808,27 +844,23 @@
         },
         {
           "t": "body",
-          "s": "  What's Changed Remove all legacy int"
+          "s": "  Pull requests #89509 and #89492 purge"
         },
         {
           "t": "body",
-          "s": "  -indexed item accessors for Character"
+          "s": "  legacy integer-indexed inventory"
         },
         {
           "t": "body",
-          "s": "  and outfit by @ShnitzelX2 in #89509"
+          "s": "  accessors from Character classes while"
         },
         {
           "t": "body",
-          "s": "  Rewrite wound text to be more colorful"
+          "s": "  overhauling injury string generation"
         },
         {
           "t": "body",
-          "s": "  and immersive by @phoenix492 in #89492"
-        },
-        {
-          "t": "body",
-          "s": "  Full Changelog :"
+          "s": "  for wound descriptions."
         },
         {
           "t": "blank",
@@ -895,7 +927,7 @@
         },
         {
           "t": "body",
-          "s": "Last build: 12.11.26 14:00 UTC"
+          "s": "Last build: 12.11.26 14:11 UTC"
         },
         {
           "t": "nav",

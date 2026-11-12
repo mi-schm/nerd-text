@@ -1,12 +1,16 @@
-P204  NERD-TEXT 204   12.11.26 14:00 UTC
+P204  NERD-TEXT 204   12.11.26 14:11 UTC
 ========================================
 SECURITY ADVISORY (4/5)                 
 ========================================
 > DEBIAN DSA                            
-  DSA: 6620-1 apache2 - security        
+  Debian: Apache2 Security Flaw         
                                         
-  https://security-                     
-  tracker.debian.org/tracker/DSA-6620-1 
+  Debian security advisory DSA-6620-1   
+  addresses security vulnerabilities    
+  within the Apache2 HTTP server        
+  package. System administrators should 
+  upgrade apache2 packages via apt to   
+  secure web services.                  
                                         
   Source: Debian DSA (2026-11-12)       
 [100] Index  [203] Prev  [205] Next     

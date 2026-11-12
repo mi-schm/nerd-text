@@ -1,16 +1,16 @@
-P203  NERD-TEXT 203   12.11.26 14:00 UTC
+P203  NERD-TEXT 203   12.11.26 14:11 UTC
 ========================================
 SECURITY ADVISORY (3/5)                 
 ========================================
 > CVE-2026-20320                        
-  Cisco BroadWorks: Improper            
+  Cisco BroadWorks: Remote XXE Flaw     
                                         
-  Cisco BroadWorks contains an improper 
-  restriction of XML external entity    
-  reference vulnerability that could    
-  allow an unauthenticated, remote      
-  attacker to read sensitive            
-  configuration information on an       
+  Unauthenticated remote threat actors  
+  submit crafted XML entities to leak   
+  sensitive configuration data and local
+  files. Network teams must apply Cisco 
+  software fixes before CISA's Nov 24   
+  deadline.                             
                                         
   CISA KEV | Added: 2026-11-10 | Due:   
   2026-11-24                            

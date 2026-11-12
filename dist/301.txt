@@ -1,15 +1,15 @@
-P301  NERD-TEXT 301   12.11.26 14:00 UTC
+P301  NERD-TEXT 301   12.11.26 14:11 UTC
 ========================================
 GAME LOG (1/5)                          
 ========================================
 > DWARF FORTRESS                        
-  DF: The audio system has rebuilt      
+  Dwarf Fortress: Audio Overhaul        
                                         
-  (Toady One) The audio system has      
-  rebuilt from the ground up for        
-  fortress mode. We have user interface 
-  sounds, a better ambience system, and 
-  varied work sounds for mining.        
+  Fortress mode receives a total sound  
+  engine rewrite, integrating dedicated 
+  UI audio cues, dynamic environmental  
+  ambience, and contextual mining sound 
+  effects.                              
                                         
   Source: Dwarf Fortress (Mon, 09 Nov   
   2026)                                 

@@ -1,16 +1,15 @@
-P303  NERD-TEXT 303   12.11.26 14:00 UTC
+P303  NERD-TEXT 303   12.11.26 14:11 UTC
 ========================================
 GAME LOG (3/5)                          
 ========================================
 > CAVES OF QUD                          
-  Caves of Qud: Diaspora is coming      
+  Caves of Qud: Diaspora Expansion      
                                         
-  Hey friends, It's the beginning of a  
-  new era of Caves of Qud development.  
-  We are pleased to announce that the   
-  first expansion pack, Caves of Qud:   
-  Diaspora is releasing into Early      
-  Access on December 9th for $14.99.    
+  Developers scheduled the first        
+  commercial expansion for early access 
+  launch on December 9th at $14.99,     
+  expanding baseline engine content and 
+  introducing new world systems.        
                                         
   Source: Caves of Qud (Thu, 15 Oct     
   2026)                                 

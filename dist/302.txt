@@ -1,11 +1,15 @@
-P302  NERD-TEXT 302   12.11.26 14:00 UTC
+P302  NERD-TEXT 302   12.11.26 14:11 UTC
 ========================================
 GAME LOG (2/5)                          
 ========================================
 > DWARF FORTRESS                        
-  DF: 53.17 Released                    
+  Dwarf Fortress: Update 53.17          
                                         
-  DF Version 53.17 has been released.   
+  Bay 12 Games deployed maintenance     
+  build 53.17 to production branches.   
+  The patch addresses runtime stability,
+  core simulation loops, and critical   
+  world-gen routines.                   
                                         
   Source: Dwarf Fortress (Mon, 09 Nov   
   2026)                                 

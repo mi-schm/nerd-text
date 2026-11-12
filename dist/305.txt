@@ -1,16 +1,15 @@
-P305  NERD-TEXT 305   12.11.26 14:00 UTC
+P305  NERD-TEXT 305   12.11.26 14:11 UTC
 ========================================
 GAME LOG (5/5)                          
 ========================================
 > CATACLYSM: DDA                        
-  Cataclysm: DDA: Cataclysm-DDA         
+  Cataclysm DDA: Accessor Refactor      
                                         
-  What's Changed Remove all legacy int  
-  -indexed item accessors for Character 
-  and outfit by @ShnitzelX2 in #89509   
-  Rewrite wound text to be more colorful
-  and immersive by @phoenix492 in #89492
-  Full Changelog :                      
+  Pull requests #89509 and #89492 purge 
+  legacy integer-indexed inventory      
+  accessors from Character classes while
+  overhauling injury string generation  
+  for wound descriptions.               
                                         
   Source: Cataclysm: DDA                
   (2026-11-12T07:15)                    

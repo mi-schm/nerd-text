@@ -1,22 +1,22 @@
-P200  NERD-TEXT 200   12.11.26 14:00 UTC
+P200  NERD-TEXT 200   12.11.26 14:11 UTC
 ========================================
 CISA KEV & LINUX SECURITY (DSA/USN)     
 ========================================
-201  Microsoft Office: Outlook Missing  
-     Microsoft Office Outlook contains a
-     missing user interaction for       
-202  Openwave Messaging Limited Webtop  
-     Openwave Messaging Limited Webtop  
-     Media Transcoder contains an       
-203  Cisco BroadWorks: Improper         
-     Cisco BroadWorks contains an       
-     improper restriction of XML        
-204  DSA: 6620-1 apache2 - security     
-     https://security-tracker.debian.org
-     /tracker/DSA-6620-1                
-205  USN: 9063-1: Yodl vulnerability    
-     It was discovered that Yodl        
-     incorrectly handled certain input, 
+201  MS Office: Outlook Spoofing Flaw   
+     Remote unauthorized attackers      
+     exploit a missing user interaction 
+202  Openwave Webtop: Transcoder Bug    
+     Authenticated actors bypass        
+     boundary spheres during document   
+203  Cisco BroadWorks: Remote XXE Flaw  
+     Unauthenticated remote threat      
+     actors submit crafted XML entities 
+204  Debian: Apache2 Security Flaw      
+     Debian security advisory DSA-6620-1
+     addresses security vulnerabilities 
+205  Ubuntu: Yodl Buffer Over-Read      
+     Maliciously crafted document input 
+     triggers an out-of-bounds read     
 [100] Index      [201] Details     [300]
 ========================================
 RED:100  GRN:200  YEL:300  CYN:999      
