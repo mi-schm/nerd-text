@@ -1,17 +1,18 @@
-P405  NERD-TEXT 405   12.11.26 15:28 UTC
+P405  NERD-TEXT 405   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (5/10)                    
 ========================================
-> HN #5 | reuters.com                   
-  Nvidia: Jensen Huang Steps Down       
+> HN #5 | freightwaves.com              
+  Nvidia: $11.4M in GPUs Stolen         
                                         
-  Jensen Huang has abruptly vacated his 
-  chief executive role at the chipmaker.
-  The immediate departure shocks global 
-  tech markets, prompting swift         
-  succession planning across the board. 
+  A commercial freight shipment carrying
+  11.4 million dollars in high-demand   
+  enterprise graphics hardware vanished 
+  in transit from California to Texas,  
+  prompting cargo theft investigations. 
                                         
-  282 pts | 148 comments | reuters.com  
+  358 pts | 194 comments |              
+  freightwaves.com                      
 [100] Index  [404] Prev  [406] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

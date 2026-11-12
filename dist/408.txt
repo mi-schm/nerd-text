@@ -1,18 +1,18 @@
-P408  NERD-TEXT 408   12.11.26 15:28 UTC
+P408  NERD-TEXT 408   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (8/10)                    
 ========================================
-> HN #8 | bbc.co.uk                     
-  Nvidia: Stock Plunge Amid Exit        
+> HN #8 | joshka.net                    
+  TUI: Zero-Width Terminal Borders      
                                         
-  Shares tumble sharply following the   
-  sudden resignation of the firm's      
-  founding executive, as controversy and
-  national security allegations ignite  
-  intense scrutiny across global        
-  financial markets.                    
+  Developers explore rendering          
+  techniques that implement visual      
+  window separators and decorative      
+  frames without consuming valuable     
+  character cell coordinates in modern  
+  console interfaces.                   
                                         
-  140 pts | 73 comments | bbc.co.uk     
+  295 pts | 133 comments | joshka.net   
 [100] Index  [407] Prev  [409] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

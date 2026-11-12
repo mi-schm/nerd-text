@@ -1,16 +1,16 @@
-P203  NERD-TEXT 203   12.11.26 15:28 UTC
+P203  NERD-TEXT 203   14.11.26 12:11 UTC
 ========================================
 SECURITY ADVISORY (3/5)                 
 ========================================
-> CVE-2026-20320                        
-  BroadWorks: XXE Data Leak Bug         
+> CVE-2026-124194                       
+  Outlook: Remote Spoofing Bug          
                                         
-  An unauthenticated remote XXE flaw    
-  exposes sensitive server configuration
-  files on Cisco BroadWorks. CISA       
-  confirmed active exploitation,        
-  mandating remediation across federal  
-  systems by Nov 24.                    
+  CISA warns of an Outlook vulnerability
+  stemming from missing user interaction
+  checks. Remote attackers can conduct  
+  network-level spoofing attacks against
+  unpatched systems without operator    
+  consent.                              
                                         
   CISA KEV | Added: 2026-11-10 | Due:   
   2026-11-24                            

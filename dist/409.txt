@@ -1,18 +1,18 @@
-P409  NERD-TEXT 409   12.11.26 15:28 UTC
+P409  NERD-TEXT 409   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (9/10)                    
 ========================================
 > HN #9 | github.com                    
-  Jane Street: Socratic AI Tutor        
+  GGML: Tensor Library Hits v1.0        
                                         
-  An open agent specification guides    
-  autonomous models to teach complex    
-  concepts via targeted questioning,    
-  fostering deep conceptual             
-  understanding rather than merely      
-  emitting direct answers.              
+  The foundational C/C++ machine        
+  learning runtime powering llama.cpp   
+  reaches its official milestone,       
+  formalizing API stability, tensor     
+  operations, and optimized multi-      
+  platform execution.                   
                                         
-  489 pts | 112 comments | github.com   
+  295 pts | 46 comments | github.com    
 [100] Index  [408] Prev  [410] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

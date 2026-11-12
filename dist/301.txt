@@ -1,18 +1,18 @@
-P301  NERD-TEXT 301   12.11.26 15:28 UTC
+P301  NERD-TEXT 301   14.11.26 12:11 UTC
 ========================================
 RETRO LOG (1/5)                         
 ========================================
 > TIMEEXT                               
-  id Software: Ex-Devs Form Studio      
+  Arcade Archives: Rezon Gets Port      
                                         
-  Veteran developers laid off by        
-  Microsoft have banded together to     
-  found an independent game studio,     
-  aiming to preserve their classic      
-  shooter craft outside corporate       
-  ownership.                            
+  Hamster expands its Arcade Archives 2 
+  lineup with a modern port of the      
+  obscure coin-op shmup. The Gen 9 re-  
+  release brings authentic arcade       
+  emulation, display scaling, and dip-  
+  switch toggles.                       
                                         
-  Source: TimeExt (Thu, 12 Nov 2026)    
+  Source: TimeExt (Sat, 14 Nov 2026)    
 [100] Index  [300] Prev  [302] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

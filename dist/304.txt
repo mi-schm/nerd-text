@@ -1,17 +1,18 @@
-P304  NERD-TEXT 304   12.11.26 15:28 UTC
+P304  NERD-TEXT 304   14.11.26 12:11 UTC
 ========================================
 RETRO LOG (4/5)                         
 ========================================
 > RETRORGB                              
-  RetroRGB: Weekly Roundup #539 Out     
+  SNK: KOF 96, 97 & 99 Vinyl Scores     
                                         
-  Issue 539 recaps current CRT          
-  calibrations, scaler firmware updates,
-  flash carts, and community hardware   
-  projects across video formats and all 
-  major audio streaming feeds.          
+  Mana Wave launches vinyl pre-orders   
+  for King of Fighters 96, 97, and 99.  
+  Each LP compiles SNK Neo Sound        
+  Orchestra arrangements, remastering   
+  original Neo Geo MVS and CD audio     
+  across three releases.                
                                         
-  Source: RetroRGB (Wed, 11 Nov 2026)   
+  Source: RetroRGB (Fri, 13 Nov 2026)   
 [100] Index  [303] Prev  [305] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

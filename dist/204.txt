@@ -1,18 +1,18 @@
-P204  NERD-TEXT 204   12.11.26 15:28 UTC
+P204  NERD-TEXT 204   14.11.26 12:11 UTC
 ========================================
 SECURITY ADVISORY (4/5)                 
 ========================================
 > DEBIAN DSA                            
-  Debian: Apache2 Security Update       
+  Debian: Linux Kernel Patched          
                                         
-  Debian issued DSA 6620-1 to resolve   
-  multiple security vulnerabilities     
-  within the Apache2 HTTP server suite. 
-  Administrators are urged to upgrade   
-  packages immediately to protect       
-  production servers.                   
+  Debian has issued DSA-6628-1 to       
+  address multiple security             
+  vulnerabilities across the Linux      
+  kernel. Upgrading installed linux     
+  packages is urgently advised to avert 
+  privilege escalation and crashes.     
                                         
-  Source: Debian DSA (2026-11-12)       
+  Source: Debian DSA (2026-11-13)       
 [100] Index  [203] Prev  [205] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

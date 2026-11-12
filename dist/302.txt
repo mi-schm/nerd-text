@@ -1,18 +1,18 @@
-P302  NERD-TEXT 302   12.11.26 15:28 UTC
+P302  NERD-TEXT 302   14.11.26 12:11 UTC
 ========================================
 RETRO LOG (2/5)                         
 ========================================
 > TIMEEXT                               
-  Gunpei Yokoi: Legacy Reassessed       
+  Digital Eclipse: Barbie Anthology     
                                         
-  Colleagues revisit the lateral        
-  thinking philosophy of the late Game  
-  Boy inventor and Game & Watch pioneer,
-  whose hardware design tenets still    
-  guide modern portable console         
-  creation.                             
+  Digital Eclipse is developing an      
+  interactive documentary collection    
+  spotlighting classic Barbie titles.   
+  The package pairs playable retro      
+  releases with archival design assets, 
+  interviews, and scans.                
                                         
-  Source: TimeExt (Thu, 12 Nov 2026)    
+  Source: TimeExt (Fri, 13 Nov 2026)    
 [100] Index  [301] Prev  [303] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

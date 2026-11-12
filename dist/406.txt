@@ -1,18 +1,18 @@
-P406  NERD-TEXT 406   12.11.26 15:28 UTC
+P406  NERD-TEXT 406   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (6/10)                    
 ========================================
-> HN #6 | libreagi.com                  
-  LibreAGI: Torrenting Open AI          
+> HN #6 | reddit.com                    
+  iPadOS: 16 Clicks for Class File      
                                         
-  A decentralized BitTorrent tracker    
-  preserves vulnerable open-source      
-  artificial intelligence weights,      
-  ensuring research community access    
-  even if centralized host platforms    
-  delete them.                          
+  Classroom device deployments face     
+  criticism as complex authentication,  
+  nested cloud folders, and mobile      
+  sandboxing require students to        
+  complete 16 separate taps to launch a 
+  slide deck.                           
                                         
-  23 pts | 10 comments | libreagi.com   
+  352 pts | 193 comments | reddit.com   
 [100] Index  [405] Prev  [407] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

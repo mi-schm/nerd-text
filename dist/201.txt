@@ -1,19 +1,19 @@
-P201  NERD-TEXT 201   12.11.26 15:28 UTC
+P201  NERD-TEXT 201   14.11.26 12:11 UTC
 ========================================
 SECURITY ADVISORY (1/5)                 
 ========================================
-> CVE-2026-124194                       
-  Outlook: Network Spoofing Flaw        
+> CVE-2026-114713                       
+  UnrealIRCd: Command Injection         
                                         
-  CISA added a zero-interaction flaw to 
-  its Known Exploited Vulnerabilities   
-  catalog. Remote unauthenticated       
-  attackers can spoof network actions to
-  compromise target systems without user
-  prompts.                              
+  CISA added an UnrealIRCd delimiter    
+  flaw to its KEV catalog. The bug      
+  enables users in linked multi-server  
+  setups to inject arbitrary server-to- 
+  server commands with elevated         
+  privileges without auth.              
                                         
-  CISA KEV | Added: 2026-11-10 | Due:   
-  2026-11-24                            
+  CISA KEV | Added: 2026-11-13 | Due:   
+  2026-11-16                            
 [100] Index  [200] Prev  [202] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

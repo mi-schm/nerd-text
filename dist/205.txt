@@ -1,18 +1,18 @@
-P205  NERD-TEXT 205   12.11.26 15:28 UTC
+P205  NERD-TEXT 205   14.11.26 12:11 UTC
 ========================================
 SECURITY ADVISORY (5/5)                 
 ========================================
 > UBUNTU USN                            
-  Ubuntu: Yodl Buffer Over-Read         
+  Ubuntu: FIPS Kernel Fixed             
                                         
-  Canonical patched a buffer over-read  
-  vulnerability in Yodl. Specially      
-  crafted input could cause the document
-  pre-parser to crash, triggering       
-  denial-of-service conditions on       
-  impacted Ubuntu hosts.                
+  Canonical released USN-9027-2 for     
+  Ubuntu FIPS kernels. The maintenance  
+  update fixes several flaws that remote
+  or local attackers could exploit to   
+  compromise target nodes and escalate  
+  system rights.                        
                                         
-  Source: Ubuntu USN (Wed, 11 Nov 2026) 
+  Source: Ubuntu USN (Fri, 13 Nov 2026) 
 [100] Index  [204] Prev  [300] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

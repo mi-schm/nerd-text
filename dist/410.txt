@@ -1,18 +1,19 @@
-P410  NERD-TEXT 410   12.11.26 15:28 UTC
+P410  NERD-TEXT 410   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (10/10)                   
 ========================================
-> HN #10 | codeberg.org                 
-  Bootvine: Systemd Tree Visualizer     
+> HN #10 | orcasairband.com             
+  Airband: Live Multichannel Audio      
                                         
-  A Linux boot visualization utility    
-  renders active systemd services as an 
-  evolving organic vine, transforming   
-  cryptic startup diagnostics into an   
-  intuitive, real-time graphical process
-  tree.                                 
+  An automated monitoring system streams
+  and transcribes simultaneous aviation 
+  VHF radio transmissions across        
+  multiple air traffic sectors,         
+  delivering real-time logs for radio   
+  enthusiasts.                          
                                         
-  234 pts | 93 comments | codeberg.org  
+  271 pts | 63 comments |               
+  orcasairband.com                      
 [100] Index  [409] Prev  [999] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

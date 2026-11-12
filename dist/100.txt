@@ -1,19 +1,19 @@
-P100  NERD-TEXT 100   12.11.26 15:28 UTC
+P100  NERD-TEXT 100   14.11.26 12:11 UTC
 ========================================
   NERD-TEXT // TECH & RETRO TELETEXT    
 ========================================
 SECURITY & LINUX ADVISORIES     [200]   
-201  Outlook: Network Spoofing Flaw     
-202  Webtop: Media Transcoder Flaw      
+201  UnrealIRCd: Command Injection      
+202  Check Point: Permission Flaw       
                                         
 RETRO GAMING & HANDHELDS        [300]   
-301  id Software: Ex-Devs Form Studio   
-302  Gunpei Yokoi: Legacy Reassessed    
+301  Arcade Archives: Rezon Gets Port   
+302  Digital Eclipse: Barbie Anthology  
                                         
 TOP 10 HACKER NEWS              [400]   
-401  Quake 4: Open-Source Engine Out    
-402  AMD: Mike Clark Details Zen 6      
-403  Nvidia: CEO Transition Announced   
+401  FAA: US Flights Halted Nationwide  
+402  LibreOffice: Dig at Cloud Outages  
+403  Nvidia: GPU Scarcity Allegations   
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 [200] Sec  [300] Retro  [400] HN  [999] 

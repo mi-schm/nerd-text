@@ -1,18 +1,19 @@
-P404  NERD-TEXT 404   12.11.26 15:28 UTC
+P404  NERD-TEXT 404   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (4/10)                    
 ========================================
-> HN #4 | pron.github.io                
-  Curry On: Software Correctness        
+> HN #4 | theguardian.com               
+  AI: Gdel's Shorthand Decoded          
                                         
-  Ron Pressler examines the mathematical
-  limits and pragmatic realities of     
-  program verification, comparing formal
-  proofs against empirical testing      
-  models across complex distributed     
-  systems.                              
+  Machine learning models transcribed   
+  1,009 pages of Kurt Gdel's notes      
+  written in obsolete German shorthand, 
+  surfacing hundreds of previously      
+  inaccessible mathematical proofs and  
+  ideas.                                
                                         
-  208 pts | 90 comments | pron.github.io
+  396 pts | 101 comments |              
+  theguardian.com                       
 [100] Index  [403] Prev  [405] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

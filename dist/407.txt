@@ -1,19 +1,18 @@
-P407  NERD-TEXT 407   12.11.26 15:28 UTC
+P407  NERD-TEXT 407   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (7/10)                    
 ========================================
-> HN #7 | blog.janestreet.com           
-  Jane Street: LLM Dev Workflow         
+> HN #7 | youtube.com                   
+  Jon Blow: AI Programming Debate       
                                         
-  The quantitative trading firm outlines
-  how engineering teams integrate large 
-  language models into internal         
-  development pipelines without         
-  sacrificing rigorous OCaml correctness
-  standards.                            
+  Game designer Jonathan Blow explores  
+  software architecture realities,      
+  arguing that LLMs merely replicate    
+  existing code patterns without        
+  understanding underlying systems      
+  engineering.                          
                                         
-  40 pts | 19 comments |                
-  blog.janestreet.co                    
+  323 pts | 427 comments | youtube.com  
 [100] Index  [406] Prev  [408] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

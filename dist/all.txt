@@ -1,19 +1,19 @@
-P100  NERD-TEXT 100   12.11.26 15:28 UTC
+P100  NERD-TEXT 100   14.11.26 12:11 UTC
 ========================================
   NERD-TEXT // TECH & RETRO TELETEXT    
 ========================================
 SECURITY & LINUX ADVISORIES     [200]   
-201  Outlook: Network Spoofing Flaw     
-202  Webtop: Media Transcoder Flaw      
+201  UnrealIRCd: Command Injection      
+202  Check Point: Permission Flaw       
                                         
 RETRO GAMING & HANDHELDS        [300]   
-301  id Software: Ex-Devs Form Studio   
-302  Gunpei Yokoi: Legacy Reassessed    
+301  Arcade Archives: Rezon Gets Port   
+302  Digital Eclipse: Barbie Anthology  
                                         
 TOP 10 HACKER NEWS              [400]   
-401  Quake 4: Open-Source Engine Out    
-402  AMD: Mike Clark Details Zen 6      
-403  Nvidia: CEO Transition Announced   
+401  FAA: US Flights Halted Nationwide  
+402  LibreOffice: Dig at Cloud Outages  
+403  Nvidia: GPU Scarcity Allegations   
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 [200] Sec  [300] Retro  [400] HN  [999] 
@@ -22,88 +22,88 @@ AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P200  NERD-TEXT 200   12.11.26 15:28 UTC
+P200  NERD-TEXT 200   14.11.26 12:11 UTC
 ========================================
 CISA KEV & LINUX SECURITY (DSA/USN)     
 ========================================
-201  Outlook: Network Spoofing Flaw     
-     CISA added a zero-interaction flaw 
-     to its Known Exploited...          
-202  Webtop: Media Transcoder Flaw      
-     A resource transfer vulnerability  
-     enables authenticated users to...  
-203  BroadWorks: XXE Data Leak Bug      
-     An unauthenticated remote XXE flaw 
-     exposes sensitive server...        
-204  Debian: Apache2 Security Update    
-     Debian issued DSA 6620-1 to resolve
-     multiple security...               
-205  Ubuntu: Yodl Buffer Over-Read      
-     Canonical patched a buffer over-   
-     read vulnerability in Yodl...      
+201  UnrealIRCd: Command Injection      
+     CISA added an UnrealIRCd delimiter 
+     flaw to its KEV catalog. The bug...
+202  Check Point: Permission Flaw       
+     A critical permissions flaw hits   
+     multiple Check Point gateway and...
+203  Outlook: Remote Spoofing Bug       
+     CISA warns of an Outlook           
+     vulnerability stemming from...     
+204  Debian: Linux Kernel Patched       
+     Debian has issued DSA-6628-1 to    
+     address multiple security...       
+205  Ubuntu: FIPS Kernel Fixed          
+     Canonical released USN-9027-2 for  
+     Ubuntu FIPS kernels. The...        
 [100] Index      [201] Details     [300]
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P201  NERD-TEXT 201   12.11.26 15:28 UTC
+P201  NERD-TEXT 201   14.11.26 12:11 UTC
 ========================================
 SECURITY ADVISORY (1/5)                 
 ========================================
-> CVE-2026-124194                       
-  Outlook: Network Spoofing Flaw        
+> CVE-2026-114713                       
+  UnrealIRCd: Command Injection         
                                         
-  CISA added a zero-interaction flaw to 
-  its Known Exploited Vulnerabilities   
-  catalog. Remote unauthenticated       
-  attackers can spoof network actions to
-  compromise target systems without user
-  prompts.                              
+  CISA added an UnrealIRCd delimiter    
+  flaw to its KEV catalog. The bug      
+  enables users in linked multi-server  
+  setups to inject arbitrary server-to- 
+  server commands with elevated         
+  privileges without auth.              
                                         
-  CISA KEV | Added: 2026-11-10 | Due:   
-  2026-11-24                            
+  CISA KEV | Added: 2026-11-13 | Due:   
+  2026-11-16                            
 [100] Index  [200] Prev  [202] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P202  NERD-TEXT 202   12.11.26 15:28 UTC
+P202  NERD-TEXT 202   14.11.26 12:11 UTC
 ========================================
 SECURITY ADVISORY (2/5)                 
 ========================================
-> CVE-2026-111793                       
-  Webtop: Media Transcoder Flaw         
+> CVE-2026-123039                       
+  Check Point: Permission Flaw          
                                         
-  A resource transfer vulnerability     
-  enables authenticated users to convert
-  unauthorized documents and breach     
-  boundaries. CISA flags active         
-  exploitation, ordering federal patches
-  within two weeks.                     
+  A critical permissions flaw hits      
+  multiple Check Point gateway and      
+  management appliances. The bug permits
+  unauthorized resource tampering,      
+  prompting CISA to mandate remediation 
+  under catalog rules.                  
                                         
-  CISA KEV | Added: 2026-11-10 | Due:   
-  2026-11-24                            
+  CISA KEV | Added: 2026-11-13 | Due:   
+  2026-11-16                            
 [100] Index  [201] Prev  [203] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P203  NERD-TEXT 203   12.11.26 15:28 UTC
+P203  NERD-TEXT 203   14.11.26 12:11 UTC
 ========================================
 SECURITY ADVISORY (3/5)                 
 ========================================
-> CVE-2026-20320                        
-  BroadWorks: XXE Data Leak Bug         
+> CVE-2026-124194                       
+  Outlook: Remote Spoofing Bug          
                                         
-  An unauthenticated remote XXE flaw    
-  exposes sensitive server configuration
-  files on Cisco BroadWorks. CISA       
-  confirmed active exploitation,        
-  mandating remediation across federal  
-  systems by Nov 24.                    
+  CISA warns of an Outlook vulnerability
+  stemming from missing user interaction
+  checks. Remote attackers can conduct  
+  network-level spoofing attacks against
+  unpatched systems without operator    
+  consent.                              
                                         
   CISA KEV | Added: 2026-11-10 | Due:   
   2026-11-24                            
@@ -113,168 +113,170 @@ AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P204  NERD-TEXT 204   12.11.26 15:28 UTC
+P204  NERD-TEXT 204   14.11.26 12:11 UTC
 ========================================
 SECURITY ADVISORY (4/5)                 
 ========================================
 > DEBIAN DSA                            
-  Debian: Apache2 Security Update       
+  Debian: Linux Kernel Patched          
                                         
-  Debian issued DSA 6620-1 to resolve   
-  multiple security vulnerabilities     
-  within the Apache2 HTTP server suite. 
-  Administrators are urged to upgrade   
-  packages immediately to protect       
-  production servers.                   
+  Debian has issued DSA-6628-1 to       
+  address multiple security             
+  vulnerabilities across the Linux      
+  kernel. Upgrading installed linux     
+  packages is urgently advised to avert 
+  privilege escalation and crashes.     
                                         
-  Source: Debian DSA (2026-11-12)       
+  Source: Debian DSA (2026-11-13)       
 [100] Index  [203] Prev  [205] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P205  NERD-TEXT 205   12.11.26 15:28 UTC
+P205  NERD-TEXT 205   14.11.26 12:11 UTC
 ========================================
 SECURITY ADVISORY (5/5)                 
 ========================================
 > UBUNTU USN                            
-  Ubuntu: Yodl Buffer Over-Read         
+  Ubuntu: FIPS Kernel Fixed             
                                         
-  Canonical patched a buffer over-read  
-  vulnerability in Yodl. Specially      
-  crafted input could cause the document
-  pre-parser to crash, triggering       
-  denial-of-service conditions on       
-  impacted Ubuntu hosts.                
+  Canonical released USN-9027-2 for     
+  Ubuntu FIPS kernels. The maintenance  
+  update fixes several flaws that remote
+  or local attackers could exploit to   
+  compromise target nodes and escalate  
+  system rights.                        
                                         
-  Source: Ubuntu USN (Wed, 11 Nov 2026) 
+  Source: Ubuntu USN (Fri, 13 Nov 2026) 
 [100] Index  [204] Prev  [300] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P300  NERD-TEXT 300   12.11.26 15:28 UTC
+P300  NERD-TEXT 300   14.11.26 12:11 UTC
 ========================================
 RETRO GAMING, HANDHELDS & ROMHACKS      
 ========================================
-301  id Software: Ex-Devs Form Studio   
-     Veteran developers laid off by     
-     Microsoft have banded together...  
-302  Gunpei Yokoi: Legacy Reassessed    
-     Colleagues revisit the lateral     
-     thinking philosophy of the late... 
-303  PS2 Slim: M.2 SATA SSD Mod Debuts  
-     The M2 Slim hardware modification  
-     enables internal M.2 SATA...       
-304  RetroRGB: Weekly Roundup #539 Out  
-     Issue 539 recaps current CRT       
-     calibrations, scaler firmware...   
-305  RetroArch: Version 1.21.0 Launched 
-     The modular multi-system frontend  
-     rolls out its latest maintenance...
+301  Arcade Archives: Rezon Gets Port   
+     Hamster expands its Arcade Archives
+     2 lineup with a modern port of...  
+302  Digital Eclipse: Barbie Anthology  
+     Digital Eclipse is developing an   
+     interactive documentary...         
+303  Final Fight CD: Sega-CD OST Vinyl  
+     Mana Wave Media opens pre-orders   
+     for the Mega-CD score on vinyl...  
+304  SNK: KOF 96, 97 & 99 Vinyl Scores  
+     Mana Wave launches vinyl pre-orders
+     for King of Fighters 96, 97, and...
+305  RetroArch: Update 1.21.0 Released  
+     Libretro rolls out RetroArch       
+     1.21.0, delivering new frontend... 
 [100] Index      [301] Details     [400]
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P301  NERD-TEXT 301   12.11.26 15:28 UTC
+P301  NERD-TEXT 301   14.11.26 12:11 UTC
 ========================================
 RETRO LOG (1/5)                         
 ========================================
 > TIMEEXT                               
-  id Software: Ex-Devs Form Studio      
+  Arcade Archives: Rezon Gets Port      
                                         
-  Veteran developers laid off by        
-  Microsoft have banded together to     
-  found an independent game studio,     
-  aiming to preserve their classic      
-  shooter craft outside corporate       
-  ownership.                            
+  Hamster expands its Arcade Archives 2 
+  lineup with a modern port of the      
+  obscure coin-op shmup. The Gen 9 re-  
+  release brings authentic arcade       
+  emulation, display scaling, and dip-  
+  switch toggles.                       
                                         
-  Source: TimeExt (Thu, 12 Nov 2026)    
+  Source: TimeExt (Sat, 14 Nov 2026)    
 [100] Index  [300] Prev  [302] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P302  NERD-TEXT 302   12.11.26 15:28 UTC
+P302  NERD-TEXT 302   14.11.26 12:11 UTC
 ========================================
 RETRO LOG (2/5)                         
 ========================================
 > TIMEEXT                               
-  Gunpei Yokoi: Legacy Reassessed       
+  Digital Eclipse: Barbie Anthology     
                                         
-  Colleagues revisit the lateral        
-  thinking philosophy of the late Game  
-  Boy inventor and Game & Watch pioneer,
-  whose hardware design tenets still    
-  guide modern portable console         
-  creation.                             
+  Digital Eclipse is developing an      
+  interactive documentary collection    
+  spotlighting classic Barbie titles.   
+  The package pairs playable retro      
+  releases with archival design assets, 
+  interviews, and scans.                
                                         
-  Source: TimeExt (Thu, 12 Nov 2026)    
+  Source: TimeExt (Fri, 13 Nov 2026)    
 [100] Index  [301] Prev  [303] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P303  NERD-TEXT 303   12.11.26 15:28 UTC
+P303  NERD-TEXT 303   14.11.26 12:11 UTC
 ========================================
 RETRO LOG (3/5)                         
 ========================================
 > RETRORGB                              
-  PS2 Slim: M.2 SATA SSD Mod Debuts     
+  Final Fight CD: Sega-CD OST Vinyl     
                                         
-  The M2 Slim hardware modification     
-  enables internal M.2 SATA storage     
-  inside SCPH-700XX revision consoles,  
-  eliminating slow USB 1.1 bottlenecks  
-  for faster Open PS2 Loader playback.  
+  Mana Wave Media opens pre-orders for  
+  the Mega-CD score on vinyl. The       
+  release features remastered Red Book  
+  audio composed by Capcom legends      
+  including Yoko Shimomura, Junko       
+  Tamiya, and Harumi Fujita.            
                                         
-  Source: RetroRGB (Wed, 11 Nov 2026)   
+  Source: RetroRGB (Fri, 13 Nov 2026)   
 [100] Index  [302] Prev  [304] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P304  NERD-TEXT 304   12.11.26 15:28 UTC
+P304  NERD-TEXT 304   14.11.26 12:11 UTC
 ========================================
 RETRO LOG (4/5)                         
 ========================================
 > RETRORGB                              
-  RetroRGB: Weekly Roundup #539 Out     
+  SNK: KOF 96, 97 & 99 Vinyl Scores     
                                         
-  Issue 539 recaps current CRT          
-  calibrations, scaler firmware updates,
-  flash carts, and community hardware   
-  projects across video formats and all 
-  major audio streaming feeds.          
+  Mana Wave launches vinyl pre-orders   
+  for King of Fighters 96, 97, and 99.  
+  Each LP compiles SNK Neo Sound        
+  Orchestra arrangements, remastering   
+  original Neo Geo MVS and CD audio     
+  across three releases.                
                                         
-  Source: RetroRGB (Wed, 11 Nov 2026)   
+  Source: RetroRGB (Fri, 13 Nov 2026)   
 [100] Index  [303] Prev  [305] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P305  NERD-TEXT 305   12.11.26 15:28 UTC
+P305  NERD-TEXT 305   14.11.26 12:11 UTC
 ========================================
 RETRO LOG (5/5)                         
 ========================================
 > LIBRETRO                              
-  RetroArch: Version 1.21.0 Launched    
+  RetroArch: Update 1.21.0 Released     
                                         
-  The modular multi-system frontend     
-  rolls out its latest maintenance      
-  release, delivering core stability    
-  patches, input latency improvements,  
-  and updated shader pipeline           
-  compatibility.                        
+  Libretro rolls out RetroArch 1.21.0,  
+  delivering new frontend refinements,  
+  stability fixes, and updated emulation
+  cores. The update improves performance
+  across modern platforms and legacy    
+  port targets.                         
                                         
   Source: Libretro (Tue, 29 Apr 2025)   
 [100] Index  [304] Prev  [400] Next     
@@ -283,20 +285,20 @@ AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P400  NERD-TEXT 400   12.11.26 15:28 UTC
+P400  NERD-TEXT 400   14.11.26 12:11 UTC
 ========================================
   TOP 10 HACKER NEWS // FRONT PAGE      
 ========================================
-401  Quake 4: Open-Source Engine Out    
-402  AMD: Mike Clark Details Zen 6      
-403  Nvidia: CEO Transition Announced   
-404  Curry On: Software Correctness     
-405  Nvidia: Jensen Huang Steps Down    
-406  LibreAGI: Torrenting Open AI       
-407  Jane Street: LLM Dev Workflow      
-408  Nvidia: Stock Plunge Amid Exit     
-409  Jane Street: Socratic AI Tutor     
-410  Bootvine: Systemd Tree Visualizer  
+401  FAA: US Flights Halted Nationwide  
+402  LibreOffice: Dig at Cloud Outages  
+403  Nvidia: GPU Scarcity Allegations   
+404  AI: Gdel's Shorthand Decoded       
+405  Nvidia: $11.4M in GPUs Stolen      
+406  iPadOS: 16 Clicks for Class File   
+407  Jon Blow: AI Programming Debate    
+408  TUI: Zero-Width Terminal Borders   
+409  GGML: Tensor Library Hits v1.0     
+410  Airband: Live Multichannel Audio   
                                         
 ----------------------------------------
 [100] Index      [401] Story 1     [999]
@@ -305,219 +307,219 @@ AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P401  NERD-TEXT 401   12.11.26 15:28 UTC
+P401  NERD-TEXT 401   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (1/10)                    
 ========================================
-> HN #1 | moddb.com                     
-  Quake 4: Open-Source Engine Out       
+> HN #1 | nbcnews.com                   
+  FAA: US Flights Halted Nationwide     
                                         
-  The openQ4 project brings native      
-  modern OS support to the classic id   
-  Tech 4 shooter. Players gain          
-  widescreen scaling, high-refresh      
-  rates, and full Linux or Steam Deck   
-  compatibility.                        
+  The Federal Aviation Administration   
+  ordered a nationwide pause on         
+  departures following a systemwide     
+  automation outage, disrupting air     
+  travel across major carrier networks. 
                                         
-  47 pts | 16 comments | moddb.com      
+  1564 pts | 1187 comments | nbcnews.com
 [100] Index  [400] Prev  [402] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P402  NERD-TEXT 402   12.11.26 15:28 UTC
+P402  NERD-TEXT 402   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (2/10)                    
 ========================================
-> HN #2 | chipsandcheese.com            
-  AMD: Mike Clark Details Zen 6         
+> HN #2 | twitter.com                   
+  LibreOffice: Dig at Cloud Outages     
                                         
-  Chief architect Mike Clark unpacks    
-  design philosophies behind the        
-  upcoming microarchitecture, exploring 
-  execution width, cache layouts, and   
-  power scaling for next-generation     
-  silicon.                              
+  The open-source suite highlighted the 
+  reliability of local software over    
+  cloud ecosystems during widespread    
+  vendor disruptions, contrasting       
+  offline apps with fragile             
+  subscriptions.                        
                                         
-  39 pts | 0 comments |                 
-  chipsandcheese.com                    
+  892 pts | 276 comments | twitter.com  
 [100] Index  [401] Prev  [403] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P403  NERD-TEXT 403   12.11.26 15:28 UTC
+P403  NERD-TEXT 403   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (3/10)                    
 ========================================
-> HN #3 | nvidianews.nvidia.com         
-  Nvidia: CEO Transition Announced      
+> HN #3 | techpowerup.com               
+  Nvidia: GPU Scarcity Allegations      
                                         
-  The semiconductor giant confirms an   
-  immediate executive leadership        
-  handover following decades of market- 
-  defining GPU and AI hardware          
-  dominance, triggering massive industry
-  reaction.                             
+  Accusations claim the vendor fueled   
+  artificial hardware shortages and     
+  bolstered revenue by funding          
+  artificial intelligence startups that 
+  were bound to acquire its enterprise  
+  accelerators.                         
                                         
-  926 pts | 739 comments |              
-  nvidianews.nvidia.                    
+  670 pts | 388 comments |              
+  techpowerup.com                       
 [100] Index  [402] Prev  [404] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P404  NERD-TEXT 404   12.11.26 15:28 UTC
+P404  NERD-TEXT 404   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (4/10)                    
 ========================================
-> HN #4 | pron.github.io                
-  Curry On: Software Correctness        
+> HN #4 | theguardian.com               
+  AI: Gdel's Shorthand Decoded          
                                         
-  Ron Pressler examines the mathematical
-  limits and pragmatic realities of     
-  program verification, comparing formal
-  proofs against empirical testing      
-  models across complex distributed     
-  systems.                              
+  Machine learning models transcribed   
+  1,009 pages of Kurt Gdel's notes      
+  written in obsolete German shorthand, 
+  surfacing hundreds of previously      
+  inaccessible mathematical proofs and  
+  ideas.                                
                                         
-  208 pts | 90 comments | pron.github.io
+  396 pts | 101 comments |              
+  theguardian.com                       
 [100] Index  [403] Prev  [405] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P405  NERD-TEXT 405   12.11.26 15:28 UTC
+P405  NERD-TEXT 405   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (5/10)                    
 ========================================
-> HN #5 | reuters.com                   
-  Nvidia: Jensen Huang Steps Down       
+> HN #5 | freightwaves.com              
+  Nvidia: $11.4M in GPUs Stolen         
                                         
-  Jensen Huang has abruptly vacated his 
-  chief executive role at the chipmaker.
-  The immediate departure shocks global 
-  tech markets, prompting swift         
-  succession planning across the board. 
+  A commercial freight shipment carrying
+  11.4 million dollars in high-demand   
+  enterprise graphics hardware vanished 
+  in transit from California to Texas,  
+  prompting cargo theft investigations. 
                                         
-  282 pts | 148 comments | reuters.com  
+  358 pts | 194 comments |              
+  freightwaves.com                      
 [100] Index  [404] Prev  [406] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P406  NERD-TEXT 406   12.11.26 15:28 UTC
+P406  NERD-TEXT 406   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (6/10)                    
 ========================================
-> HN #6 | libreagi.com                  
-  LibreAGI: Torrenting Open AI          
+> HN #6 | reddit.com                    
+  iPadOS: 16 Clicks for Class File      
                                         
-  A decentralized BitTorrent tracker    
-  preserves vulnerable open-source      
-  artificial intelligence weights,      
-  ensuring research community access    
-  even if centralized host platforms    
-  delete them.                          
+  Classroom device deployments face     
+  criticism as complex authentication,  
+  nested cloud folders, and mobile      
+  sandboxing require students to        
+  complete 16 separate taps to launch a 
+  slide deck.                           
                                         
-  23 pts | 10 comments | libreagi.com   
+  352 pts | 193 comments | reddit.com   
 [100] Index  [405] Prev  [407] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P407  NERD-TEXT 407   12.11.26 15:28 UTC
+P407  NERD-TEXT 407   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (7/10)                    
 ========================================
-> HN #7 | blog.janestreet.com           
-  Jane Street: LLM Dev Workflow         
+> HN #7 | youtube.com                   
+  Jon Blow: AI Programming Debate       
                                         
-  The quantitative trading firm outlines
-  how engineering teams integrate large 
-  language models into internal         
-  development pipelines without         
-  sacrificing rigorous OCaml correctness
-  standards.                            
+  Game designer Jonathan Blow explores  
+  software architecture realities,      
+  arguing that LLMs merely replicate    
+  existing code patterns without        
+  understanding underlying systems      
+  engineering.                          
                                         
-  40 pts | 19 comments |                
-  blog.janestreet.co                    
+  323 pts | 427 comments | youtube.com  
 [100] Index  [406] Prev  [408] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P408  NERD-TEXT 408   12.11.26 15:28 UTC
+P408  NERD-TEXT 408   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (8/10)                    
 ========================================
-> HN #8 | bbc.co.uk                     
-  Nvidia: Stock Plunge Amid Exit        
+> HN #8 | joshka.net                    
+  TUI: Zero-Width Terminal Borders      
                                         
-  Shares tumble sharply following the   
-  sudden resignation of the firm's      
-  founding executive, as controversy and
-  national security allegations ignite  
-  intense scrutiny across global        
-  financial markets.                    
+  Developers explore rendering          
+  techniques that implement visual      
+  window separators and decorative      
+  frames without consuming valuable     
+  character cell coordinates in modern  
+  console interfaces.                   
                                         
-  140 pts | 73 comments | bbc.co.uk     
+  295 pts | 133 comments | joshka.net   
 [100] Index  [407] Prev  [409] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P409  NERD-TEXT 409   12.11.26 15:28 UTC
+P409  NERD-TEXT 409   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (9/10)                    
 ========================================
 > HN #9 | github.com                    
-  Jane Street: Socratic AI Tutor        
+  GGML: Tensor Library Hits v1.0        
                                         
-  An open agent specification guides    
-  autonomous models to teach complex    
-  concepts via targeted questioning,    
-  fostering deep conceptual             
-  understanding rather than merely      
-  emitting direct answers.              
+  The foundational C/C++ machine        
+  learning runtime powering llama.cpp   
+  reaches its official milestone,       
+  formalizing API stability, tensor     
+  operations, and optimized multi-      
+  platform execution.                   
                                         
-  489 pts | 112 comments | github.com   
+  295 pts | 46 comments | github.com    
 [100] Index  [408] Prev  [410] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P410  NERD-TEXT 410   12.11.26 15:28 UTC
+P410  NERD-TEXT 410   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (10/10)                   
 ========================================
-> HN #10 | codeberg.org                 
-  Bootvine: Systemd Tree Visualizer     
+> HN #10 | orcasairband.com             
+  Airband: Live Multichannel Audio      
                                         
-  A Linux boot visualization utility    
-  renders active systemd services as an 
-  evolving organic vine, transforming   
-  cryptic startup diagnostics into an   
-  intuitive, real-time graphical process
-  tree.                                 
+  An automated monitoring system streams
+  and transcribes simultaneous aviation 
+  VHF radio transmissions across        
+  multiple air traffic sectors,         
+  delivering real-time logs for radio   
+  enthusiasts.                          
                                         
-  234 pts | 93 comments | codeberg.org  
+  271 pts | 63 comments |               
+  orcasairband.com                      
 [100] Index  [409] Prev  [999] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
 
-P999  NERD-TEXT 999   12.11.26 15:28 UTC
+P999  NERD-TEXT 999   14.11.26 12:11 UTC
 ========================================
 ABOUT NERD-TEXT // ARCHITECTURE         
 ========================================
@@ -531,7 +533,7 @@ TERMINAL / CURL ACCESS:
   $ curl <host>/100.txt                 
   $ curl <host>/all.txt                 
                                         
-Last build: 12.11.26 15:28 UTC          
+Last build: 14.11.26 12:11 UTC          
 [100] Index   [200] Sec   [400] HN      
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

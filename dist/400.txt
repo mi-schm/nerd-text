@@ -1,17 +1,17 @@
-P400  NERD-TEXT 400   12.11.26 15:28 UTC
+P400  NERD-TEXT 400   14.11.26 12:11 UTC
 ========================================
   TOP 10 HACKER NEWS // FRONT PAGE      
 ========================================
-401  Quake 4: Open-Source Engine Out    
-402  AMD: Mike Clark Details Zen 6      
-403  Nvidia: CEO Transition Announced   
-404  Curry On: Software Correctness     
-405  Nvidia: Jensen Huang Steps Down    
-406  LibreAGI: Torrenting Open AI       
-407  Jane Street: LLM Dev Workflow      
-408  Nvidia: Stock Plunge Amid Exit     
-409  Jane Street: Socratic AI Tutor     
-410  Bootvine: Systemd Tree Visualizer  
+401  FAA: US Flights Halted Nationwide  
+402  LibreOffice: Dig at Cloud Outages  
+403  Nvidia: GPU Scarcity Allegations   
+404  AI: Gdel's Shorthand Decoded       
+405  Nvidia: $11.4M in GPUs Stolen      
+406  iPadOS: 16 Clicks for Class File   
+407  Jon Blow: AI Programming Debate    
+408  TUI: Zero-Width Terminal Borders   
+409  GGML: Tensor Library Hits v1.0     
+410  Airband: Live Multichannel Audio   
                                         
 ----------------------------------------
 [100] Index      [401] Story 1     [999]

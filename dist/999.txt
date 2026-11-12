@@ -1,4 +1,4 @@
-P999  NERD-TEXT 999   12.11.26 15:28 UTC
+P999  NERD-TEXT 999   14.11.26 12:11 UTC
 ========================================
 ABOUT NERD-TEXT // ARCHITECTURE         
 ========================================
@@ -12,7 +12,7 @@ TERMINAL / CURL ACCESS:
   $ curl <host>/100.txt                 
   $ curl <host>/all.txt                 
                                         
-Last build: 12.11.26 15:28 UTC          
+Last build: 14.11.26 12:11 UTC          
 [100] Index   [200] Sec   [400] HN      
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

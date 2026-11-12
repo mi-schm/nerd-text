@@ -1,19 +1,18 @@
-P402  NERD-TEXT 402   12.11.26 15:28 UTC
+P402  NERD-TEXT 402   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (2/10)                    
 ========================================
-> HN #2 | chipsandcheese.com            
-  AMD: Mike Clark Details Zen 6         
+> HN #2 | twitter.com                   
+  LibreOffice: Dig at Cloud Outages     
                                         
-  Chief architect Mike Clark unpacks    
-  design philosophies behind the        
-  upcoming microarchitecture, exploring 
-  execution width, cache layouts, and   
-  power scaling for next-generation     
-  silicon.                              
+  The open-source suite highlighted the 
+  reliability of local software over    
+  cloud ecosystems during widespread    
+  vendor disruptions, contrasting       
+  offline apps with fragile             
+  subscriptions.                        
                                         
-  39 pts | 0 comments |                 
-  chipsandcheese.com                    
+  892 pts | 276 comments | twitter.com  
 [100] Index  [401] Prev  [403] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

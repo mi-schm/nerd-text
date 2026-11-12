@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-12T15:28:39.581288+00:00",
+  "generated_utc": "2026-11-14T12:11:07.262117+00:00",
   "pages": {
     "100": {
       "title": "INDEX",
@@ -21,12 +21,12 @@
         {
           "t": "link",
           "p": "201",
-          "s": "201  Outlook: Network Spoofing Flaw"
+          "s": "201  UnrealIRCd: Command Injection"
         },
         {
           "t": "link",
           "p": "202",
-          "s": "202  Webtop: Media Transcoder Flaw"
+          "s": "202  Check Point: Permission Flaw"
         },
         {
           "t": "blank",
@@ -39,12 +39,12 @@
         {
           "t": "link",
           "p": "301",
-          "s": "301  id Software: Ex-Devs Form Studio"
+          "s": "301  Arcade Archives: Rezon Gets Port"
         },
         {
           "t": "link",
           "p": "302",
-          "s": "302  Gunpei Yokoi: Legacy Reassessed"
+          "s": "302  Digital Eclipse: Barbie Anthology"
         },
         {
           "t": "blank",
@@ -57,17 +57,17 @@
         {
           "t": "link",
           "p": "401",
-          "s": "401  Quake 4: Open-Source Engine Out"
+          "s": "401  FAA: US Flights Halted Nationwide"
         },
         {
           "t": "link",
           "p": "402",
-          "s": "402  AMD: Mike Clark Details Zen 6"
+          "s": "402  LibreOffice: Dig at Cloud Outages"
         },
         {
           "t": "link",
           "p": "403",
-          "s": "403  Nvidia: CEO Transition Announced"
+          "s": "403  Nvidia: GPU Scarcity Allegations"
         },
         {
           "t": "sep",
@@ -99,67 +99,67 @@
         {
           "t": "link",
           "p": "201",
-          "s": "201  Outlook: Network Spoofing Flaw"
+          "s": "201  UnrealIRCd: Command Injection"
         },
         {
           "t": "body",
-          "s": "     CISA added a zero-interaction flaw"
+          "s": "     CISA added an UnrealIRCd delimiter"
         },
         {
           "t": "body",
-          "s": "     to its Known Exploited..."
+          "s": "     flaw to its KEV catalog. The bug..."
         },
         {
           "t": "link",
           "p": "202",
-          "s": "202  Webtop: Media Transcoder Flaw"
+          "s": "202  Check Point: Permission Flaw"
         },
         {
           "t": "body",
-          "s": "     A resource transfer vulnerability"
+          "s": "     A critical permissions flaw hits"
         },
         {
           "t": "body",
-          "s": "     enables authenticated users to..."
+          "s": "     multiple Check Point gateway and..."
         },
         {
           "t": "link",
           "p": "203",
-          "s": "203  BroadWorks: XXE Data Leak Bug"
+          "s": "203  Outlook: Remote Spoofing Bug"
         },
         {
           "t": "body",
-          "s": "     An unauthenticated remote XXE flaw"
+          "s": "     CISA warns of an Outlook"
         },
         {
           "t": "body",
-          "s": "     exposes sensitive server..."
+          "s": "     vulnerability stemming from..."
         },
         {
           "t": "link",
           "p": "204",
-          "s": "204  Debian: Apache2 Security Update"
+          "s": "204  Debian: Linux Kernel Patched"
         },
         {
           "t": "body",
-          "s": "     Debian issued DSA 6620-1 to resolve"
+          "s": "     Debian has issued DSA-6628-1 to"
         },
         {
           "t": "body",
-          "s": "     multiple security..."
+          "s": "     address multiple security..."
         },
         {
           "t": "link",
           "p": "205",
-          "s": "205  Ubuntu: Yodl Buffer Over-Read"
+          "s": "205  Ubuntu: FIPS Kernel Fixed"
         },
         {
           "t": "body",
-          "s": "     Canonical patched a buffer over-"
+          "s": "     Canonical released USN-9027-2 for"
         },
         {
           "t": "body",
-          "s": "     read vulnerability in Yodl..."
+          "s": "     Ubuntu FIPS kernels. The..."
         },
         {
           "t": "nav",
@@ -168,7 +168,7 @@
       ]
     },
     "201": {
-      "title": "CVE-2026-124",
+      "title": "CVE-2026-114",
       "next": "202",
       "prev": "200",
       "lines": [
@@ -182,11 +182,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> CVE-2026-124194"
+          "s": "> CVE-2026-114713"
         },
         {
           "t": "sec_cyan",
-          "s": "  Outlook: Network Spoofing Flaw"
+          "s": "  UnrealIRCd: Command Injection"
         },
         {
           "t": "blank",
@@ -194,27 +194,27 @@
         },
         {
           "t": "body",
-          "s": "  CISA added a zero-interaction flaw to"
+          "s": "  CISA added an UnrealIRCd delimiter"
         },
         {
           "t": "body",
-          "s": "  its Known Exploited Vulnerabilities"
+          "s": "  flaw to its KEV catalog. The bug"
         },
         {
           "t": "body",
-          "s": "  catalog. Remote unauthenticated"
+          "s": "  enables users in linked multi-server"
         },
         {
           "t": "body",
-          "s": "  attackers can spoof network actions to"
+          "s": "  setups to inject arbitrary server-to-"
         },
         {
           "t": "body",
-          "s": "  compromise target systems without user"
+          "s": "  server commands with elevated"
         },
         {
           "t": "body",
-          "s": "  prompts."
+          "s": "  privileges without auth."
         },
         {
           "t": "blank",
@@ -222,11 +222,11 @@
         },
         {
           "t": "warn_red",
-          "s": "  CISA KEV | Added: 2026-11-10 | Due:"
+          "s": "  CISA KEV | Added: 2026-11-13 | Due:"
         },
         {
           "t": "warn_red",
-          "s": "  2026-11-24"
+          "s": "  2026-11-16"
         },
         {
           "t": "nav",
@@ -235,7 +235,7 @@
       ]
     },
     "202": {
-      "title": "CVE-2026-111",
+      "title": "CVE-2026-123",
       "next": "203",
       "prev": "201",
       "lines": [
@@ -249,11 +249,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> CVE-2026-111793"
+          "s": "> CVE-2026-123039"
         },
         {
           "t": "sec_cyan",
-          "s": "  Webtop: Media Transcoder Flaw"
+          "s": "  Check Point: Permission Flaw"
         },
         {
           "t": "blank",
@@ -261,27 +261,27 @@
         },
         {
           "t": "body",
-          "s": "  A resource transfer vulnerability"
+          "s": "  A critical permissions flaw hits"
         },
         {
           "t": "body",
-          "s": "  enables authenticated users to convert"
+          "s": "  multiple Check Point gateway and"
         },
         {
           "t": "body",
-          "s": "  unauthorized documents and breach"
+          "s": "  management appliances. The bug permits"
         },
         {
           "t": "body",
-          "s": "  boundaries. CISA flags active"
+          "s": "  unauthorized resource tampering,"
         },
         {
           "t": "body",
-          "s": "  exploitation, ordering federal patches"
+          "s": "  prompting CISA to mandate remediation"
         },
         {
           "t": "body",
-          "s": "  within two weeks."
+          "s": "  under catalog rules."
         },
         {
           "t": "blank",
@@ -289,11 +289,11 @@
         },
         {
           "t": "warn_red",
-          "s": "  CISA KEV | Added: 2026-11-10 | Due:"
+          "s": "  CISA KEV | Added: 2026-11-13 | Due:"
         },
         {
           "t": "warn_red",
-          "s": "  2026-11-24"
+          "s": "  2026-11-16"
         },
         {
           "t": "nav",
@@ -302,7 +302,7 @@
       ]
     },
     "203": {
-      "title": "CVE-2026-203",
+      "title": "CVE-2026-124",
       "next": "204",
       "prev": "202",
       "lines": [
@@ -316,11 +316,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> CVE-2026-20320"
+          "s": "> CVE-2026-124194"
         },
         {
           "t": "sec_cyan",
-          "s": "  BroadWorks: XXE Data Leak Bug"
+          "s": "  Outlook: Remote Spoofing Bug"
         },
         {
           "t": "blank",
@@ -328,27 +328,27 @@
         },
         {
           "t": "body",
-          "s": "  An unauthenticated remote XXE flaw"
+          "s": "  CISA warns of an Outlook vulnerability"
         },
         {
           "t": "body",
-          "s": "  exposes sensitive server configuration"
+          "s": "  stemming from missing user interaction"
         },
         {
           "t": "body",
-          "s": "  files on Cisco BroadWorks. CISA"
+          "s": "  checks. Remote attackers can conduct"
         },
         {
           "t": "body",
-          "s": "  confirmed active exploitation,"
+          "s": "  network-level spoofing attacks against"
         },
         {
           "t": "body",
-          "s": "  mandating remediation across federal"
+          "s": "  unpatched systems without operator"
         },
         {
           "t": "body",
-          "s": "  systems by Nov 24."
+          "s": "  consent."
         },
         {
           "t": "blank",
@@ -387,7 +387,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Debian: Apache2 Security Update"
+          "s": "  Debian: Linux Kernel Patched"
         },
         {
           "t": "blank",
@@ -395,27 +395,27 @@
         },
         {
           "t": "body",
-          "s": "  Debian issued DSA 6620-1 to resolve"
+          "s": "  Debian has issued DSA-6628-1 to"
         },
         {
           "t": "body",
-          "s": "  multiple security vulnerabilities"
+          "s": "  address multiple security"
         },
         {
           "t": "body",
-          "s": "  within the Apache2 HTTP server suite."
+          "s": "  vulnerabilities across the Linux"
         },
         {
           "t": "body",
-          "s": "  Administrators are urged to upgrade"
+          "s": "  kernel. Upgrading installed linux"
         },
         {
           "t": "body",
-          "s": "  packages immediately to protect"
+          "s": "  packages is urgently advised to avert"
         },
         {
           "t": "body",
-          "s": "  production servers."
+          "s": "  privilege escalation and crashes."
         },
         {
           "t": "blank",
@@ -423,7 +423,7 @@
         },
         {
           "t": "warn_red",
-          "s": "  Source: Debian DSA (2026-11-12)"
+          "s": "  Source: Debian DSA (2026-11-13)"
         },
         {
           "t": "nav",
@@ -450,7 +450,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Ubuntu: Yodl Buffer Over-Read"
+          "s": "  Ubuntu: FIPS Kernel Fixed"
         },
         {
           "t": "blank",
@@ -458,27 +458,27 @@
         },
         {
           "t": "body",
-          "s": "  Canonical patched a buffer over-read"
+          "s": "  Canonical released USN-9027-2 for"
         },
         {
           "t": "body",
-          "s": "  vulnerability in Yodl. Specially"
+          "s": "  Ubuntu FIPS kernels. The maintenance"
         },
         {
           "t": "body",
-          "s": "  crafted input could cause the document"
+          "s": "  update fixes several flaws that remote"
         },
         {
           "t": "body",
-          "s": "  pre-parser to crash, triggering"
+          "s": "  or local attackers could exploit to"
         },
         {
           "t": "body",
-          "s": "  denial-of-service conditions on"
+          "s": "  compromise target nodes and escalate"
         },
         {
           "t": "body",
-          "s": "  impacted Ubuntu hosts."
+          "s": "  system rights."
         },
         {
           "t": "blank",
@@ -486,7 +486,7 @@
         },
         {
           "t": "warn_red",
-          "s": "  Source: Ubuntu USN (Wed, 11 Nov 2026)"
+          "s": "  Source: Ubuntu USN (Fri, 13 Nov 2026)"
         },
         {
           "t": "nav",
@@ -510,67 +510,67 @@
         {
           "t": "link",
           "p": "301",
-          "s": "301  id Software: Ex-Devs Form Studio"
+          "s": "301  Arcade Archives: Rezon Gets Port"
         },
         {
           "t": "body",
-          "s": "     Veteran developers laid off by"
+          "s": "     Hamster expands its Arcade Archives"
         },
         {
           "t": "body",
-          "s": "     Microsoft have banded together..."
+          "s": "     2 lineup with a modern port of..."
         },
         {
           "t": "link",
           "p": "302",
-          "s": "302  Gunpei Yokoi: Legacy Reassessed"
+          "s": "302  Digital Eclipse: Barbie Anthology"
         },
         {
           "t": "body",
-          "s": "     Colleagues revisit the lateral"
+          "s": "     Digital Eclipse is developing an"
         },
         {
           "t": "body",
-          "s": "     thinking philosophy of the late..."
+          "s": "     interactive documentary..."
         },
         {
           "t": "link",
           "p": "303",
-          "s": "303  PS2 Slim: M.2 SATA SSD Mod Debuts"
+          "s": "303  Final Fight CD: Sega-CD OST Vinyl"
         },
         {
           "t": "body",
-          "s": "     The M2 Slim hardware modification"
+          "s": "     Mana Wave Media opens pre-orders"
         },
         {
           "t": "body",
-          "s": "     enables internal M.2 SATA..."
+          "s": "     for the Mega-CD score on vinyl..."
         },
         {
           "t": "link",
           "p": "304",
-          "s": "304  RetroRGB: Weekly Roundup #539 Out"
+          "s": "304  SNK: KOF 96, 97 & 99 Vinyl Scores"
         },
         {
           "t": "body",
-          "s": "     Issue 539 recaps current CRT"
+          "s": "     Mana Wave launches vinyl pre-orders"
         },
         {
           "t": "body",
-          "s": "     calibrations, scaler firmware..."
+          "s": "     for King of Fighters 96, 97, and..."
         },
         {
           "t": "link",
           "p": "305",
-          "s": "305  RetroArch: Version 1.21.0 Launched"
+          "s": "305  RetroArch: Update 1.21.0 Released"
         },
         {
           "t": "body",
-          "s": "     The modular multi-system frontend"
+          "s": "     Libretro rolls out RetroArch"
         },
         {
           "t": "body",
-          "s": "     rolls out its latest maintenance..."
+          "s": "     1.21.0, delivering new frontend..."
         },
         {
           "t": "nav",
@@ -597,7 +597,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  id Software: Ex-Devs Form Studio"
+          "s": "  Arcade Archives: Rezon Gets Port"
         },
         {
           "t": "blank",
@@ -605,27 +605,27 @@
         },
         {
           "t": "body",
-          "s": "  Veteran developers laid off by"
+          "s": "  Hamster expands its Arcade Archives 2"
         },
         {
           "t": "body",
-          "s": "  Microsoft have banded together to"
+          "s": "  lineup with a modern port of the"
         },
         {
           "t": "body",
-          "s": "  found an independent game studio,"
+          "s": "  obscure coin-op shmup. The Gen 9 re-"
         },
         {
           "t": "body",
-          "s": "  aiming to preserve their classic"
+          "s": "  release brings authentic arcade"
         },
         {
           "t": "body",
-          "s": "  shooter craft outside corporate"
+          "s": "  emulation, display scaling, and dip-"
         },
         {
           "t": "body",
-          "s": "  ownership."
+          "s": "  switch toggles."
         },
         {
           "t": "blank",
@@ -633,7 +633,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: TimeExt (Thu, 12 Nov 2026)"
+          "s": "  Source: TimeExt (Sat, 14 Nov 2026)"
         },
         {
           "t": "nav",
@@ -660,7 +660,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Gunpei Yokoi: Legacy Reassessed"
+          "s": "  Digital Eclipse: Barbie Anthology"
         },
         {
           "t": "blank",
@@ -668,27 +668,27 @@
         },
         {
           "t": "body",
-          "s": "  Colleagues revisit the lateral"
+          "s": "  Digital Eclipse is developing an"
         },
         {
           "t": "body",
-          "s": "  thinking philosophy of the late Game"
+          "s": "  interactive documentary collection"
         },
         {
           "t": "body",
-          "s": "  Boy inventor and Game & Watch pioneer,"
+          "s": "  spotlighting classic Barbie titles."
         },
         {
           "t": "body",
-          "s": "  whose hardware design tenets still"
+          "s": "  The package pairs playable retro"
         },
         {
           "t": "body",
-          "s": "  guide modern portable console"
+          "s": "  releases with archival design assets,"
         },
         {
           "t": "body",
-          "s": "  creation."
+          "s": "  interviews, and scans."
         },
         {
           "t": "blank",
@@ -696,7 +696,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: TimeExt (Thu, 12 Nov 2026)"
+          "s": "  Source: TimeExt (Fri, 13 Nov 2026)"
         },
         {
           "t": "nav",
@@ -723,7 +723,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  PS2 Slim: M.2 SATA SSD Mod Debuts"
+          "s": "  Final Fight CD: Sega-CD OST Vinyl"
         },
         {
           "t": "blank",
@@ -731,23 +731,27 @@
         },
         {
           "t": "body",
-          "s": "  The M2 Slim hardware modification"
+          "s": "  Mana Wave Media opens pre-orders for"
         },
         {
           "t": "body",
-          "s": "  enables internal M.2 SATA storage"
+          "s": "  the Mega-CD score on vinyl. The"
         },
         {
           "t": "body",
-          "s": "  inside SCPH-700XX revision consoles,"
+          "s": "  release features remastered Red Book"
         },
         {
           "t": "body",
-          "s": "  eliminating slow USB 1.1 bottlenecks"
+          "s": "  audio composed by Capcom legends"
         },
         {
           "t": "body",
-          "s": "  for faster Open PS2 Loader playback."
+          "s": "  including Yoko Shimomura, Junko"
+        },
+        {
+          "t": "body",
+          "s": "  Tamiya, and Harumi Fujita."
         },
         {
           "t": "blank",
@@ -755,7 +759,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: RetroRGB (Wed, 11 Nov 2026)"
+          "s": "  Source: RetroRGB (Fri, 13 Nov 2026)"
         },
         {
           "t": "nav",
@@ -782,7 +786,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  RetroRGB: Weekly Roundup #539 Out"
+          "s": "  SNK: KOF 96, 97 & 99 Vinyl Scores"
         },
         {
           "t": "blank",
@@ -790,23 +794,27 @@
         },
         {
           "t": "body",
-          "s": "  Issue 539 recaps current CRT"
+          "s": "  Mana Wave launches vinyl pre-orders"
         },
         {
           "t": "body",
-          "s": "  calibrations, scaler firmware updates,"
+          "s": "  for King of Fighters 96, 97, and 99."
         },
         {
           "t": "body",
-          "s": "  flash carts, and community hardware"
+          "s": "  Each LP compiles SNK Neo Sound"
         },
         {
           "t": "body",
-          "s": "  projects across video formats and all"
+          "s": "  Orchestra arrangements, remastering"
         },
         {
           "t": "body",
-          "s": "  major audio streaming feeds."
+          "s": "  original Neo Geo MVS and CD audio"
+        },
+        {
+          "t": "body",
+          "s": "  across three releases."
         },
         {
           "t": "blank",
@@ -814,7 +822,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: RetroRGB (Wed, 11 Nov 2026)"
+          "s": "  Source: RetroRGB (Fri, 13 Nov 2026)"
         },
         {
           "t": "nav",
@@ -841,7 +849,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  RetroArch: Version 1.21.0 Launched"
+          "s": "  RetroArch: Update 1.21.0 Released"
         },
         {
           "t": "blank",
@@ -849,27 +857,27 @@
         },
         {
           "t": "body",
-          "s": "  The modular multi-system frontend"
+          "s": "  Libretro rolls out RetroArch 1.21.0,"
         },
         {
           "t": "body",
-          "s": "  rolls out its latest maintenance"
+          "s": "  delivering new frontend refinements,"
         },
         {
           "t": "body",
-          "s": "  release, delivering core stability"
+          "s": "  stability fixes, and updated emulation"
         },
         {
           "t": "body",
-          "s": "  patches, input latency improvements,"
+          "s": "  cores. The update improves performance"
         },
         {
           "t": "body",
-          "s": "  and updated shader pipeline"
+          "s": "  across modern platforms and legacy"
         },
         {
           "t": "body",
-          "s": "  compatibility."
+          "s": "  port targets."
         },
         {
           "t": "blank",
@@ -901,52 +909,52 @@
         {
           "t": "link",
           "p": "401",
-          "s": "401  Quake 4: Open-Source Engine Out"
+          "s": "401  FAA: US Flights Halted Nationwide"
         },
         {
           "t": "link",
           "p": "402",
-          "s": "402  AMD: Mike Clark Details Zen 6"
+          "s": "402  LibreOffice: Dig at Cloud Outages"
         },
         {
           "t": "link",
           "p": "403",
-          "s": "403  Nvidia: CEO Transition Announced"
+          "s": "403  Nvidia: GPU Scarcity Allegations"
         },
         {
           "t": "link",
           "p": "404",
-          "s": "404  Curry On: Software Correctness"
+          "s": "404  AI: Gdel's Shorthand Decoded"
         },
         {
           "t": "link",
           "p": "405",
-          "s": "405  Nvidia: Jensen Huang Steps Down"
+          "s": "405  Nvidia: $11.4M in GPUs Stolen"
         },
         {
           "t": "link",
           "p": "406",
-          "s": "406  LibreAGI: Torrenting Open AI"
+          "s": "406  iPadOS: 16 Clicks for Class File"
         },
         {
           "t": "link",
           "p": "407",
-          "s": "407  Jane Street: LLM Dev Workflow"
+          "s": "407  Jon Blow: AI Programming Debate"
         },
         {
           "t": "link",
           "p": "408",
-          "s": "408  Nvidia: Stock Plunge Amid Exit"
+          "s": "408  TUI: Zero-Width Terminal Borders"
         },
         {
           "t": "link",
           "p": "409",
-          "s": "409  Jane Street: Socratic AI Tutor"
+          "s": "409  GGML: Tensor Library Hits v1.0"
         },
         {
           "t": "link",
           "p": "410",
-          "s": "410  Bootvine: Systemd Tree Visualizer"
+          "s": "410  Airband: Live Multichannel Audio"
         },
         {
           "t": "blank",
@@ -977,11 +985,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #1 | moddb.com"
+          "s": "> HN #1 | nbcnews.com"
         },
         {
           "t": "sec_cyan",
-          "s": "  Quake 4: Open-Source Engine Out"
+          "s": "  FAA: US Flights Halted Nationwide"
         },
         {
           "t": "blank",
@@ -989,27 +997,23 @@
         },
         {
           "t": "body",
-          "s": "  The openQ4 project brings native"
+          "s": "  The Federal Aviation Administration"
         },
         {
           "t": "body",
-          "s": "  modern OS support to the classic id"
+          "s": "  ordered a nationwide pause on"
         },
         {
           "t": "body",
-          "s": "  Tech 4 shooter. Players gain"
+          "s": "  departures following a systemwide"
         },
         {
           "t": "body",
-          "s": "  widescreen scaling, high-refresh"
+          "s": "  automation outage, disrupting air"
         },
         {
           "t": "body",
-          "s": "  rates, and full Linux or Steam Deck"
-        },
-        {
-          "t": "body",
-          "s": "  compatibility."
+          "s": "  travel across major carrier networks."
         },
         {
           "t": "blank",
@@ -1017,7 +1021,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  47 pts | 16 comments | moddb.com"
+          "s": "  1564 pts | 1187 comments | nbcnews.com"
         },
         {
           "t": "nav",
@@ -1040,11 +1044,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #2 | chipsandcheese.com"
+          "s": "> HN #2 | twitter.com"
         },
         {
           "t": "sec_cyan",
-          "s": "  AMD: Mike Clark Details Zen 6"
+          "s": "  LibreOffice: Dig at Cloud Outages"
         },
         {
           "t": "blank",
@@ -1052,27 +1056,27 @@
         },
         {
           "t": "body",
-          "s": "  Chief architect Mike Clark unpacks"
+          "s": "  The open-source suite highlighted the"
         },
         {
           "t": "body",
-          "s": "  design philosophies behind the"
+          "s": "  reliability of local software over"
         },
         {
           "t": "body",
-          "s": "  upcoming microarchitecture, exploring"
+          "s": "  cloud ecosystems during widespread"
         },
         {
           "t": "body",
-          "s": "  execution width, cache layouts, and"
+          "s": "  vendor disruptions, contrasting"
         },
         {
           "t": "body",
-          "s": "  power scaling for next-generation"
+          "s": "  offline apps with fragile"
         },
         {
           "t": "body",
-          "s": "  silicon."
+          "s": "  subscriptions."
         },
         {
           "t": "blank",
@@ -1080,11 +1084,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  39 pts | 0 comments |"
-        },
-        {
-          "t": "warn_grn",
-          "s": "  chipsandcheese.com"
+          "s": "  892 pts | 276 comments | twitter.com"
         },
         {
           "t": "nav",
@@ -1107,11 +1107,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #3 | nvidianews.nvidia.com"
+          "s": "> HN #3 | techpowerup.com"
         },
         {
           "t": "sec_cyan",
-          "s": "  Nvidia: CEO Transition Announced"
+          "s": "  Nvidia: GPU Scarcity Allegations"
         },
         {
           "t": "blank",
@@ -1119,27 +1119,27 @@
         },
         {
           "t": "body",
-          "s": "  The semiconductor giant confirms an"
+          "s": "  Accusations claim the vendor fueled"
         },
         {
           "t": "body",
-          "s": "  immediate executive leadership"
+          "s": "  artificial hardware shortages and"
         },
         {
           "t": "body",
-          "s": "  handover following decades of market-"
+          "s": "  bolstered revenue by funding"
         },
         {
           "t": "body",
-          "s": "  defining GPU and AI hardware"
+          "s": "  artificial intelligence startups that"
         },
         {
           "t": "body",
-          "s": "  dominance, triggering massive industry"
+          "s": "  were bound to acquire its enterprise"
         },
         {
           "t": "body",
-          "s": "  reaction."
+          "s": "  accelerators."
         },
         {
           "t": "blank",
@@ -1147,11 +1147,11 @@
         },
         {
           "t": "warn_grn",
-          "s": "  926 pts | 739 comments |"
+          "s": "  670 pts | 388 comments |"
         },
         {
           "t": "warn_grn",
-          "s": "  nvidianews.nvidia."
+          "s": "  techpowerup.com"
         },
         {
           "t": "nav",
@@ -1174,11 +1174,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #4 | pron.github.io"
+          "s": "> HN #4 | theguardian.com"
         },
         {
           "t": "sec_cyan",
-          "s": "  Curry On: Software Correctness"
+          "s": "  AI: Gdel's Shorthand Decoded"
         },
         {
           "t": "blank",
@@ -1186,27 +1186,27 @@
         },
         {
           "t": "body",
-          "s": "  Ron Pressler examines the mathematical"
+          "s": "  Machine learning models transcribed"
         },
         {
           "t": "body",
-          "s": "  limits and pragmatic realities of"
+          "s": "  1,009 pages of Kurt Gdel's notes"
         },
         {
           "t": "body",
-          "s": "  program verification, comparing formal"
+          "s": "  written in obsolete German shorthand,"
         },
         {
           "t": "body",
-          "s": "  proofs against empirical testing"
+          "s": "  surfacing hundreds of previously"
         },
         {
           "t": "body",
-          "s": "  models across complex distributed"
+          "s": "  inaccessible mathematical proofs and"
         },
         {
           "t": "body",
-          "s": "  systems."
+          "s": "  ideas."
         },
         {
           "t": "blank",
@@ -1214,7 +1214,11 @@
         },
         {
           "t": "warn_grn",
-          "s": "  208 pts | 90 comments | pron.github.io"
+          "s": "  396 pts | 101 comments |"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  theguardian.com"
         },
         {
           "t": "nav",
@@ -1237,11 +1241,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #5 | reuters.com"
+          "s": "> HN #5 | freightwaves.com"
         },
         {
           "t": "sec_cyan",
-          "s": "  Nvidia: Jensen Huang Steps Down"
+          "s": "  Nvidia: $11.4M in GPUs Stolen"
         },
         {
           "t": "blank",
@@ -1249,23 +1253,23 @@
         },
         {
           "t": "body",
-          "s": "  Jensen Huang has abruptly vacated his"
+          "s": "  A commercial freight shipment carrying"
         },
         {
           "t": "body",
-          "s": "  chief executive role at the chipmaker."
+          "s": "  11.4 million dollars in high-demand"
         },
         {
           "t": "body",
-          "s": "  The immediate departure shocks global"
+          "s": "  enterprise graphics hardware vanished"
         },
         {
           "t": "body",
-          "s": "  tech markets, prompting swift"
+          "s": "  in transit from California to Texas,"
         },
         {
           "t": "body",
-          "s": "  succession planning across the board."
+          "s": "  prompting cargo theft investigations."
         },
         {
           "t": "blank",
@@ -1273,7 +1277,11 @@
         },
         {
           "t": "warn_grn",
-          "s": "  282 pts | 148 comments | reuters.com"
+          "s": "  358 pts | 194 comments |"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  freightwaves.com"
         },
         {
           "t": "nav",
@@ -1296,11 +1304,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #6 | libreagi.com"
+          "s": "> HN #6 | reddit.com"
         },
         {
           "t": "sec_cyan",
-          "s": "  LibreAGI: Torrenting Open AI"
+          "s": "  iPadOS: 16 Clicks for Class File"
         },
         {
           "t": "blank",
@@ -1308,27 +1316,27 @@
         },
         {
           "t": "body",
-          "s": "  A decentralized BitTorrent tracker"
+          "s": "  Classroom device deployments face"
         },
         {
           "t": "body",
-          "s": "  preserves vulnerable open-source"
+          "s": "  criticism as complex authentication,"
         },
         {
           "t": "body",
-          "s": "  artificial intelligence weights,"
+          "s": "  nested cloud folders, and mobile"
         },
         {
           "t": "body",
-          "s": "  ensuring research community access"
+          "s": "  sandboxing require students to"
         },
         {
           "t": "body",
-          "s": "  even if centralized host platforms"
+          "s": "  complete 16 separate taps to launch a"
         },
         {
           "t": "body",
-          "s": "  delete them."
+          "s": "  slide deck."
         },
         {
           "t": "blank",
@@ -1336,7 +1344,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  23 pts | 10 comments | libreagi.com"
+          "s": "  352 pts | 193 comments | reddit.com"
         },
         {
           "t": "nav",
@@ -1359,11 +1367,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #7 | blog.janestreet.com"
+          "s": "> HN #7 | youtube.com"
         },
         {
           "t": "sec_cyan",
-          "s": "  Jane Street: LLM Dev Workflow"
+          "s": "  Jon Blow: AI Programming Debate"
         },
         {
           "t": "blank",
@@ -1371,27 +1379,27 @@
         },
         {
           "t": "body",
-          "s": "  The quantitative trading firm outlines"
+          "s": "  Game designer Jonathan Blow explores"
         },
         {
           "t": "body",
-          "s": "  how engineering teams integrate large"
+          "s": "  software architecture realities,"
         },
         {
           "t": "body",
-          "s": "  language models into internal"
+          "s": "  arguing that LLMs merely replicate"
         },
         {
           "t": "body",
-          "s": "  development pipelines without"
+          "s": "  existing code patterns without"
         },
         {
           "t": "body",
-          "s": "  sacrificing rigorous OCaml correctness"
+          "s": "  understanding underlying systems"
         },
         {
           "t": "body",
-          "s": "  standards."
+          "s": "  engineering."
         },
         {
           "t": "blank",
@@ -1399,11 +1407,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  40 pts | 19 comments |"
-        },
-        {
-          "t": "warn_grn",
-          "s": "  blog.janestreet.co"
+          "s": "  323 pts | 427 comments | youtube.com"
         },
         {
           "t": "nav",
@@ -1426,11 +1430,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #8 | bbc.co.uk"
+          "s": "> HN #8 | joshka.net"
         },
         {
           "t": "sec_cyan",
-          "s": "  Nvidia: Stock Plunge Amid Exit"
+          "s": "  TUI: Zero-Width Terminal Borders"
         },
         {
           "t": "blank",
@@ -1438,27 +1442,27 @@
         },
         {
           "t": "body",
-          "s": "  Shares tumble sharply following the"
+          "s": "  Developers explore rendering"
         },
         {
           "t": "body",
-          "s": "  sudden resignation of the firm's"
+          "s": "  techniques that implement visual"
         },
         {
           "t": "body",
-          "s": "  founding executive, as controversy and"
+          "s": "  window separators and decorative"
         },
         {
           "t": "body",
-          "s": "  national security allegations ignite"
+          "s": "  frames without consuming valuable"
         },
         {
           "t": "body",
-          "s": "  intense scrutiny across global"
+          "s": "  character cell coordinates in modern"
         },
         {
           "t": "body",
-          "s": "  financial markets."
+          "s": "  console interfaces."
         },
         {
           "t": "blank",
@@ -1466,7 +1470,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  140 pts | 73 comments | bbc.co.uk"
+          "s": "  295 pts | 133 comments | joshka.net"
         },
         {
           "t": "nav",
@@ -1493,7 +1497,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Jane Street: Socratic AI Tutor"
+          "s": "  GGML: Tensor Library Hits v1.0"
         },
         {
           "t": "blank",
@@ -1501,27 +1505,27 @@
         },
         {
           "t": "body",
-          "s": "  An open agent specification guides"
+          "s": "  The foundational C/C++ machine"
         },
         {
           "t": "body",
-          "s": "  autonomous models to teach complex"
+          "s": "  learning runtime powering llama.cpp"
         },
         {
           "t": "body",
-          "s": "  concepts via targeted questioning,"
+          "s": "  reaches its official milestone,"
         },
         {
           "t": "body",
-          "s": "  fostering deep conceptual"
+          "s": "  formalizing API stability, tensor"
         },
         {
           "t": "body",
-          "s": "  understanding rather than merely"
+          "s": "  operations, and optimized multi-"
         },
         {
           "t": "body",
-          "s": "  emitting direct answers."
+          "s": "  platform execution."
         },
         {
           "t": "blank",
@@ -1529,7 +1533,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  489 pts | 112 comments | github.com"
+          "s": "  295 pts | 46 comments | github.com"
         },
         {
           "t": "nav",
@@ -1552,11 +1556,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> HN #10 | codeberg.org"
+          "s": "> HN #10 | orcasairband.com"
         },
         {
           "t": "sec_cyan",
-          "s": "  Bootvine: Systemd Tree Visualizer"
+          "s": "  Airband: Live Multichannel Audio"
         },
         {
           "t": "blank",
@@ -1564,27 +1568,27 @@
         },
         {
           "t": "body",
-          "s": "  A Linux boot visualization utility"
+          "s": "  An automated monitoring system streams"
         },
         {
           "t": "body",
-          "s": "  renders active systemd services as an"
+          "s": "  and transcribes simultaneous aviation"
         },
         {
           "t": "body",
-          "s": "  evolving organic vine, transforming"
+          "s": "  VHF radio transmissions across"
         },
         {
           "t": "body",
-          "s": "  cryptic startup diagnostics into an"
+          "s": "  multiple air traffic sectors,"
         },
         {
           "t": "body",
-          "s": "  intuitive, real-time graphical process"
+          "s": "  delivering real-time logs for radio"
         },
         {
           "t": "body",
-          "s": "  tree."
+          "s": "  enthusiasts."
         },
         {
           "t": "blank",
@@ -1592,7 +1596,11 @@
         },
         {
           "t": "warn_grn",
-          "s": "  234 pts | 93 comments | codeberg.org"
+          "s": "  271 pts | 63 comments |"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  orcasairband.com"
         },
         {
           "t": "nav",
@@ -1655,7 +1663,7 @@
         },
         {
           "t": "body",
-          "s": "Last build: 12.11.26 15:28 UTC"
+          "s": "Last build: 14.11.26 12:11 UTC"
         },
         {
           "t": "nav",

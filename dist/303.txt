@@ -1,17 +1,18 @@
-P303  NERD-TEXT 303   12.11.26 15:28 UTC
+P303  NERD-TEXT 303   14.11.26 12:11 UTC
 ========================================
 RETRO LOG (3/5)                         
 ========================================
 > RETRORGB                              
-  PS2 Slim: M.2 SATA SSD Mod Debuts     
+  Final Fight CD: Sega-CD OST Vinyl     
                                         
-  The M2 Slim hardware modification     
-  enables internal M.2 SATA storage     
-  inside SCPH-700XX revision consoles,  
-  eliminating slow USB 1.1 bottlenecks  
-  for faster Open PS2 Loader playback.  
+  Mana Wave Media opens pre-orders for  
+  the Mega-CD score on vinyl. The       
+  release features remastered Red Book  
+  audio composed by Capcom legends      
+  including Yoko Shimomura, Junko       
+  Tamiya, and Harumi Fujita.            
                                         
-  Source: RetroRGB (Wed, 11 Nov 2026)   
+  Source: RetroRGB (Fri, 13 Nov 2026)   
 [100] Index  [302] Prev  [304] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne

@@ -1,19 +1,19 @@
-P403  NERD-TEXT 403   12.11.26 15:28 UTC
+P403  NERD-TEXT 403   14.11.26 12:11 UTC
 ========================================
   HACKER NEWS (3/10)                    
 ========================================
-> HN #3 | nvidianews.nvidia.com         
-  Nvidia: CEO Transition Announced      
+> HN #3 | techpowerup.com               
+  Nvidia: GPU Scarcity Allegations      
                                         
-  The semiconductor giant confirms an   
-  immediate executive leadership        
-  handover following decades of market- 
-  defining GPU and AI hardware          
-  dominance, triggering massive industry
-  reaction.                             
+  Accusations claim the vendor fueled   
+  artificial hardware shortages and     
+  bolstered revenue by funding          
+  artificial intelligence startups that 
+  were bound to acquire its enterprise  
+  accelerators.                         
                                         
-  926 pts | 739 comments |              
-  nvidianews.nvidia.                    
+  670 pts | 388 comments |              
+  techpowerup.com                       
 [100] Index  [402] Prev  [404] Next     
 ----------------------------------------
 AD: Your 40-char link -> ads@nerdtext.ne
