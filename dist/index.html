@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>NERD-TEXT 100 // Zero-Bloat Teletext</title>
+  <style>
+    :root {
+      --tt-black: #000000;
+      --tt-red: #ff2a2a;
+      --tt-green: #00e640;
+      --tt-yellow: #ffe600;
+      --tt-blue: #1e40ff;
+      --tt-magenta: #ff2ae6;
+      --tt-cyan: #00f0ff;
+      --tt-white: #f2f2f2;
+      --tt-dim: #777777;
+      --font-mono: "Courier New", Courier, "Lucida Console", Monaco, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0b0b0c;
+      color: var(--tt-white);
+      font-family: var(--font-mono);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 12px 8px 24px;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .top-bar {
+      width: 100%;
+      max-width: 640px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 12px;
+      color: var(--tt-dim);
+      gap: 8px;
+    }
+
+    .top-bar-controls {
+      display: flex;
+      gap: 6px;
+    }
+
+    .pill-btn {
+      background: #18181b;
+      color: var(--tt-cyan);
+      border: 1px solid #333;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 4px 8px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .pill-btn:hover {
+      background: #252529;
+    }
+
+    .pill-btn.active {
+      background: var(--tt-cyan);
+      color: var(--tt-black);
+      font-weight: bold;
+    }
+
+    .crt-frame {
+      position: relative;
+      width: 100%;
+      max-width: 640px;
+      background-color: var(--tt-black);
+      border: 3px solid #26262a;
+      box-shadow: 0 0 28px rgba(0, 240, 255, 0.08);
+      padding: 12px 10px;
+      overflow: hidden;
+    }
+
+    .crt-frame.scanlines::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%,
+        rgba(0, 0, 0, 0.38) 50%
+      );
+      background-size: 100% 4px;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .screen {
+      width: 100%;
+      font-size: clamp(11.5px, 3.65vw, 22px);
+      line-height: 1.28;
+      letter-spacing: 0.02em;
+      white-space: pre;
+      overflow-x: hidden;
+    }
+
+    .tt-header {
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--tt-black);
+      color: var(--tt-white);
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    .tt-header .pg-input {
+      color: var(--tt-yellow);
+    }
+
+    .tt-header .clock {
+      color: var(--tt-cyan);
+    }
+
+    .line {
+      min-height: 1.28em;
+      display: block;
+    }
+
+    .c-white { color: var(--tt-white); }
+    .c-yellow { color: var(--tt-yellow); }
+    .c-cyan { color: var(--tt-cyan); }
+    .c-green { color: var(--tt-green); }
+    .c-red { color: var(--tt-red); }
+    .c-magenta { color: var(--tt-magenta); }
+    .c-dim { color: var(--tt-dim); }
+
+    .bg-blue {
+      background-color: var(--tt-blue);
+      color: var(--tt-white);
+      font-weight: bold;
+    }
+
+    .bg-red {
+      background-color: var(--tt-red);
+      color: var(--tt-white);
+      font-weight: bold;
+    }
+
+    .bg-green {
+      background-color: var(--tt-green);
+      color: var(--tt-black);
+      font-weight: bold;
+    }
+
+    .bg-magenta {
+      background-color: var(--tt-magenta);
+      color: var(--tt-black);
+      font-weight: bold;
+    }
+
+    .bg-yellow {
+      background-color: var(--tt-yellow);
+      color: var(--tt-black);
+      font-weight: bold;
+    }
+
+    .pg-link {
+      color: var(--tt-yellow);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .pg-link:hover {
+      background-color: var(--tt-yellow);
+      color: var(--tt-black);
+      text-decoration: none;
+    }
+
+    .fastext {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4px;
+      margin-top: 8px;
+      padding-top: 6px;
+      border-top: 1px dashed #333;
+    }
+
+    .ft-btn {
+      border: none;
+      font-family: var(--font-mono);
+      font-weight: bold;
+      font-size: clamp(11px, 3.2vw, 15px);
+      padding: 6px 2px;
+      cursor: pointer;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .ft-red { background: var(--tt-red); color: var(--tt-white); }
+    .ft-green { background: var(--tt-green); color: var(--tt-black); }
+    .ft-yellow { background: var(--tt-yellow); color: var(--tt-black); }
+    .ft-cyan { background: var(--tt-cyan); color: var(--tt-black); }
+
+    .keypad-wrap {
+      width: 100%;
+      max-width: 640px;
+      margin-top: 12px;
+      background: #121215;
+      border: 1px solid #26262a;
+      padding: 10px;
+    }
+
+    .keypad-hint {
+      font-size: 11px;
+      color: var(--tt-dim);
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .keypad {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 6px;
+    }
+
+    .kp-btn {
+      background: #1d1d22;
+      color: var(--tt-white);
+      border: 1px solid #34343b;
+      font-family: var(--font-mono);
+      font-size: 15px;
+      font-weight: bold;
+      padding: 10px 0;
+      cursor: pointer;
+    }
+
+    .kp-btn:active {
+      background: var(--tt-yellow);
+      color: var(--tt-black);
+    }
+
+    .kp-nav {
+      color: var(--tt-cyan);
+    }
+
+    .raw-box {
+      display: none;
+      width: 100%;
+      max-width: 640px;
+      margin-top: 10px;
+      background: #050505;
+      border: 1px solid #333;
+      padding: 10px;
+      font-size: 12px;
+      color: var(--tt-green);
+      white-space: pre;
+      overflow-x: auto;
+    }
+
+    .raw-box.visible {
+      display: block;
+    }
+
+    .raw-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+      color: var(--tt-dim);
+      font-size: 11px;
+    }
+
+    @media (max-width: 480px) {
+      .keypad {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <span id="status-label">NERD-TEXT // 40x24 GRID</span>
+    <div class="top-bar-controls">
+      <button class="pill-btn active" id="btn-crt" onclick="toggleScanlines()">CRT: ON</button>
+      <button class="pill-btn" id="btn-raw" onclick="toggleRaw()">RAW TXT</button>
+    </div>
+  </div>
+
+  <div class="crt-frame scanlines" id="crt-frame">
+    <div class="screen" id="screen">
+      <div class="tt-header">
+        <span class="pg-input" id="hdr-pg">P100</span>
+        <span id="hdr-title">NERD-TEXT 100</span>
+        <span class="clock" id="hdr-clock">--.--.-- --:--</span>
+      </div>
+      <div id="screen-body"></div>
+      <div class="fastext">
+        <button class="ft-btn ft-red" onclick="goPage('100')">100 INDEX</button>
+        <button class="ft-btn ft-green" onclick="goPage('200')">200 CVEs</button>
+        <button class="ft-btn ft-yellow" onclick="goPage('300')">300 GAMES</button>
+        <button class="ft-btn ft-cyan" onclick="goPage('999')">999 INFO</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="raw-box" id="raw-box">
+    <div class="raw-header">
+      <span id="raw-cmd">$ curl https://nerdtext.io/100</span>
+      <button class="pill-btn" onclick="copyRaw()">COPY</button>
+    </div>
+    <div id="raw-content"></div>
+  </div>
+
+  <div class="keypad-wrap">
+    <div class="keypad-hint">
+      <span>TYPE 3 DIGITS OR ARROWS</span>
+      <span>SWIPE LEFT/RIGHT</span>
+    </div>
+    <div class="keypad">
+      <button class="kp-btn" onclick="pressDigit('1')">1</button>
+      <button class="kp-btn" onclick="pressDigit('2')">2</button>
+      <button class="kp-btn" onclick="pressDigit('3')">3</button>
+      <button class="kp-btn" onclick="pressDigit('4')">4</button>
+      <button class="kp-btn" onclick="pressDigit('5')">5</button>
+      <button class="kp-btn kp-nav" onclick="prevPage()">PREV</button>
+      <button class="kp-btn" onclick="pressDigit('6')">6</button>
+      <button class="kp-btn" onclick="pressDigit('7')">7</button>
+      <button class="kp-btn" onclick="pressDigit('8')">8</button>
+      <button class="kp-btn" onclick="pressDigit('9')">9</button>
+      <button class="kp-btn" onclick="pressDigit('0')">0</button>
+      <button class="kp-btn kp-nav" onclick="nextPage()">NEXT</button>
+    </div>
+  </div>
+
+  <script>
+    const FALLBACK_PAGES = {
+      "100": {
+        title: "INDEX",
+        next: "200",
+        prev: "999",
+        lines: [
+          { t: "banner", s: "  NERD-TEXT // ZERO-BLOAT TELETEXT    " },
+          { t: "sep", s: "========================================" },
+          { t: "sec_cyan", s: "SECURITY & CVEs (FROM PAGE 200)" },
+          { t: "link", p: "201", s: "201  OpenSSH auth-bypass exploited ITW" },
+          { t: "link", p: "202", s: "202  Barracuda ESG: KEV deadline looms" },
+          { t: "link", p: "203", s: "203  Chrome Use-After-Free (CVE-125350)" },
+          { t: "blank", s: "" },
+          { t: "sec_green", s: "NERD GAMES & ROGUELIKES (FROM 300)" },
+          { t: "link", p: "301", s: "301  Dwarf Fortress: Magic update in Nov" },
+          { t: "link", p: "302", s: "302  NetHack 5.0: Lua overhaul & balance" },
+          { t: "link", p: "303", s: "303  Caves of Qud: Modding API patch" },
+          { t: "blank", s: "" },
+          { t: "sep", s: "----------------------------------------" },
+          { t: "nav", s: "[200] Security   [300] Games   [999] Info" }
+        ]
+      },
+      "200": {
+        title: "SECURITY",
+        next: "201",
+        prev: "100",
+        lines: [
+          { t: "hdr_red", s: "SECURITY & CISA KEV OVERVIEW" },
+          { t: "sep", s: "========================================" },
+          { t: "link", p: "201", s: "201  CVE-2026-123158: OpenSSH Auth" },
+          { t: "body", s: "     Flawed status code on Linux." },
+          { t: "link", p: "202", s: "202  CVE-2026-116606: Barracuda ESG" },
+          { t: "body", s: "     Chained root exploit in the wild." },
+          { t: "link", p: "203", s: "203  CVE-2026-125350: Chromium UAF" },
+          { t: "body", s: "     Active exploitation confirmed." },
+          { t: "blank", s: "" },
+          { t: "nav", s: "[100] Index      [201] Details     [300]" }
+        ]
+      },
+      "201": {
+        title: "CVE-123158",
+        next: "202",
+        prev: "200",
+        lines: [
+          { t: "hdr_red", s: "CVE DETAIL (1/3)" },
+          { t: "sep", s: "========================================" },
+          { t: "item_yel", s: "> CVE-2026-123158" },
+          { t: "sec_cyan", s: "  OpenBSD OpenSSH: Auth Bypass" },
+          { t: "blank", s: "" },
+          { t: "body", s: "  Flawed status code handling on Linux" },
+          { t: "body", s: "  allows remote authentication bypass" },
+          { t: "body", s: "  under non-default configurations." },
+          { t: "blank", s: "" },
+          { t: "warn_red", s: "  CVSS 8.1 | Patch immediately!" },
+          { t: "nav", s: "[100] Index  [200] Prev  [202] Next" }
+        ]
+      },
+      "300": {
+        title: "NERD GAMES",
+        next: "301",
+        prev: "200",
+        lines: [
+          { t: "hdr_grn", s: "ROGUELIKES & SYSTEM-DRIVEN GAMES" },
+          { t: "sep", s: "========================================" },
+          { t: "link", p: "301", s: "301  Dwarf Fortress: Myth & Magic" },
+          { t: "body", s: "     20th anniversary magic overhaul." },
+          { t: "link", p: "302", s: "302  NetHack 5.0.0: Lua Compiler" },
+          { t: "body", s: "     Replaces yacc/lex; Valkyrie nerfed." },
+          { t: "blank", s: "" },
+          { t: "nav", s: "[100] Index      [301] Details     [999]" }
+        ]
+      },
+      "301": {
+        title: "DWARF FORT",
+        next: "302",
+        prev: "300",
+        lines: [
+          { t: "hdr_grn", s: "GAME LOG (1/2)" },
+          { t: "sep", s: "========================================" },
+          { t: "item_yel", s: "> DWARF FORTRESS" },
+          { t: "sec_cyan", s: "  Myth & Magic System Preview" },
+          { t: "blank", s: "" },
+          { t: "body", s: "  Marking its 20th anniversary, the" },
+          { t: "body", s: "  procedural magic system hits PC." },
+          { t: "body", s: "  Pre-patch fixes tavern book thieves." },
+          { t: "blank", s: "" },
+          { t: "warn_grn", s: "  Source: Bay 12 Dev Log" },
+          { t: "nav", s: "[100] Index  [300] Prev  [302] Next" }
+        ]
+      },
+      "999": {
+        title: "INFO",
+        next: "100",
+        prev: "300",
+        lines: [
+          { t: "hdr_mag", s: "ABOUT NERD-TEXT // ARCHITECTURE" },
+          { t: "sep", s: "=" * 40 },
+          { t: "body", s: "Zero ads. Zero tracking. Finite pages." },
+          { t: "body", s: "Built for instant loading on weak" },
+          { t: "body", s: "mobile links and terminal workflows." },
+          { t: "blank", s: "" },
+          { t: "sec_cyan", s: "TERMINAL / CURL ACCESS:" },
+          { t: "item_yel", s: "  $ curl https://nerdtext.io/100" },
+          { t: "item_yel", s: "  $ curl https://nerdtext.io/201" },
+          { t: "blank", s: "" },
+          { t: "body", s: "Mode: Local Demo Fallback" },
+          { t: "nav", s: "[100] Index   [200] Sec   [300] Games" }
+        ]
+      }
+    };
+
+    let PAGES = FALLBACK_PAGES;
+    let buildStamp = "";
+    let currentPage = "100";
+    let digitBuffer = "";
+    let digitTimeout = null;
+    let rawVisible = false;
+
+    const TYPE_CLASS = {
+      banner: "bg-blue",
+      hdr_red: "bg-red",
+      hdr_grn: "bg-green",
+      hdr_mag: "bg-magenta",
+      sec_cyan: "c-cyan",
+      sec_green: "c-green",
+      item_yel: "c-yellow",
+      warn_red: "c-red",
+      warn_grn: "c-green",
+      sep: "c-dim",
+      nav: "c-cyan",
+      body: "c-white",
+      link: "c-white",
+      blank: "c-white"
+    };
+
+    function detectInitialPage() {
+      const hashMatch = window.location.hash.match(/^#([0-9]{3})$/);
+      if (hashMatch && PAGES[hashMatch[1]]) return hashMatch[1];
+
+      const pathMatch = window.location.pathname.match(/\/([0-9]{3})(?:\.html)?$/);
+      if (pathMatch && PAGES[pathMatch[1]]) return pathMatch[1];
+
+      return "100";
+    }
+
+    function linkifyText(text) {
+      const escaped = text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+      return escaped.replace(/\b([1-9][0-9]{2})\b/g, (match) => {
+        if (PAGES[match]) {
+          return `<span class="pg-link" onclick="goPage('${match}')">${match}</span>`;
+        }
+        return match;
+      });
+    }
+
+    function renderPage(pg) {
+      const data = PAGES[pg];
+      if (!data) {
+        document.getElementById("hdr-pg").textContent = `P${pg}?`;
+        setTimeout(() => {
+          document.getElementById("hdr-pg").textContent = `P${currentPage}`;
+        }, 700);
+        return;
+      }
+
+      currentPage = pg;
+      digitBuffer = "";
+
+      try {
+        window.history.replaceState(null, "", `#${pg}`);
+      } catch (_) {}
+
+      document.getElementById("hdr-pg").textContent = `P${pg}`;
+      document.getElementById("hdr-title").textContent = `NERD-TEXT ${pg}`;
+
+      const bodyEl = document.getElementById("screen-body");
+      bodyEl.innerHTML = "";
+
+      data.lines.forEach((line) => {
+        const div = document.createElement("div");
+        div.className = `line ${TYPE_CLASS[line.t] || "c-white"}`;
+        if (line.t === "blank") {
+          div.innerHTML = "&nbsp;";
+        } else if (line.t === "link" && line.p) {
+          div.innerHTML = linkifyText(line.s);
+          div.style.cursor = "pointer";
+          div.onclick = () => goPage(line.p);
+        } else {
+          div.innerHTML = linkifyText(line.s);
+        }
+        bodyEl.appendChild(div);
+      });
+
+      updateRawBox();
+    }
+
+    function goPage(pg) {
+      renderPage(String(pg));
+    }
+
+    function nextPage() {
+      const keys = Object.keys(PAGES).sort();
+      const cur = PAGES[currentPage];
+      if (cur && cur.next && PAGES[cur.next]) {
+        goPage(cur.next);
+        return;
+      }
+      const idx = keys.indexOf(currentPage);
+      goPage(keys[(idx + 1) % keys.length]);
+    }
+
+    function prevPage() {
+      const keys = Object.keys(PAGES).sort();
+      const cur = PAGES[currentPage];
+      if (cur && cur.prev && PAGES[cur.prev]) {
+        goPage(cur.prev);
+        return;
+      }
+      const idx = keys.indexOf(currentPage);
+      goPage(keys[(idx - 1 + keys.length) % keys.length]);
+    }
+
+    function pressDigit(d) {
+      clearTimeout(digitTimeout);
+      digitBuffer += d;
+      const display = (digitBuffer + "---").slice(0, 3);
+      document.getElementById("hdr-pg").textContent = `P${display}`;
+
+      if (digitBuffer.length === 3) {
+        const target = digitBuffer;
+        digitBuffer = "";
+        setTimeout(() => goPage(target), 90);
+      } else {
+        digitTimeout = setTimeout(() => {
+          digitBuffer = "";
+          document.getElementById("hdr-pg").textContent = `P${currentPage}`;
+        }, 1800);
+      }
+    }
+
+    function updateClock() {
+      const now = new Date();
+      const dd = String(now.getDate()).padStart(2, "0");
+      const mm = String(now.getMonth() + 1).padStart(2, "0");
+      const yy = String(now.getFullYear()).slice(-2);
+      const hh = String(now.getHours()).padStart(2, "0");
+      const min = String(now.getMinutes()).padStart(2, "0");
+      const ss = String(now.getSeconds()).padStart(2, "0");
+      document.getElementById("hdr-clock").textContent = `${dd}.${mm}.${yy} ${hh}:${min}:${ss}`;
+    }
+
+    function toggleScanlines() {
+      const frame = document.getElementById("crt-frame");
+      const btn = document.getElementById("btn-crt");
+      frame.classList.toggle("scanlines");
+      const isOn = frame.classList.contains("scanlines");
+      btn.classList.toggle("active", isOn);
+      btn.textContent = isOn ? "CRT: ON" : "CRT: OFF";
+    }
+
+    function toggleRaw() {
+      rawVisible = !rawVisible;
+      document.getElementById("raw-box").classList.toggle("visible", rawVisible);
+      document.getElementById("btn-raw").classList.toggle("active", rawVisible);
+      updateRawBox();
+    }
+
+    function updateRawBox() {
+      if (!rawVisible) return;
+      const data = PAGES[currentPage];
+      if (!data) return;
+      const host = window.location.origin.startsWith("http")
+        ? window.location.origin
+        : "https://nerdtext.io";
+      document.getElementById("raw-cmd").textContent = `$ curl ${host}/${currentPage}`;
+      const stamp = buildStamp || document.getElementById("hdr-clock").textContent;
+      const header = `P${currentPage}  NERD-TEXT ${currentPage}   ${stamp}`.slice(0, 40).padEnd(40, " ");
+      const body = data.lines.map((l) => l.s.slice(0, 40).padEnd(40, " ")).join("\n");
+      const footer = "========================================\nRED:100  GRN:200  YEL:300  CYN:999";
+      document.getElementById("raw-content").textContent = `${header}\n========================================\n${body}\n${footer}`;
+    }
+
+    function copyRaw() {
+      const txt = document.getElementById("raw-content").textContent;
+      navigator.clipboard.writeText(txt);
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if (e.key >= "0" && e.key <= "9") {
+        e.preventDefault();
+        pressDigit(e.key);
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        nextPage();
+      } else if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        prevPage();
+      } else if (e.key === "Backspace" || e.key === "Escape") {
+        digitBuffer = "";
+        goPage("100");
+      }
+    });
+
+    let touchStartX = 0;
+    document.getElementById("crt-frame").addEventListener("touchstart", (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    document.getElementById("crt-frame").addEventListener("touchend", (e) => {
+      const dx = e.changedTouches[0].screenX - touchStartX;
+      if (Math.abs(dx) > 45) {
+        if (dx < 0) nextPage();
+        else prevPage();
+      }
+    }, { passive: true });
+
+    async function boot() {
+      updateClock();
+      setInterval(updateClock, 1000);
+
+      try {
+        const res = await fetch("pages.json", { cache: "no-store" });
+        if (res.ok) {
+          const payload = await res.json();
+          if (payload && payload.pages && payload.pages["100"]) {
+            PAGES = payload.pages;
+            if (payload.generated_utc) {
+              buildStamp = payload.generated_utc.slice(0, 16).replace("T", " ") + " UTC";
+              document.getElementById("status-label").textContent = `LIVE FEED // ${buildStamp}`;
+            }
+          }
+        }
+      } catch (_) {}
+
+      renderPage(detectInitialPage());
+    }
+
+    boot();
+  </script>
+</body>
+</html>
