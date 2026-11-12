@@ -97,35 +97,36 @@ def wrap_40(text: str, indent: str = "") -> list[str]:
     return [line[:WIDTH] for line in wrapped]
 
 
-def resolve_gemini_model(api_key: str) -> str:
-    """Ermittelt dynamisch ein verfügbares Flash-Modell für den hinterlegten API-Key."""
+def resolve_gemini_models(api_key: str) -> list[str]:
+    """Ermittelt alle verfügbaren Gemini-Modelle in priorisierter Reihenfolge."""
+    preferred_order = [
+        "gemini-2.5-flash",
+        "gemini-2.5-flash-lite",
+        "gemini-2.0-flash",
+        "gemini-2.0-flash-lite",
+        "gemini-flash-latest",
+        "gemini-1.5-flash",
+        "gemini-1.5-flash-latest",
+    ]
     list_url = f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}"
     try:
         req = urllib.request.Request(list_url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=10) as resp:
             data = json.loads(resp.read().decode("utf-8"))
-            models = [
+            available = [
                 m["name"].replace("models/", "")
                 for m in data.get("models", [])
                 if "generateContent" in m.get("supportedGenerationMethods", [])
             ]
-            for preferred in (
-                "gemini-2.5-flash",
-                "gemini-2.5-flash-lite",
-                "gemini-2.0-flash",
-                "gemini-flash-latest",
-                "gemini-1.5-flash",
-            ):
-                if preferred in models:
-                    return preferred
-            flash_models = [m for m in models if "flash" in m]
-            if flash_models:
-                return flash_models[0]
-            if models:
-                return models[0]
+            ordered = [m for m in preferred_order if m in available]
+            for m in available:
+                if "flash" in m and m not in ordered and "tts" not in m and "image" not in m:
+                    ordered.append(m)
+            if ordered:
+                return ordered
     except Exception as exc:
-        print(f"[WARN] Could not list models ({exc}), trying fallback.")
-    return "gemini-2.0-flash"
+        print(f"[WARN] Could not list models ({exc}), using static fallback list.")
+    return preferred_order
 
 
 def summarize_with_llm(items: list[dict], category: str) -> list[dict] | None:
@@ -133,7 +134,7 @@ def summarize_with_llm(items: list[dict], category: str) -> list[dict] | None:
     if not api_key or not items:
         return None
 
-    model = resolve_gemini_model(api_key)
+    models = resolve_gemini_models(api_key)
     prompt = (
         f"You are a senior Teletext news editor for {category}. "
         "Rewrite each raw feed item into crisp, complete Teletext copy:\n"
@@ -145,32 +146,37 @@ def summarize_with_llm(items: list[dict], category: str) -> list[dict] | None:
         f"Items:\n{json.dumps(items, ensure_ascii=True)}"
     )
 
-    url = (
-        "https://generativelanguage.googleapis.com/v1beta/models/"
-        f"{model}:generateContent?key={api_key}"
-    )
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"temperature": 0.2},
     }
 
-    try:
-        req = urllib.request.Request(
-            url,
-            data=json.dumps(payload).encode("utf-8"),
-            headers={"Content-Type": "application/json"},
-            method="POST",
+    for model in models:
+        url = (
+            "https://generativelanguage.googleapis.com/v1beta/models/"
+            f"{model}:generateContent?key={api_key}"
         )
-        with urllib.request.urlopen(req, timeout=25) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            raw_text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
-            raw_text = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw_text)
-            parsed = json.loads(raw_text)
-            if isinstance(parsed, list) and len(parsed) == len(items):
-                print(f"[INFO] LLM editorial rewrite succeeded via {model}.")
-                return parsed
-    except Exception as exc:
-        print(f"[WARN] LLM step skipped on {model} ({exc}), using deterministic formatter.")
+        try:
+            req = urllib.request.Request(
+                url,
+                data=json.dumps(payload).encode("utf-8"),
+                headers={"Content-Type": "application/json"},
+                method="POST",
+            )
+            with urllib.request.urlopen(req, timeout=25) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+                raw_text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
+                raw_text = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw_text)
+                parsed = json.loads(raw_text)
+                if isinstance(parsed, list) and len(parsed) == len(items):
+                    print(f"[INFO] LLM editorial rewrite succeeded via {model}.")
+                    return parsed
+        except urllib.error.HTTPError as exc:
+            err_body = exc.read().decode("utf-8", errors="ignore")[:160]
+            print(f"[WARN] {model} failed ({exc.code}): {err_body}")
+        except Exception as exc:
+            print(f"[WARN] {model} failed: {exc}")
+
     return None
 
 
@@ -223,7 +229,7 @@ def parse_feed_items(xml_bytes: bytes, source_name: str, max_items: int = 2, sho
             is_rdf = bool(entries)
         if not entries:
             entries = root.findall(".//{http://www.w3.org/2005/Atom}entry")
-            is_atom = bool(entries)
+            is_atom = True
 
         for entry in entries[:max_items]:
             if is_atom:
