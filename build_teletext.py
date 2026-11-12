@@ -42,8 +42,10 @@ RETRO_FEEDS = [
     ("Romhack", "https://www.romhacking.net/news/feed/"),
 ]
 
-HN_TOP_URL = "https://hacker-news.firebaseio.com/v0/topstories.json"
-HN_ITEM_URL = "https://hacker-news.firebaseio.com/v0/item/{}.json"
+HN_ALGOLIA_URL = (
+    "https://hn.algolia.com/api/v1/search"
+    "?tags=story&numericFilters=created_at_i>{}&hitsPerPage=15"
+)
 
 USER_AGENT = "NerdText-Bot/1.0 (+https://teletext.nerdtext.net)"
 
@@ -341,42 +343,50 @@ def extract_article_snippet(url: str) -> str:
         return ""
 
 
+HN_ALGOLIA_URL = (
+    "https://hn.algolia.com/api/v1/search"
+    "?tags=story&numericFilters=created_at_i>{}&hitsPerPage=15"
+)
+
+
 def get_hacker_news(limit: int = 10) -> list[dict]:
     results = []
+    cutoff = int(datetime.now(timezone.utc).timestamp()) - 86400
     try:
-        ids = json.loads(fetch_url(HN_TOP_URL, timeout=10).decode("utf-8"))[:25]
-        for item_id in ids:
+        data = json.loads(fetch_url(HN_ALGOLIA_URL.format(cutoff), timeout=10).decode("utf-8"))
+        hits = data.get("hits", [])
+        hits.sort(key=lambda h: h.get("points") or 0, reverse=True)
+
+        for hit in hits:
             if len(results) >= limit:
                 break
-            try:
-                story = json.loads(fetch_url(HN_ITEM_URL.format(item_id), timeout=8).decode("utf-8"))
-                if not story or story.get("type") != "story" or story.get("dead") or story.get("deleted"):
-                    continue
-                title = clean_text(story.get("title", ""))
-                url = story.get("url", "")
-                score = story.get("score", 0)
-                comments = story.get("descendants", 0)
-                domain = re.sub(r"^https?://(?:www\.)?([^/]+).*$", r"\1", url) if url else "news.ycombinator.com"
+            title = clean_text(hit.get("title", ""))
+            url = hit.get("url") or ""
+            score = hit.get("points") or 0
+            comments = hit.get("num_comments") or 0
+            domain = (
+                re.sub(r"^https?://(?:www\.)?([^/]+).*$", r"\1", url)
+                if url
+                else "news.ycombinator.com"
+            )
 
-                snippet = extract_article_snippet(url) if url else clean_text(story.get("text", ""))[:500]
-                raw_summary = snippet if snippet else f"{title} ({domain})."
+            snippet = extract_article_snippet(url) if url else clean_text(hit.get("story_text") or "")[:500]
+            raw_summary = snippet if snippet else f"{title} ({domain})."
 
-                results.append({
-                    "id": f"HN #{len(results)+1} | {domain[:24]}",
-                    "headline": smart_truncate(title, 34),
-                    "summary": smart_truncate(raw_summary, 220),
-                    "meta": f"{score} pts | {comments} comments | {domain[:18]}",
-                })
-            except Exception:
-                continue
+            results.append({
+                "id": f"HN #{len(results)+1} | {domain[:24]}",
+                "headline": smart_truncate(title, 34),
+                "summary": smart_truncate(raw_summary, 220),
+                "meta": f"{score} pts | {comments} comments | {domain[:18]}",
+            })
     except Exception as exc:
-        print(f"[ERROR] Hacker News fetch failed: {exc}")
+        print(f"[ERROR] Hacker News Algolia fetch failed: {exc}")
 
     if not results:
         return [{
             "id": "HN-OFFLINE",
             "headline": "Hacker News unreachable",
-            "summary": "Hacker News Firebase API did not respond during build.",
+            "summary": "Hacker News Algolia API did not respond during build.",
             "meta": "Retry next cycle",
         }]
     return results
