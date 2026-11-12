@@ -1,9 +1,9 @@
-P302  NERD-TEXT 302   12.11.26 13:13 UTC
+P302  NERD-TEXT 302   12.11.26 13:29 UTC
 ========================================
 GAME LOG (2/5)                          
 ========================================
 > DWARF FORTRESS                        
-  Dwarf Fortress: 2026-11-09: DF 53.    
+  DF: 2026-11-09: DF 53.17 Released     
                                         
   DF Version 53.17 has been released.   
                                         

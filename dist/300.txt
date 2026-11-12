@@ -1,13 +1,13 @@
-P300  NERD-TEXT 300   12.11.26 13:13 UTC
+P300  NERD-TEXT 300   12.11.26 13:29 UTC
 ========================================
 ROGUELIKES & SYSTEM-DRIVEN GAMES        
 ========================================
-301  Dwarf Fortress: 11/09/2026         
+301  DF: (Toady One) The audio system h 
      (Toady One) The audio system has   
      rebuilt from the ground up for     
-302  Dwarf Fortress: 2026-11-09: DF 53. 
+302  DF: 2026-11-09: DF 53.17 Released  
      DF Version 53.17 has been released.
-303  Caves of Qud: Caves of Qud: Diaspo 
+303  Caves of Qud: Diaspora is coming D 
      Hey friends, It's the beginning of 
      a new era of Caves of Qud          
 304  Caves of Qud: Autoexplore Patch -  

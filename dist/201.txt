@@ -1,14 +1,13 @@
-P201  NERD-TEXT 201   12.11.26 13:13 UTC
+P201  NERD-TEXT 201   12.11.26 13:29 UTC
 ========================================
 CVE DETAIL (1/5)                        
 ========================================
 > CVE-2026-124194                       
-  Microsoft Office: Microsoft Office    
+  Microsoft Office: Outlook Missing     
                                         
-  Microsoft Office Outlook Missing User 
-  Interaction for Potentially Unsafe    
-  Action Vulnerability. Patch due:      
-  2026-11-24.                           
+  Outlook Missing User Interaction for  
+  Potentially Unsafe Action             
+  Vulnerability. Patch due: 2026-11-24. 
                                         
   Added: 2026-11-10 | Due: 2026-11-24   
 [100] Index  [200] Prev  [202] Next     

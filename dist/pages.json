@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-12T13:13:26.871018+00:00",
+  "generated_utc": "2026-11-12T13:29:24.177816+00:00",
   "pages": {
     "100": {
       "title": "INDEX",
@@ -21,7 +21,7 @@
         {
           "t": "link",
           "p": "201",
-          "s": "201  Microsoft Office: Microsoft Office"
+          "s": "201  Microsoft Office: Outlook Missing "
         },
         {
           "t": "link",
@@ -31,7 +31,7 @@
         {
           "t": "link",
           "p": "203",
-          "s": "203  Cisco BroadWorks: Cisco BroadWorks"
+          "s": "203  Cisco BroadWorks: Improper Restric"
         },
         {
           "t": "blank",
@@ -44,17 +44,17 @@
         {
           "t": "link",
           "p": "301",
-          "s": "301  Dwarf Fortress: 11/09/2026"
+          "s": "301  DF: (Toady One) The audio system h"
         },
         {
           "t": "link",
           "p": "302",
-          "s": "302  Dwarf Fortress: 2026-11-09: DF 53."
+          "s": "302  DF: 2026-11-09: DF 53.17 Released"
         },
         {
           "t": "link",
           "p": "303",
-          "s": "303  Caves of Qud: Caves of Qud: Diaspo"
+          "s": "303  Caves of Qud: Diaspora is coming D"
         },
         {
           "t": "blank",
@@ -66,7 +66,7 @@
         },
         {
           "t": "nav",
-          "s": "[200] Security   [300] Games   [999] Info"
+          "s": "[200] Security  [300] Games   [999] Info"
         }
       ]
     },
@@ -86,15 +86,15 @@
         {
           "t": "link",
           "p": "201",
-          "s": "201  CVE-2026-124194: Microsoft Office: Micr"
+          "s": "201  CVE-2026-124194: Microsoft Office: Outl"
         },
         {
           "t": "body",
-          "s": "     Microsoft Office Outlook Missing"
+          "s": "     Outlook Missing User Interaction"
         },
         {
           "t": "body",
-          "s": "     User Interaction for Potentially"
+          "s": "     for Potentially Unsafe Action"
         },
         {
           "t": "link",
@@ -103,24 +103,24 @@
         },
         {
           "t": "body",
-          "s": "     Openwave Messaging Limited Webtop"
+          "s": "     Incorrect Resource Transfer Between"
         },
         {
           "t": "body",
-          "s": "     Media Transcoder Incorrect Resource"
+          "s": "     Spheres Vulnerability. Patch due:"
         },
         {
           "t": "link",
           "p": "203",
-          "s": "203  CVE-2026-20320: Cisco BroadWorks: Cisc"
+          "s": "203  CVE-2026-20320: Cisco BroadWorks: Impr"
         },
         {
           "t": "body",
-          "s": "     Cisco BroadWorks Improper"
+          "s": "     Improper Restriction of XML"
         },
         {
           "t": "body",
-          "s": "     Restriction of XML External Entity"
+          "s": "     External Entity Reference"
         },
         {
           "t": "link",
@@ -129,11 +129,11 @@
         },
         {
           "t": "body",
-          "s": "     Barracuda Networks Multiple"
+          "s": "     OS Command Injection Vulnerability."
         },
         {
           "t": "body",
-          "s": "     Products OS Command Injection"
+          "s": "     Patch due: 2026-11-13."
         },
         {
           "t": "link",
@@ -173,7 +173,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Microsoft Office: Microsoft Office"
+          "s": "  Microsoft Office: Outlook Missing"
         },
         {
           "t": "blank",
@@ -181,19 +181,15 @@
         },
         {
           "t": "body",
-          "s": "  Microsoft Office Outlook Missing User"
+          "s": "  Outlook Missing User Interaction for"
         },
         {
           "t": "body",
-          "s": "  Interaction for Potentially Unsafe"
+          "s": "  Potentially Unsafe Action"
         },
         {
           "t": "body",
-          "s": "  Action Vulnerability. Patch due:"
-        },
-        {
-          "t": "body",
-          "s": "  2026-11-24."
+          "s": "  Vulnerability. Patch due: 2026-11-24."
         },
         {
           "t": "blank",
@@ -236,19 +232,15 @@
         },
         {
           "t": "body",
-          "s": "  Openwave Messaging Limited Webtop"
+          "s": "  Incorrect Resource Transfer Between"
         },
         {
           "t": "body",
-          "s": "  Media Transcoder Incorrect Resource"
+          "s": "  Spheres Vulnerability. Patch due:"
         },
         {
           "t": "body",
-          "s": "  Transfer Between Spheres"
-        },
-        {
-          "t": "body",
-          "s": "  Vulnerability. Patch due: 2026-11-24."
+          "s": "  2026-11-24."
         },
         {
           "t": "blank",
@@ -283,7 +275,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Cisco BroadWorks: Cisco BroadWorks"
+          "s": "  Cisco BroadWorks: Improper Restric"
         },
         {
           "t": "blank",
@@ -291,15 +283,15 @@
         },
         {
           "t": "body",
-          "s": "  Cisco BroadWorks Improper Restriction"
+          "s": "  Improper Restriction of XML External"
         },
         {
           "t": "body",
-          "s": "  of XML External Entity Reference"
+          "s": "  Entity Reference Vulnerability. Patch"
         },
         {
           "t": "body",
-          "s": "  Vulnerability. Patch due: 2026-11-24."
+          "s": "  due: 2026-11-24."
         },
         {
           "t": "blank",
@@ -339,10 +331,6 @@
         {
           "t": "blank",
           "s": ""
-        },
-        {
-          "t": "body",
-          "s": "  Barracuda Networks Multiple Products"
         },
         {
           "t": "body",
@@ -437,7 +425,7 @@
         {
           "t": "link",
           "p": "301",
-          "s": "301  Dwarf Fortress: 11/09/2026"
+          "s": "301  DF: (Toady One) The audio system h"
         },
         {
           "t": "body",
@@ -450,7 +438,7 @@
         {
           "t": "link",
           "p": "302",
-          "s": "302  Dwarf Fortress: 2026-11-09: DF 53."
+          "s": "302  DF: 2026-11-09: DF 53.17 Released"
         },
         {
           "t": "body",
@@ -459,7 +447,7 @@
         {
           "t": "link",
           "p": "303",
-          "s": "303  Caves of Qud: Caves of Qud: Diaspo"
+          "s": "303  Caves of Qud: Diaspora is coming D"
         },
         {
           "t": "body",
@@ -520,7 +508,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Dwarf Fortress: 11/09/2026"
+          "s": "  DF: (Toady One) The audio system h"
         },
         {
           "t": "blank",
@@ -579,7 +567,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Dwarf Fortress: 2026-11-09: DF 53."
+          "s": "  DF: 2026-11-09: DF 53.17 Released"
         },
         {
           "t": "blank",
@@ -626,7 +614,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Caves of Qud: Caves of Qud: Diaspo"
+          "s": "  Caves of Qud: Diaspora is coming D"
         },
         {
           "t": "blank",
@@ -819,11 +807,11 @@
         },
         {
           "t": "item_yel",
-          "s": "  $ curl https://nerdtext.io/100"
+          "s": "  $ curl <host>/100.txt"
         },
         {
           "t": "item_yel",
-          "s": "  $ curl https://nerdtext.io/201"
+          "s": "  $ curl <host>/201.txt"
         },
         {
           "t": "blank",
@@ -831,7 +819,7 @@
         },
         {
           "t": "body",
-          "s": "Last build: 12.11.26 13:13 UTC"
+          "s": "Last build: 12.11.26 13:29 UTC"
         },
         {
           "t": "nav",

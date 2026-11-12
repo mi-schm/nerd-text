@@ -1,18 +1,18 @@
-P100  NERD-TEXT 100   12.11.26 13:13 UTC
+P100  NERD-TEXT 100   12.11.26 13:29 UTC
 ========================================
   NERD-TEXT // ZERO-BLOAT TELETEXT      
 ========================================
 SECURITY & CVEs (FROM PAGE 200)         
-201  Microsoft Office: Microsoft Office 
+201  Microsoft Office: Outlook Missing  
 202  Openwave Messaging Limited Webtop  
-203  Cisco BroadWorks: Cisco BroadWorks 
+203  Cisco BroadWorks: Improper Restric 
                                         
 NERD GAMES & ROGUELIKES (FROM 300)      
-301  Dwarf Fortress: 11/09/2026         
-302  Dwarf Fortress: 2026-11-09: DF 53. 
-303  Caves of Qud: Caves of Qud: Diaspo 
+301  DF: (Toady One) The audio system h 
+302  DF: 2026-11-09: DF 53.17 Released  
+303  Caves of Qud: Diaspora is coming D 
                                         
 ----------------------------------------
-[200] Security   [300] Games   [999] Inf
+[200] Security  [300] Games   [999] Info
 ========================================
 RED:100  GRN:200  YEL:300  CYN:999      

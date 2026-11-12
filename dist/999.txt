@@ -1,4 +1,4 @@
-P999  NERD-TEXT 999   12.11.26 13:13 UTC
+P999  NERD-TEXT 999   12.11.26 13:29 UTC
 ========================================
 ABOUT NERD-TEXT // ARCHITECTURE         
 ========================================
@@ -7,10 +7,10 @@ Built for instant loading on weak
 mobile links and terminal workflows.    
                                         
 TERMINAL / CURL ACCESS:                 
-  $ curl https://nerdtext.io/100        
-  $ curl https://nerdtext.io/201        
+  $ curl <host>/100.txt                 
+  $ curl <host>/201.txt                 
                                         
-Last build: 12.11.26 13:13 UTC          
+Last build: 12.11.26 13:29 UTC          
 [100] Index   [200] Sec   [300] Games   
 ========================================
 RED:100  GRN:200  YEL:300  CYN:999      

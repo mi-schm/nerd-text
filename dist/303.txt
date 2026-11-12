@@ -1,9 +1,9 @@
-P303  NERD-TEXT 303   12.11.26 13:13 UTC
+P303  NERD-TEXT 303   12.11.26 13:29 UTC
 ========================================
 GAME LOG (3/5)                          
 ========================================
 > CAVES OF QUD                          
-  Caves of Qud: Caves of Qud: Diaspo    
+  Caves of Qud: Diaspora is coming D    
                                         
   Hey friends, It's the beginning of a  
   new era of Caves of Qud development.  

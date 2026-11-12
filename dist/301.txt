@@ -1,9 +1,9 @@
-P301  NERD-TEXT 301   12.11.26 13:13 UTC
+P301  NERD-TEXT 301   12.11.26 13:29 UTC
 ========================================
 GAME LOG (1/5)                          
 ========================================
 > DWARF FORTRESS                        
-  Dwarf Fortress: 11/09/2026            
+  DF: (Toady One) The audio system h    
                                         
   (Toady One) The audio system has      
   rebuilt from the ground up for        
