@@ -23,6 +23,9 @@ from pathlib import Path
 DIST_DIR = Path("dist")
 WIDTH = 40
 
+AD_EMAIL = "ads@nerdtext.net"
+AD_SLOT = f"AD: Your 40-char link -> {AD_EMAIL}"[:WIDTH].ljust(WIDTH)
+
 CISA_KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 
 LINUX_SEC_FEEDS = [
@@ -42,7 +45,7 @@ RETRO_FEEDS = [
 HN_TOP_URL = "https://hacker-news.firebaseio.com/v0/topstories.json"
 HN_ITEM_URL = "https://hacker-news.firebaseio.com/v0/item/{}.json"
 
-USER_AGENT = "NerdText-Bot/1.0 (+https://nerdtext.local)"
+USER_AGENT = "NerdText-Bot/1.0 (+https://teletext.nerdtext.net)"
 
 
 def fetch_url(url: str, timeout: int = 12) -> bytes:
@@ -384,7 +387,7 @@ def build_pages(sec_items: list[dict], retro_items: list[dict], hn_items: list[d
 
     # --- PAGE 100: INDEX ---
     p100 = [
-        {"t": "banner", "s": "  NERD-TEXT // ZERO-BLOAT TELETEXT    "},
+        {"t": "banner", "s": "  NERD-TEXT // TECH & RETRO TELETEXT  "},
         {"t": "sep", "s": "=" * 40},
         {"t": "sec_cyan", "s": "SECURITY & LINUX ADVISORIES     [200]"},
     ]
@@ -403,6 +406,7 @@ def build_pages(sec_items: list[dict], retro_items: list[dict], hn_items: list[d
 
     p100.extend([
         {"t": "sep", "s": "-" * 40},
+        {"t": "item_yel", "s": AD_SLOT},
         {"t": "nav", "s": "[200] Sec  [300] Retro  [400] HN  [999]"},
     ])
     pages["100"] = {"title": "INDEX", "next": "200", "prev": "999", "lines": p100}
@@ -497,7 +501,7 @@ def build_pages(sec_items: list[dict], retro_items: list[dict], hn_items: list[d
         lines.append({"t": "nav", "s": f"[100] Index  [{prv}] Prev  [{nxt}] Next"})
         pages[pg] = {"title": f"HN #{i+1}", "next": nxt, "prev": prv, "lines": lines}
 
-    # --- PAGE 999: INFO & CURL ACCESS ---
+    # --- PAGE 999: INFO & SPONSORING ---
     pages["999"] = {
         "title": "INFO",
         "next": "100",
@@ -505,12 +509,14 @@ def build_pages(sec_items: list[dict], retro_items: list[dict], hn_items: list[d
         "lines": [
             {"t": "hdr_mag", "s": "ABOUT NERD-TEXT // ARCHITECTURE"},
             {"t": "sep", "s": "=" * 40},
-            {"t": "body", "s": "Zero ads. Zero tracking. Finite pages."},
+            {"t": "body", "s": "No tracking. No popups. Finite pages."},
             {"t": "body", "s": "200: Security | 300: Retro | 400: HN"},
+            {"t": "blank", "s": ""},
+            {"t": "sec_cyan", "s": "SPONSORING (1 LINE / 40 CHARS):"},
+            {"t": "item_yel", "s": f"  Contact: {AD_EMAIL}"},
             {"t": "blank", "s": ""},
             {"t": "sec_cyan", "s": "TERMINAL / CURL ACCESS:"},
             {"t": "item_yel", "s": "  $ curl <host>/100.txt"},
-            {"t": "item_yel", "s": "  $ curl <host>/400.txt"},
             {"t": "item_yel", "s": "  $ curl <host>/all.txt"},
             {"t": "blank", "s": ""},
             {"t": "body", "s": f"Last build: {stamp} UTC"},
@@ -526,6 +532,8 @@ def render_plain_txt(page_num: str, page_obj: dict, stamp: str) -> str:
     out = [header, "=" * 40]
     for line in page_obj["lines"]:
         out.append(line["s"][:40].ljust(40))
+    out.append("-" * 40)
+    out.append(AD_SLOT)
     out.append("=" * 40)
     out.append("100:IDX  200:SEC  300:RETRO  400:HN".ljust(40))
     return "\n".join(out) + "\n"
