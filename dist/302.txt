@@ -1,16 +1,16 @@
-P302  NERD-TEXT 302   12.11.26 14:49 UTC
+P302  NERD-TEXT 302   12.11.26 15:07 UTC
 ========================================
 RETRO LOG (2/5)                         
 ========================================
 > TIMEEXT                               
-  Nintendo: Gunpei Yokoi's Legacy       
+  Gunpei Yokoi: Legacy Remembered       
                                         
-  Colleagues reflect on the legendary   
-  Nintendo creator behind the Game Boy  
-  and Game & Watch lines, highlighting  
-  his philosophy of lateral thinking    
-  with withered technology that still   
-  shapes games.                         
+  Peers revisit the design philosophy of
+  late Game Boy creator Gunpei Yokoi,   
+  highlighting his lateral thinking with
+  seasoned tech mantra that shaped      
+  Nintendo's hardware philosophy for    
+  decades.                              
                                         
   Source: TimeExt (Thu, 12 Nov 2026)    
 [100] Index  [301] Prev  [303] Next     

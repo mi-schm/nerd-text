@@ -1,16 +1,15 @@
-P203  NERD-TEXT 203   12.11.26 14:49 UTC
+P203  NERD-TEXT 203   12.11.26 15:07 UTC
 ========================================
 SECURITY ADVISORY (3/5)                 
 ========================================
 > CVE-2026-20320                        
-  Cisco: BroadWorks XXE Data Leak       
+  Cisco BroadWorks: Remote XXE Leak     
                                         
-  A critical XXE vulnerability in Cisco 
-  BroadWorks allows unauthenticated     
-  remote adversaries to steal sensitive 
-  configuration files. CISA ordered     
-  federal agencies to apply vendor      
-  updates by Nov 24.                    
+  Improper XML external entity parsing  
+  lets unauthenticated network attackers
+  extract internal configuration files  
+  remotely. CISA adds flaw to the Known 
+  Exploited Vulnerabilities catalog.    
                                         
   CISA KEV | Added: 2026-11-10 | Due:   
   2026-11-24                            

@@ -1,16 +1,17 @@
-P404  NERD-TEXT 404   12.11.26 14:49 UTC
+P404  NERD-TEXT 404   12.11.26 15:07 UTC
 ========================================
   HACKER NEWS (4/10)                    
 ========================================
 > HN #4 | moddb.com                     
-  ModDB/Quake: OpenQ4 Engine            
+  openQ4: Quake 4 Engine Modernized     
                                         
-  Open-source replacement for Quake 4   
-  brings native widescreen support,     
-  smooth high-refresh rates, and modern 
-  Linux and Steam Deck compatibility.   
+  The open-source engine replacement    
+  brings native Linux, modern Windows,  
+  and Steam Deck support to the id Tech 
+  4 shooter, adding widescreen rendering
+  and unlocked high-refresh frame rates.
                                         
-  13 pts | 0 comments | moddb.com       
+  23 pts | 4 comments | moddb.com       
 [100] Index  [403] Prev  [405] Next     
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

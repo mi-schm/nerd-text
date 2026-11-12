@@ -1,16 +1,16 @@
-P205  NERD-TEXT 205   12.11.26 14:49 UTC
+P205  NERD-TEXT 205   12.11.26 15:07 UTC
 ========================================
 SECURITY ADVISORY (5/5)                 
 ========================================
 > UBUNTU USN                            
-  Ubuntu/USN: Yodl DoS Flaw Patched     
+  Ubuntu: Yodl Buffer Over-Read DoS     
                                         
-  Canonical released advisory USN-9063-1
-  resolving a buffer over-read in Yodl. 
-  Crafted input can trigger an          
-  application crash, causing a denial of
-  service. Users should update installed
-  packages now.                         
+  An input validation issue causes a    
+  memory buffer over-read during        
+  document parsing in Yodl. Specially   
+  crafted files trigger process crashes,
+  enabling remote denial of service     
+  conditions.                           
                                         
   Source: Ubuntu USN (Wed, 11 Nov 2026) 
 [100] Index  [204] Prev  [300] Next     

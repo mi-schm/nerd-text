@@ -1,17 +1,18 @@
-P409  NERD-TEXT 409   12.11.26 14:49 UTC
+P409  NERD-TEXT 409   12.11.26 15:07 UTC
 ========================================
   HACKER NEWS (9/10)                    
 ========================================
-> HN #9 | bbc.co.uk                     
-  BBC/Nvidia: Stock Plunge              
+> HN #9 | github.com                    
+  Jane Street: Socratic AI Skill        
                                         
-  US markets react sharply as Nvidia    
-  shares drop following the sudden      
-  resignation of longtime CEO Jensen    
-  Huang amid unfolding geopolitical     
-  scrutiny.                             
+  A published agent skill specification 
+  instructs LLMs to guide developers via
+  guided questions rather than          
+  generating code directly, reinforcing 
+  conceptual understanding during       
+  debugging.                            
                                         
-  83 pts | 37 comments | bbc.co.uk      
+  475 pts | 108 comments | github.com   
 [100] Index  [408] Prev  [410] Next     
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

@@ -1,19 +1,19 @@
-P100  NERD-TEXT 100   12.11.26 14:49 UTC
+P100  NERD-TEXT 100   12.11.26 15:07 UTC
 ========================================
   NERD-TEXT // ZERO-BLOAT TELETEXT      
 ========================================
 SECURITY & LINUX ADVISORIES     [200]   
-201  MS Outlook: Network Spoofing Flaw  
-202  Openwave: Media Transcoder Flaw    
+201  MS Outlook: Remote Spoofing Bug    
+202  Webtop: Document Transcoder Flaw   
                                         
 RETRO GAMING & HANDHELDS        [300]   
-301  id Software: Ex-Devs Form Studio   
-302  Nintendo: Gunpei Yokoi's Legacy    
+301  id Software: Ex-Staff Form Studio  
+302  Gunpei Yokoi: Legacy Remembered    
                                         
 TOP 10 HACKER NEWS              [400]   
-401  Nvidia/News: CEO Transition        
-402  Pron/GitHub: Correct Software      
-403  Reuters/Nvidia: Jensen Huang       
+401  Nvidia: CEO Transition Announced   
+402  Software: Why Correctness Is Hard  
+403  AMD: Zen 6 Architecture Deep Dive  
 ----------------------------------------
 [200] Sec  [300] Retro  [400] HN  [999] 
 ========================================

@@ -1,17 +1,17 @@
-P400  NERD-TEXT 400   12.11.26 14:49 UTC
+P400  NERD-TEXT 400   12.11.26 15:07 UTC
 ========================================
   TOP 10 HACKER NEWS // FRONT PAGE      
 ========================================
-401  Nvidia/News: CEO Transition        
-402  Pron/GitHub: Correct Software      
-403  Reuters/Nvidia: Jensen Huang       
-404  ModDB/Quake: OpenQ4 Engine         
-405  Chips/AMD: Zen 6 Architecture      
-406  Libre/BitTorrent: OSS Models       
-407  GitHub/JaneStreet: Socratic        
-408  Blog/JaneStreet: LLM Dev           
-409  BBC/Nvidia: Stock Plunge           
-410  Codeberg/Bootvine: Systemd         
+401  Nvidia: CEO Transition Announced   
+402  Software: Why Correctness Is Hard  
+403  AMD: Zen 6 Architecture Deep Dive  
+404  openQ4: Quake 4 Engine Modernized  
+405  Nvidia: Jensen Huang Steps Down    
+406  Jane Street: LLMs in Trading Dev   
+407  LibreAGI: Torrenting Open AI       
+408  Nvidia: Huang Quits Amid Scandal   
+409  Jane Street: Socratic AI Skill     
+410  systemd: Boot Job Tree Console     
                                         
 ----------------------------------------
 [100] Index      [401] Story 1     [999]

@@ -1,18 +1,18 @@
-P405  NERD-TEXT 405   12.11.26 14:49 UTC
+P405  NERD-TEXT 405   12.11.26 15:07 UTC
 ========================================
   HACKER NEWS (5/10)                    
 ========================================
-> HN #5 | chipsandcheese.com            
-  Chips/AMD: Zen 6 Architecture         
+> HN #5 | reuters.com                   
+  Nvidia: Jensen Huang Steps Down       
                                         
-  Technical deep dive with AMD chief    
-  architect Mike Clark exploring        
-  upcoming microarchitecture            
-  innovations, performance metrics, and 
-  hardware targets.                     
+  In a sudden shift, the co-founder     
+  departs his chief executive post with 
+  immediate effect, shaking             
+  semiconductor markets as the board    
+  initiates emergency succession plans  
+  for the AI giant.                     
                                         
-  8 pts | 0 comments |                  
-  chipsandcheese.com                    
+  233 pts | 110 comments | reuters.com  
 [100] Index  [404] Prev  [406] Next     
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

@@ -1,17 +1,18 @@
-P410  NERD-TEXT 410   12.11.26 14:49 UTC
+P410  NERD-TEXT 410   12.11.26 15:07 UTC
 ========================================
   HACKER NEWS (10/10)                   
 ========================================
 > HN #10 | codeberg.org                 
-  Codeberg/Bootvine: Systemd            
+  systemd: Boot Job Tree Console        
                                         
-  Bootvine tool visualizes systemd      
-  initialization stages as an           
-  interactive live tree animation,      
-  tracking service dependencies during  
-  system startup.                       
+  A novel patch renders a dynamic       
+  dependency tree directly onto the     
+  Linux boot console, giving            
+  administrators real-time visual       
+  tracking of parallel service startup  
+  and blocking boot tasks.              
                                         
-  215 pts | 83 comments | codeberg.org  
+  226 pts | 89 comments | codeberg.org  
 [100] Index  [409] Prev  [999] Next     
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

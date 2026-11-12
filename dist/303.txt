@@ -1,16 +1,16 @@
-P303  NERD-TEXT 303   12.11.26 14:49 UTC
+P303  NERD-TEXT 303   12.11.26 15:07 UTC
 ========================================
 RETRO LOG (3/5)                         
 ========================================
 > RETRORGB                              
-  PS2 Slim: M.2 SATA SSD Mod Debut      
+  PS2 Slim: M.2 SATA Mod Revealed       
                                         
-  A breakthrough hardware mod dubbed M2 
-  Slim enables internal M.2 SATA drive  
-  installation inside SCPH-700XX        
-  consoles, bypassing USB 1.1           
-  bottlenecks for vastly faster ISO     
-  loading and quieter play.             
+  The new M2 Slim mod adds M.2 SATA     
+  storage to SCPH-700XX consoles. It    
+  restores direct IDE bus connectivity  
+  to slimline units, enabling seamless  
+  OPL game loading without the typical  
+  USB 1.1 stutter.                      
                                         
   Source: RetroRGB (Wed, 11 Nov 2026)   
 [100] Index  [302] Prev  [304] Next     

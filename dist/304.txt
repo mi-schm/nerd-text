@@ -1,16 +1,16 @@
-P304  NERD-TEXT 304   12.11.26 14:49 UTC
+P304  NERD-TEXT 304   12.11.26 15:07 UTC
 ========================================
 RETRO LOG (4/5)                         
 ========================================
 > RETRORGB                              
-  Podcast: RetroRGB Roundup #539        
+  RetroRGB: Weekly Roundup #539 Out     
                                         
-  The retro gaming scene digest returns 
-  across audio platforms and video      
-  feeds, covering weekly hardware       
-  developments, CRT maintenance tips,   
-  scaler updates, and recent homebrew   
-  scene announcements.                  
+  Edition 539 recaps the latest CRT     
+  repair developments, scaler firmware  
+  updates, flash carts, and retro       
+  community mods. Available via standard
+  podcast platforms and direct high-    
+  bitrate video streams.                
                                         
   Source: RetroRGB (Wed, 11 Nov 2026)   
 [100] Index  [303] Prev  [305] Next     

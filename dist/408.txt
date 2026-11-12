@@ -1,17 +1,18 @@
-P408  NERD-TEXT 408   12.11.26 14:49 UTC
+P408  NERD-TEXT 408   12.11.26 15:07 UTC
 ========================================
   HACKER NEWS (8/10)                    
 ========================================
-> HN #8 | blog.janestreet.com           
-  Blog/JaneStreet: LLM Dev              
+> HN #8 | bbc.co.uk                     
+  Nvidia: Huang Quits Amid Scandal      
                                         
-  Engineering post details how large    
-  language models have fundamentally    
-  shifted internal software development 
-  lifecycles and daily coding practices.
+  Shares dropped sharply following      
+  allegations surrounding the long-time 
+  chief executive, triggering his       
+  immediate resignation and forcing the 
+  chipmaker into unexpected crisis      
+  governance.                           
                                         
-  11 pts | 5 comments |                 
-  blog.janestreet.co                    
+  109 pts | 49 comments | bbc.co.uk     
 [100] Index  [407] Prev  [409] Next     
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

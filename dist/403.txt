@@ -1,17 +1,19 @@
-P403  NERD-TEXT 403   12.11.26 14:49 UTC
+P403  NERD-TEXT 403   12.11.26 15:07 UTC
 ========================================
   HACKER NEWS (3/10)                    
 ========================================
-> HN #3 | reuters.com                   
-  Reuters/Nvidia: Jensen Huang          
+> HN #3 | chipsandcheese.com            
+  AMD: Zen 6 Architecture Deep Dive     
                                         
-  Jensen Huang steps down from his      
-  executive position at the             
-  semiconductor giant immediately,      
-  triggering widespread industry        
-  speculation and market reactions.     
+  Lead architect Mike Clark discusses   
+  Zen 6 microarchitecture changes,      
+  exploring pipeline optimizations,     
+  cache hierarchy scaling, and execution
+  throughput gains planned for upcoming 
+  silicon.                              
                                         
-  182 pts | 66 comments | reuters.com   
+  24 pts | 0 comments |                 
+  chipsandcheese.com                    
 [100] Index  [402] Prev  [404] Next     
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

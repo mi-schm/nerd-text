@@ -1,4 +1,4 @@
-P999  NERD-TEXT 999   12.11.26 14:49 UTC
+P999  NERD-TEXT 999   12.11.26 15:07 UTC
 ========================================
 ABOUT NERD-TEXT // ARCHITECTURE         
 ========================================
@@ -10,7 +10,7 @@ TERMINAL / CURL ACCESS:
   $ curl <host>/400.txt                 
   $ curl <host>/all.txt                 
                                         
-Last build: 12.11.26 14:49 UTC          
+Last build: 12.11.26 15:07 UTC          
 [100] Index   [200] Sec   [400] HN      
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

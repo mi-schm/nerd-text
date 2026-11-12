@@ -1,16 +1,16 @@
-P204  NERD-TEXT 204   12.11.26 14:49 UTC
+P204  NERD-TEXT 204   12.11.26 15:07 UTC
 ========================================
 SECURITY ADVISORY (4/5)                 
 ========================================
 > DEBIAN DSA                            
-  Debian/DSA: Apache2 Flaws Patched     
+  Debian: Apache2 Security Patch        
                                         
-  Debian released security update DSA   
-  6620-1 for the Apache2 HTTP server    
-  package across stable distributions.  
-  System administrators are urged to    
-  apply the latest package rebuilds to  
-  prevent attacks.                      
+  Debian maintainers have issued an     
+  urgent update for the apache2 HTTP    
+  server package. The DSA-6620-1        
+  advisory remediates critical remote   
+  security flaws across stable          
+  production releases.                  
                                         
   Source: Debian DSA (2026-11-12)       
 [100] Index  [203] Prev  [205] Next     

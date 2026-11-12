@@ -1,17 +1,19 @@
-P406  NERD-TEXT 406   12.11.26 14:49 UTC
+P406  NERD-TEXT 406   12.11.26 15:07 UTC
 ========================================
   HACKER NEWS (6/10)                    
 ========================================
-> HN #6 | libreagi.com                  
-  Libre/BitTorrent: OSS Models          
+> HN #6 | blog.janestreet.com           
+  Jane Street: LLMs in Trading Dev      
                                         
-  Private BitTorrent tracker launched to
-  archive and preserve vulnerable open- 
-  source AI models, ensuring vital      
-  research survives repository          
-  shutdowns.                            
+  The quantitative trading firm details 
+  how large language models are actively
+  reshaping internal OCaml workflows,   
+  developer tooling, and automated      
+  testing across proprietary trading    
+  systems.                              
                                         
-  8 pts | 0 comments | libreagi.com     
+  25 pts | 11 comments |                
+  blog.janestreet.co                    
 [100] Index  [405] Prev  [407] Next     
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

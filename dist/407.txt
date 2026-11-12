@@ -1,16 +1,18 @@
-P407  NERD-TEXT 407   12.11.26 14:49 UTC
+P407  NERD-TEXT 407   12.11.26 15:07 UTC
 ========================================
   HACKER NEWS (7/10)                    
 ========================================
-> HN #7 | github.com                    
-  GitHub/JaneStreet: Socratic           
+> HN #7 | libreagi.com                  
+  LibreAGI: Torrenting Open AI          
                                         
-  Jane Street releases specialized agent
-  skills documentation outlining        
-  structured Socratic tutoring workflows
-  designed for advanced LLM integration.
+  A private BitTorrent tracker provides 
+  decentralized archiving for open-     
+  source machine learning weights,      
+  ensuring public AI models survive     
+  upstream takedowns, hosting fees, and 
+  license shifts.                       
                                         
-  467 pts | 103 comments | github.com   
+  16 pts | 7 comments | libreagi.com    
 [100] Index  [406] Prev  [408] Next     
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

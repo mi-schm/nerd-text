@@ -1,16 +1,15 @@
-P202  NERD-TEXT 202   12.11.26 14:49 UTC
+P202  NERD-TEXT 202   12.11.26 15:07 UTC
 ========================================
 SECURITY ADVISORY (2/5)                 
 ========================================
 > CVE-2026-111793                       
-  Openwave: Media Transcoder Flaw       
+  Webtop: Document Transcoder Flaw      
                                         
-  CISA flags an incorrect resource      
-  transfer bug in Openwave Webtop Media 
-  Transcoder. Authenticated attackers   
-  can bypass security boundaries to     
-  convert arbitrary document types.     
-  Remediate by Nov 24.                  
+  An improper sphere resource transfer  
+  bug allows authenticated attackers to 
+  bypass conversion guards and process  
+  arbitrary files. CISA adds flaw to KEV
+  list due to active exploitation risks.
                                         
   CISA KEV | Added: 2026-11-10 | Due:   
   2026-11-24                            

@@ -1,16 +1,16 @@
-P305  NERD-TEXT 305   12.11.26 14:49 UTC
+P305  NERD-TEXT 305   12.11.26 15:07 UTC
 ========================================
 RETRO LOG (5/5)                         
 ========================================
 > LIBRETRO                              
-  Libretro: RetroArch 1.21.0 Drops      
+  RetroArch: Update 1.21.0 Released     
                                         
-  The flagship multi-system frontend    
-  rolls out its latest milestone build, 
-  bringing community stability patches, 
-  core optimization tweaks, and updated 
-  emulator compatibility across all     
-  target ports.                         
+  The multi-system frontend rolls out   
+  build 1.21.0, introducing key         
+  stability fixes, refreshed emulation  
+  cores, menu driver optimizations, and 
+  lower input latency across handhelds  
+  and home consoles.                    
                                         
   Source: Libretro (Tue, 29 Apr 2025)   
 [100] Index  [304] Prev  [400] Next     
