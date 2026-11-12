@@ -1,18 +1,19 @@
-P304  NERD-TEXT 304   12.11.26 15:07 UTC
+P304  NERD-TEXT 304   12.11.26 15:28 UTC
 ========================================
 RETRO LOG (4/5)                         
 ========================================
 > RETRORGB                              
   RetroRGB: Weekly Roundup #539 Out     
                                         
-  Edition 539 recaps the latest CRT     
-  repair developments, scaler firmware  
-  updates, flash carts, and retro       
-  community mods. Available via standard
-  podcast platforms and direct high-    
-  bitrate video streams.                
+  Issue 539 recaps current CRT          
+  calibrations, scaler firmware updates,
+  flash carts, and community hardware   
+  projects across video formats and all 
+  major audio streaming feeds.          
                                         
   Source: RetroRGB (Wed, 11 Nov 2026)   
 [100] Index  [303] Prev  [305] Next     
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

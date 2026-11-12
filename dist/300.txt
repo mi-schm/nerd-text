@@ -1,22 +1,24 @@
-P300  NERD-TEXT 300   12.11.26 15:07 UTC
+P300  NERD-TEXT 300   12.11.26 15:28 UTC
 ========================================
 RETRO GAMING, HANDHELDS & ROMHACKS      
 ========================================
-301  id Software: Ex-Staff Form Studio  
-     Former id Software developers hit  
-     by recent Microsoft studio...      
-302  Gunpei Yokoi: Legacy Remembered    
-     Peers revisit the design philosophy
-     of late Game Boy creator Gunpei... 
-303  PS2 Slim: M.2 SATA Mod Revealed    
-     The new M2 Slim mod adds M.2 SATA  
-     storage to SCPH-700XX consoles...  
+301  id Software: Ex-Devs Form Studio   
+     Veteran developers laid off by     
+     Microsoft have banded together...  
+302  Gunpei Yokoi: Legacy Reassessed    
+     Colleagues revisit the lateral     
+     thinking philosophy of the late... 
+303  PS2 Slim: M.2 SATA SSD Mod Debuts  
+     The M2 Slim hardware modification  
+     enables internal M.2 SATA...       
 304  RetroRGB: Weekly Roundup #539 Out  
-     Edition 539 recaps the latest CRT  
-     repair developments, scaler...     
-305  RetroArch: Update 1.21.0 Released  
-     The multi-system frontend rolls out
-     build 1.21.0, introducing key...   
+     Issue 539 recaps current CRT       
+     calibrations, scaler firmware...   
+305  RetroArch: Version 1.21.0 Launched 
+     The modular multi-system frontend  
+     rolls out its latest maintenance...
 [100] Index      [301] Details     [400]
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

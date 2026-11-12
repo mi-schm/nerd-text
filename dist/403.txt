@@ -1,19 +1,21 @@
-P403  NERD-TEXT 403   12.11.26 15:07 UTC
+P403  NERD-TEXT 403   12.11.26 15:28 UTC
 ========================================
   HACKER NEWS (3/10)                    
 ========================================
-> HN #3 | chipsandcheese.com            
-  AMD: Zen 6 Architecture Deep Dive     
+> HN #3 | nvidianews.nvidia.com         
+  Nvidia: CEO Transition Announced      
                                         
-  Lead architect Mike Clark discusses   
-  Zen 6 microarchitecture changes,      
-  exploring pipeline optimizations,     
-  cache hierarchy scaling, and execution
-  throughput gains planned for upcoming 
-  silicon.                              
+  The semiconductor giant confirms an   
+  immediate executive leadership        
+  handover following decades of market- 
+  defining GPU and AI hardware          
+  dominance, triggering massive industry
+  reaction.                             
                                         
-  24 pts | 0 comments |                 
-  chipsandcheese.com                    
+  926 pts | 739 comments |              
+  nvidianews.nvidia.                    
 [100] Index  [402] Prev  [404] Next     
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

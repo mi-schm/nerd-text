@@ -1,19 +1,20 @@
-P406  NERD-TEXT 406   12.11.26 15:07 UTC
+P406  NERD-TEXT 406   12.11.26 15:28 UTC
 ========================================
   HACKER NEWS (6/10)                    
 ========================================
-> HN #6 | blog.janestreet.com           
-  Jane Street: LLMs in Trading Dev      
+> HN #6 | libreagi.com                  
+  LibreAGI: Torrenting Open AI          
                                         
-  The quantitative trading firm details 
-  how large language models are actively
-  reshaping internal OCaml workflows,   
-  developer tooling, and automated      
-  testing across proprietary trading    
-  systems.                              
+  A decentralized BitTorrent tracker    
+  preserves vulnerable open-source      
+  artificial intelligence weights,      
+  ensuring research community access    
+  even if centralized host platforms    
+  delete them.                          
                                         
-  25 pts | 11 comments |                
-  blog.janestreet.co                    
+  23 pts | 10 comments | libreagi.com   
 [100] Index  [405] Prev  [407] Next     
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

@@ -1,18 +1,21 @@
-P202  NERD-TEXT 202   12.11.26 15:07 UTC
+P202  NERD-TEXT 202   12.11.26 15:28 UTC
 ========================================
 SECURITY ADVISORY (2/5)                 
 ========================================
 > CVE-2026-111793                       
-  Webtop: Document Transcoder Flaw      
+  Webtop: Media Transcoder Flaw         
                                         
-  An improper sphere resource transfer  
-  bug allows authenticated attackers to 
-  bypass conversion guards and process  
-  arbitrary files. CISA adds flaw to KEV
-  list due to active exploitation risks.
+  A resource transfer vulnerability     
+  enables authenticated users to convert
+  unauthorized documents and breach     
+  boundaries. CISA flags active         
+  exploitation, ordering federal patches
+  within two weeks.                     
                                         
   CISA KEV | Added: 2026-11-10 | Due:   
   2026-11-24                            
 [100] Index  [201] Prev  [203] Next     
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

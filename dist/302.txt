@@ -1,18 +1,20 @@
-P302  NERD-TEXT 302   12.11.26 15:07 UTC
+P302  NERD-TEXT 302   12.11.26 15:28 UTC
 ========================================
 RETRO LOG (2/5)                         
 ========================================
 > TIMEEXT                               
-  Gunpei Yokoi: Legacy Remembered       
+  Gunpei Yokoi: Legacy Reassessed       
                                         
-  Peers revisit the design philosophy of
-  late Game Boy creator Gunpei Yokoi,   
-  highlighting his lateral thinking with
-  seasoned tech mantra that shaped      
-  Nintendo's hardware philosophy for    
-  decades.                              
+  Colleagues revisit the lateral        
+  thinking philosophy of the late Game  
+  Boy inventor and Game & Watch pioneer,
+  whose hardware design tenets still    
+  guide modern portable console         
+  creation.                             
                                         
   Source: TimeExt (Thu, 12 Nov 2026)    
 [100] Index  [301] Prev  [303] Next     
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

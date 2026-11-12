@@ -1,18 +1,20 @@
-P301  NERD-TEXT 301   12.11.26 15:07 UTC
+P301  NERD-TEXT 301   12.11.26 15:28 UTC
 ========================================
 RETRO LOG (1/5)                         
 ========================================
 > TIMEEXT                               
-  id Software: Ex-Staff Form Studio     
+  id Software: Ex-Devs Form Studio      
                                         
-  Former id Software developers hit by  
-  recent Microsoft studio layoffs have  
-  banded together to establish an       
-  independent development team, aiming  
-  to build original retro-inspired      
-  shooter titles.                       
+  Veteran developers laid off by        
+  Microsoft have banded together to     
+  found an independent game studio,     
+  aiming to preserve their classic      
+  shooter craft outside corporate       
+  ownership.                            
                                         
   Source: TimeExt (Thu, 12 Nov 2026)    
 [100] Index  [300] Prev  [302] Next     
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

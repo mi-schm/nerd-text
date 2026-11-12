@@ -1,18 +1,20 @@
-P409  NERD-TEXT 409   12.11.26 15:07 UTC
+P409  NERD-TEXT 409   12.11.26 15:28 UTC
 ========================================
   HACKER NEWS (9/10)                    
 ========================================
 > HN #9 | github.com                    
-  Jane Street: Socratic AI Skill        
+  Jane Street: Socratic AI Tutor        
                                         
-  A published agent skill specification 
-  instructs LLMs to guide developers via
-  guided questions rather than          
-  generating code directly, reinforcing 
-  conceptual understanding during       
-  debugging.                            
+  An open agent specification guides    
+  autonomous models to teach complex    
+  concepts via targeted questioning,    
+  fostering deep conceptual             
+  understanding rather than merely      
+  emitting direct answers.              
                                         
-  475 pts | 108 comments | github.com   
+  489 pts | 112 comments | github.com   
 [100] Index  [408] Prev  [410] Next     
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

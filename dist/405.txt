@@ -1,18 +1,19 @@
-P405  NERD-TEXT 405   12.11.26 15:07 UTC
+P405  NERD-TEXT 405   12.11.26 15:28 UTC
 ========================================
   HACKER NEWS (5/10)                    
 ========================================
 > HN #5 | reuters.com                   
   Nvidia: Jensen Huang Steps Down       
                                         
-  In a sudden shift, the co-founder     
-  departs his chief executive post with 
-  immediate effect, shaking             
-  semiconductor markets as the board    
-  initiates emergency succession plans  
-  for the AI giant.                     
+  Jensen Huang has abruptly vacated his 
+  chief executive role at the chipmaker.
+  The immediate departure shocks global 
+  tech markets, prompting swift         
+  succession planning across the board. 
                                         
-  233 pts | 110 comments | reuters.com  
+  282 pts | 148 comments | reuters.com  
 [100] Index  [404] Prev  [406] Next     
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

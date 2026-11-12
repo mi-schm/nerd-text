@@ -1,18 +1,20 @@
-P401  NERD-TEXT 401   12.11.26 15:07 UTC
+P401  NERD-TEXT 401   12.11.26 15:28 UTC
 ========================================
   HACKER NEWS (1/10)                    
 ========================================
-> HN #1 | nvidianews.nvidia.com         
-  Nvidia: CEO Transition Announced      
+> HN #1 | moddb.com                     
+  Quake 4: Open-Source Engine Out       
                                         
-  The tech titan announced an immediate 
-  leadership transition across its AI   
-  computing platforms, autonomous       
-  machines, and data center businesses  
-  amid sweeping corporate restructuring.
+  The openQ4 project brings native      
+  modern OS support to the classic id   
+  Tech 4 shooter. Players gain          
+  widescreen scaling, high-refresh      
+  rates, and full Linux or Steam Deck   
+  compatibility.                        
                                         
-  802 pts | 598 comments |              
-  nvidianews.nvidia.                    
+  47 pts | 16 comments | moddb.com      
 [100] Index  [400] Prev  [402] Next     
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

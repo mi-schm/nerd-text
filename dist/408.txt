@@ -1,18 +1,20 @@
-P408  NERD-TEXT 408   12.11.26 15:07 UTC
+P408  NERD-TEXT 408   12.11.26 15:28 UTC
 ========================================
   HACKER NEWS (8/10)                    
 ========================================
 > HN #8 | bbc.co.uk                     
-  Nvidia: Huang Quits Amid Scandal      
+  Nvidia: Stock Plunge Amid Exit        
                                         
-  Shares dropped sharply following      
-  allegations surrounding the long-time 
-  chief executive, triggering his       
-  immediate resignation and forcing the 
-  chipmaker into unexpected crisis      
-  governance.                           
+  Shares tumble sharply following the   
+  sudden resignation of the firm's      
+  founding executive, as controversy and
+  national security allegations ignite  
+  intense scrutiny across global        
+  financial markets.                    
                                         
-  109 pts | 49 comments | bbc.co.uk     
+  140 pts | 73 comments | bbc.co.uk     
 [100] Index  [407] Prev  [409] Next     
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

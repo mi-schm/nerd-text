@@ -1,22 +1,24 @@
-P200  NERD-TEXT 200   12.11.26 15:07 UTC
+P200  NERD-TEXT 200   12.11.26 15:28 UTC
 ========================================
 CISA KEV & LINUX SECURITY (DSA/USN)     
 ========================================
-201  MS Outlook: Remote Spoofing Bug    
-     Unauthenticated remote threat      
-     actors can bypass safety...        
-202  Webtop: Document Transcoder Flaw   
-     An improper sphere resource        
-     transfer bug allows...             
-203  Cisco BroadWorks: Remote XXE Leak  
-     Improper XML external entity       
-     parsing lets unauthenticated...    
-204  Debian: Apache2 Security Patch     
-     Debian maintainers have issued an  
-     urgent update for the apache2...   
-205  Ubuntu: Yodl Buffer Over-Read DoS  
-     An input validation issue causes a 
-     memory buffer over-read during...  
+201  Outlook: Network Spoofing Flaw     
+     CISA added a zero-interaction flaw 
+     to its Known Exploited...          
+202  Webtop: Media Transcoder Flaw      
+     A resource transfer vulnerability  
+     enables authenticated users to...  
+203  BroadWorks: XXE Data Leak Bug      
+     An unauthenticated remote XXE flaw 
+     exposes sensitive server...        
+204  Debian: Apache2 Security Update    
+     Debian issued DSA 6620-1 to resolve
+     multiple security...               
+205  Ubuntu: Yodl Buffer Over-Read      
+     Canonical patched a buffer over-   
+     read vulnerability in Yodl...      
 [100] Index      [201] Details     [300]
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

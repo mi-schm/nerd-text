@@ -1,16 +1,20 @@
-P999  NERD-TEXT 999   12.11.26 15:07 UTC
+P999  NERD-TEXT 999   12.11.26 15:28 UTC
 ========================================
 ABOUT NERD-TEXT // ARCHITECTURE         
 ========================================
-Zero ads. Zero tracking. Finite pages.  
+No tracking. No popups. Finite pages.   
 200: Security | 300: Retro | 400: HN    
+                                        
+SPONSORING (1 LINE / 40 CHARS):         
+  Contact: ads@nerdtext.net             
                                         
 TERMINAL / CURL ACCESS:                 
   $ curl <host>/100.txt                 
-  $ curl <host>/400.txt                 
   $ curl <host>/all.txt                 
                                         
-Last build: 12.11.26 15:07 UTC          
+Last build: 12.11.26 15:28 UTC          
 [100] Index   [200] Sec   [400] HN      
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     

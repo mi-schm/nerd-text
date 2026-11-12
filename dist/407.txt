@@ -1,18 +1,21 @@
-P407  NERD-TEXT 407   12.11.26 15:07 UTC
+P407  NERD-TEXT 407   12.11.26 15:28 UTC
 ========================================
   HACKER NEWS (7/10)                    
 ========================================
-> HN #7 | libreagi.com                  
-  LibreAGI: Torrenting Open AI          
+> HN #7 | blog.janestreet.com           
+  Jane Street: LLM Dev Workflow         
                                         
-  A private BitTorrent tracker provides 
-  decentralized archiving for open-     
-  source machine learning weights,      
-  ensuring public AI models survive     
-  upstream takedowns, hosting fees, and 
-  license shifts.                       
+  The quantitative trading firm outlines
+  how engineering teams integrate large 
+  language models into internal         
+  development pipelines without         
+  sacrificing rigorous OCaml correctness
+  standards.                            
                                         
-  16 pts | 7 comments | libreagi.com    
+  40 pts | 19 comments |                
+  blog.janestreet.co                    
 [100] Index  [406] Prev  [408] Next     
+----------------------------------------
+AD: Your 40-char link -> ads@nerdtext.ne
 ========================================
 100:IDX  200:SEC  300:RETRO  400:HN     
