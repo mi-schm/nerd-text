@@ -20,7 +20,6 @@ from pathlib import Path
 
 DIST_DIR = Path("dist")
 WIDTH = 40
-MAX_BODY_LINES = 18
 
 CISA_KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 
@@ -49,6 +48,19 @@ def clean_text(raw: str) -> str:
     return text
 
 
+def dedup_prefix(prefix: str, text: str) -> str:
+    """Entfernt doppelte Hersteller- oder Spielnamen am Anfang."""
+    p = prefix.strip()
+    t = text.strip()
+    if t.lower().startswith(p.lower()):
+        t = t[len(p):].lstrip(" :-|–—")
+    return t
+
+
+def is_date_only(text: str) -> bool:
+    return bool(re.fullmatch(r"[\d./\-:\s]+", text.strip()))
+
+
 def wrap_40(text: str, indent: str = "") -> list[str]:
     clean = clean_text(text)
     if not clean:
@@ -65,17 +77,13 @@ def wrap_40(text: str, indent: str = "") -> list[str]:
 
 
 def summarize_with_llm(items: list[dict], category: str) -> list[dict] | None:
-    """
-    Optional: Uses Gemini API (via GEMINI_API_KEY) to punch up summaries into
-    crisp 3-line Teletext blurbs. Falls back gracefully if unset or offline.
-    """
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not api_key or not items:
         return None
 
     prompt = (
         f"You are a Teletext editor for {category}. Rewrite each item below into:\n"
-        "1) 'headline': max 34 chars, punchy, factual, no clickbait.\n"
+        "1) 'headline': max 34 chars, punchy, factual, no redundant vendor/game prefix.\n"
         "2) 'summary': max 110 chars, pure technical facts/versions/impact.\n"
         "Return ONLY valid JSON array of objects with keys 'headline' and 'summary'.\n\n"
         f"Items:\n{json.dumps(items, ensure_ascii=True)}"
@@ -121,10 +129,15 @@ def get_cisa_cves(limit: int = 5) -> list[dict]:
             product = clean_text(v.get("product", ""))
             name = clean_text(v.get("vulnerabilityName", ""))
             due = clean_text(v.get("dueDate", ""))
+
+            target = dedup_prefix(vendor, product)
+            label = f"{vendor} {target}".strip() if target else vendor
+            clean_name = dedup_prefix(label, name) or name
+
             results.append({
                 "id": cve,
-                "headline": f"{vendor} {product}: {name}"[:34],
-                "summary": f"{name}. Patch due: {due}."[:140],
+                "headline": f"{label}: {clean_name}"[:34],
+                "summary": f"{clean_name}. Patch due: {due}."[:140],
                 "meta": f"Added: {v.get('dateAdded', '')} | Due: {due}",
             })
         return results
@@ -161,13 +174,18 @@ def parse_feed_items(xml_bytes: bytes, source_name: str, max_items: int = 2) -> 
                 sum_el = entry.find("description")
                 date_el = entry.find("pubDate")
 
-            title = clean_text(title_el.text if title_el is not None else "Update")
+            raw_title = clean_text(title_el.text if title_el is not None else "")
             summary = clean_text(sum_el.text if sum_el is not None else "")
             pub = clean_text(date_el.text if date_el is not None else "")[:16]
 
+            title = dedup_prefix(source_name, raw_title)
+            if not title or is_date_only(title):
+                title = summary[:45] if summary else "Dev Log Update"
+
+            short_src = "DF" if source_name == "Dwarf Fortress" else source_name
             items.append({
                 "id": source_name.upper(),
-                "headline": f"{source_name}: {title}"[:34],
+                "headline": f"{short_src}: {title}"[:34],
                 "summary": (summary or title)[:140],
                 "meta": f"Source: {source_name} ({pub})",
             })
@@ -215,7 +233,7 @@ def build_pages(cves: list[dict], games: list[dict], stamp: str) -> dict:
     p100.extend([
         {"t": "blank", "s": ""},
         {"t": "sep", "s": "-" * 40},
-        {"t": "nav", "s": "[200] Security   [300] Games   [999] Info"},
+        {"t": "nav", "s": "[200] Security  [300] Games   [999] Info"},
     ])
     pages["100"] = {"title": "INDEX", "next": "200", "prev": "999", "lines": p100}
 
@@ -290,8 +308,8 @@ def build_pages(cves: list[dict], games: list[dict], stamp: str) -> dict:
             {"t": "body", "s": "mobile links and terminal workflows."},
             {"t": "blank", "s": ""},
             {"t": "sec_cyan", "s": "TERMINAL / CURL ACCESS:"},
-            {"t": "item_yel", "s": "  $ curl https://nerdtext.io/100"},
-            {"t": "item_yel", "s": "  $ curl https://nerdtext.io/201"},
+            {"t": "item_yel", "s": "  $ curl <host>/100.txt"},
+            {"t": "item_yel", "s": "  $ curl <host>/201.txt"},
             {"t": "blank", "s": ""},
             {"t": "body", "s": f"Last build: {stamp} UTC"},
             {"t": "nav", "s": "[100] Index   [200] Sec   [300] Games"},

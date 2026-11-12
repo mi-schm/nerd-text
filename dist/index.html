@@ -312,7 +312,7 @@
 
   <div class="raw-box" id="raw-box">
     <div class="raw-header">
-      <span id="raw-cmd">$ curl https://nerdtext.io/100</span>
+      <span id="raw-cmd">$ curl https://nerd-text.michaelschm.workers.dev/100.txt</span>
       <button class="pill-btn" onclick="copyRaw()">COPY</button>
     </div>
     <div id="raw-content"></div>
@@ -350,84 +350,12 @@
           { t: "sep", s: "========================================" },
           { t: "sec_cyan", s: "SECURITY & CVEs (FROM PAGE 200)" },
           { t: "link", p: "201", s: "201  OpenSSH auth-bypass exploited ITW" },
-          { t: "link", p: "202", s: "202  Barracuda ESG: KEV deadline looms" },
-          { t: "link", p: "203", s: "203  Chrome Use-After-Free (CVE-125350)" },
           { t: "blank", s: "" },
           { t: "sec_green", s: "NERD GAMES & ROGUELIKES (FROM 300)" },
-          { t: "link", p: "301", s: "301  Dwarf Fortress: Magic update in Nov" },
-          { t: "link", p: "302", s: "302  NetHack 5.0: Lua overhaul & balance" },
-          { t: "link", p: "303", s: "303  Caves of Qud: Modding API patch" },
+          { t: "link", p: "301", s: "301  DF: Myth & Magic Dev Log Update" },
           { t: "blank", s: "" },
           { t: "sep", s: "----------------------------------------" },
-          { t: "nav", s: "[200] Security   [300] Games   [999] Info" }
-        ]
-      },
-      "200": {
-        title: "SECURITY",
-        next: "201",
-        prev: "100",
-        lines: [
-          { t: "hdr_red", s: "SECURITY & CISA KEV OVERVIEW" },
-          { t: "sep", s: "========================================" },
-          { t: "link", p: "201", s: "201  CVE-2026-123158: OpenSSH Auth" },
-          { t: "body", s: "     Flawed status code on Linux." },
-          { t: "link", p: "202", s: "202  CVE-2026-116606: Barracuda ESG" },
-          { t: "body", s: "     Chained root exploit in the wild." },
-          { t: "link", p: "203", s: "203  CVE-2026-125350: Chromium UAF" },
-          { t: "body", s: "     Active exploitation confirmed." },
-          { t: "blank", s: "" },
-          { t: "nav", s: "[100] Index      [201] Details     [300]" }
-        ]
-      },
-      "201": {
-        title: "CVE-123158",
-        next: "202",
-        prev: "200",
-        lines: [
-          { t: "hdr_red", s: "CVE DETAIL (1/3)" },
-          { t: "sep", s: "========================================" },
-          { t: "item_yel", s: "> CVE-2026-123158" },
-          { t: "sec_cyan", s: "  OpenBSD OpenSSH: Auth Bypass" },
-          { t: "blank", s: "" },
-          { t: "body", s: "  Flawed status code handling on Linux" },
-          { t: "body", s: "  allows remote authentication bypass" },
-          { t: "body", s: "  under non-default configurations." },
-          { t: "blank", s: "" },
-          { t: "warn_red", s: "  CVSS 8.1 | Patch immediately!" },
-          { t: "nav", s: "[100] Index  [200] Prev  [202] Next" }
-        ]
-      },
-      "300": {
-        title: "NERD GAMES",
-        next: "301",
-        prev: "200",
-        lines: [
-          { t: "hdr_grn", s: "ROGUELIKES & SYSTEM-DRIVEN GAMES" },
-          { t: "sep", s: "========================================" },
-          { t: "link", p: "301", s: "301  Dwarf Fortress: Myth & Magic" },
-          { t: "body", s: "     20th anniversary magic overhaul." },
-          { t: "link", p: "302", s: "302  NetHack 5.0.0: Lua Compiler" },
-          { t: "body", s: "     Replaces yacc/lex; Valkyrie nerfed." },
-          { t: "blank", s: "" },
-          { t: "nav", s: "[100] Index      [301] Details     [999]" }
-        ]
-      },
-      "301": {
-        title: "DWARF FORT",
-        next: "302",
-        prev: "300",
-        lines: [
-          { t: "hdr_grn", s: "GAME LOG (1/2)" },
-          { t: "sep", s: "========================================" },
-          { t: "item_yel", s: "> DWARF FORTRESS" },
-          { t: "sec_cyan", s: "  Myth & Magic System Preview" },
-          { t: "blank", s: "" },
-          { t: "body", s: "  Marking its 20th anniversary, the" },
-          { t: "body", s: "  procedural magic system hits PC." },
-          { t: "body", s: "  Pre-patch fixes tavern book thieves." },
-          { t: "blank", s: "" },
-          { t: "warn_grn", s: "  Source: Bay 12 Dev Log" },
-          { t: "nav", s: "[100] Index  [300] Prev  [302] Next" }
+          { t: "nav", s: "[200] Security  [300] Games   [999] Info" }
         ]
       },
       "999": {
@@ -436,14 +364,14 @@
         prev: "300",
         lines: [
           { t: "hdr_mag", s: "ABOUT NERD-TEXT // ARCHITECTURE" },
-          { t: "sep", s: "=" * 40 },
+          { t: "sep", s: "========================================" },
           { t: "body", s: "Zero ads. Zero tracking. Finite pages." },
           { t: "body", s: "Built for instant loading on weak" },
           { t: "body", s: "mobile links and terminal workflows." },
           { t: "blank", s: "" },
           { t: "sec_cyan", s: "TERMINAL / CURL ACCESS:" },
-          { t: "item_yel", s: "  $ curl https://nerdtext.io/100" },
-          { t: "item_yel", s: "  $ curl https://nerdtext.io/201" },
+          { t: "item_yel", s: "  $ curl <host>/100.txt" },
+          { t: "item_yel", s: "  $ curl <host>/201.txt" },
           { t: "blank", s: "" },
           { t: "body", s: "Mode: Local Demo Fallback" },
           { t: "nav", s: "[100] Index   [200] Sec   [300] Games" }
@@ -616,8 +544,8 @@
       if (!data) return;
       const host = window.location.origin.startsWith("http")
         ? window.location.origin
-        : "https://nerdtext.io";
-      document.getElementById("raw-cmd").textContent = `$ curl ${host}/${currentPage}`;
+        : "https://nerd-text.michaelschm.workers.dev";
+      document.getElementById("raw-cmd").textContent = `$ curl ${host}/${currentPage}.txt`;
       const stamp = buildStamp || document.getElementById("hdr-clock").textContent;
       const header = `P${currentPage}  NERD-TEXT ${currentPage}   ${stamp}`.slice(0, 40).padEnd(40, " ");
       const body = data.lines.map((l) => l.s.slice(0, 40).padEnd(40, " ")).join("\n");
