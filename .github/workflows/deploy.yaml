@@ -26,3 +26,6 @@ jobs:
           git add dist/*.json dist/*.txt
           git diff --staged --quiet || git commit -m "chore: daily teletext build"
           git push
+
+  env:
+    GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
