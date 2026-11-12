@@ -1,0 +1,17 @@
+P402  NERD-TEXT 402   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (2/10)                    
+========================================
+> HN #2 | pron.github.io                
+  Pron/GitHub: Correct Software         
+                                        
+  Deep dive into language design        
+  paradigms, contrasting the practical  
+  trade-offs of continuations versus    
+  monads in modern functional           
+  programming environments.             
+                                        
+  189 pts | 78 comments | pron.github.io
+[100] Index  [401] Prev  [403] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     

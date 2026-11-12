@@ -1,18 +1,18 @@
-P302  NERD-TEXT 302   12.11.26 14:11 UTC
+P302  NERD-TEXT 302   12.11.26 14:49 UTC
 ========================================
-GAME LOG (2/5)                          
+RETRO LOG (2/5)                         
 ========================================
-> DWARF FORTRESS                        
-  Dwarf Fortress: Update 53.17          
+> TIMEEXT                               
+  Nintendo: Gunpei Yokoi's Legacy       
                                         
-  Bay 12 Games deployed maintenance     
-  build 53.17 to production branches.   
-  The patch addresses runtime stability,
-  core simulation loops, and critical   
-  world-gen routines.                   
+  Colleagues reflect on the legendary   
+  Nintendo creator behind the Game Boy  
+  and Game & Watch lines, highlighting  
+  his philosophy of lateral thinking    
+  with withered technology that still   
+  shapes games.                         
                                         
-  Source: Dwarf Fortress (Mon, 09 Nov   
-  2026)                                 
+  Source: TimeExt (Thu, 12 Nov 2026)    
 [100] Index  [301] Prev  [303] Next     
 ========================================
-RED:100  GRN:200  YEL:300  CYN:999      
+100:IDX  200:SEC  300:RETRO  400:HN     

@@ -1,0 +1,17 @@
+P403  NERD-TEXT 403   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (3/10)                    
+========================================
+> HN #3 | reuters.com                   
+  Reuters/Nvidia: Jensen Huang          
+                                        
+  Jensen Huang steps down from his      
+  executive position at the             
+  semiconductor giant immediately,      
+  triggering widespread industry        
+  speculation and market reactions.     
+                                        
+  182 pts | 66 comments | reuters.com   
+[100] Index  [402] Prev  [404] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     

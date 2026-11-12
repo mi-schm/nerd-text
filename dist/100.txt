@@ -1,18 +1,20 @@
-P100  NERD-TEXT 100   12.11.26 14:11 UTC
+P100  NERD-TEXT 100   12.11.26 14:49 UTC
 ========================================
   NERD-TEXT // ZERO-BLOAT TELETEXT      
 ========================================
-SECURITY & LINUX ADVISORIES (P200)      
-201  MS Office: Outlook Spoofing Flaw   
-202  Openwave Webtop: Transcoder Bug    
-203  Cisco BroadWorks: Remote XXE Flaw  
+SECURITY & LINUX ADVISORIES     [200]   
+201  MS Outlook: Network Spoofing Flaw  
+202  Openwave: Media Transcoder Flaw    
                                         
-NERD GAMES & ROGUELIKES (FROM 300)      
-301  Dwarf Fortress: Audio Overhaul     
-302  Dwarf Fortress: Update 53.17       
-303  Caves of Qud: Diaspora Expansion   
+RETRO GAMING & HANDHELDS        [300]   
+301  id Software: Ex-Devs Form Studio   
+302  Nintendo: Gunpei Yokoi's Legacy    
                                         
+TOP 10 HACKER NEWS              [400]   
+401  Nvidia/News: CEO Transition        
+402  Pron/GitHub: Correct Software      
+403  Reuters/Nvidia: Jensen Huang       
 ----------------------------------------
-[200] Security  [300] Games   [999] Info
+[200] Sec  [300] Retro  [400] HN  [999] 
 ========================================
-RED:100  GRN:200  YEL:300  CYN:999      
+100:IDX  200:SEC  300:RETRO  400:HN     

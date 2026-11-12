@@ -1,0 +1,19 @@
+P400  NERD-TEXT 400   12.11.26 14:49 UTC
+========================================
+  TOP 10 HACKER NEWS // FRONT PAGE      
+========================================
+401  Nvidia/News: CEO Transition        
+402  Pron/GitHub: Correct Software      
+403  Reuters/Nvidia: Jensen Huang       
+404  ModDB/Quake: OpenQ4 Engine         
+405  Chips/AMD: Zen 6 Architecture      
+406  Libre/BitTorrent: OSS Models       
+407  GitHub/JaneStreet: Socratic        
+408  Blog/JaneStreet: LLM Dev           
+409  BBC/Nvidia: Stock Plunge           
+410  Codeberg/Bootvine: Systemd         
+                                        
+----------------------------------------
+[100] Index      [401] Story 1     [999]
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     

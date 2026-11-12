@@ -1,19 +1,19 @@
-P201  NERD-TEXT 201   12.11.26 14:11 UTC
+P201  NERD-TEXT 201   12.11.26 14:49 UTC
 ========================================
 SECURITY ADVISORY (1/5)                 
 ========================================
 > CVE-2026-124194                       
-  MS Office: Outlook Spoofing Flaw      
+  MS Outlook: Network Spoofing Flaw     
                                         
-  Remote unauthorized attackers exploit 
-  a missing user interaction check over 
-  network vectors to spoof client       
-  sessions. Organizations must apply    
-  Microsoft security updates before the 
-  Nov 24 deadline.                      
+  CISA added an active spoofing flaw in 
+  Microsoft Outlook to its catalog.     
+  Remote unauthenticated actors can     
+  exploit missing user interaction      
+  checks to forge data across networks. 
+  Patch due Nov 24.                     
                                         
   CISA KEV | Added: 2026-11-10 | Due:   
   2026-11-24                            
 [100] Index  [200] Prev  [202] Next     
 ========================================
-RED:100  GRN:200  YEL:300  CYN:999      
+100:IDX  200:SEC  300:RETRO  400:HN     

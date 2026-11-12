@@ -1,16 +1,16 @@
-P999  NERD-TEXT 999   12.11.26 14:11 UTC
+P999  NERD-TEXT 999   12.11.26 14:49 UTC
 ========================================
 ABOUT NERD-TEXT // ARCHITECTURE         
 ========================================
 Zero ads. Zero tracking. Finite pages.  
-Built for instant loading on weak       
-mobile links and terminal workflows.    
+200: Security | 300: Retro | 400: HN    
                                         
 TERMINAL / CURL ACCESS:                 
   $ curl <host>/100.txt                 
-  $ curl <host>/204.txt                 
+  $ curl <host>/400.txt                 
+  $ curl <host>/all.txt                 
                                         
-Last build: 12.11.26 14:11 UTC          
-[100] Index   [200] Sec   [300] Games   
+Last build: 12.11.26 14:49 UTC          
+[100] Index   [200] Sec   [400] HN      
 ========================================
-RED:100  GRN:200  YEL:300  CYN:999      
+100:IDX  200:SEC  300:RETRO  400:HN     

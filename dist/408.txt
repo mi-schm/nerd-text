@@ -1,0 +1,17 @@
+P408  NERD-TEXT 408   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (8/10)                    
+========================================
+> HN #8 | blog.janestreet.com           
+  Blog/JaneStreet: LLM Dev              
+                                        
+  Engineering post details how large    
+  language models have fundamentally    
+  shifted internal software development 
+  lifecycles and daily coding practices.
+                                        
+  11 pts | 5 comments |                 
+  blog.janestreet.co                    
+[100] Index  [407] Prev  [409] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     

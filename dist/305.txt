@@ -1,18 +1,18 @@
-P305  NERD-TEXT 305   12.11.26 14:11 UTC
+P305  NERD-TEXT 305   12.11.26 14:49 UTC
 ========================================
-GAME LOG (5/5)                          
+RETRO LOG (5/5)                         
 ========================================
-> CATACLYSM: DDA                        
-  Cataclysm DDA: Accessor Refactor      
+> LIBRETRO                              
+  Libretro: RetroArch 1.21.0 Drops      
                                         
-  Pull requests #89509 and #89492 purge 
-  legacy integer-indexed inventory      
-  accessors from Character classes while
-  overhauling injury string generation  
-  for wound descriptions.               
+  The flagship multi-system frontend    
+  rolls out its latest milestone build, 
+  bringing community stability patches, 
+  core optimization tweaks, and updated 
+  emulator compatibility across all     
+  target ports.                         
                                         
-  Source: Cataclysm: DDA                
-  (2026-11-12T07:15)                    
-[100] Index  [304] Prev  [999] Next     
+  Source: Libretro (Tue, 29 Apr 2025)   
+[100] Index  [304] Prev  [400] Next     
 ========================================
-RED:100  GRN:200  YEL:300  CYN:999      
+100:IDX  200:SEC  300:RETRO  400:HN     

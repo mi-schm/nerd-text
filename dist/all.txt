@@ -1,0 +1,476 @@
+P100  NERD-TEXT 100   12.11.26 14:49 UTC
+========================================
+  NERD-TEXT // ZERO-BLOAT TELETEXT      
+========================================
+SECURITY & LINUX ADVISORIES     [200]   
+201  MS Outlook: Network Spoofing Flaw  
+202  Openwave: Media Transcoder Flaw    
+                                        
+RETRO GAMING & HANDHELDS        [300]   
+301  id Software: Ex-Devs Form Studio   
+302  Nintendo: Gunpei Yokoi's Legacy    
+                                        
+TOP 10 HACKER NEWS              [400]   
+401  Nvidia/News: CEO Transition        
+402  Pron/GitHub: Correct Software      
+403  Reuters/Nvidia: Jensen Huang       
+----------------------------------------
+[200] Sec  [300] Retro  [400] HN  [999] 
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P200  NERD-TEXT 200   12.11.26 14:49 UTC
+========================================
+CISA KEV & LINUX SECURITY (DSA/USN)     
+========================================
+201  MS Outlook: Network Spoofing Flaw  
+     CISA added an active spoofing flaw 
+     in Microsoft Outlook to its        
+202  Openwave: Media Transcoder Flaw    
+     CISA flags an incorrect resource   
+     transfer bug in Openwave Webtop    
+203  Cisco: BroadWorks XXE Data Leak    
+     A critical XXE vulnerability in    
+     Cisco BroadWorks allows            
+204  Debian/DSA: Apache2 Flaws Patched  
+     Debian released security update DSA
+     6620-1 for the Apache2 HTTP server 
+205  Ubuntu/USN: Yodl DoS Flaw Patched  
+     Canonical released advisory        
+     USN-9063-1 resolving a buffer over-
+[100] Index      [201] Details     [300]
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P201  NERD-TEXT 201   12.11.26 14:49 UTC
+========================================
+SECURITY ADVISORY (1/5)                 
+========================================
+> CVE-2026-124194                       
+  MS Outlook: Network Spoofing Flaw     
+                                        
+  CISA added an active spoofing flaw in 
+  Microsoft Outlook to its catalog.     
+  Remote unauthenticated actors can     
+  exploit missing user interaction      
+  checks to forge data across networks. 
+  Patch due Nov 24.                     
+                                        
+  CISA KEV | Added: 2026-11-10 | Due:   
+  2026-11-24                            
+[100] Index  [200] Prev  [202] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P202  NERD-TEXT 202   12.11.26 14:49 UTC
+========================================
+SECURITY ADVISORY (2/5)                 
+========================================
+> CVE-2026-111793                       
+  Openwave: Media Transcoder Flaw       
+                                        
+  CISA flags an incorrect resource      
+  transfer bug in Openwave Webtop Media 
+  Transcoder. Authenticated attackers   
+  can bypass security boundaries to     
+  convert arbitrary document types.     
+  Remediate by Nov 24.                  
+                                        
+  CISA KEV | Added: 2026-11-10 | Due:   
+  2026-11-24                            
+[100] Index  [201] Prev  [203] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P203  NERD-TEXT 203   12.11.26 14:49 UTC
+========================================
+SECURITY ADVISORY (3/5)                 
+========================================
+> CVE-2026-20320                        
+  Cisco: BroadWorks XXE Data Leak       
+                                        
+  A critical XXE vulnerability in Cisco 
+  BroadWorks allows unauthenticated     
+  remote adversaries to steal sensitive 
+  configuration files. CISA ordered     
+  federal agencies to apply vendor      
+  updates by Nov 24.                    
+                                        
+  CISA KEV | Added: 2026-11-10 | Due:   
+  2026-11-24                            
+[100] Index  [202] Prev  [204] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P204  NERD-TEXT 204   12.11.26 14:49 UTC
+========================================
+SECURITY ADVISORY (4/5)                 
+========================================
+> DEBIAN DSA                            
+  Debian/DSA: Apache2 Flaws Patched     
+                                        
+  Debian released security update DSA   
+  6620-1 for the Apache2 HTTP server    
+  package across stable distributions.  
+  System administrators are urged to    
+  apply the latest package rebuilds to  
+  prevent attacks.                      
+                                        
+  Source: Debian DSA (2026-11-12)       
+[100] Index  [203] Prev  [205] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P205  NERD-TEXT 205   12.11.26 14:49 UTC
+========================================
+SECURITY ADVISORY (5/5)                 
+========================================
+> UBUNTU USN                            
+  Ubuntu/USN: Yodl DoS Flaw Patched     
+                                        
+  Canonical released advisory USN-9063-1
+  resolving a buffer over-read in Yodl. 
+  Crafted input can trigger an          
+  application crash, causing a denial of
+  service. Users should update installed
+  packages now.                         
+                                        
+  Source: Ubuntu USN (Wed, 11 Nov 2026) 
+[100] Index  [204] Prev  [300] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P300  NERD-TEXT 300   12.11.26 14:49 UTC
+========================================
+RETRO GAMING, HANDHELDS & ROMHACKS      
+========================================
+301  id Software: Ex-Devs Form Studio   
+     Former staff hit by Microsoft cuts 
+     have banded together to establish a
+302  Nintendo: Gunpei Yokoi's Legacy    
+     Colleagues reflect on the legendary
+     Nintendo creator behind the Game   
+303  PS2 Slim: M.2 SATA SSD Mod Debut   
+     A breakthrough hardware mod dubbed 
+     M2 Slim enables internal M.2 SATA  
+304  Podcast: RetroRGB Roundup #539     
+     The retro gaming scene digest      
+     returns across audio platforms and 
+305  Libretro: RetroArch 1.21.0 Drops   
+     The flagship multi-system frontend 
+     rolls out its latest milestone     
+[100] Index      [301] Details     [400]
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P301  NERD-TEXT 301   12.11.26 14:49 UTC
+========================================
+RETRO LOG (1/5)                         
+========================================
+> TIMEEXT                               
+  id Software: Ex-Devs Form Studio      
+                                        
+  Former staff hit by Microsoft cuts    
+  have banded together to establish a   
+  fresh independent development team,   
+  aiming to build new titles using their
+  veteran FPS pedigree and internal     
+  expertise.                            
+                                        
+  Source: TimeExt (Thu, 12 Nov 2026)    
+[100] Index  [300] Prev  [302] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P302  NERD-TEXT 302   12.11.26 14:49 UTC
+========================================
+RETRO LOG (2/5)                         
+========================================
+> TIMEEXT                               
+  Nintendo: Gunpei Yokoi's Legacy       
+                                        
+  Colleagues reflect on the legendary   
+  Nintendo creator behind the Game Boy  
+  and Game & Watch lines, highlighting  
+  his philosophy of lateral thinking    
+  with withered technology that still   
+  shapes games.                         
+                                        
+  Source: TimeExt (Thu, 12 Nov 2026)    
+[100] Index  [301] Prev  [303] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P303  NERD-TEXT 303   12.11.26 14:49 UTC
+========================================
+RETRO LOG (3/5)                         
+========================================
+> RETRORGB                              
+  PS2 Slim: M.2 SATA SSD Mod Debut      
+                                        
+  A breakthrough hardware mod dubbed M2 
+  Slim enables internal M.2 SATA drive  
+  installation inside SCPH-700XX        
+  consoles, bypassing USB 1.1           
+  bottlenecks for vastly faster ISO     
+  loading and quieter play.             
+                                        
+  Source: RetroRGB (Wed, 11 Nov 2026)   
+[100] Index  [302] Prev  [304] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P304  NERD-TEXT 304   12.11.26 14:49 UTC
+========================================
+RETRO LOG (4/5)                         
+========================================
+> RETRORGB                              
+  Podcast: RetroRGB Roundup #539        
+                                        
+  The retro gaming scene digest returns 
+  across audio platforms and video      
+  feeds, covering weekly hardware       
+  developments, CRT maintenance tips,   
+  scaler updates, and recent homebrew   
+  scene announcements.                  
+                                        
+  Source: RetroRGB (Wed, 11 Nov 2026)   
+[100] Index  [303] Prev  [305] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P305  NERD-TEXT 305   12.11.26 14:49 UTC
+========================================
+RETRO LOG (5/5)                         
+========================================
+> LIBRETRO                              
+  Libretro: RetroArch 1.21.0 Drops      
+                                        
+  The flagship multi-system frontend    
+  rolls out its latest milestone build, 
+  bringing community stability patches, 
+  core optimization tweaks, and updated 
+  emulator compatibility across all     
+  target ports.                         
+                                        
+  Source: Libretro (Tue, 29 Apr 2025)   
+[100] Index  [304] Prev  [400] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P400  NERD-TEXT 400   12.11.26 14:49 UTC
+========================================
+  TOP 10 HACKER NEWS // FRONT PAGE      
+========================================
+401  Nvidia/News: CEO Transition        
+402  Pron/GitHub: Correct Software      
+403  Reuters/Nvidia: Jensen Huang       
+404  ModDB/Quake: OpenQ4 Engine         
+405  Chips/AMD: Zen 6 Architecture      
+406  Libre/BitTorrent: OSS Models       
+407  GitHub/JaneStreet: Socratic        
+408  Blog/JaneStreet: LLM Dev           
+409  BBC/Nvidia: Stock Plunge           
+410  Codeberg/Bootvine: Systemd         
+                                        
+----------------------------------------
+[100] Index      [401] Story 1     [999]
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P401  NERD-TEXT 401   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (1/10)                    
+========================================
+> HN #1 | nvidianews.nvidia.com         
+  Nvidia/News: CEO Transition           
+                                        
+  Nvidia confirms a major leadership    
+  shuffle affecting its AI computing    
+  platforms, data center divisions, and 
+  global autonomous machine strategies  
+  going forward.                        
+                                        
+  665 pts | 482 comments |              
+  nvidianews.nvidia.                    
+[100] Index  [400] Prev  [402] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P402  NERD-TEXT 402   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (2/10)                    
+========================================
+> HN #2 | pron.github.io                
+  Pron/GitHub: Correct Software         
+                                        
+  Deep dive into language design        
+  paradigms, contrasting the practical  
+  trade-offs of continuations versus    
+  monads in modern functional           
+  programming environments.             
+                                        
+  189 pts | 78 comments | pron.github.io
+[100] Index  [401] Prev  [403] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P403  NERD-TEXT 403   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (3/10)                    
+========================================
+> HN #3 | reuters.com                   
+  Reuters/Nvidia: Jensen Huang          
+                                        
+  Jensen Huang steps down from his      
+  executive position at the             
+  semiconductor giant immediately,      
+  triggering widespread industry        
+  speculation and market reactions.     
+                                        
+  182 pts | 66 comments | reuters.com   
+[100] Index  [402] Prev  [404] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P404  NERD-TEXT 404   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (4/10)                    
+========================================
+> HN #4 | moddb.com                     
+  ModDB/Quake: OpenQ4 Engine            
+                                        
+  Open-source replacement for Quake 4   
+  brings native widescreen support,     
+  smooth high-refresh rates, and modern 
+  Linux and Steam Deck compatibility.   
+                                        
+  13 pts | 0 comments | moddb.com       
+[100] Index  [403] Prev  [405] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P405  NERD-TEXT 405   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (5/10)                    
+========================================
+> HN #5 | chipsandcheese.com            
+  Chips/AMD: Zen 6 Architecture         
+                                        
+  Technical deep dive with AMD chief    
+  architect Mike Clark exploring        
+  upcoming microarchitecture            
+  innovations, performance metrics, and 
+  hardware targets.                     
+                                        
+  8 pts | 0 comments |                  
+  chipsandcheese.com                    
+[100] Index  [404] Prev  [406] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P406  NERD-TEXT 406   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (6/10)                    
+========================================
+> HN #6 | libreagi.com                  
+  Libre/BitTorrent: OSS Models          
+                                        
+  Private BitTorrent tracker launched to
+  archive and preserve vulnerable open- 
+  source AI models, ensuring vital      
+  research survives repository          
+  shutdowns.                            
+                                        
+  8 pts | 0 comments | libreagi.com     
+[100] Index  [405] Prev  [407] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P407  NERD-TEXT 407   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (7/10)                    
+========================================
+> HN #7 | github.com                    
+  GitHub/JaneStreet: Socratic           
+                                        
+  Jane Street releases specialized agent
+  skills documentation outlining        
+  structured Socratic tutoring workflows
+  designed for advanced LLM integration.
+                                        
+  467 pts | 103 comments | github.com   
+[100] Index  [406] Prev  [408] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P408  NERD-TEXT 408   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (8/10)                    
+========================================
+> HN #8 | blog.janestreet.com           
+  Blog/JaneStreet: LLM Dev              
+                                        
+  Engineering post details how large    
+  language models have fundamentally    
+  shifted internal software development 
+  lifecycles and daily coding practices.
+                                        
+  11 pts | 5 comments |                 
+  blog.janestreet.co                    
+[100] Index  [407] Prev  [409] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P409  NERD-TEXT 409   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (9/10)                    
+========================================
+> HN #9 | bbc.co.uk                     
+  BBC/Nvidia: Stock Plunge              
+                                        
+  US markets react sharply as Nvidia    
+  shares drop following the sudden      
+  resignation of longtime CEO Jensen    
+  Huang amid unfolding geopolitical     
+  scrutiny.                             
+                                        
+  83 pts | 37 comments | bbc.co.uk      
+[100] Index  [408] Prev  [410] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P410  NERD-TEXT 410   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (10/10)                   
+========================================
+> HN #10 | codeberg.org                 
+  Codeberg/Bootvine: Systemd            
+                                        
+  Bootvine tool visualizes systemd      
+  initialization stages as an           
+  interactive live tree animation,      
+  tracking service dependencies during  
+  system startup.                       
+                                        
+  215 pts | 83 comments | codeberg.org  
+[100] Index  [409] Prev  [999] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     
+
+P999  NERD-TEXT 999   12.11.26 14:49 UTC
+========================================
+ABOUT NERD-TEXT // ARCHITECTURE         
+========================================
+Zero ads. Zero tracking. Finite pages.  
+200: Security | 300: Retro | 400: HN    
+                                        
+TERMINAL / CURL ACCESS:                 
+  $ curl <host>/100.txt                 
+  $ curl <host>/400.txt                 
+  $ curl <host>/all.txt                 
+                                        
+Last build: 12.11.26 14:49 UTC          
+[100] Index   [200] Sec   [400] HN      
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     

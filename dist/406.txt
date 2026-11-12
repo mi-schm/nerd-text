@@ -1,0 +1,17 @@
+P406  NERD-TEXT 406   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (6/10)                    
+========================================
+> HN #6 | libreagi.com                  
+  Libre/BitTorrent: OSS Models          
+                                        
+  Private BitTorrent tracker launched to
+  archive and preserve vulnerable open- 
+  source AI models, ensuring vital      
+  research survives repository          
+  shutdowns.                            
+                                        
+  8 pts | 0 comments | libreagi.com     
+[100] Index  [405] Prev  [407] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     

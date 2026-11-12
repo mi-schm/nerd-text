@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-12T14:11:12.276433+00:00",
+  "generated_utc": "2026-11-12T14:49:13.275114+00:00",
   "pages": {
     "100": {
       "title": "INDEX",
@@ -16,22 +16,17 @@
         },
         {
           "t": "sec_cyan",
-          "s": "SECURITY & LINUX ADVISORIES (P200)"
+          "s": "SECURITY & LINUX ADVISORIES     [200]"
         },
         {
           "t": "link",
           "p": "201",
-          "s": "201  MS Office: Outlook Spoofing Flaw"
+          "s": "201  MS Outlook: Network Spoofing Flaw"
         },
         {
           "t": "link",
           "p": "202",
-          "s": "202  Openwave Webtop: Transcoder Bug"
-        },
-        {
-          "t": "link",
-          "p": "203",
-          "s": "203  Cisco BroadWorks: Remote XXE Flaw"
+          "s": "202  Openwave: Media Transcoder Flaw"
         },
         {
           "t": "blank",
@@ -39,26 +34,40 @@
         },
         {
           "t": "sec_green",
-          "s": "NERD GAMES & ROGUELIKES (FROM 300)"
+          "s": "RETRO GAMING & HANDHELDS        [300]"
         },
         {
           "t": "link",
           "p": "301",
-          "s": "301  Dwarf Fortress: Audio Overhaul"
+          "s": "301  id Software: Ex-Devs Form Studio"
         },
         {
           "t": "link",
           "p": "302",
-          "s": "302  Dwarf Fortress: Update 53.17"
-        },
-        {
-          "t": "link",
-          "p": "303",
-          "s": "303  Caves of Qud: Diaspora Expansion"
+          "s": "302  Nintendo: Gunpei Yokoi's Legacy"
         },
         {
           "t": "blank",
           "s": ""
+        },
+        {
+          "t": "item_yel",
+          "s": "TOP 10 HACKER NEWS              [400]"
+        },
+        {
+          "t": "link",
+          "p": "401",
+          "s": "401  Nvidia/News: CEO Transition"
+        },
+        {
+          "t": "link",
+          "p": "402",
+          "s": "402  Pron/GitHub: Correct Software"
+        },
+        {
+          "t": "link",
+          "p": "403",
+          "s": "403  Reuters/Nvidia: Jensen Huang"
         },
         {
           "t": "sep",
@@ -66,7 +75,7 @@
         },
         {
           "t": "nav",
-          "s": "[200] Security  [300] Games   [999] Info"
+          "s": "[200] Sec  [300] Retro  [400] HN  [999]"
         }
       ]
     },
@@ -86,67 +95,67 @@
         {
           "t": "link",
           "p": "201",
-          "s": "201  MS Office: Outlook Spoofing Flaw"
+          "s": "201  MS Outlook: Network Spoofing Flaw"
         },
         {
           "t": "body",
-          "s": "     Remote unauthorized attackers"
+          "s": "     CISA added an active spoofing flaw"
         },
         {
           "t": "body",
-          "s": "     exploit a missing user interaction"
+          "s": "     in Microsoft Outlook to its"
         },
         {
           "t": "link",
           "p": "202",
-          "s": "202  Openwave Webtop: Transcoder Bug"
+          "s": "202  Openwave: Media Transcoder Flaw"
         },
         {
           "t": "body",
-          "s": "     Authenticated actors bypass"
+          "s": "     CISA flags an incorrect resource"
         },
         {
           "t": "body",
-          "s": "     boundary spheres during document"
+          "s": "     transfer bug in Openwave Webtop"
         },
         {
           "t": "link",
           "p": "203",
-          "s": "203  Cisco BroadWorks: Remote XXE Flaw"
+          "s": "203  Cisco: BroadWorks XXE Data Leak"
         },
         {
           "t": "body",
-          "s": "     Unauthenticated remote threat"
+          "s": "     A critical XXE vulnerability in"
         },
         {
           "t": "body",
-          "s": "     actors submit crafted XML entities"
+          "s": "     Cisco BroadWorks allows"
         },
         {
           "t": "link",
           "p": "204",
-          "s": "204  Debian: Apache2 Security Flaw"
+          "s": "204  Debian/DSA: Apache2 Flaws Patched"
         },
         {
           "t": "body",
-          "s": "     Debian security advisory DSA-6620-1"
+          "s": "     Debian released security update DSA"
         },
         {
           "t": "body",
-          "s": "     addresses security vulnerabilities"
+          "s": "     6620-1 for the Apache2 HTTP server"
         },
         {
           "t": "link",
           "p": "205",
-          "s": "205  Ubuntu: Yodl Buffer Over-Read"
+          "s": "205  Ubuntu/USN: Yodl DoS Flaw Patched"
         },
         {
           "t": "body",
-          "s": "     Maliciously crafted document input"
+          "s": "     Canonical released advisory"
         },
         {
           "t": "body",
-          "s": "     triggers an out-of-bounds read"
+          "s": "     USN-9063-1 resolving a buffer over-"
         },
         {
           "t": "nav",
@@ -173,7 +182,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  MS Office: Outlook Spoofing Flaw"
+          "s": "  MS Outlook: Network Spoofing Flaw"
         },
         {
           "t": "blank",
@@ -181,27 +190,27 @@
         },
         {
           "t": "body",
-          "s": "  Remote unauthorized attackers exploit"
+          "s": "  CISA added an active spoofing flaw in"
         },
         {
           "t": "body",
-          "s": "  a missing user interaction check over"
+          "s": "  Microsoft Outlook to its catalog."
         },
         {
           "t": "body",
-          "s": "  network vectors to spoof client"
+          "s": "  Remote unauthenticated actors can"
         },
         {
           "t": "body",
-          "s": "  sessions. Organizations must apply"
+          "s": "  exploit missing user interaction"
         },
         {
           "t": "body",
-          "s": "  Microsoft security updates before the"
+          "s": "  checks to forge data across networks."
         },
         {
           "t": "body",
-          "s": "  Nov 24 deadline."
+          "s": "  Patch due Nov 24."
         },
         {
           "t": "blank",
@@ -240,7 +249,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Openwave Webtop: Transcoder Bug"
+          "s": "  Openwave: Media Transcoder Flaw"
         },
         {
           "t": "blank",
@@ -248,27 +257,27 @@
         },
         {
           "t": "body",
-          "s": "  Authenticated actors bypass boundary"
+          "s": "  CISA flags an incorrect resource"
         },
         {
           "t": "body",
-          "s": "  spheres during document conversion to"
+          "s": "  transfer bug in Openwave Webtop Media"
         },
         {
           "t": "body",
-          "s": "  process restricted file formats"
+          "s": "  Transcoder. Authenticated attackers"
         },
         {
           "t": "body",
-          "s": "  remotely. Administrators must patch"
+          "s": "  can bypass security boundaries to"
         },
         {
           "t": "body",
-          "s": "  Openwave Webtop Transcoder systems per"
+          "s": "  convert arbitrary document types."
         },
         {
           "t": "body",
-          "s": "  CISA guidance."
+          "s": "  Remediate by Nov 24."
         },
         {
           "t": "blank",
@@ -307,7 +316,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Cisco BroadWorks: Remote XXE Flaw"
+          "s": "  Cisco: BroadWorks XXE Data Leak"
         },
         {
           "t": "blank",
@@ -315,27 +324,27 @@
         },
         {
           "t": "body",
-          "s": "  Unauthenticated remote threat actors"
+          "s": "  A critical XXE vulnerability in Cisco"
         },
         {
           "t": "body",
-          "s": "  submit crafted XML entities to leak"
+          "s": "  BroadWorks allows unauthenticated"
         },
         {
           "t": "body",
-          "s": "  sensitive configuration data and local"
+          "s": "  remote adversaries to steal sensitive"
         },
         {
           "t": "body",
-          "s": "  files. Network teams must apply Cisco"
+          "s": "  configuration files. CISA ordered"
         },
         {
           "t": "body",
-          "s": "  software fixes before CISA's Nov 24"
+          "s": "  federal agencies to apply vendor"
         },
         {
           "t": "body",
-          "s": "  deadline."
+          "s": "  updates by Nov 24."
         },
         {
           "t": "blank",
@@ -374,7 +383,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Debian: Apache2 Security Flaw"
+          "s": "  Debian/DSA: Apache2 Flaws Patched"
         },
         {
           "t": "blank",
@@ -382,27 +391,27 @@
         },
         {
           "t": "body",
-          "s": "  Debian security advisory DSA-6620-1"
+          "s": "  Debian released security update DSA"
         },
         {
           "t": "body",
-          "s": "  addresses security vulnerabilities"
+          "s": "  6620-1 for the Apache2 HTTP server"
         },
         {
           "t": "body",
-          "s": "  within the Apache2 HTTP server"
+          "s": "  package across stable distributions."
         },
         {
           "t": "body",
-          "s": "  package. System administrators should"
+          "s": "  System administrators are urged to"
         },
         {
           "t": "body",
-          "s": "  upgrade apache2 packages via apt to"
+          "s": "  apply the latest package rebuilds to"
         },
         {
           "t": "body",
-          "s": "  secure web services."
+          "s": "  prevent attacks."
         },
         {
           "t": "blank",
@@ -437,7 +446,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Ubuntu: Yodl Buffer Over-Read"
+          "s": "  Ubuntu/USN: Yodl DoS Flaw Patched"
         },
         {
           "t": "blank",
@@ -445,27 +454,27 @@
         },
         {
           "t": "body",
-          "s": "  Maliciously crafted document input"
+          "s": "  Canonical released advisory USN-9063-1"
         },
         {
           "t": "body",
-          "s": "  triggers an out-of-bounds read error"
+          "s": "  resolving a buffer over-read in Yodl."
         },
         {
           "t": "body",
-          "s": "  during parsing, crashing the Yodl"
+          "s": "  Crafted input can trigger an"
         },
         {
           "t": "body",
-          "s": "  utility in a denial-of-service state."
+          "s": "  application crash, causing a denial of"
         },
         {
           "t": "body",
-          "s": "  Upgrade yodl packages on Ubuntu hosts"
+          "s": "  service. Users should update installed"
         },
         {
           "t": "body",
-          "s": "  immediately."
+          "s": "  packages now."
         },
         {
           "t": "blank",
@@ -482,13 +491,13 @@
       ]
     },
     "300": {
-      "title": "NERD GAMES",
+      "title": "RETRO GAMES",
       "next": "301",
       "prev": "200",
       "lines": [
         {
           "t": "hdr_grn",
-          "s": "ROGUELIKES & SYSTEM-DRIVEN GAMES"
+          "s": "RETRO GAMING, HANDHELDS & ROMHACKS"
         },
         {
           "t": "sep",
@@ -497,82 +506,82 @@
         {
           "t": "link",
           "p": "301",
-          "s": "301  Dwarf Fortress: Audio Overhaul"
+          "s": "301  id Software: Ex-Devs Form Studio"
         },
         {
           "t": "body",
-          "s": "     Fortress mode receives a total"
+          "s": "     Former staff hit by Microsoft cuts"
         },
         {
           "t": "body",
-          "s": "     sound engine rewrite, integrating"
+          "s": "     have banded together to establish a"
         },
         {
           "t": "link",
           "p": "302",
-          "s": "302  Dwarf Fortress: Update 53.17"
+          "s": "302  Nintendo: Gunpei Yokoi's Legacy"
         },
         {
           "t": "body",
-          "s": "     Bay 12 Games deployed maintenance"
+          "s": "     Colleagues reflect on the legendary"
         },
         {
           "t": "body",
-          "s": "     build 53.17 to production branches."
+          "s": "     Nintendo creator behind the Game"
         },
         {
           "t": "link",
           "p": "303",
-          "s": "303  Caves of Qud: Diaspora Expansion"
+          "s": "303  PS2 Slim: M.2 SATA SSD Mod Debut"
         },
         {
           "t": "body",
-          "s": "     Developers scheduled the first"
+          "s": "     A breakthrough hardware mod dubbed"
         },
         {
           "t": "body",
-          "s": "     commercial expansion for early"
+          "s": "     M2 Slim enables internal M.2 SATA"
         },
         {
           "t": "link",
           "p": "304",
-          "s": "304  Caves of Qud: Autoexplore Update"
+          "s": "304  Podcast: RetroRGB Roundup #539"
         },
         {
           "t": "body",
-          "s": "     Update 211.55 restores classic"
+          "s": "     The retro gaming scene digest"
         },
         {
           "t": "body",
-          "s": "     autoexplore movement pathing under"
+          "s": "     returns across audio platforms and"
         },
         {
           "t": "link",
           "p": "305",
-          "s": "305  Cataclysm DDA: Accessor Refactor"
+          "s": "305  Libretro: RetroArch 1.21.0 Drops"
         },
         {
           "t": "body",
-          "s": "     Pull requests #89509 and #89492"
+          "s": "     The flagship multi-system frontend"
         },
         {
           "t": "body",
-          "s": "     purge legacy integer-indexed"
+          "s": "     rolls out its latest milestone"
         },
         {
           "t": "nav",
-          "s": "[100] Index      [301] Details     [999]"
+          "s": "[100] Index      [301] Details     [400]"
         }
       ]
     },
     "301": {
-      "title": "DWARF FORTRE",
+      "title": "TIMEEXT",
       "next": "302",
       "prev": "300",
       "lines": [
         {
           "t": "hdr_grn",
-          "s": "GAME LOG (1/5)"
+          "s": "RETRO LOG (1/5)"
         },
         {
           "t": "sep",
@@ -580,11 +589,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> DWARF FORTRESS"
+          "s": "> TIMEEXT"
         },
         {
           "t": "sec_cyan",
-          "s": "  Dwarf Fortress: Audio Overhaul"
+          "s": "  id Software: Ex-Devs Form Studio"
         },
         {
           "t": "blank",
@@ -592,23 +601,27 @@
         },
         {
           "t": "body",
-          "s": "  Fortress mode receives a total sound"
+          "s": "  Former staff hit by Microsoft cuts"
         },
         {
           "t": "body",
-          "s": "  engine rewrite, integrating dedicated"
+          "s": "  have banded together to establish a"
         },
         {
           "t": "body",
-          "s": "  UI audio cues, dynamic environmental"
+          "s": "  fresh independent development team,"
         },
         {
           "t": "body",
-          "s": "  ambience, and contextual mining sound"
+          "s": "  aiming to build new titles using their"
         },
         {
           "t": "body",
-          "s": "  effects."
+          "s": "  veteran FPS pedigree and internal"
+        },
+        {
+          "t": "body",
+          "s": "  expertise."
         },
         {
           "t": "blank",
@@ -616,11 +629,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: Dwarf Fortress (Mon, 09 Nov"
-        },
-        {
-          "t": "warn_grn",
-          "s": "  2026)"
+          "s": "  Source: TimeExt (Thu, 12 Nov 2026)"
         },
         {
           "t": "nav",
@@ -629,13 +638,13 @@
       ]
     },
     "302": {
-      "title": "DWARF FORTRE",
+      "title": "TIMEEXT",
       "next": "303",
       "prev": "301",
       "lines": [
         {
           "t": "hdr_grn",
-          "s": "GAME LOG (2/5)"
+          "s": "RETRO LOG (2/5)"
         },
         {
           "t": "sep",
@@ -643,11 +652,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> DWARF FORTRESS"
+          "s": "> TIMEEXT"
         },
         {
           "t": "sec_cyan",
-          "s": "  Dwarf Fortress: Update 53.17"
+          "s": "  Nintendo: Gunpei Yokoi's Legacy"
         },
         {
           "t": "blank",
@@ -655,23 +664,27 @@
         },
         {
           "t": "body",
-          "s": "  Bay 12 Games deployed maintenance"
+          "s": "  Colleagues reflect on the legendary"
         },
         {
           "t": "body",
-          "s": "  build 53.17 to production branches."
+          "s": "  Nintendo creator behind the Game Boy"
         },
         {
           "t": "body",
-          "s": "  The patch addresses runtime stability,"
+          "s": "  and Game & Watch lines, highlighting"
         },
         {
           "t": "body",
-          "s": "  core simulation loops, and critical"
+          "s": "  his philosophy of lateral thinking"
         },
         {
           "t": "body",
-          "s": "  world-gen routines."
+          "s": "  with withered technology that still"
+        },
+        {
+          "t": "body",
+          "s": "  shapes games."
         },
         {
           "t": "blank",
@@ -679,11 +692,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: Dwarf Fortress (Mon, 09 Nov"
-        },
-        {
-          "t": "warn_grn",
-          "s": "  2026)"
+          "s": "  Source: TimeExt (Thu, 12 Nov 2026)"
         },
         {
           "t": "nav",
@@ -692,13 +701,13 @@
       ]
     },
     "303": {
-      "title": "CAVES OF QUD",
+      "title": "RETRORGB",
       "next": "304",
       "prev": "302",
       "lines": [
         {
           "t": "hdr_grn",
-          "s": "GAME LOG (3/5)"
+          "s": "RETRO LOG (3/5)"
         },
         {
           "t": "sep",
@@ -706,11 +715,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> CAVES OF QUD"
+          "s": "> RETRORGB"
         },
         {
           "t": "sec_cyan",
-          "s": "  Caves of Qud: Diaspora Expansion"
+          "s": "  PS2 Slim: M.2 SATA SSD Mod Debut"
         },
         {
           "t": "blank",
@@ -718,23 +727,27 @@
         },
         {
           "t": "body",
-          "s": "  Developers scheduled the first"
+          "s": "  A breakthrough hardware mod dubbed M2"
         },
         {
           "t": "body",
-          "s": "  commercial expansion for early access"
+          "s": "  Slim enables internal M.2 SATA drive"
         },
         {
           "t": "body",
-          "s": "  launch on December 9th at $14.99,"
+          "s": "  installation inside SCPH-700XX"
         },
         {
           "t": "body",
-          "s": "  expanding baseline engine content and"
+          "s": "  consoles, bypassing USB 1.1"
         },
         {
           "t": "body",
-          "s": "  introducing new world systems."
+          "s": "  bottlenecks for vastly faster ISO"
+        },
+        {
+          "t": "body",
+          "s": "  loading and quieter play."
         },
         {
           "t": "blank",
@@ -742,11 +755,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: Caves of Qud (Thu, 15 Oct"
-        },
-        {
-          "t": "warn_grn",
-          "s": "  2026)"
+          "s": "  Source: RetroRGB (Wed, 11 Nov 2026)"
         },
         {
           "t": "nav",
@@ -755,13 +764,13 @@
       ]
     },
     "304": {
-      "title": "CAVES OF QUD",
+      "title": "RETRORGB",
       "next": "305",
       "prev": "303",
       "lines": [
         {
           "t": "hdr_grn",
-          "s": "GAME LOG (4/5)"
+          "s": "RETRO LOG (4/5)"
         },
         {
           "t": "sep",
@@ -769,11 +778,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> CAVES OF QUD"
+          "s": "> RETRORGB"
         },
         {
           "t": "sec_cyan",
-          "s": "  Caves of Qud: Autoexplore Update"
+          "s": "  Podcast: RetroRGB Roundup #539"
         },
         {
           "t": "blank",
@@ -781,23 +790,27 @@
         },
         {
           "t": "body",
-          "s": "  Update 211.55 restores classic"
+          "s": "  The retro gaming scene digest returns"
         },
         {
           "t": "body",
-          "s": "  autoexplore movement pathing under a"
+          "s": "  across audio platforms and video"
         },
         {
           "t": "body",
-          "s": "  new default Standard mode, correcting"
+          "s": "  feeds, covering weekly hardware"
         },
         {
           "t": "body",
-          "s": "  navigation algorithms and automated"
+          "s": "  developments, CRT maintenance tips,"
         },
         {
           "t": "body",
-          "s": "  grid exploration behaviors."
+          "s": "  scaler updates, and recent homebrew"
+        },
+        {
+          "t": "body",
+          "s": "  scene announcements."
         },
         {
           "t": "blank",
@@ -805,11 +818,7 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: Caves of Qud (Thu, 24 Sep"
-        },
-        {
-          "t": "warn_grn",
-          "s": "  2026)"
+          "s": "  Source: RetroRGB (Wed, 11 Nov 2026)"
         },
         {
           "t": "nav",
@@ -818,13 +827,13 @@
       ]
     },
     "305": {
-      "title": "CATACLYSM: D",
-      "next": "999",
+      "title": "LIBRETRO",
+      "next": "400",
       "prev": "304",
       "lines": [
         {
           "t": "hdr_grn",
-          "s": "GAME LOG (5/5)"
+          "s": "RETRO LOG (5/5)"
         },
         {
           "t": "sep",
@@ -832,11 +841,11 @@
         },
         {
           "t": "item_yel",
-          "s": "> CATACLYSM: DDA"
+          "s": "> LIBRETRO"
         },
         {
           "t": "sec_cyan",
-          "s": "  Cataclysm DDA: Accessor Refactor"
+          "s": "  Libretro: RetroArch 1.21.0 Drops"
         },
         {
           "t": "blank",
@@ -844,23 +853,27 @@
         },
         {
           "t": "body",
-          "s": "  Pull requests #89509 and #89492 purge"
+          "s": "  The flagship multi-system frontend"
         },
         {
           "t": "body",
-          "s": "  legacy integer-indexed inventory"
+          "s": "  rolls out its latest milestone build,"
         },
         {
           "t": "body",
-          "s": "  accessors from Character classes while"
+          "s": "  bringing community stability patches,"
         },
         {
           "t": "body",
-          "s": "  overhauling injury string generation"
+          "s": "  core optimization tweaks, and updated"
         },
         {
           "t": "body",
-          "s": "  for wound descriptions."
+          "s": "  emulator compatibility across all"
+        },
+        {
+          "t": "body",
+          "s": "  target ports."
         },
         {
           "t": "blank",
@@ -868,22 +881,685 @@
         },
         {
           "t": "warn_grn",
-          "s": "  Source: Cataclysm: DDA"
-        },
-        {
-          "t": "warn_grn",
-          "s": "  (2026-11-12T07:15)"
+          "s": "  Source: Libretro (Tue, 29 Apr 2025)"
         },
         {
           "t": "nav",
-          "s": "[100] Index  [304] Prev  [999] Next"
+          "s": "[100] Index  [304] Prev  [400] Next"
+        }
+      ]
+    },
+    "400": {
+      "title": "HACKER NEWS",
+      "next": "401",
+      "prev": "300",
+      "lines": [
+        {
+          "t": "banner",
+          "s": "  TOP 10 HACKER NEWS // FRONT PAGE    "
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "link",
+          "p": "401",
+          "s": "401  Nvidia/News: CEO Transition"
+        },
+        {
+          "t": "link",
+          "p": "402",
+          "s": "402  Pron/GitHub: Correct Software"
+        },
+        {
+          "t": "link",
+          "p": "403",
+          "s": "403  Reuters/Nvidia: Jensen Huang"
+        },
+        {
+          "t": "link",
+          "p": "404",
+          "s": "404  ModDB/Quake: OpenQ4 Engine"
+        },
+        {
+          "t": "link",
+          "p": "405",
+          "s": "405  Chips/AMD: Zen 6 Architecture"
+        },
+        {
+          "t": "link",
+          "p": "406",
+          "s": "406  Libre/BitTorrent: OSS Models"
+        },
+        {
+          "t": "link",
+          "p": "407",
+          "s": "407  GitHub/JaneStreet: Socratic"
+        },
+        {
+          "t": "link",
+          "p": "408",
+          "s": "408  Blog/JaneStreet: LLM Dev"
+        },
+        {
+          "t": "link",
+          "p": "409",
+          "s": "409  BBC/Nvidia: Stock Plunge"
+        },
+        {
+          "t": "link",
+          "p": "410",
+          "s": "410  Codeberg/Bootvine: Systemd"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "sep",
+          "s": "----------------------------------------"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index      [401] Story 1     [999]"
+        }
+      ]
+    },
+    "401": {
+      "title": "HN #1",
+      "next": "402",
+      "prev": "400",
+      "lines": [
+        {
+          "t": "banner",
+          "s": "  HACKER NEWS (1/10)                  "
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> HN #1 | nvidianews.nvidia.com"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Nvidia/News: CEO Transition"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Nvidia confirms a major leadership"
+        },
+        {
+          "t": "body",
+          "s": "  shuffle affecting its AI computing"
+        },
+        {
+          "t": "body",
+          "s": "  platforms, data center divisions, and"
+        },
+        {
+          "t": "body",
+          "s": "  global autonomous machine strategies"
+        },
+        {
+          "t": "body",
+          "s": "  going forward."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  665 pts | 482 comments |"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  nvidianews.nvidia."
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [400] Prev  [402] Next"
+        }
+      ]
+    },
+    "402": {
+      "title": "HN #2",
+      "next": "403",
+      "prev": "401",
+      "lines": [
+        {
+          "t": "banner",
+          "s": "  HACKER NEWS (2/10)                  "
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> HN #2 | pron.github.io"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Pron/GitHub: Correct Software"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Deep dive into language design"
+        },
+        {
+          "t": "body",
+          "s": "  paradigms, contrasting the practical"
+        },
+        {
+          "t": "body",
+          "s": "  trade-offs of continuations versus"
+        },
+        {
+          "t": "body",
+          "s": "  monads in modern functional"
+        },
+        {
+          "t": "body",
+          "s": "  programming environments."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  189 pts | 78 comments | pron.github.io"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [401] Prev  [403] Next"
+        }
+      ]
+    },
+    "403": {
+      "title": "HN #3",
+      "next": "404",
+      "prev": "402",
+      "lines": [
+        {
+          "t": "banner",
+          "s": "  HACKER NEWS (3/10)                  "
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> HN #3 | reuters.com"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Reuters/Nvidia: Jensen Huang"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Jensen Huang steps down from his"
+        },
+        {
+          "t": "body",
+          "s": "  executive position at the"
+        },
+        {
+          "t": "body",
+          "s": "  semiconductor giant immediately,"
+        },
+        {
+          "t": "body",
+          "s": "  triggering widespread industry"
+        },
+        {
+          "t": "body",
+          "s": "  speculation and market reactions."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  182 pts | 66 comments | reuters.com"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [402] Prev  [404] Next"
+        }
+      ]
+    },
+    "404": {
+      "title": "HN #4",
+      "next": "405",
+      "prev": "403",
+      "lines": [
+        {
+          "t": "banner",
+          "s": "  HACKER NEWS (4/10)                  "
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> HN #4 | moddb.com"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  ModDB/Quake: OpenQ4 Engine"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Open-source replacement for Quake 4"
+        },
+        {
+          "t": "body",
+          "s": "  brings native widescreen support,"
+        },
+        {
+          "t": "body",
+          "s": "  smooth high-refresh rates, and modern"
+        },
+        {
+          "t": "body",
+          "s": "  Linux and Steam Deck compatibility."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  13 pts | 0 comments | moddb.com"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [403] Prev  [405] Next"
+        }
+      ]
+    },
+    "405": {
+      "title": "HN #5",
+      "next": "406",
+      "prev": "404",
+      "lines": [
+        {
+          "t": "banner",
+          "s": "  HACKER NEWS (5/10)                  "
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> HN #5 | chipsandcheese.com"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Chips/AMD: Zen 6 Architecture"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Technical deep dive with AMD chief"
+        },
+        {
+          "t": "body",
+          "s": "  architect Mike Clark exploring"
+        },
+        {
+          "t": "body",
+          "s": "  upcoming microarchitecture"
+        },
+        {
+          "t": "body",
+          "s": "  innovations, performance metrics, and"
+        },
+        {
+          "t": "body",
+          "s": "  hardware targets."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  8 pts | 0 comments |"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  chipsandcheese.com"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [404] Prev  [406] Next"
+        }
+      ]
+    },
+    "406": {
+      "title": "HN #6",
+      "next": "407",
+      "prev": "405",
+      "lines": [
+        {
+          "t": "banner",
+          "s": "  HACKER NEWS (6/10)                  "
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> HN #6 | libreagi.com"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Libre/BitTorrent: OSS Models"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Private BitTorrent tracker launched to"
+        },
+        {
+          "t": "body",
+          "s": "  archive and preserve vulnerable open-"
+        },
+        {
+          "t": "body",
+          "s": "  source AI models, ensuring vital"
+        },
+        {
+          "t": "body",
+          "s": "  research survives repository"
+        },
+        {
+          "t": "body",
+          "s": "  shutdowns."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  8 pts | 0 comments | libreagi.com"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [405] Prev  [407] Next"
+        }
+      ]
+    },
+    "407": {
+      "title": "HN #7",
+      "next": "408",
+      "prev": "406",
+      "lines": [
+        {
+          "t": "banner",
+          "s": "  HACKER NEWS (7/10)                  "
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> HN #7 | github.com"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  GitHub/JaneStreet: Socratic"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Jane Street releases specialized agent"
+        },
+        {
+          "t": "body",
+          "s": "  skills documentation outlining"
+        },
+        {
+          "t": "body",
+          "s": "  structured Socratic tutoring workflows"
+        },
+        {
+          "t": "body",
+          "s": "  designed for advanced LLM integration."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  467 pts | 103 comments | github.com"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [406] Prev  [408] Next"
+        }
+      ]
+    },
+    "408": {
+      "title": "HN #8",
+      "next": "409",
+      "prev": "407",
+      "lines": [
+        {
+          "t": "banner",
+          "s": "  HACKER NEWS (8/10)                  "
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> HN #8 | blog.janestreet.com"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Blog/JaneStreet: LLM Dev"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Engineering post details how large"
+        },
+        {
+          "t": "body",
+          "s": "  language models have fundamentally"
+        },
+        {
+          "t": "body",
+          "s": "  shifted internal software development"
+        },
+        {
+          "t": "body",
+          "s": "  lifecycles and daily coding practices."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  11 pts | 5 comments |"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  blog.janestreet.co"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [407] Prev  [409] Next"
+        }
+      ]
+    },
+    "409": {
+      "title": "HN #9",
+      "next": "410",
+      "prev": "408",
+      "lines": [
+        {
+          "t": "banner",
+          "s": "  HACKER NEWS (9/10)                  "
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> HN #9 | bbc.co.uk"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  BBC/Nvidia: Stock Plunge"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  US markets react sharply as Nvidia"
+        },
+        {
+          "t": "body",
+          "s": "  shares drop following the sudden"
+        },
+        {
+          "t": "body",
+          "s": "  resignation of longtime CEO Jensen"
+        },
+        {
+          "t": "body",
+          "s": "  Huang amid unfolding geopolitical"
+        },
+        {
+          "t": "body",
+          "s": "  scrutiny."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  83 pts | 37 comments | bbc.co.uk"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [408] Prev  [410] Next"
+        }
+      ]
+    },
+    "410": {
+      "title": "HN #10",
+      "next": "999",
+      "prev": "409",
+      "lines": [
+        {
+          "t": "banner",
+          "s": "  HACKER NEWS (10/10)                  "
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> HN #10 | codeberg.org"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Codeberg/Bootvine: Systemd"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Bootvine tool visualizes systemd"
+        },
+        {
+          "t": "body",
+          "s": "  initialization stages as an"
+        },
+        {
+          "t": "body",
+          "s": "  interactive live tree animation,"
+        },
+        {
+          "t": "body",
+          "s": "  tracking service dependencies during"
+        },
+        {
+          "t": "body",
+          "s": "  system startup."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  215 pts | 83 comments | codeberg.org"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [409] Prev  [999] Next"
         }
       ]
     },
     "999": {
       "title": "INFO",
       "next": "100",
-      "prev": "300",
+      "prev": "400",
       "lines": [
         {
           "t": "hdr_mag",
@@ -899,11 +1575,7 @@
         },
         {
           "t": "body",
-          "s": "Built for instant loading on weak"
-        },
-        {
-          "t": "body",
-          "s": "mobile links and terminal workflows."
+          "s": "200: Security | 300: Retro | 400: HN"
         },
         {
           "t": "blank",
@@ -919,7 +1591,11 @@
         },
         {
           "t": "item_yel",
-          "s": "  $ curl <host>/204.txt"
+          "s": "  $ curl <host>/400.txt"
+        },
+        {
+          "t": "item_yel",
+          "s": "  $ curl <host>/all.txt"
         },
         {
           "t": "blank",
@@ -927,11 +1603,11 @@
         },
         {
           "t": "body",
-          "s": "Last build: 12.11.26 14:11 UTC"
+          "s": "Last build: 12.11.26 14:49 UTC"
         },
         {
           "t": "nav",
-          "s": "[100] Index   [200] Sec   [300] Games"
+          "s": "[100] Index   [200] Sec   [400] HN"
         }
       ]
     }

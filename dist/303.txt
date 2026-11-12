@@ -1,18 +1,18 @@
-P303  NERD-TEXT 303   12.11.26 14:11 UTC
+P303  NERD-TEXT 303   12.11.26 14:49 UTC
 ========================================
-GAME LOG (3/5)                          
+RETRO LOG (3/5)                         
 ========================================
-> CAVES OF QUD                          
-  Caves of Qud: Diaspora Expansion      
+> RETRORGB                              
+  PS2 Slim: M.2 SATA SSD Mod Debut      
                                         
-  Developers scheduled the first        
-  commercial expansion for early access 
-  launch on December 9th at $14.99,     
-  expanding baseline engine content and 
-  introducing new world systems.        
+  A breakthrough hardware mod dubbed M2 
+  Slim enables internal M.2 SATA drive  
+  installation inside SCPH-700XX        
+  consoles, bypassing USB 1.1           
+  bottlenecks for vastly faster ISO     
+  loading and quieter play.             
                                         
-  Source: Caves of Qud (Thu, 15 Oct     
-  2026)                                 
+  Source: RetroRGB (Wed, 11 Nov 2026)   
 [100] Index  [302] Prev  [304] Next     
 ========================================
-RED:100  GRN:200  YEL:300  CYN:999      
+100:IDX  200:SEC  300:RETRO  400:HN     

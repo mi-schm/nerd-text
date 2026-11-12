@@ -1,0 +1,17 @@
+P409  NERD-TEXT 409   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (9/10)                    
+========================================
+> HN #9 | bbc.co.uk                     
+  BBC/Nvidia: Stock Plunge              
+                                        
+  US markets react sharply as Nvidia    
+  shares drop following the sudden      
+  resignation of longtime CEO Jensen    
+  Huang amid unfolding geopolitical     
+  scrutiny.                             
+                                        
+  83 pts | 37 comments | bbc.co.uk      
+[100] Index  [408] Prev  [410] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     

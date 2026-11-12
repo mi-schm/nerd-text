@@ -1,0 +1,18 @@
+P401  NERD-TEXT 401   12.11.26 14:49 UTC
+========================================
+  HACKER NEWS (1/10)                    
+========================================
+> HN #1 | nvidianews.nvidia.com         
+  Nvidia/News: CEO Transition           
+                                        
+  Nvidia confirms a major leadership    
+  shuffle affecting its AI computing    
+  platforms, data center divisions, and 
+  global autonomous machine strategies  
+  going forward.                        
+                                        
+  665 pts | 482 comments |              
+  nvidianews.nvidia.                    
+[100] Index  [400] Prev  [402] Next     
+========================================
+100:IDX  200:SEC  300:RETRO  400:HN     

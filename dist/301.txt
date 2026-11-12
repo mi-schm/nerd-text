@@ -1,18 +1,18 @@
-P301  NERD-TEXT 301   12.11.26 14:11 UTC
+P301  NERD-TEXT 301   12.11.26 14:49 UTC
 ========================================
-GAME LOG (1/5)                          
+RETRO LOG (1/5)                         
 ========================================
-> DWARF FORTRESS                        
-  Dwarf Fortress: Audio Overhaul        
+> TIMEEXT                               
+  id Software: Ex-Devs Form Studio      
                                         
-  Fortress mode receives a total sound  
-  engine rewrite, integrating dedicated 
-  UI audio cues, dynamic environmental  
-  ambience, and contextual mining sound 
-  effects.                              
+  Former staff hit by Microsoft cuts    
+  have banded together to establish a   
+  fresh independent development team,   
+  aiming to build new titles using their
+  veteran FPS pedigree and internal     
+  expertise.                            
                                         
-  Source: Dwarf Fortress (Mon, 09 Nov   
-  2026)                                 
+  Source: TimeExt (Thu, 12 Nov 2026)    
 [100] Index  [300] Prev  [302] Next     
 ========================================
-RED:100  GRN:200  YEL:300  CYN:999      
+100:IDX  200:SEC  300:RETRO  400:HN     
