@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 NERD-TEXT Static Generator
-Fetches CISA KEV vulnerabilities and Roguelike/Nerd-Game RSS feeds,
+Fetches CISA KEV vulnerabilities, Linux Security Advisories, and Roguelike/Nerd-Game RSS feeds,
 enforces a strict 40-character Teletext grid, and outputs:
   - dist/pages.json (for the Web UI)
   - dist/<page>.txt (for terminal `curl` access)
@@ -22,6 +22,12 @@ DIST_DIR = Path("dist")
 WIDTH = 40
 
 CISA_KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+
+LINUX_SEC_FEEDS = [
+    ("Debian DSA", "https://www.debian.org/security/dsa"),
+    ("Ubuntu USN", "https://ubuntu.com/security/notices/rss.xml"),
+    ("Kernel", "https://www.kernel.org/feeds/kdist.xml"),
+]
 
 GAME_FEEDS = [
     ("Dwarf Fortress", "https://www.bay12games.com/dwarves/dev_now.rss"),
@@ -49,9 +55,11 @@ def clean_text(raw: str) -> str:
 
 
 def dedup_prefix(prefix: str, text: str) -> str:
-    """Entfernt doppelte Hersteller- oder Spielnamen am Anfang."""
-    p = prefix.strip()
+    """Entfernt doppelte Hersteller-/Spielnamen, Autoren-Tags und Datums-Präfixe."""
     t = text.strip()
+    t = re.sub(r"^\([A-Za-z0-9 _.-]+\)\s*", "", t)
+    t = re.sub(r"^\d{4}-\d{2}-\d{2}\s*[:\-]\s*", "", t)
+    p = prefix.strip()
     if t.lower().startswith(p.lower()):
         t = t[len(p):].lstrip(" :-|–—")
     return t
@@ -116,7 +124,7 @@ def summarize_with_llm(items: list[dict], category: str) -> list[dict] | None:
     return None
 
 
-def get_cisa_cves(limit: int = 5) -> list[dict]:
+def get_cisa_cves(limit: int = 3) -> list[dict]:
     try:
         raw = fetch_url(CISA_KEV_URL)
         data = json.loads(raw.decode("utf-8"))
@@ -138,28 +146,28 @@ def get_cisa_cves(limit: int = 5) -> list[dict]:
                 "id": cve,
                 "headline": f"{label}: {clean_name}"[:34],
                 "summary": f"{clean_name}. Patch due: {due}."[:140],
-                "meta": f"Added: {v.get('dateAdded', '')} | Due: {due}",
+                "meta": f"CISA KEV | Added: {v.get('dateAdded', '')} | Due: {due}",
             })
         return results
     except Exception as exc:
         print(f"[ERROR] CISA KEV fetch failed: {exc}")
-        return [{
-            "id": "FEED-ERR",
-            "headline": "CISA KEV feed temporarily offline",
-            "summary": "Check cisa.gov/known-exploited-vulnerabilities directly.",
-            "meta": "Status: Retry scheduled",
-        }]
+        return []
 
 
-def parse_feed_items(xml_bytes: bytes, source_name: str, max_items: int = 2) -> list[dict]:
+def parse_feed_items(xml_bytes: bytes, source_name: str, max_items: int = 2, short_tag: str = "") -> list[dict]:
     items = []
     try:
         root = ET.fromstring(xml_bytes)
         entries = root.findall(".//item")
         is_atom = False
+        is_rdf = False
+
+        if not entries:
+            entries = root.findall(".//{http://purl.org/rss/1.0/}item")
+            is_rdf = bool(entries)
         if not entries:
             entries = root.findall(".//{http://www.w3.org/2005/Atom}entry")
-            is_atom = True
+            is_atom = bool(entries)
 
         for entry in entries[:max_items]:
             if is_atom:
@@ -169,6 +177,10 @@ def parse_feed_items(xml_bytes: bytes, source_name: str, max_items: int = 2) -> 
                     or entry.find("{http://www.w3.org/2005/Atom}content")
                 )
                 date_el = entry.find("{http://www.w3.org/2005/Atom}updated")
+            elif is_rdf:
+                title_el = entry.find("{http://purl.org/rss/1.0/}title")
+                sum_el = entry.find("{http://purl.org/rss/1.0/}description")
+                date_el = entry.find("{http://purl.org/dc/elements/1.1/}date")
             else:
                 title_el = entry.find("title")
                 sum_el = entry.find("description")
@@ -179,19 +191,43 @@ def parse_feed_items(xml_bytes: bytes, source_name: str, max_items: int = 2) -> 
             pub = clean_text(date_el.text if date_el is not None else "")[:16]
 
             title = dedup_prefix(source_name, raw_title)
+            if short_tag:
+                title = dedup_prefix(short_tag, title)
             if not title or is_date_only(title):
-                title = summary[:45] if summary else "Dev Log Update"
+                title = dedup_prefix(short_tag or source_name, summary[:55]) if summary else "Update"
 
-            short_src = "DF" if source_name == "Dwarf Fortress" else source_name
+            tag = short_tag or source_name
             items.append({
                 "id": source_name.upper(),
-                "headline": f"{short_src}: {title}"[:34],
+                "headline": f"{tag}: {title}"[:34],
                 "summary": (summary or title)[:140],
-                "meta": f"Source: {source_name} ({pub})",
+                "meta": f"Source: {source_name} ({pub})" if pub else f"Source: {source_name}",
             })
     except Exception as exc:
         print(f"[WARN] Failed parsing {source_name}: {exc}")
     return items
+
+
+def get_security_items() -> list[dict]:
+    cves = get_cisa_cves(limit=3)
+    linux_items = []
+    for name, url in LINUX_SEC_FEEDS:
+        try:
+            raw = fetch_url(url, timeout=12)
+            tag = "DSA" if "Debian" in name else ("USN" if "Ubuntu" in name else "Linux")
+            linux_items.extend(parse_feed_items(raw, name, max_items=1, short_tag=tag))
+        except Exception as exc:
+            print(f"[WARN] Security feed unreachable ({name}): {exc}")
+
+    combined = (cves + linux_items)[:5]
+    if not combined:
+        return [{
+            "id": "SEC-OFFLINE",
+            "headline": "Security feeds offline",
+            "summary": "Upstream CISA/Linux endpoints unreachable during build.",
+            "meta": "Retry scheduled",
+        }]
+    return combined
 
 
 def get_nerd_games(limit: int = 5) -> list[dict]:
@@ -199,7 +235,8 @@ def get_nerd_games(limit: int = 5) -> list[dict]:
     for name, url in GAME_FEEDS:
         try:
             raw = fetch_url(url, timeout=12)
-            collected.extend(parse_feed_items(raw, name, max_items=2))
+            tag = "DF" if name == "Dwarf Fortress" else name
+            collected.extend(parse_feed_items(raw, name, max_items=2, short_tag=tag))
         except Exception as exc:
             print(f"[WARN] Feed unreachable ({name}): {exc}")
 
@@ -213,16 +250,16 @@ def get_nerd_games(limit: int = 5) -> list[dict]:
     return collected[:limit]
 
 
-def build_pages(cves: list[dict], games: list[dict], stamp: str) -> dict:
+def build_pages(sec_items: list[dict], games: list[dict], stamp: str) -> dict:
     pages = {}
 
     # --- PAGE 100: INDEX ---
     p100 = [
         {"t": "banner", "s": "  NERD-TEXT // ZERO-BLOAT TELETEXT    "},
         {"t": "sep", "s": "=" * 40},
-        {"t": "sec_cyan", "s": "SECURITY & CVEs (FROM PAGE 200)"},
+        {"t": "sec_cyan", "s": "SECURITY & LINUX ADVISORIES (P200)"},
     ]
-    for idx, item in enumerate(cves[:3], start=201):
+    for idx, item in enumerate(sec_items[:3], start=201):
         p100.append({"t": "link", "p": str(idx), "s": f"{idx}  {item['headline'][:35]}"})
 
     p100.append({"t": "blank", "s": ""})
@@ -237,24 +274,24 @@ def build_pages(cves: list[dict], games: list[dict], stamp: str) -> dict:
     ])
     pages["100"] = {"title": "INDEX", "next": "200", "prev": "999", "lines": p100}
 
-    # --- PAGE 200: SECURITY OVERVIEW ---
+    # --- PAGE 200: SECURITY & LINUX OVERVIEW ---
     p200 = [
-        {"t": "hdr_red", "s": "SECURITY & CISA KEV OVERVIEW"},
+        {"t": "hdr_red", "s": "CISA KEV & LINUX SECURITY (DSA/USN)"},
         {"t": "sep", "s": "=" * 40},
     ]
-    for idx, item in enumerate(cves, start=201):
-        p200.append({"t": "link", "p": str(idx), "s": f"{idx}  {item['id']}: {item['headline'][:22]}"})
+    for idx, item in enumerate(sec_items, start=201):
+        p200.append({"t": "link", "p": str(idx), "s": f"{idx}  {item['headline'][:35]}"})
         p200.extend({"t": "body", "s": l} for l in wrap_40(item["summary"], "     ")[:2])
     p200.append({"t": "nav", "s": "[100] Index      [201] Details     [300]"})
     pages["200"] = {"title": "SECURITY", "next": "201", "prev": "100", "lines": p200}
 
-    # --- PAGES 201..20N: CVE DETAILS ---
-    for i, item in enumerate(cves):
+    # --- PAGES 201..20N: SECURITY DETAILS ---
+    for i, item in enumerate(sec_items):
         pg = str(201 + i)
-        nxt = str(201 + i + 1) if i + 1 < len(cves) else "300"
+        nxt = str(201 + i + 1) if i + 1 < len(sec_items) else "300"
         prv = str(201 + i - 1) if i > 0 else "200"
         lines = [
-            {"t": "hdr_red", "s": f"CVE DETAIL ({i+1}/{len(cves)})"},
+            {"t": "hdr_red", "s": f"SECURITY ADVISORY ({i+1}/{len(sec_items)})"},
             {"t": "sep", "s": "=" * 40},
             {"t": "item_yel", "s": f"> {item['id']}"[:40]},
         ]
@@ -309,7 +346,7 @@ def build_pages(cves: list[dict], games: list[dict], stamp: str) -> dict:
             {"t": "blank", "s": ""},
             {"t": "sec_cyan", "s": "TERMINAL / CURL ACCESS:"},
             {"t": "item_yel", "s": "  $ curl <host>/100.txt"},
-            {"t": "item_yel", "s": "  $ curl <host>/201.txt"},
+            {"t": "item_yel", "s": "  $ curl <host>/204.txt"},
             {"t": "blank", "s": ""},
             {"t": "body", "s": f"Last build: {stamp} UTC"},
             {"t": "nav", "s": "[100] Index   [200] Sec   [300] Games"},
@@ -334,11 +371,11 @@ def main() -> None:
     now_utc = datetime.now(timezone.utc)
     stamp = now_utc.strftime("%d.%m.%y %H:%M")
 
-    print("[1/4] Fetching CISA KEV vulnerabilities...")
-    cves = get_cisa_cves(limit=5)
-    llm_cves = summarize_with_llm(cves, "Cybersecurity & CVEs")
-    if llm_cves:
-        for orig, refined in zip(cves, llm_cves):
+    print("[1/4] Fetching CISA KEV & Linux Security feeds...")
+    sec_items = get_security_items()
+    llm_sec = summarize_with_llm(sec_items, "Cybersecurity, CVEs & Linux Advisories")
+    if llm_sec:
+        for orig, refined in zip(sec_items, llm_sec):
             orig["headline"] = clean_text(refined.get("headline", orig["headline"]))[:34]
             orig["summary"] = clean_text(refined.get("summary", orig["summary"]))[:140]
 
@@ -351,7 +388,7 @@ def main() -> None:
             orig["summary"] = clean_text(refined.get("summary", orig["summary"]))[:140]
 
     print("[3/4] Building 40-char Teletext grid...")
-    pages = build_pages(cves, games, stamp)
+    pages = build_pages(sec_items, games, stamp)
 
     payload = {"generated_utc": now_utc.isoformat(), "pages": pages}
     (DIST_DIR / "pages.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
