@@ -1,16 +1,16 @@
-P100  NERD-TEXT 100   12.11.26 13:33 UTC
+P100  NERD-TEXT 100   12.11.26 13:44 UTC
 ========================================
   NERD-TEXT // ZERO-BLOAT TELETEXT      
 ========================================
 SECURITY & LINUX ADVISORIES (P200)      
 201  Microsoft Office: Outlook Missing  
 202  Openwave Messaging Limited Webtop  
-203  Cisco BroadWorks: Improper Restric 
+203  Cisco BroadWorks: Improper         
                                         
 NERD GAMES & ROGUELIKES (FROM 300)      
-301  DF: The audio system has rebuilt f 
+301  DF: The audio system has rebuilt   
 302  DF: 53.17 Released                 
-303  Caves of Qud: Diaspora is coming D 
+303  Caves of Qud: Diaspora is coming   
                                         
 ----------------------------------------
 [200] Security  [300] Games   [999] Info

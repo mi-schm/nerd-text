@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-12T13:33:34.008518+00:00",
+  "generated_utc": "2026-11-12T13:44:05.625701+00:00",
   "pages": {
     "100": {
       "title": "INDEX",
@@ -21,17 +21,17 @@
         {
           "t": "link",
           "p": "201",
-          "s": "201  Microsoft Office: Outlook Missing "
+          "s": "201  Microsoft Office: Outlook Missing"
         },
         {
           "t": "link",
           "p": "202",
-          "s": "202  Openwave Messaging Limited Webtop "
+          "s": "202  Openwave Messaging Limited Webtop"
         },
         {
           "t": "link",
           "p": "203",
-          "s": "203  Cisco BroadWorks: Improper Restric"
+          "s": "203  Cisco BroadWorks: Improper"
         },
         {
           "t": "blank",
@@ -44,7 +44,7 @@
         {
           "t": "link",
           "p": "301",
-          "s": "301  DF: The audio system has rebuilt f"
+          "s": "301  DF: The audio system has rebuilt"
         },
         {
           "t": "link",
@@ -54,7 +54,7 @@
         {
           "t": "link",
           "p": "303",
-          "s": "303  Caves of Qud: Diaspora is coming D"
+          "s": "303  Caves of Qud: Diaspora is coming"
         },
         {
           "t": "blank",
@@ -86,46 +86,46 @@
         {
           "t": "link",
           "p": "201",
-          "s": "201  Microsoft Office: Outlook Missing "
+          "s": "201  Microsoft Office: Outlook Missing"
         },
         {
           "t": "body",
-          "s": "     Outlook Missing User Interaction"
+          "s": "     Microsoft Office Outlook contains a"
         },
         {
           "t": "body",
-          "s": "     for Potentially Unsafe Action"
+          "s": "     missing user interaction for"
         },
         {
           "t": "link",
           "p": "202",
-          "s": "202  Openwave Messaging Limited Webtop "
+          "s": "202  Openwave Messaging Limited Webtop"
         },
         {
           "t": "body",
-          "s": "     Incorrect Resource Transfer Between"
+          "s": "     Openwave Messaging Limited Webtop"
         },
         {
           "t": "body",
-          "s": "     Spheres Vulnerability. Patch due:"
+          "s": "     Media Transcoder contains an"
         },
         {
           "t": "link",
           "p": "203",
-          "s": "203  Cisco BroadWorks: Improper Restric"
+          "s": "203  Cisco BroadWorks: Improper"
         },
         {
           "t": "body",
-          "s": "     Improper Restriction of XML"
+          "s": "     Cisco BroadWorks contains an"
         },
         {
           "t": "body",
-          "s": "     External Entity Reference"
+          "s": "     improper restriction of XML"
         },
         {
           "t": "link",
           "p": "204",
-          "s": "204  DSA: 6620-1 apache2 - security upd"
+          "s": "204  DSA: 6620-1 apache2 - security"
         },
         {
           "t": "body",
@@ -181,15 +181,27 @@
         },
         {
           "t": "body",
-          "s": "  Outlook Missing User Interaction for"
+          "s": "  Microsoft Office Outlook contains a"
         },
         {
           "t": "body",
-          "s": "  Potentially Unsafe Action"
+          "s": "  missing user interaction for"
         },
         {
           "t": "body",
-          "s": "  Vulnerability. Patch due: 2026-11-24."
+          "s": "  potentially unsafe action"
+        },
+        {
+          "t": "body",
+          "s": "  vulnerability that allows an"
+        },
+        {
+          "t": "body",
+          "s": "  unauthorized attacker to perform"
+        },
+        {
+          "t": "body",
+          "s": "  spoofing over a network."
         },
         {
           "t": "blank",
@@ -236,15 +248,27 @@
         },
         {
           "t": "body",
-          "s": "  Incorrect Resource Transfer Between"
+          "s": "  Openwave Messaging Limited Webtop"
         },
         {
           "t": "body",
-          "s": "  Spheres Vulnerability. Patch due:"
+          "s": "  Media Transcoder contains an incorrect"
         },
         {
           "t": "body",
-          "s": "  2026-11-24."
+          "s": "  resource transfer between spheres"
+        },
+        {
+          "t": "body",
+          "s": "  vulnerability that may allow an"
+        },
+        {
+          "t": "body",
+          "s": "  authenticated user to process and"
+        },
+        {
+          "t": "body",
+          "s": "  convert unintended document types if"
         },
         {
           "t": "blank",
@@ -283,7 +307,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Cisco BroadWorks: Improper Restric"
+          "s": "  Cisco BroadWorks: Improper"
         },
         {
           "t": "blank",
@@ -291,15 +315,27 @@
         },
         {
           "t": "body",
-          "s": "  Improper Restriction of XML External"
+          "s": "  Cisco BroadWorks contains an improper"
         },
         {
           "t": "body",
-          "s": "  Entity Reference Vulnerability. Patch"
+          "s": "  restriction of XML external entity"
         },
         {
           "t": "body",
-          "s": "  due: 2026-11-24."
+          "s": "  reference vulnerability that could"
+        },
+        {
+          "t": "body",
+          "s": "  allow an unauthenticated, remote"
+        },
+        {
+          "t": "body",
+          "s": "  attacker to read sensitive"
+        },
+        {
+          "t": "body",
+          "s": "  configuration information on an"
         },
         {
           "t": "blank",
@@ -338,7 +374,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  DSA: 6620-1 apache2 - security upd"
+          "s": "  DSA: 6620-1 apache2 - security"
         },
         {
           "t": "blank",
@@ -409,7 +445,11 @@
         },
         {
           "t": "body",
-          "s": "  to c"
+          "s": "  to cause Yodl to crash, resulting in a"
+        },
+        {
+          "t": "body",
+          "s": "  denial of service."
         },
         {
           "t": "blank",
@@ -441,7 +481,7 @@
         {
           "t": "link",
           "p": "301",
-          "s": "301  DF: The audio system has rebuilt f"
+          "s": "301  DF: The audio system has rebuilt"
         },
         {
           "t": "body",
@@ -463,7 +503,7 @@
         {
           "t": "link",
           "p": "303",
-          "s": "303  Caves of Qud: Diaspora is coming D"
+          "s": "303  Caves of Qud: Diaspora is coming"
         },
         {
           "t": "body",
@@ -476,7 +516,7 @@
         {
           "t": "link",
           "p": "304",
-          "s": "304  Caves of Qud: Autoexplore Patch - "
+          "s": "304  Caves of Qud: Autoexplore Patch -"
         },
         {
           "t": "body",
@@ -489,7 +529,7 @@
         {
           "t": "link",
           "p": "305",
-          "s": "305  Cataclysm: DDA: Cataclysm-DDA expe"
+          "s": "305  Cataclysm: DDA: Cataclysm-DDA"
         },
         {
           "t": "body",
@@ -524,7 +564,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  DF: The audio system has rebuilt f"
+          "s": "  DF: The audio system has rebuilt"
         },
         {
           "t": "blank",
@@ -545,6 +585,14 @@
         {
           "t": "body",
           "s": "  sounds, a better ambience system, and"
+        },
+        {
+          "t": "body",
+          "s": "  varied work sounds for mining. With"
+        },
+        {
+          "t": "body",
+          "s": "  this new framework, we can continue to"
         },
         {
           "t": "blank",
@@ -630,7 +678,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Caves of Qud: Diaspora is coming D"
+          "s": "  Caves of Qud: Diaspora is coming"
         },
         {
           "t": "blank",
@@ -650,7 +698,15 @@
         },
         {
           "t": "body",
-          "s": "  first expansion pack, Caves of"
+          "s": "  first expansion pack, Caves of Qud:"
+        },
+        {
+          "t": "body",
+          "s": "  Diaspora is releasing into Early"
+        },
+        {
+          "t": "body",
+          "s": "  Access on December 9th for $14.99."
         },
         {
           "t": "blank",
@@ -709,7 +765,15 @@
         },
         {
           "t": "body",
-          "s": "  default. Added a \"Performance\" auto"
+          "s": "  default. Added a \"Performance\""
+        },
+        {
+          "t": "body",
+          "s": "  autoexplore mode that utilizes far"
+        },
+        {
+          "t": "body",
+          "s": "  less CPU but ocassionally causes"
         },
         {
           "t": "blank",
@@ -748,7 +812,7 @@
         },
         {
           "t": "sec_cyan",
-          "s": "  Cataclysm: DDA: Cataclysm-DDA expe"
+          "s": "  Cataclysm: DDA: Cataclysm-DDA"
         },
         {
           "t": "blank",
@@ -768,7 +832,15 @@
         },
         {
           "t": "body",
-          "s": "  Rewrite wound text to be more"
+          "s": "  Rewrite wound text to be more colorful"
+        },
+        {
+          "t": "body",
+          "s": "  and immersive by @phoenix492 in #89492"
+        },
+        {
+          "t": "body",
+          "s": "  Full Changelog :"
         },
         {
           "t": "blank",
@@ -835,7 +907,7 @@
         },
         {
           "t": "body",
-          "s": "Last build: 12.11.26 13:33 UTC"
+          "s": "Last build: 12.11.26 13:44 UTC"
         },
         {
           "t": "nav",

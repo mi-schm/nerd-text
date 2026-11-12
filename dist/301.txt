@@ -1,14 +1,16 @@
-P301  NERD-TEXT 301   12.11.26 13:33 UTC
+P301  NERD-TEXT 301   12.11.26 13:44 UTC
 ========================================
 GAME LOG (1/5)                          
 ========================================
 > DWARF FORTRESS                        
-  DF: The audio system has rebuilt f    
+  DF: The audio system has rebuilt      
                                         
   (Toady One) The audio system has      
   rebuilt from the ground up for        
   fortress mode. We have user interface 
   sounds, a better ambience system, and 
+  varied work sounds for mining. With   
+  this new framework, we can continue to
                                         
   Source: Dwarf Fortress (Mon, 09 Nov   
   2026)                                 

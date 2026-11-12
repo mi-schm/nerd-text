@@ -1,13 +1,16 @@
-P202  NERD-TEXT 202   12.11.26 13:33 UTC
+P202  NERD-TEXT 202   12.11.26 13:44 UTC
 ========================================
 SECURITY ADVISORY (2/5)                 
 ========================================
 > CVE-2026-111793                       
   Openwave Messaging Limited Webtop     
                                         
-  Incorrect Resource Transfer Between   
-  Spheres Vulnerability. Patch due:     
-  2026-11-24.                           
+  Openwave Messaging Limited Webtop     
+  Media Transcoder contains an incorrect
+  resource transfer between spheres     
+  vulnerability that may allow an       
+  authenticated user to process and     
+  convert unintended document types if  
                                         
   CISA KEV | Added: 2026-11-10 | Due:   
   2026-11-24                            

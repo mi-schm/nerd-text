@@ -1,13 +1,16 @@
-P203  NERD-TEXT 203   12.11.26 13:33 UTC
+P203  NERD-TEXT 203   12.11.26 13:44 UTC
 ========================================
 SECURITY ADVISORY (3/5)                 
 ========================================
 > CVE-2026-20320                        
-  Cisco BroadWorks: Improper Restric    
+  Cisco BroadWorks: Improper            
                                         
-  Improper Restriction of XML External  
-  Entity Reference Vulnerability. Patch 
-  due: 2026-11-24.                      
+  Cisco BroadWorks contains an improper 
+  restriction of XML external entity    
+  reference vulnerability that could    
+  allow an unauthenticated, remote      
+  attacker to read sensitive            
+  configuration information on an       
                                         
   CISA KEV | Added: 2026-11-10 | Due:   
   2026-11-24                            

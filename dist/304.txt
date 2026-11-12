@@ -1,4 +1,4 @@
-P304  NERD-TEXT 304   12.11.26 13:33 UTC
+P304  NERD-TEXT 304   12.11.26 13:44 UTC
 ========================================
 GAME LOG (4/5)                          
 ========================================
@@ -8,7 +8,9 @@ GAME LOG (4/5)
   211.55 Added a "Standard" autoexplore 
   mode that matches older classic       
   autoexplore pathing, it is now the    
-  default. Added a "Performance" auto   
+  default. Added a "Performance"        
+  autoexplore mode that utilizes far    
+  less CPU but ocassionally causes      
                                         
   Source: Caves of Qud (Thu, 24 Sep     
   2026)                                 

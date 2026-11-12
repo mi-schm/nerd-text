@@ -1,17 +1,17 @@
-P200  NERD-TEXT 200   12.11.26 13:33 UTC
+P200  NERD-TEXT 200   12.11.26 13:44 UTC
 ========================================
 CISA KEV & LINUX SECURITY (DSA/USN)     
 ========================================
 201  Microsoft Office: Outlook Missing  
-     Outlook Missing User Interaction   
-     for Potentially Unsafe Action      
+     Microsoft Office Outlook contains a
+     missing user interaction for       
 202  Openwave Messaging Limited Webtop  
-     Incorrect Resource Transfer Between
-     Spheres Vulnerability. Patch due:  
-203  Cisco BroadWorks: Improper Restric 
-     Improper Restriction of XML        
-     External Entity Reference          
-204  DSA: 6620-1 apache2 - security upd 
+     Openwave Messaging Limited Webtop  
+     Media Transcoder contains an       
+203  Cisco BroadWorks: Improper         
+     Cisco BroadWorks contains an       
+     improper restriction of XML        
+204  DSA: 6620-1 apache2 - security     
      https://security-tracker.debian.org
      /tracker/DSA-6620-1                
 205  USN: 9063-1: Yodl vulnerability    
