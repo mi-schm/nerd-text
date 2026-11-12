@@ -100,12 +100,22 @@ def wrap_40(text: str, indent: str = "") -> list[str]:
     return [line[:WIDTH] for line in wrapped]
 
 
+def preview_2_lines(text: str, indent: str = "     ") -> list[str]:
+    """Erzeugt maximal 2 sauber abgeschlossene Vorschauzeilen (ggf. mit '...')."""
+    lines = wrap_40(text, indent)
+    if len(lines) <= 2:
+        return lines
+    second = lines[1].rstrip(" .,;:-")
+    if len(second) > WIDTH - 3:
+        second = second[: WIDTH - 3].rsplit(" ", 1)[0].rstrip(" .,;:-")
+    return [lines[0], f"{second}..."]
+
+
 def resolve_gemini_models(api_key: str) -> list[str]:
     preferred_order = [
         "gemini-flash-latest",
         "gemini-2.0-flash",
         "gemini-2.0-flash-lite",
-        "gemini-2.5-flash",
         "gemini-1.5-flash",
     ]
     list_url = f"https://generativelanguage.googleapis.com/v1beta/models?key={api_key}"
@@ -120,7 +130,7 @@ def resolve_gemini_models(api_key: str) -> list[str]:
             ]
             ordered = [m for m in preferred_order if m in available]
             for m in available:
-                if "flash" in m and m not in ordered and "tts" not in m and "image" not in m:
+                if "flash" in m and m not in ordered and "tts" not in m and "image" not in m and "2.5" not in m:
                     ordered.append(m)
             if ordered:
                 return ordered
@@ -129,7 +139,7 @@ def resolve_gemini_models(api_key: str) -> list[str]:
     return preferred_order
 
 
-def summarize_with_llm(items: list[dict], category: str) -> list[dict] | None:
+def summarize_with_llm(items: list[dict], category: str, extra_rules: str = "") -> list[dict] | None:
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not api_key or not items:
         return None
@@ -139,9 +149,10 @@ def summarize_with_llm(items: list[dict], category: str) -> list[dict] | None:
         f"You are a senior Teletext news editor for {category}. "
         "Rewrite each raw feed item into crisp, complete Teletext copy:\n"
         "1) 'headline': max 34 chars, complete words (NEVER cut off mid-word), "
-        "format 'Topic/Source: Core Fact'.\n"
+        "format 'Topic: Core Fact'.\n"
         "2) 'summary': 150 to 200 chars of dense technical/editorial facts ending with a full period. "
         "Explain what happened, why it matters, or key specs. Never repeat the headline.\n"
+        f"{extra_rules}"
         "Return ONLY a raw JSON array of objects with keys 'headline' and 'summary'. No markdown.\n\n"
         f"Items:\n{json.dumps(items, ensure_ascii=True)}"
     )
@@ -312,7 +323,6 @@ def get_retro_games(limit: int = 5) -> list[dict]:
 
 
 def extract_article_snippet(url: str) -> str:
-    """Liest den Anfang des verlinkten Artikels für eine echte Gemini-Zusammenfassung."""
     if not url or url.lower().endswith((".pdf", ".zip", ".png", ".jpg")):
         return ""
     try:
@@ -332,7 +342,7 @@ def get_hacker_news(limit: int = 10) -> list[dict]:
     results = []
     try:
         ids = json.loads(fetch_url(HN_TOP_URL, timeout=10).decode("utf-8"))[:25]
-        for rank_idx, item_id in enumerate(ids):
+        for item_id in ids:
             if len(results) >= limit:
                 break
             try:
@@ -404,7 +414,7 @@ def build_pages(sec_items: list[dict], retro_items: list[dict], hn_items: list[d
     ]
     for idx, item in enumerate(sec_items, start=201):
         p200.append({"t": "link", "p": str(idx), "s": f"{idx}  {item['headline'][:35]}"})
-        p200.extend({"t": "body", "s": l} for l in wrap_40(item["summary"], "     ")[:2])
+        p200.extend({"t": "body", "s": l} for l in preview_2_lines(item["summary"], "     "))
     p200.append({"t": "nav", "s": "[100] Index      [201] Details     [300]"})
     pages["200"] = {"title": "SECURITY", "next": "201", "prev": "100", "lines": p200}
 
@@ -433,7 +443,7 @@ def build_pages(sec_items: list[dict], retro_items: list[dict], hn_items: list[d
     ]
     for idx, item in enumerate(retro_items, start=301):
         p300.append({"t": "link", "p": str(idx), "s": f"{idx}  {item['headline'][:35]}"})
-        p300.extend({"t": "body", "s": l} for l in wrap_40(item["summary"], "     ")[:2])
+        p300.extend({"t": "body", "s": l} for l in preview_2_lines(item["summary"], "     "))
     p300.append({"t": "nav", "s": "[100] Index      [301] Details     [400]"})
     pages["300"] = {"title": "RETRO GAMES", "next": "301", "prev": "200", "lines": p300}
 
@@ -544,7 +554,11 @@ def main() -> None:
 
     print("[3/5] Fetching Top 10 Hacker News stories...")
     hn_items = get_hacker_news(limit=10)
-    llm_hn = summarize_with_llm(hn_items, "Hacker News Tech & Programming Stories")
+    hn_rules = (
+        "3) NEVER start 'headline' with a website/domain name like GitHub/, Blog/, News/, Reuters/, or BBC/ — "
+        "always start directly with the project, company, or core topic (e.g. 'JaneStreet: Socratic AI').\n"
+    )
+    llm_hn = summarize_with_llm(hn_items, "Hacker News Tech & Programming Stories", extra_rules=hn_rules)
     if llm_hn:
         for orig, refined in zip(hn_items, llm_hn):
             orig["headline"] = smart_truncate(clean_text(refined.get("headline", orig["headline"])), 34)
