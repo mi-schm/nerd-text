@@ -1,0 +1,18 @@
+P100  NERD-TEXT 100   12.11.26 13:13 UTC
+========================================
+  NERD-TEXT // ZERO-BLOAT TELETEXT      
+========================================
+SECURITY & CVEs (FROM PAGE 200)         
+201  Microsoft Office: Microsoft Office 
+202  Openwave Messaging Limited Webtop  
+203  Cisco BroadWorks: Cisco BroadWorks 
+                                        
+NERD GAMES & ROGUELIKES (FROM 300)      
+301  Dwarf Fortress: 11/09/2026         
+302  Dwarf Fortress: 2026-11-09: DF 53. 
+303  Caves of Qud: Caves of Qud: Diaspo 
+                                        
+----------------------------------------
+[200] Security   [300] Games   [999] Inf
+========================================
+RED:100  GRN:200  YEL:300  CYN:999      

@@ -1,0 +1,17 @@
+P303  NERD-TEXT 303   12.11.26 13:13 UTC
+========================================
+GAME LOG (3/5)                          
+========================================
+> CAVES OF QUD                          
+  Caves of Qud: Caves of Qud: Diaspo    
+                                        
+  Hey friends, It's the beginning of a  
+  new era of Caves of Qud development.  
+  We are pleased to announce that the   
+  first expansion pack, Caves of        
+                                        
+  Source: Caves of Qud (Thu, 15 Oct     
+  2026)                                 
+[100] Index  [302] Prev  [304] Next     
+========================================
+RED:100  GRN:200  YEL:300  CYN:999      

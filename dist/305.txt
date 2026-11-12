@@ -1,0 +1,17 @@
+P305  NERD-TEXT 305   12.11.26 13:13 UTC
+========================================
+GAME LOG (5/5)                          
+========================================
+> CATACLYSM: DDA                        
+  Cataclysm: DDA: Cataclysm-DDA expe    
+                                        
+  What's Changed Remove all legacy int  
+  -indexed item accessors for Character 
+  and outfit by @ShnitzelX2 in #89509   
+  Rewrite wound text to be more         
+                                        
+  Source: Cataclysm: DDA                
+  (2026-11-12T07:15)                    
+[100] Index  [304] Prev  [999] Next     
+========================================
+RED:100  GRN:200  YEL:300  CYN:999      

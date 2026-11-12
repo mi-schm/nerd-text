@@ -1,0 +1,15 @@
+P204  NERD-TEXT 204   12.11.26 13:13 UTC
+========================================
+CVE DETAIL (4/5)                        
+========================================
+> CVE-2026-111560                       
+  Barracuda Networks Multiple Produc    
+                                        
+  Barracuda Networks Multiple Products  
+  OS Command Injection Vulnerability.   
+  Patch due: 2026-11-13.                
+                                        
+  Added: 2026-11-10 | Due: 2026-11-13   
+[100] Index  [203] Prev  [205] Next     
+========================================
+RED:100  GRN:200  YEL:300  CYN:999      

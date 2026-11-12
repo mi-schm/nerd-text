@@ -1,0 +1,22 @@
+P200  NERD-TEXT 200   12.11.26 13:13 UTC
+========================================
+SECURITY & CISA KEV OVERVIEW            
+========================================
+201  CVE-2026-124194: Microsoft Office: 
+     Microsoft Office Outlook Missing   
+     User Interaction for Potentially   
+202  CVE-2026-111793: Openwave Messaging
+     Openwave Messaging Limited Webtop  
+     Media Transcoder Incorrect Resource
+203  CVE-2026-20320: Cisco BroadWorks: C
+     Cisco BroadWorks Improper          
+     Restriction of XML External Entity 
+204  CVE-2026-111560: Barracuda Networks
+     Barracuda Networks Multiple        
+     Products OS Command Injection      
+205  CVE-2026-116606: Barracuda Networks
+     Barracuda Networks Email Security  
+     Gateway (ESG) Authentication Bypass
+[100] Index      [201] Details     [300]
+========================================
+RED:100  GRN:200  YEL:300  CYN:999      

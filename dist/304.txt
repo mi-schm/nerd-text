@@ -1,0 +1,17 @@
+P304  NERD-TEXT 304   12.11.26 13:13 UTC
+========================================
+GAME LOG (4/5)                          
+========================================
+> CAVES OF QUD                          
+  Caves of Qud: Autoexplore Patch -     
+                                        
+  211.55 Added a "Standard" autoexplore 
+  mode that matches older classic       
+  autoexplore pathing, it is now the    
+  default. Added a "Performance" auto   
+                                        
+  Source: Caves of Qud (Thu, 24 Sep     
+  2026)                                 
+[100] Index  [303] Prev  [305] Next     
+========================================
+RED:100  GRN:200  YEL:300  CYN:999      

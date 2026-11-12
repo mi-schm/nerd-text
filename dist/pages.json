@@ -1,0 +1,843 @@
+{
+  "generated_utc": "2026-11-12T13:13:26.871018+00:00",
+  "pages": {
+    "100": {
+      "title": "INDEX",
+      "next": "200",
+      "prev": "999",
+      "lines": [
+        {
+          "t": "banner",
+          "s": "  NERD-TEXT // ZERO-BLOAT TELETEXT    "
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "SECURITY & CVEs (FROM PAGE 200)"
+        },
+        {
+          "t": "link",
+          "p": "201",
+          "s": "201  Microsoft Office: Microsoft Office"
+        },
+        {
+          "t": "link",
+          "p": "202",
+          "s": "202  Openwave Messaging Limited Webtop "
+        },
+        {
+          "t": "link",
+          "p": "203",
+          "s": "203  Cisco BroadWorks: Cisco BroadWorks"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "sec_green",
+          "s": "NERD GAMES & ROGUELIKES (FROM 300)"
+        },
+        {
+          "t": "link",
+          "p": "301",
+          "s": "301  Dwarf Fortress: 11/09/2026"
+        },
+        {
+          "t": "link",
+          "p": "302",
+          "s": "302  Dwarf Fortress: 2026-11-09: DF 53."
+        },
+        {
+          "t": "link",
+          "p": "303",
+          "s": "303  Caves of Qud: Caves of Qud: Diaspo"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "sep",
+          "s": "----------------------------------------"
+        },
+        {
+          "t": "nav",
+          "s": "[200] Security   [300] Games   [999] Info"
+        }
+      ]
+    },
+    "200": {
+      "title": "SECURITY",
+      "next": "201",
+      "prev": "100",
+      "lines": [
+        {
+          "t": "hdr_red",
+          "s": "SECURITY & CISA KEV OVERVIEW"
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "link",
+          "p": "201",
+          "s": "201  CVE-2026-124194: Microsoft Office: Micr"
+        },
+        {
+          "t": "body",
+          "s": "     Microsoft Office Outlook Missing"
+        },
+        {
+          "t": "body",
+          "s": "     User Interaction for Potentially"
+        },
+        {
+          "t": "link",
+          "p": "202",
+          "s": "202  CVE-2026-111793: Openwave Messaging Lim"
+        },
+        {
+          "t": "body",
+          "s": "     Openwave Messaging Limited Webtop"
+        },
+        {
+          "t": "body",
+          "s": "     Media Transcoder Incorrect Resource"
+        },
+        {
+          "t": "link",
+          "p": "203",
+          "s": "203  CVE-2026-20320: Cisco BroadWorks: Cisc"
+        },
+        {
+          "t": "body",
+          "s": "     Cisco BroadWorks Improper"
+        },
+        {
+          "t": "body",
+          "s": "     Restriction of XML External Entity"
+        },
+        {
+          "t": "link",
+          "p": "204",
+          "s": "204  CVE-2026-111560: Barracuda Networks Mul"
+        },
+        {
+          "t": "body",
+          "s": "     Barracuda Networks Multiple"
+        },
+        {
+          "t": "body",
+          "s": "     Products OS Command Injection"
+        },
+        {
+          "t": "link",
+          "p": "205",
+          "s": "205  CVE-2026-116606: Barracuda Networks Bar"
+        },
+        {
+          "t": "body",
+          "s": "     Barracuda Networks Email Security"
+        },
+        {
+          "t": "body",
+          "s": "     Gateway (ESG) Authentication Bypass"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index      [201] Details     [300]"
+        }
+      ]
+    },
+    "201": {
+      "title": "CVE-2026-124",
+      "next": "202",
+      "prev": "200",
+      "lines": [
+        {
+          "t": "hdr_red",
+          "s": "CVE DETAIL (1/5)"
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> CVE-2026-124194"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Microsoft Office: Microsoft Office"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Microsoft Office Outlook Missing User"
+        },
+        {
+          "t": "body",
+          "s": "  Interaction for Potentially Unsafe"
+        },
+        {
+          "t": "body",
+          "s": "  Action Vulnerability. Patch due:"
+        },
+        {
+          "t": "body",
+          "s": "  2026-11-24."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_red",
+          "s": "  Added: 2026-11-10 | Due: 2026-11-24"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [200] Prev  [202] Next"
+        }
+      ]
+    },
+    "202": {
+      "title": "CVE-2026-111",
+      "next": "203",
+      "prev": "201",
+      "lines": [
+        {
+          "t": "hdr_red",
+          "s": "CVE DETAIL (2/5)"
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> CVE-2026-111793"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Openwave Messaging Limited Webtop"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Openwave Messaging Limited Webtop"
+        },
+        {
+          "t": "body",
+          "s": "  Media Transcoder Incorrect Resource"
+        },
+        {
+          "t": "body",
+          "s": "  Transfer Between Spheres"
+        },
+        {
+          "t": "body",
+          "s": "  Vulnerability. Patch due: 2026-11-24."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_red",
+          "s": "  Added: 2026-11-10 | Due: 2026-11-24"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [201] Prev  [203] Next"
+        }
+      ]
+    },
+    "203": {
+      "title": "CVE-2026-203",
+      "next": "204",
+      "prev": "202",
+      "lines": [
+        {
+          "t": "hdr_red",
+          "s": "CVE DETAIL (3/5)"
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> CVE-2026-20320"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Cisco BroadWorks: Cisco BroadWorks"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Cisco BroadWorks Improper Restriction"
+        },
+        {
+          "t": "body",
+          "s": "  of XML External Entity Reference"
+        },
+        {
+          "t": "body",
+          "s": "  Vulnerability. Patch due: 2026-11-24."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_red",
+          "s": "  Added: 2026-11-10 | Due: 2026-11-24"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [202] Prev  [204] Next"
+        }
+      ]
+    },
+    "204": {
+      "title": "CVE-2026-111",
+      "next": "205",
+      "prev": "203",
+      "lines": [
+        {
+          "t": "hdr_red",
+          "s": "CVE DETAIL (4/5)"
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> CVE-2026-111560"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Barracuda Networks Multiple Produc"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Barracuda Networks Multiple Products"
+        },
+        {
+          "t": "body",
+          "s": "  OS Command Injection Vulnerability."
+        },
+        {
+          "t": "body",
+          "s": "  Patch due: 2026-11-13."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_red",
+          "s": "  Added: 2026-11-10 | Due: 2026-11-13"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [203] Prev  [205] Next"
+        }
+      ]
+    },
+    "205": {
+      "title": "CVE-2026-116",
+      "next": "300",
+      "prev": "204",
+      "lines": [
+        {
+          "t": "hdr_red",
+          "s": "CVE DETAIL (5/5)"
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> CVE-2026-116606"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Barracuda Networks Barracuda Email"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Barracuda Networks Email Security"
+        },
+        {
+          "t": "body",
+          "s": "  Gateway (ESG) Authentication Bypass"
+        },
+        {
+          "t": "body",
+          "s": "  Using an Alternate Path or Channel"
+        },
+        {
+          "t": "body",
+          "s": "  Vulnerability. Patch due: 2026-11-1"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_red",
+          "s": "  Added: 2026-11-10 | Due: 2026-11-13"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [204] Prev  [300] Next"
+        }
+      ]
+    },
+    "300": {
+      "title": "NERD GAMES",
+      "next": "301",
+      "prev": "200",
+      "lines": [
+        {
+          "t": "hdr_grn",
+          "s": "ROGUELIKES & SYSTEM-DRIVEN GAMES"
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "link",
+          "p": "301",
+          "s": "301  Dwarf Fortress: 11/09/2026"
+        },
+        {
+          "t": "body",
+          "s": "     (Toady One) The audio system has"
+        },
+        {
+          "t": "body",
+          "s": "     rebuilt from the ground up for"
+        },
+        {
+          "t": "link",
+          "p": "302",
+          "s": "302  Dwarf Fortress: 2026-11-09: DF 53."
+        },
+        {
+          "t": "body",
+          "s": "     DF Version 53.17 has been released."
+        },
+        {
+          "t": "link",
+          "p": "303",
+          "s": "303  Caves of Qud: Caves of Qud: Diaspo"
+        },
+        {
+          "t": "body",
+          "s": "     Hey friends, It's the beginning of"
+        },
+        {
+          "t": "body",
+          "s": "     a new era of Caves of Qud"
+        },
+        {
+          "t": "link",
+          "p": "304",
+          "s": "304  Caves of Qud: Autoexplore Patch - "
+        },
+        {
+          "t": "body",
+          "s": "     211.55 Added a \"Standard\""
+        },
+        {
+          "t": "body",
+          "s": "     autoexplore mode that matches older"
+        },
+        {
+          "t": "link",
+          "p": "305",
+          "s": "305  Cataclysm: DDA: Cataclysm-DDA expe"
+        },
+        {
+          "t": "body",
+          "s": "     What's Changed Remove all legacy"
+        },
+        {
+          "t": "body",
+          "s": "     int -indexed item accessors for"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index      [301] Details     [999]"
+        }
+      ]
+    },
+    "301": {
+      "title": "DWARF FORTRE",
+      "next": "302",
+      "prev": "300",
+      "lines": [
+        {
+          "t": "hdr_grn",
+          "s": "GAME LOG (1/5)"
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> DWARF FORTRESS"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Dwarf Fortress: 11/09/2026"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  (Toady One) The audio system has"
+        },
+        {
+          "t": "body",
+          "s": "  rebuilt from the ground up for"
+        },
+        {
+          "t": "body",
+          "s": "  fortress mode. We have user interface"
+        },
+        {
+          "t": "body",
+          "s": "  sounds, a better ambience system, and"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  Source: Dwarf Fortress (Mon, 09 Nov"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  2026)"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [300] Prev  [302] Next"
+        }
+      ]
+    },
+    "302": {
+      "title": "DWARF FORTRE",
+      "next": "303",
+      "prev": "301",
+      "lines": [
+        {
+          "t": "hdr_grn",
+          "s": "GAME LOG (2/5)"
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> DWARF FORTRESS"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Dwarf Fortress: 2026-11-09: DF 53."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  DF Version 53.17 has been released."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  Source: Dwarf Fortress (Mon, 09 Nov"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  2026)"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [301] Prev  [303] Next"
+        }
+      ]
+    },
+    "303": {
+      "title": "CAVES OF QUD",
+      "next": "304",
+      "prev": "302",
+      "lines": [
+        {
+          "t": "hdr_grn",
+          "s": "GAME LOG (3/5)"
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> CAVES OF QUD"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Caves of Qud: Caves of Qud: Diaspo"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  Hey friends, It's the beginning of a"
+        },
+        {
+          "t": "body",
+          "s": "  new era of Caves of Qud development."
+        },
+        {
+          "t": "body",
+          "s": "  We are pleased to announce that the"
+        },
+        {
+          "t": "body",
+          "s": "  first expansion pack, Caves of"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  Source: Caves of Qud (Thu, 15 Oct"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  2026)"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [302] Prev  [304] Next"
+        }
+      ]
+    },
+    "304": {
+      "title": "CAVES OF QUD",
+      "next": "305",
+      "prev": "303",
+      "lines": [
+        {
+          "t": "hdr_grn",
+          "s": "GAME LOG (4/5)"
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> CAVES OF QUD"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Caves of Qud: Autoexplore Patch -"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  211.55 Added a \"Standard\" autoexplore"
+        },
+        {
+          "t": "body",
+          "s": "  mode that matches older classic"
+        },
+        {
+          "t": "body",
+          "s": "  autoexplore pathing, it is now the"
+        },
+        {
+          "t": "body",
+          "s": "  default. Added a \"Performance\" auto"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  Source: Caves of Qud (Thu, 24 Sep"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  2026)"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [303] Prev  [305] Next"
+        }
+      ]
+    },
+    "305": {
+      "title": "CATACLYSM: D",
+      "next": "999",
+      "prev": "304",
+      "lines": [
+        {
+          "t": "hdr_grn",
+          "s": "GAME LOG (5/5)"
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "item_yel",
+          "s": "> CATACLYSM: DDA"
+        },
+        {
+          "t": "sec_cyan",
+          "s": "  Cataclysm: DDA: Cataclysm-DDA expe"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "  What's Changed Remove all legacy int"
+        },
+        {
+          "t": "body",
+          "s": "  -indexed item accessors for Character"
+        },
+        {
+          "t": "body",
+          "s": "  and outfit by @ShnitzelX2 in #89509"
+        },
+        {
+          "t": "body",
+          "s": "  Rewrite wound text to be more"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "warn_grn",
+          "s": "  Source: Cataclysm: DDA"
+        },
+        {
+          "t": "warn_grn",
+          "s": "  (2026-11-12T07:15)"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index  [304] Prev  [999] Next"
+        }
+      ]
+    },
+    "999": {
+      "title": "INFO",
+      "next": "100",
+      "prev": "300",
+      "lines": [
+        {
+          "t": "hdr_mag",
+          "s": "ABOUT NERD-TEXT // ARCHITECTURE"
+        },
+        {
+          "t": "sep",
+          "s": "========================================"
+        },
+        {
+          "t": "body",
+          "s": "Zero ads. Zero tracking. Finite pages."
+        },
+        {
+          "t": "body",
+          "s": "Built for instant loading on weak"
+        },
+        {
+          "t": "body",
+          "s": "mobile links and terminal workflows."
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "sec_cyan",
+          "s": "TERMINAL / CURL ACCESS:"
+        },
+        {
+          "t": "item_yel",
+          "s": "  $ curl https://nerdtext.io/100"
+        },
+        {
+          "t": "item_yel",
+          "s": "  $ curl https://nerdtext.io/201"
+        },
+        {
+          "t": "blank",
+          "s": ""
+        },
+        {
+          "t": "body",
+          "s": "Last build: 12.11.26 13:13 UTC"
+        },
+        {
+          "t": "nav",
+          "s": "[100] Index   [200] Sec   [300] Games"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+P202  NERD-TEXT 202   12.11.26 13:13 UTC
+========================================
+CVE DETAIL (2/5)                        
+========================================
+> CVE-2026-111793                       
+  Openwave Messaging Limited Webtop     
+                                        
+  Openwave Messaging Limited Webtop     
+  Media Transcoder Incorrect Resource   
+  Transfer Between Spheres              
+  Vulnerability. Patch due: 2026-11-24. 
+                                        
+  Added: 2026-11-10 | Due: 2026-11-24   
+[100] Index  [201] Prev  [203] Next     
+========================================
+RED:100  GRN:200  YEL:300  CYN:999      
